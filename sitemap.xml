@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap des guides — Heures Supplémentaires France
+  À soumettre dans Google Search Console (Sitemaps > Ajouter un sitemap).
+  Quand tu attaches un vrai nom de domaine, remplace simulateurheuressupfrance.pages.dev
+  par ton domaine partout dans ce fichier (et dans les balises canonical des pages).
+  Pense à mettre à jour <lastmod> quand tu modifies une page.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/heures-supplementaires-guide</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/restauration-hcr</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/temps-partiel-heures-complementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/forfait-jours-cadres</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/heures-non-payees</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/grille-salaire-convention</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/defiscalisation-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/transport-routier-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/btp-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/metallurgie-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/syntec-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/assurance-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/boulangerie-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/proprete-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/hospitalisation-privee-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/coiffure-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/medico-social-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/securite-privee-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/pharmacie-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/chimie-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/centres-sociaux-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://simulateurheuressupfrance.pages.dev/guides/animation-heures-supplementaires</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
