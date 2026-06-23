@@ -1,0 +1,240 @@
+/* =====================================================================
+   Heures Supplémentaires France — Guides
+   Design system v2 — aligné sur la charte "Cabinet Exécutif" du module
+   M6 (Ivoire · Charbon · Champagne — Cormorant Garamond + Outfit).
+   Une seule modif ici = toutes les pages changent.
+   ===================================================================== */
+
+:root{
+  --ivoire:       #F7F3ED;
+  --ivoire-2:     #EDE8E0;
+  --ivoire-3:     #E2DAD0;
+  --charbon:      #1A1714;
+  --charbon-2:    #2E2A26;
+  --charbon-3:    #4A4540;
+  --pierre:       #8A847C;
+  --pierre-2:     #BDB5A8;
+  --champagne:    #C4A35A;
+  --champagne-2:  #8B6914;
+  --champagne-3:  #F0E3C0;
+  --succes:       #2D6A4F;
+  --succes-bg:    #E8F5EF;
+  --alerte:       #9B2C2C;
+  --alerte-bg:    #FBEAEA;
+  --warning:      #7A5C00;
+  --warning-bg:   #FFF8E6;
+
+  /* alias pour compatibilité avec les anciens noms utilisés dans les pages */
+  --paper:        var(--ivoire);
+  --card:         #FFFFFF;
+  --ink:          var(--charbon);
+  --teal:         var(--champagne);
+  --teal-deep:    var(--champagne-2);
+  --teal-soft:    var(--champagne-3);
+  --amber:        var(--alerte);
+  --amber-soft:   var(--alerte-bg);
+  --line:         var(--ivoire-3);
+  --muted:        var(--pierre);
+
+  --display:"Cormorant Garamond",Georgia,serif;
+  --body:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+
+  --shadow:    0 4px 16px rgba(26,23,20,.10);
+  --shadow-lg: 0 20px 50px -12px rgba(26,23,20,.45);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+html,body{background:var(--charbon)}
+
+body{
+  font-family:var(--body);
+  color:var(--charbon);
+  line-height:1.65;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ---------- décor : photo fixe en arrière-plan ----------
+   La photo reste immobile ; c'est l'encart crème (.page-shell) qui
+   défile par-dessus, comme une feuille posée sur le bureau du renard. */
+.bg-fixed{
+  position:fixed; inset:0; z-index:0;
+  background-image:
+    linear-gradient(180deg, rgba(15,13,11,.10) 0%, rgba(15,13,11,.55) 65%, rgba(15,13,11,.88) 100%),
+    url('img/fox-bg.jpg');
+  background-size:cover;
+  background-position:center 18%;
+  background-repeat:no-repeat;
+}
+
+/* ---------- l'encart crème déroulant ---------- */
+.page-shell{
+  position:relative; z-index:1;
+  max-width:760px; margin:0 auto;
+  margin-top:128px;
+  min-height:calc(100vh - 128px);
+  background:var(--ivoire);
+  border-radius:26px 26px 0 0;
+  box-shadow:var(--shadow-lg);
+}
+@media (min-width:700px){
+  .page-shell{ margin-top:170px; }
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+
+/* ---------- entrance animation ---------- */
+.rise{opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.3,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.27s}.d4{animation-delay:.4s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ---------- top bar (injectée par core.js dans #hs-topbar) ---------- */
+.topbar{border-bottom:1px solid var(--line);background:rgba(247,243,237,.88);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10;border-radius:26px 26px 0 0}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15px;letter-spacing:-.01em;color:var(--charbon);text-decoration:none;font-family:var(--body)}
+.brand .mark{width:26px;height:26px;border-radius:8px;background:var(--charbon);display:grid;place-items:center;font-size:15px}
+.stamp{font-family:var(--mono);font-size:11.5px;color:var(--pierre);white-space:nowrap}
+@media(max-width:480px){.stamp{display:none}}
+
+/* ---------- hero ---------- */
+header.hero{padding:40px 0 8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--champagne-2);font-weight:500;margin-bottom:16px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(33px,7.6vw,49px);line-height:1.05;letter-spacing:-.01em;margin-bottom:18px}
+.lead{font-size:18.5px;color:var(--charbon-2);max-width:62ch;font-weight:300}
+.lead strong{color:var(--charbon);font-weight:600;box-shadow:inset 0 -.5em 0 var(--champagne-3)}
+
+/* ---------- signature : l'échelle des majorations ---------- */
+.ladder{margin:36px 0 28px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px 22px;box-shadow:var(--shadow)}
+.ladder h2{font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:.01em;color:var(--pierre);text-transform:none;margin-bottom:18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.base-pill{font-family:var(--mono);font-size:10.5px;background:var(--champagne-3);color:var(--champagne-2);padding:3px 9px;border-radius:20px;font-weight:500}
+.rung{display:grid;grid-template-columns:1fr;gap:6px;margin-bottom:15px}
+.rung:last-of-type{margin-bottom:0}
+.rung-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rung-label{font-family:var(--mono);font-size:13.5px;color:var(--charbon)}
+.rung-pct{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:-.01em;color:var(--champagne-2)}
+.track{height:11px;border-radius:6px;background:var(--champagne-3);overflow:hidden}
+.fill{height:100%;border-radius:6px;width:0;background:var(--champagne);animation:grow 1.1s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:.5s}
+@keyframes grow{to{width:var(--w,100%)}}
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;color:var(--pierre);margin-top:3px}
+.ladder-note{font-size:13px;color:var(--pierre);margin-top:16px;padding-top:14px;border-top:1px solid var(--line);line-height:1.55}
+
+/* ---------- CTA ---------- */
+.cta-row{display:flex;flex-direction:column;gap:11px;align-items:flex-start;margin:28px 0 8px}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--charbon);color:var(--ivoire);text-decoration:none;font-family:var(--body);font-weight:500;font-size:16.5px;padding:15px 26px;border-radius:12px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;box-shadow:0 12px 24px -14px rgba(26,23,20,.85)}
+.btn:hover{transform:translateY(-2px);background:var(--charbon-2)}
+.arr{transition:transform .18s ease}
+.btn:hover .arr,.btn-light:hover .arr,.btn-outline:hover .arr,.btn-outline-light:hover .arr{transform:translateX(4px)}
+.btn-sub{font-size:14px;color:var(--pierre)}
+.btn-sub b{color:var(--champagne-2);font-weight:600}
+
+/* ---------- platform buttons : iPhone (web) vs Android (Play Store) ---------- */
+.btn-group{display:flex;flex-wrap:wrap;gap:10px}
+.plat-ic{font-size:15px;line-height:1}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--charbon);border:1.5px solid var(--charbon-3);text-decoration:none;font-family:var(--body);font-weight:500;font-size:15.5px;padding:13.5px 22px;border-radius:12px;transition:transform .18s ease,background .18s ease}
+.btn-outline:hover{transform:translateY(-2px);background:var(--ivoire-2)}
+.btn-light{display:inline-flex;align-items:center;gap:9px;background:var(--champagne);color:var(--charbon);text-decoration:none;font-weight:600;font-size:16.5px;padding:15px 28px;border-radius:12px;transition:transform .18s ease,background .18s ease}
+.btn-light:hover{transform:translateY(-2px);background:#d4b568}
+.btn-outline-light{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--ivoire);border:1.5px solid rgba(247,243,237,.35);text-decoration:none;font-weight:500;font-size:15.5px;padding:13.5px 24px;border-radius:12px;transition:transform .18s ease,background .18s ease}
+.btn-outline-light:hover{transform:translateY(-2px);background:rgba(247,243,237,.08)}
+
+/* ---------- sections ---------- */
+main{padding-top:16px}
+section.block{padding:30px 0;border-top:1px solid var(--line)}
+section.block.first{border-top:none}
+h2.title{font-family:var(--display);font-weight:600;font-size:clamp(23px,4.8vw,28px);letter-spacing:-.01em;line-height:1.18;margin-bottom:13px}
+.block p{margin-bottom:14px;color:var(--charbon-2)}
+.block p:last-child{margin-bottom:0}
+a.inline{color:var(--champagne-2);text-decoration:underline;text-decoration-color:var(--champagne);text-underline-offset:3px;font-weight:500}
+
+/* ---------- table ---------- */
+.tbl{width:100%;border-collapse:collapse;margin:6px 0 12px;font-size:15px}
+.tbl th,.tbl td{text-align:left;padding:12px 12px;border-bottom:1px solid var(--line)}
+.tbl th{font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--pierre)}
+.tbl td:first-child{font-family:var(--mono);font-size:13.5px;white-space:nowrap}
+.tbl .v{font-family:var(--display);font-weight:700;color:var(--champagne-2);font-size:17px}
+.tbl tr:last-child td{border-bottom:none}
+
+/* ---------- example card ---------- */
+.ex{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-top:4px;box-shadow:var(--shadow)}
+.ex-head{font-family:var(--mono);font-size:12px;color:var(--pierre);margin-bottom:14px}
+.ex-line{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px;gap:12px}
+.ex-line:last-of-type{border-bottom:none}
+.ex-line .h{color:var(--charbon-2)}
+.ex-line .h b{font-family:var(--mono);font-weight:500}
+.ex-line .amt{font-family:var(--mono);font-weight:500;color:var(--charbon);white-space:nowrap}
+.ex-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:14px;border-top:2px solid var(--charbon);gap:12px}
+.ex-total .lbl{font-family:var(--display);font-weight:600;font-size:16px}
+.ex-total .amt{font-family:var(--display);font-weight:700;font-size:23px;color:var(--champagne-2);white-space:nowrap}
+.ex-foot{font-size:12.5px;color:var(--pierre);margin-top:14px}
+
+/* ---------- callout ---------- */
+.callout{background:var(--champagne-3);border-radius:14px;padding:18px 20px;font-size:15px;color:var(--charbon-2);margin:6px 0}
+.callout b{font-weight:600;color:var(--charbon)}
+.callout.warn{background:var(--warning-bg)}
+
+/* ---------- numbered steps ---------- */
+.steps{list-style:none;counter-reset:s;margin:6px 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 18px 46px;color:var(--charbon-2)}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:9px;background:var(--charbon);color:var(--ivoire);font-family:var(--display);font-weight:700;font-size:14px;display:grid;place-items:center}
+.steps li b{font-weight:600;color:var(--charbon)}
+
+/* ---------- checklist / criteria ---------- */
+.crit{list-style:none;margin:6px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.crit li{display:flex;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);font-size:15px;color:var(--charbon-2)}
+.crit li:last-child{border-bottom:none}
+.crit li::before{content:"✓";flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:var(--champagne-3);color:var(--champagne-2);font-weight:700;font-size:12px;display:grid;place-items:center;margin-top:1px}
+.crit li b{font-weight:600;color:var(--charbon)}
+
+/* ---------- FAQ (native, no JS) ---------- */
+.faq{margin-top:8px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 30px 16px 0;font-family:var(--display);font-weight:600;font-size:17px;position:relative;color:var(--charbon)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:2px;top:13px;font-size:22px;color:var(--champagne-2);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 18px;color:var(--charbon-2);font-size:15px;margin:0}
+
+/* ---------- app block (sur fond charbon, contraste avec l'encart ivoire) ---------- */
+.appblock{background:var(--charbon);color:var(--ivoire);border-radius:20px;padding:32px 26px;margin:8px 0 0;text-align:center}
+.appblock .fox{font-size:36px;line-height:1;margin-bottom:14px}
+.appblock h2{font-family:var(--display);font-weight:600;font-size:clamp(22px,5vw,28px);letter-spacing:-.01em;color:var(--ivoire);margin-bottom:12px;line-height:1.15}
+.appblock p{color:var(--pierre-2);font-size:15.5px;max-width:46ch;margin:0 auto 22px}
+.feats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:24px}
+.feat{font-family:var(--mono);font-size:11.5px;color:var(--champagne-3);background:rgba(247,243,237,.07);border:1px solid rgba(247,243,237,.14);padding:6px 12px;border-radius:20px}
+
+/* ---------- disclaimer + related ---------- */
+.disc{font-size:13px;color:var(--pierre);border:1px dashed var(--line);border-radius:12px;padding:16px 18px;margin-top:28px;line-height:1.55}
+.disc b{color:var(--charbon);font-weight:600}
+.related{margin-top:28px}
+.related h3{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--pierre);font-weight:500;margin-bottom:13px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{font-size:13.5px;text-decoration:none;color:var(--charbon);background:#fff;border:1px solid var(--line);padding:9px 14px;border-radius:11px;transition:border-color .15s ease,transform .15s ease}
+.chip:hover{border-color:var(--champagne);transform:translateY(-1px)}
+.chip span{color:var(--pierre);font-family:var(--mono);font-size:11px}
+
+/* ---------- guide index grid ---------- */
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+@media(max-width:560px){.guide-grid{grid-template-columns:1fr}}
+.guide-card{display:block;text-decoration:none;color:var(--charbon);background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.guide-card:hover{transform:translateY(-3px);border-color:var(--champagne);box-shadow:var(--shadow-lg)}
+.guide-card .ic{font-size:23px;line-height:1;margin-bottom:12px}
+.guide-card h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.005em;margin-bottom:6px;line-height:1.25}
+.guide-card p{font-size:13.5px;color:var(--pierre);line-height:1.5}
+.guide-card .go{font-family:var(--mono);font-size:11.5px;color:var(--champagne-2);margin-top:12px;display:inline-block}
+
+/* ---------- footer (injecté par core.js dans #hs-footer) ---------- */
+footer{border-top:1px solid var(--line);margin-top:44px;padding:24px 0 46px}
+footer .wrap{font-size:12.5px;color:var(--pierre);line-height:1.6}
+footer a{color:var(--pierre)}
+
+@media (prefers-reduced-motion: reduce){
+  .rise{animation:none;opacity:1;transform:none}
+  .fill{animation:none;width:var(--w,100%)}
+  *{transition:none!important}
+}
