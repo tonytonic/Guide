@@ -3,17 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guides du droit du travail : heures supplémentaires, temps partiel, cadres</title>
-<meta name="description" content="Guides clairs et à jour 2026 sur les heures supplémentaires, les heures complémentaires à temps partiel, le forfait jours des cadres et les grilles de salaire par convention collective.">
+<title>Heures Supplémentaires France — Guide complet du droit du travail 2026</title>
+<meta name="description" content="Bienvenue dans la Famille Renards. 8 modules, 105 outils, guides clairs sur les heures supplémentaires, conventions collectives — avec le simulateur gratuit.">
 <link rel="canonical" href="https://simulateurheuressupfrance.pages.dev/guides">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Guides du droit du travail français — Heures Supplémentaires France">
-<meta property="og:description" content="Comprends tes droits sur les heures sup, le temps partiel et le forfait jours. Gratuit, clair, à jour 2026.">
+<meta property="og:title" content="Heures Supplémentaires France — Guide 2026">
+<meta property="og:description" content="La Famille Renards est là pour toi. 8 modules, 105 outils, guides juridiques — gratuit, sans compte.">
 <meta property="og:locale" content="fr_FR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/guide.css">
+<style>
+/* ===== PNJ ===== */
+.pnj-scene{display:flex;align-items:flex-end;gap:1rem;margin:2.5rem 0}
+.pnj-scene.right{flex-direction:row-reverse}
+.pnj-avatar{font-size:3rem;flex-shrink:0;line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.18))}
+.pnj-bubble{background:var(--ivory,#faf7f2);border:1.5px solid var(--champagne,#d4b896);border-radius:1.2rem 1.2rem 1.2rem .2rem;padding:.9rem 1.2rem;font-family:'Outfit',sans-serif;font-size:.95rem;line-height:1.65;box-shadow:0 2px 12px rgba(0,0,0,.07);max-width:500px}
+.pnj-scene.right .pnj-bubble{border-radius:1.2rem 1.2rem .2rem 1.2rem}
+.pnj-bubble b{color:var(--amber,#c8852a)}
+.pnj-name{font-size:.72rem;font-weight:700;color:var(--amber,#c8852a);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem}
+
+/* ===== TABS ===== */
+.tabs-nav{display:flex;gap:.4rem;flex-wrap:wrap;margin:2.5rem 0 0;border-bottom:2px solid var(--champagne,#d4b896)}
+.tab-btn{background:none;border:none;cursor:pointer;font-family:'Outfit',sans-serif;font-size:.88rem;font-weight:500;color:#888;padding:.6rem 1rem;border-radius:.5rem .5rem 0 0;border:1.5px solid transparent;border-bottom:none;transition:all .2s;position:relative;bottom:-2px}
+.tab-btn:hover{color:var(--charcoal,#1a1a1a);background:rgba(212,184,150,.12)}
+.tab-btn.active{color:var(--charcoal,#1a1a1a);background:var(--ivory,#faf7f2);border-color:var(--champagne,#d4b896);font-weight:600}
+.tab-panel{display:none;padding:2rem 0}
+.tab-panel.active{display:block}
+
+/* ===== MODULE CARDS ===== */
+.module-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.4rem;margin-top:1.4rem}
+.module-card{background:var(--ivory,#faf7f2);border:1.5px solid var(--champagne,#d4b896);border-radius:1rem;overflow:hidden;transition:box-shadow .2s,transform .2s;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.module-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.12);transform:translateY(-2px)}
+.module-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid var(--champagne,#d4b896);background:#e8e2d8}
+.module-card-body{padding:1rem 1.1rem 1.2rem;flex:1;display:flex;flex-direction:column}
+.module-card-ic{font-size:1.4rem;margin-bottom:.35rem}
+.module-card-body h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.35rem;color:var(--charcoal,#1a1a1a)}
+.module-card-body p{font-size:.86rem;color:#666;line-height:1.55;flex:1}
+.module-card-go{display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:700;color:var(--amber,#c8852a)}
+.module-card-tag{display:inline-block;font-size:.7rem;font-weight:700;background:rgba(200,133,42,.12);color:var(--amber,#c8852a);border-radius:.3rem;padding:.1rem .4rem;margin-bottom:.4rem}
+
+/* ===== OUTILS ===== */
+.outils-cat{margin-bottom:1.5rem}
+.outils-cat-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--charcoal,#1a1a1a);margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid var(--champagne,#d4b896)}
+.outils-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.7rem}
+.outil-pill{display:flex;align-items:center;gap:.5rem;background:var(--ivory,#faf7f2);border:1px solid var(--champagne,#d4b896);border-radius:.7rem;padding:.55rem .8rem;text-decoration:none;color:inherit;transition:background .15s,box-shadow .15s;font-size:.85rem}
+.outil-pill:hover{background:rgba(212,184,150,.2);box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.outil-pill .oe{font-size:1.1rem;flex-shrink:0}
+.outil-pill .on{font-weight:500;color:var(--charcoal,#1a1a1a);line-height:1.3}
+.outil-pill .os{font-size:.75rem;color:#888;line-height:1.2}
+
+/* ===== WELCOME ===== */
+.welcome-band{background:linear-gradient(135deg,rgba(200,133,42,.08),rgba(212,184,150,.15));border:1.5px solid var(--champagne,#d4b896);border-radius:1.2rem;padding:2rem;margin-bottom:2rem}
+.welcome-band .wt{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;line-height:1.25;margin-bottom:.6rem}
+.welcome-band .wt span{color:var(--amber,#c8852a)}
+.welcome-band p{font-size:.95rem;line-height:1.7;color:#444;max-width:640px}
+.stats-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.2rem}
+.stat-badge{background:rgba(200,133,42,.1);border:1px solid rgba(200,133,42,.25);border-radius:.7rem;padding:.5rem .9rem;text-align:center}
+.stat-badge .sn{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--amber,#c8852a);line-height:1}
+.stat-badge .sl{font-size:.75rem;color:#666;margin-top:.15rem}
+
+/* ===== MISC ===== */
+.section-intro{font-size:.95rem;color:#555;line-height:1.7;margin-bottom:1.3rem;max-width:680px}
+@media(max-width:600px){
+  .module-grid{grid-template-columns:1fr}
+  .outils-grid{grid-template-columns:1fr 1fr}
+  .welcome-band .wt{font-size:1.4rem}
+  .tabs-nav{gap:.25rem}
+  .tab-btn{font-size:.8rem;padding:.5rem .7rem}
+  .pnj-bubble{font-size:.88rem}
+}
+@media(max-width:400px){.outils-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div class="bg-fixed"></div>
@@ -22,230 +84,621 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow rise d1">Les guides — Droit du travail français</div>
-    <h1 class="rise d1">Tes heures, tes droits, expliqués simplement.</h1>
-    <p class="lead rise d2">Heures supplémentaires, temps partiel, forfait jours, grilles de salaire… Le Code du travail s'applique différemment selon ton secteur. Ces guides <strong>partent de ta situation</strong>, te donnent les bons chiffres 2026, et te montrent comment vérifier toi-même.</p>
+    <div class="eyebrow rise d1">La Famille Renards 🦊</div>
+    <h1 class="rise d1">Bienvenue dans la Famille Renards.</h1>
+    <p class="lead rise d2">On est là pour toi. Ce guide est ta <strong>bible du droit du travail vulgarisé</strong> — 8 modules, 105 outils, et tous les guides pour comprendre tes droits et vérifier ta paie. Gratuit, sans compte, tes données restent chez toi.</p>
     <div id="hs-hero-cta" data-label="Ouvrir le simulateur" data-sub="iPhone via ce lien (web), Android sur le Play Store."></div>
   </div>
 </header>
 
 <main class="wrap">
 
-  <section class="block first">
-    <h2 class="title">Par où commencer&nbsp;?</h2>
-    <p>Choisis le guide qui correspond à ta situation. Chacun explique les règles, donne un exemple chiffré, et te renvoie vers le simulateur pour faire ton propre calcul.</p>
+  <div class="pnj-scene">
+    <div class="pnj-avatar">🦊</div>
+    <div class="pnj-bubble">
+      <div class="pnj-name">Renard · Guide</div>
+      Bienvenue ! Ici c'est simple : <b>l'appli calcule, le guide explique</b>. Explore les modules, fouille les 105 outils, ou plonge direct dans les guides juridiques. On a pensé à tout pour que tu aies les mêmes armes que les services RH des grandes entreprises. 💪
+    </div>
+  </div>
 
+  <!-- TABS -->
+  <div class="tabs-nav" role="tablist">
+    <button class="tab-btn active" role="tab" onclick="switchTab('general',this)">🏠 Accueil</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('modules',this)">📱 8 Modules</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('outils',this)">🛠️ 105 Outils</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('guides',this)">📖 Guides juridiques</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('ccn',this)">📋 Par convention</button>
+  </div>
+
+  <!-- ===== ACCUEIL ===== -->
+  <div id="tab-general" class="tab-panel active">
+    <div class="welcome-band">
+      <div class="wt">Tes heures, <span>tes droits.</span><br>On t'explique tout.</div>
+      <p>Tu travailles, tu te demandes si ta paie est juste. Ce service est fait pour toi — <strong>gratuit, sans compte, tes données ne quittent jamais ton téléphone</strong>. L'appli calcule, les guides expliquent. Ensemble, on forme la Famille Renards.</p>
+      <div class="stats-row">
+        <div class="stat-badge"><div class="sn">8</div><div class="sl">modules</div></div>
+        <div class="stat-badge"><div class="sn">105</div><div class="sl">outils</div></div>
+        <div class="stat-badge"><div class="sn">477</div><div class="sl">conventions</div></div>
+        <div class="stat-badge"><div class="sn">600</div><div class="sl">scénarios FOX</div></div>
+      </div>
+    </div>
+
+    <section class="block">
+      <h2 class="title">Comment utiliser ce guide&nbsp;?</h2>
+      <div class="guide-grid">
+        <a class="guide-card" onclick="switchTabByName('modules')">
+          <div class="ic">📱</div>
+          <h3>Les 8 modules</h3>
+          <p>Du suivi annuel au carnet de frais pro, en passant par le moteur juridique FOX et le module cadres Zenji. Découvre chaque écran.</p>
+          <span class="go">Explorer →</span>
+        </a>
+        <a class="guide-card" onclick="switchTabByName('outils')">
+          <div class="ic">🛠️</div>
+          <h3>Les 105 outils</h3>
+          <p>Congés, retraite, rupture, mutuelle, titres-restaurant, modulation… Un outil pour chaque situation de ta vie de salarié.</p>
+          <span class="go">Voir les outils →</span>
+        </a>
+        <a class="guide-card" onclick="switchTabByName('guides')">
+          <div class="ic">📖</div>
+          <h3>Guides juridiques</h3>
+          <p>Les grands thèmes expliqués clairement avec les textes de loi : heures sup, nuit, dimanche, RTT, forfait jours, défiscalisation…</p>
+          <span class="go">Lire les guides →</span>
+        </a>
+        <a class="guide-card" onclick="switchTabByName('ccn')">
+          <div class="ic">📋</div>
+          <h3>Par convention collective</h3>
+          <p>Restauration, BTP, Syntec, transport, santé… Chaque secteur a ses règles. Trouve la tienne en un clic.</p>
+          <span class="go">Choisir mon secteur →</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="pnj-scene right">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renardine · RH indépendante</div>
+        Ce que j'aime ici, c'est que les <b>sources sont toujours affichées</b>. Légifrance, BOCC, jurisprudence… Tu ne prends jamais notre parole pour argent comptant — tu peux vérifier toi-même.
+      </div>
+    </div>
+
+    <section class="block">
+      <h2 class="title">Les chiffres clés 2026</h2>
+      <table class="tbl">
+        <thead><tr><th>Paramètre</th><th>Valeur</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>SMIC horaire brut</td><td class="v">12,31 €/h</td><td>Décret 30 mai 2026</td></tr>
+          <tr><td>SMIC mensuel (35h)</td><td class="v">1 867,02 €</td><td>Décret 30 mai 2026</td></tr>
+          <tr><td>Durée légale hebdo</td><td class="v">35 h</td><td>Art. L3121-27</td></tr>
+          <tr><td>Majoration 36ᵉ–43ᵉ h</td><td class="v">+25 %</td><td>Art. L3121-36</td></tr>
+          <tr><td>Majoration 44ᵉ h et +</td><td class="v">+50 %</td><td>Art. L3121-36</td></tr>
+          <tr><td>Contingent annuel légal</td><td class="v">220 h</td><td>Art. D3121-24</td></tr>
+          <tr><td>Exonération fiscale HS</td><td class="v">7 500 €/an</td><td>Art. 81 quater CGI</td></tr>
+          <tr><td>Réduction cotisations sal.</td><td class="v">11,31 %</td><td>Art. L241-17 CSS</td></tr>
+          <tr><td>Prescription rappels de salaire</td><td class="v">3 ans</td><td>Art. L3245-1</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="appblock">
+      <div class="fox">🦊</div>
+      <h2>Prêt(e) à vérifier ta paie&nbsp;?</h2>
+      <p>8 modules, 105 outils, 477 conventions collectives. Gratuit, sans compte, hors-ligne.</p>
+      <div class="feats">
+        <span class="feat">100 % gratuit</span><span class="feat">sans compte</span>
+        <span class="feat">hors-ligne</span><span class="feat">tes données chez toi</span>
+      </div>
+      <div id="hs-app-cta"></div>
+    </div>
+  </div>
+
+  <!-- ===== 8 MODULES ===== -->
+  <div id="tab-modules" class="tab-panel">
+    <div class="pnj-scene">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard · Guide</div>
+        L'appli est organisée en <b>8 modules</b>. Chacun répond à un profil et un besoin précis. Voilà comment on se répartit le travail dans la Famille Renards.
+      </div>
+    </div>
+
+    <div class="module-grid">
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/renard-annuel.jpg" alt="Module 1 — Suivi annuel" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M1</div>
+          <div class="module-card-ic">📅</div>
+          <h3>Suivi annuel</h3>
+          <p>La base. Saisis tes heures jour par jour, semaine par semaine. M1 calcule ton contingent, tes majorations et te prévient quand tu approches du plafond.</p>
+          <a class="module-card-go" href="heures-supplementaires-guide.html">Comprendre les heures sup →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/renard-mensuel.jpg" alt="Module 2 — Paie mensuelle" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M2</div>
+          <div class="module-card-ic">💰</div>
+          <h3>Paie mensuelle</h3>
+          <p>Conçu pour ceux qui vérifient mois par mois. M2 reconstitue ton bulletin de paie, calcule les majorations et compare avec ce que ton employeur t'a versé.</p>
+          <a class="module-card-go" href="defiscalisation-heures-supplementaires.html">Défiscalisation des HS →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/renard-central.jpg" alt="Module 3 — FOX Engine" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M3</div>
+          <div class="module-card-ic">🦊</div>
+          <h3>FOX Engine — Analyse juridique</h3>
+          <p>Le cerveau de l'appli. Analyse multi-dimensionnelle : violations potentielles, contingent, burnout, scénarios juridiques, IA Kitsune. 600 scénarios, ligue de progression.</p>
+          <a class="module-card-go" href="heures-non-payees.html">Que faire si les HS ne sont pas payées →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/foxplayer-4.PNG" alt="Module 4 — DTE Jumeau numérique" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M4</div>
+          <div class="module-card-ic">🧬</div>
+          <h3>DTE — Jumeau numérique</h3>
+          <p>Ton jumeau numérique du temps. Phases biologiques, check-ins quotidiens, vacances, analyse de surcharge. Intégré avec M1 pour nourrir automatiquement les analyses.</p>
+          <a class="module-card-go" href="astreinte-guide.html">Astreinte et temps de travail →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/pnj-Mizuki.PNG" alt="Module 5 — Mizuki Temps partiel" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M5</div>
+          <div class="module-card-ic">🦋</div>
+          <h3>Mizuki — Temps partiel</h3>
+          <p>Dédié aux salariés à temps partiel. Surveille les heures complémentaires, calcule les majorations (10%/25%) et détecte quand la règle des 12 semaines déclenche une révision de contrat.</p>
+          <a class="module-card-go" href="temps-partiel-heures-complementaires.html">Guide temps partiel →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/cadremenu.PNG" alt="Module 6 — Zenji Cadres" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M6</div>
+          <div class="module-card-ic">⚖️</div>
+          <h3>Zenji — Cadres &amp; dirigeants</h3>
+          <p>Forfait annuel en jours, forfait en heures, cadre dirigeant. Zenji l'IA coach analyse la validité de ta convention et t'accompagne dans les négociations RH.</p>
+          <a class="module-card-go" href="forfait-jours-cadres.html">Guide forfait jours →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/mimizuku-menu.jpg" alt="Module 7 — Mimizuku" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">M7</div>
+          <div class="module-card-ic">🦉</div>
+          <h3>Mimizuku</h3>
+          <p>Le module de synthèse et de tableau de bord. Vue large, tous tes indicateurs d'un coup d'œil. Parfait sur tablette ou en mode paysage.</p>
+          <a class="module-card-go" href="grille-salaire-convention.html">Grille de salaire →</a>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <img class="module-card-img" src="assets/img/foxplayer-8.PNG" alt="M8 — Carnet de frais pro (dans la Trousse)" loading="lazy">
+        <div class="module-card-body">
+          <div class="module-card-tag">Trousse · Outil</div>
+          <div class="module-card-ic">🧾</div>
+          <h3>Carnet de frais pro</h3>
+          <p>Notes de frais professionnels. Suivi des dépenses, barèmes kilométriques, export pour remboursement. Tout ce dont tu as besoin pour récupérer tes frais.</p>
+          <a class="module-card-go" href="https://simulateurheuressupfrance.pages.dev/menu" target="_blank" rel="noopener">Ouvrir l'appli →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pnj-scene right" style="margin-top:2rem">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard Junior · Salarié</div>
+        Le module FOX m'a soufflé que j'avais <b>consommé 89 % de mon contingent annuel</b> en octobre. Mon employeur ne m'avait rien dit. J'ai pu négocier avant que ça dépasse — avec les chiffres en main.
+      </div>
+    </div>
+
+    <div class="appblock" style="margin-top:1.5rem">
+      <div class="fox">🦊</div>
+      <h2>Lance l'appli maintenant</h2>
+      <p>Les 8 modules t'attendent. Gratuit, sans compte, tes données restent sur ton téléphone.</p>
+      <div id="hs-app-cta-modules"></div>
+    </div>
+  </div>
+
+  <!-- ===== 105 OUTILS ===== -->
+  <div id="tab-outils" class="tab-panel">
+
+    <div class="pnj-scene">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard · Guide</div>
+        <b>105 outils</b> accessibles depuis la Trousse de l'appli. Des calculateurs pour chaque situation de ta vie de salarié — et même au-delà. Clique sur un outil pour l'ouvrir directement dans l'appli.
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">⏱️ Temps de travail</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-temps.html" target="_blank" rel="noopener"><span class="oe">⏱️</span><div><div class="on">Temps de travail</div><div class="os">Durées, seuils, calculs</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-conges.html" target="_blank" rel="noopener"><span class="oe">🏖️</span><div><div class="on">Congés payés</div><div class="os">Calcul & droits</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-feries.html" target="_blank" rel="noopener"><span class="oe">🎉</span><div><div class="on">Jours fériés</div><div class="os">Calendrier & droits</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-astreintes.html" target="_blank" rel="noopener"><span class="oe">📟</span><div><div class="on">Astreintes</div><div class="os">Indemnisation & règles</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-modulation.html" target="_blank" rel="noopener"><span class="oe">📊</span><div><div class="on">Modulation du temps</div><div class="os">Annualisation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-cet.html" target="_blank" rel="noopener"><span class="oe">🏦</span><div><div class="on">Compte épargne-temps</div><div class="os">CET — alimentation & déblocage</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-teletravail.html" target="_blank" rel="noopener"><span class="oe">🏠</span><div><div class="on">Télétravail</div><div class="os">Droits & indemnités</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-mobilites.html" target="_blank" rel="noopener"><span class="oe">🚲</span><div><div class="on">Mobilités douces</div><div class="os">Forfait mobilités</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-conge-ss.html" target="_blank" rel="noopener"><span class="oe">🤒</span><div><div class="on">Congé sans solde</div><div class="os">Règles & durée</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-sabbatique.html" target="_blank" rel="noopener"><span class="oe">🌍</span><div><div class="on">Congé sabbatique</div><div class="os">Conditions & droits</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">💶 Paie & rémunération</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-bulletin.html" target="_blank" rel="noopener"><span class="oe">🧾</span><div><div class="on">Décodeur bulletin</div><div class="os">Comprendre sa fiche de paie</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-tr.html" target="_blank" rel="noopener"><span class="oe">🍽️</span><div><div class="on">Titres-restaurant</div><div class="os">Plafonds & règles</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-anciennete.html" target="_blank" rel="noopener"><span class="oe">📈</span><div><div class="on">Ancienneté</div><div class="os">Calcul & primes</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-avantages-nature.html" target="_blank" rel="noopener"><span class="oe">🎁</span><div><div class="on">Avantages en nature</div><div class="os">Évaluation & cotisations</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-saisie.html" target="_blank" rel="noopener"><span class="oe">⚖️</span><div><div class="on">Saisie sur salaire</div><div class="os">Barèmes & quotité saisissable</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-salaire-cout-employeur.html" target="_blank" rel="noopener"><span class="oe">💼</span><div><div class="on">Coût employeur</div><div class="os">Brut → net → coût réel</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-precarite.html" target="_blank" rel="noopener"><span class="oe">📋</span><div><div class="on">Indemnité de précarité</div><div class="os">CDD & intérim</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-c2p.html" target="_blank" rel="noopener"><span class="oe">🛡️</span><div><div class="on">Compte pénibilité (C2P)</div><div class="os">Points & droits</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-transport.html" target="_blank" rel="noopener"><span class="oe">🚇</span><div><div class="on">Remboursement transport</div><div class="os">50 % abonnement</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-mutuelle.html" target="_blank" rel="noopener"><span class="oe">🏥</span><div><div class="on">Mutuelle obligatoire</div><div class="os">Règles & dispenses</div></div></a>
+      </div>
+    </div>
+
+    <div class="pnj-scene" style="margin:1.5rem 0">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renardine · RH indépendante</div>
+        Les outils <b>ne transmettent aucune donnée</b>. Tout reste dans ton téléphone. Tu peux même les utiliser hors-ligne une fois l'appli chargée.
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">🚪 Fin de contrat & rupture</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-fincontrat.html" target="_blank" rel="noopener"><span class="oe">🚪</span><div><div class="on">Fin de contrat</div><div class="os">Solde de tout compte</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-fincontrat2.html" target="_blank" rel="noopener"><span class="oe">📄</span><div><div class="on">Documents de fin</div><div class="os">Certificat, reçu, attestation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-rupture.html" target="_blank" rel="noopener"><span class="oe">🤝</span><div><div class="on">Rupture conventionnelle</div><div class="os">Calcul indemnité</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-preavis.html" target="_blank" rel="noopener"><span class="oe">📅</span><div><div class="on">Préavis</div><div class="os">Durée & calcul</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-preavis-comp.html" target="_blank" rel="noopener"><span class="oe">💰</span><div><div class="on">Indemnité de préavis</div><div class="os">Calcul compensatrice</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-chomage.html" target="_blank" rel="noopener"><span class="oe">📊</span><div><div class="on">Chômage (ARE)</div><div class="os">Calcul allocation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demission-are.html" target="_blank" rel="noopener"><span class="oe">🔓</span><div><div class="on">Démission + ARE</div><div class="os">Projet professionnel</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-miseapied.html" target="_blank" rel="noopener"><span class="oe">⛔</span><div><div class="on">Mise à pied</div><div class="os">Conservatoire & disciplinaire</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-nonconcurrence.html" target="_blank" rel="noopener"><span class="oe">🔒</span><div><div class="on">Non-concurrence</div><div class="os">Validité & indemnité</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-essai.html" target="_blank" rel="noopener"><span class="oe">🔬</span><div><div class="on">Période d'essai</div><div class="os">Durée & renouvellement</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">👨‍👩‍👧 Famille & vie personnelle</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-famille.html" target="_blank" rel="noopener"><span class="oe">👨‍👩‍👧</span><div><div class="on">Congés famille</div><div class="os">Maternité, paternité, parental</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-parentalite.html" target="_blank" rel="noopener"><span class="oe">👶</span><div><div class="on">Parentalité</div><div class="os">Droits & congés</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-allocations-familiales.html" target="_blank" rel="noopener"><span class="oe">💶</span><div><div class="on">Allocations familiales</div><div class="os">Barèmes 2026</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-pension-alimentaire.html" target="_blank" rel="noopener"><span class="oe">⚖️</span><div><div class="on">Pension alimentaire</div><div class="os">Calcul indicatif</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-proche-aidant.html" target="_blank" rel="noopener"><span class="oe">🤲</span><div><div class="on">Proche aidant</div><div class="os">Congé & indemnisation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-arret.html" target="_blank" rel="noopener"><span class="oe">🤒</span><div><div class="on">Arrêt maladie</div><div class="os">IJ & maintien de salaire</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-invalidite.html" target="_blank" rel="noopener"><span class="oe">🩺</span><div><div class="on">Invalidité</div><div class="os">Catégories & pension</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-atmp.html" target="_blank" rel="noopener"><span class="oe">⚠️</span><div><div class="on">AT/MP</div><div class="os">Accident travail & maladie pro</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-inaptitude.html" target="_blank" rel="noopener"><span class="oe">🔴</span><div><div class="on">Inaptitude</div><div class="os">Procédure & indemnités</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">🎓 Formation & carrière</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-formation.html" target="_blank" rel="noopener"><span class="oe">🎓</span><div><div class="on">Formation professionnelle</div><div class="os">CPF & plan de formation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-alternance.html" target="_blank" rel="noopener"><span class="oe">📚</span><div><div class="on">Alternance</div><div class="os">Apprentissage & pro</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-entretien.html" target="_blank" rel="noopener"><span class="oe">💬</span><div><div class="on">Entretien professionnel</div><div class="os">Droits & obligations</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-egalite.html" target="_blank" rel="noopener"><span class="oe">⚤</span><div><div class="on">Égalité F/H</div><div class="os">Index & obligations</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-delegation.html" target="_blank" rel="noopener"><span class="oe">📋</span><div><div class="on">Délégation de pouvoir</div><div class="os">Règles & limites</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-contrats.html" target="_blank" rel="noopener"><span class="oe">📝</span><div><div class="on">Types de contrats</div><div class="os">CDI, CDD, intérim…</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-greve.html" target="_blank" rel="noopener"><span class="oe">✊</span><div><div class="on">Grève</div><div class="os">Droits & retenues</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">🏛️ Retraite & protection sociale</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-retraite.html" target="_blank" rel="noopener"><span class="oe">🏛️</span><div><div class="on">Retraite</div><div class="os">Calcul & trimestres</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-cumul-retraite.html" target="_blank" rel="noopener"><span class="oe">💼</span><div><div class="on">Cumul emploi-retraite</div><div class="os">Règles & plafonds</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-activite-partielle.html" target="_blank" rel="noopener"><span class="oe">📉</span><div><div class="on">Activité partielle</div><div class="os">Chômage partiel & indemnisation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-cse.html" target="_blank" rel="noopener"><span class="oe">🏢</span><div><div class="on">CSE</div><div class="os">Seuils & attributions</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-effectifs.html" target="_blank" rel="noopener"><span class="oe">👥</span><div><div class="on">Effectifs</div><div class="os">Calcul & seuils sociaux</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-remboursement-sante.html" target="_blank" rel="noopener"><span class="oe">💊</span><div><div class="on">Remboursement santé</div><div class="os">Sécu + complémentaire</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">💡 Pratique & quotidien</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-journal.html" target="_blank" rel="noopener"><span class="oe">📓</span><div><div class="on">Journal de bord</div><div class="os">Notes & historique</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-lexique.html" target="_blank" rel="noopener"><span class="oe">📖</span><div><div class="on">Lexique juridique</div><div class="os">Définitions claires</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-decodeur-sigles.html" target="_blank" rel="noopener"><span class="oe">🔡</span><div><div class="on">Décodeur sigles</div><div class="os">CSE, IJSS, ARE, DUERP…</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-archives.html" target="_blank" rel="noopener"><span class="oe">🗂️</span><div><div class="on">Archives</div><div class="os">Conservation documents</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-numeros-urgence.html" target="_blank" rel="noopener"><span class="oe">📞</span><div><div class="on">Numéros utiles</div><div class="os">Urgences & services publics</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-convertisseur.html" target="_blank" rel="noopener"><span class="oe">🔄</span><div><div class="on">Convertisseur</div><div class="os">Salaires, taux, durées</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-dates.html" target="_blank" rel="noopener"><span class="oe">📆</span><div><div class="on">Calcul de dates</div><div class="os">Délais & échéances</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-fuseaux.html" target="_blank" rel="noopener"><span class="oe">🌐</span><div><div class="on">Fuseaux horaires</div><div class="os">Travail international</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-devises.html" target="_blank" rel="noopener"><span class="oe">💱</span><div><div class="on">Devises</div><div class="os">Conversion & salaires étrangers</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-unites.html" target="_blank" rel="noopener"><span class="oe">📐</span><div><div class="on">Unités</div><div class="os">Conversions diverses</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">💰 Finances personnelles</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-epargne.html" target="_blank" rel="noopener"><span class="oe">💰</span><div><div class="on">Épargne</div><div class="os">Simulations & rendements</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-impot-revenu.html" target="_blank" rel="noopener"><span class="oe">🧮</span><div><div class="on">Impôt sur le revenu</div><div class="os">Estimation 2026</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-livrets-epargne.html" target="_blank" rel="noopener"><span class="oe">📈</span><div><div class="on">Livrets d'épargne</div><div class="os">Taux & plafonds</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-interets-composes.html" target="_blank" rel="noopener"><span class="oe">📊</span><div><div class="on">Intérêts composés</div><div class="os">Simulation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-budget.html" target="_blank" rel="noopener"><span class="oe">📋</span><div><div class="on">Budget</div><div class="os">Suivi dépenses</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-credit-cout.html" target="_blank" rel="noopener"><span class="oe">🏦</span><div><div class="on">Coût d'un crédit</div><div class="os">TAEG & mensualités</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-cash-vs-credit.html" target="_blank" rel="noopener"><span class="oe">⚖️</span><div><div class="on">Cash vs crédit</div><div class="os">Comparateur</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-partage-depenses.html" target="_blank" rel="noopener"><span class="oe">👥</span><div><div class="on">Partage dépenses</div><div class="os">Coloc & couple</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-abonnements.html" target="_blank" rel="noopener"><span class="oe">📱</span><div><div class="on">Abonnements</div><div class="os">Suivi & optimisation</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-remise.html" target="_blank" rel="noopener"><span class="oe">🏷️</span><div><div class="on">Remise & réduction</div><div class="os">Calcul rapide</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-pourcentages.html" target="_blank" rel="noopener"><span class="oe">%</span><div><div class="on">Pourcentages</div><div class="os">Calculs variés</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-prix-unitaire.html" target="_blank" rel="noopener"><span class="oe">🛒</span><div><div class="on">Prix unitaire</div><div class="os">Comparer les prix</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-partage-addition.html" target="_blank" rel="noopener"><span class="oe">🍕</span><div><div class="on">Partage d'addition</div><div class="os">Resto & sorties</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-francs-euros.html" target="_blank" rel="noopener"><span class="oe">💱</span><div><div class="on">Francs ↔ Euros</div><div class="os">Conversion historique</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">🚗 Transport & logement</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-cout-voiture.html" target="_blank" rel="noopener"><span class="oe">🚗</span><div><div class="on">Coût voiture</div><div class="os">TCO & barème kilométrique</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-conso-auto.html" target="_blank" rel="noopener"><span class="oe">⛽</span><div><div class="on">Consommation auto</div><div class="os">Carburant & CO₂</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-bonus-malus-eco.html" target="_blank" rel="noopener"><span class="oe">🌿</span><div><div class="on">Bonus/malus écologique</div><div class="os">Barèmes 2026</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-solde-points-permis.html" target="_blank" rel="noopener"><span class="oe">🪪</span><div><div class="on">Points permis</div><div class="os">Solde & récupération</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-droits-passagers.html" target="_blank" rel="noopener"><span class="oe">✈️</span><div><div class="on">Droits passagers</div><div class="os">Retard & annulation vol</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-loyer-prorata.html" target="_blank" rel="noopener"><span class="oe">🏠</span><div><div class="on">Loyer au prorata</div><div class="os">Calcul entrée/sortie</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-dpe-decodeur.html" target="_blank" rel="noopener"><span class="oe">🏷️</span><div><div class="on">DPE décodeur</div><div class="os">Étiquette énergie logement</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-conso-electrique.html" target="_blank" rel="noopener"><span class="oe">⚡</span><div><div class="on">Consommation électrique</div><div class="os">Calcul facture</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-surface.html" target="_blank" rel="noopener"><span class="oe">📐</span><div><div class="on">Surface logement</div><div class="os">Calcul superficie</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-comparateur-forfaits.html" target="_blank" rel="noopener"><span class="oe">📶</span><div><div class="on">Forfaits mobiles</div><div class="os">Comparateur</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">📋 Démarches administratives</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-naissance.html" target="_blank" rel="noopener"><span class="oe">👶</span><div><div class="on">Naissance</div><div class="os">Démarches & droits</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-pacs-mariage.html" target="_blank" rel="noopener"><span class="oe">💍</span><div><div class="on">PACS & mariage</div><div class="os">Démarches</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-deces.html" target="_blank" rel="noopener"><span class="oe">🕯️</span><div><div class="on">Décès</div><div class="os">Démarches proches</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-demenagement.html" target="_blank" rel="noopener"><span class="oe">📦</span><div><div class="on">Déménagement</div><div class="os">Checklist & démarches</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-premier-emploi.html" target="_blank" rel="noopener"><span class="oe">🎯</span><div><div class="on">Premier emploi</div><div class="os">Démarches à faire</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-permis.html" target="_blank" rel="noopener"><span class="oe">🪪</span><div><div class="on">Permis de conduire</div><div class="os">Démarches</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-logement-etudiant.html" target="_blank" rel="noopener"><span class="oe">🏫</span><div><div class="on">Logement étudiant</div><div class="os">APL & démarches</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-micro-entreprise.html" target="_blank" rel="noopener"><span class="oe">💼</span><div><div class="on">Micro-entreprise</div><div class="os">Création & démarches</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-voiture-occasion.html" target="_blank" rel="noopener"><span class="oe">🚗</span><div><div class="on">Voiture d'occasion</div><div class="os">Démarches achat/vente</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-arrivee-france.html" target="_blank" rel="noopener"><span class="oe">🇫🇷</span><div><div class="on">Arrivée en France</div><div class="os">Démarches primo-arrivant</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-depot-garantie.html" target="_blank" rel="noopener"><span class="oe">🔑</span><div><div class="on">Dépôt de garantie</div><div class="os">Règles & restitution</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-papiers-perdus.html" target="_blank" rel="noopener"><span class="oe">📄</span><div><div class="on">Papiers perdus</div><div class="os">Que faire ?</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-valise-voyage.html" target="_blank" rel="noopener"><span class="oe">🧳</span><div><div class="on">Valise voyage</div><div class="os">Checklist</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-eco-gestes.html" target="_blank" rel="noopener"><span class="oe">♻️</span><div><div class="on">Éco-gestes</div><div class="os">Checklist environnement</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-demarche-securite-numerique.html" target="_blank" rel="noopener"><span class="oe">🔐</span><div><div class="on">Sécurité numérique</div><div class="os">Bonnes pratiques</div></div></a>
+      </div>
+    </div>
+
+    <div class="outils-cat">
+      <div class="outils-cat-title">📏 Santé & mesures</div>
+      <div class="outils-grid">
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-imc.html" target="_blank" rel="noopener"><span class="oe">⚖️</span><div><div class="on">IMC</div><div class="os">Indice de masse corporelle</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-reperes-consommateur.html" target="_blank" rel="noopener"><span class="oe">🛡️</span><div><div class="on">Repères consommateur</div><div class="os">Droits & garanties</div></div></a>
+        <a class="outil-pill" href="https://simulateurheuressupfrance.pages.dev/outils/module-tva.html" target="_blank" rel="noopener"><span class="oe">🧮</span><div><div class="on">TVA</div><div class="os">HT ↔ TTC</div></div></a>
+      </div>
+    </div>
+
+    <div class="appblock" style="margin-top:1.5rem">
+      <div class="fox">🦊</div>
+      <h2>Accéder aux 105 outils</h2>
+      <p>Tous les outils sont disponibles dans la Trousse de l'appli. Gratuit, sans compte, hors-ligne.</p>
+      <div id="hs-app-cta-outils"></div>
+    </div>
+  </div>
+
+  <!-- ===== GUIDES JURIDIQUES ===== -->
+  <div id="tab-guides" class="tab-panel">
+    <div class="pnj-scene">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard · Guide</div>
+        Les guides juridiques, c'est notre <b>bible du droit du travail vulgarisé</b>. Chaque page cite ses sources, donne des exemples chiffrés, et renvoie vers le simulateur pour que tu vérifies ta situation.
+      </div>
+    </div>
+
+    <section style="margin-top:.5rem">
+      <h2 class="title">Les fondamentaux</h2>
+      <div class="guide-grid">
+        <a class="guide-card" href="heures-supplementaires-guide.html"><div class="ic">⏱️</div><h3>Heures supplémentaires</h3><p>Le seuil 35h, +25% et +50%, contingent, repos compensateur.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="defiscalisation-heures-supplementaires.html"><div class="ic">🧾</div><h3>Défiscalisation HS</h3><p>Exonération 7 500€/an + réduction 11,31% avec exemple.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-non-payees.html"><div class="ic">📄</div><h3>HS non payées</h3><p>Preuve, délais 3 ans, constituer un dossier.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="grille-salaire-convention.html"><div class="ic">💶</div><h3>Grille de salaire</h3><p>SMIC 2026, minima conventionnels, situer ton salaire.</p><span class="go">Lire →</span></a>
+      </div>
+    </section>
+
+    <section style="margin-top:2rem">
+      <h2 class="title">Temps de travail spécifique</h2>
+      <div class="guide-grid">
+        <a class="guide-card" href="temps-partiel-heures-complementaires.html"><div class="ic">🦊</div><h3>Temps partiel</h3><p>+10% et +25%, limite du tiers, règle des 12 semaines.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="forfait-jours-cadres.html"><div class="ic">⚖️</div><h3>Forfait jours cadres</h3><p>218 jours, nullité de la convention, jurisprudence 2026.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="rtt-calcul-2026.html"><div class="ic">🗓️</div><h3>RTT 2026</h3><p>Calcul, acquisition, rachat avec majoration.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="astreinte-guide.html"><div class="ic">📟</div><h3>Astreinte</h3><p>Définition, indemnisation, différence avec la garde.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conge-paye-calcul.html"><div class="ic">🏖️</div><h3>Congés payés</h3><p>2,5 j/mois, règle du 10e ou du maintien, réforme 2024 sur les arrêts maladie.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="rupture-conventionnelle.html"><div class="ic">🤝</div><h3>Rupture conventionnelle</h3><p>Procédure 4 étapes, calcul indemnité, différé ARE.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="preavis-licenciement.html"><div class="ic">📅</div><h3>Préavis de licenciement</h3><p>Durée selon ancienneté, indemnité compensatrice, faute grave.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="periode-essai.html"><div class="ic">🔬</div><h3>Période d'essai</h3><p>Durée max par catégorie, renouvellement, préavis de rupture.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="bulletin-paie-comprendre.html"><div class="ic">🧾</div><h3>Comprendre son bulletin</h3><p>Chaque ligne expliquée : brut, cotisations, net imposable, PAS.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="teletravail-droits.html"><div class="ic">🏠</div><h3>Télétravail</h3><p>Indemnités URSSAF 2026, accident du travail à domicile, refus employeur.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="arret-maladie-salarie.html"><div class="ic">🤒</div><h3>Arrêt maladie</h3><p>IJSS, délai de carence 3 jours, maintien de salaire, réforme CP 2024.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="formation-cpf.html"><div class="ic">🎓</div><h3>CPF et formation</h3><p>500 €/an, reste à charge 100 € depuis 2024, formations éligibles.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conges-maternite-paternite.html"><div class="ic">👶</div><h3>Maternité &amp; paternité</h3><p>Durées, IJSS, congé paternité 25 j obligatoire, protection licenciement.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="harcelement-moral-travail.html"><div class="ic">⚠️</div><h3>Harcèlement moral</h3><p>Définition légale, constitution du dossier, recours et protection.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="retraite-calcul-trimestres.html"><div class="ic">🏛️</div><h3>Retraite 2026</h3><p>Âge légal 64 ans, 172 trimestres, calcul pension, décote et surcote.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="cse-droits-salaries.html"><div class="ic">🏢</div><h3>CSE et représentation</h3><p>Seuils, attributions, ASC, droit d'alerte et droit de retrait.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="modulation-annualisation-temps-travail.html"><div class="ic">📊</div><h3>Modulation du temps de travail</h3><p>Annualisation, 1 607 h, calcul HS en fin de période, accord obligatoire.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="saisie-sur-salaire.html"><div class="ic">⚖️</div><h3>Saisie sur salaire</h3><p>Barème officiel 2026, part insaisissable, procédure tribunal.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="chomage-are-calcul.html"><div class="ic">📊</div><h3>Chômage ARE</h3><p>SJR, calcul allocation, durée d'indemnisation, conditions 2026.</p><span class="go">Lire →</span></a>
+        
+        <a class="guide-card" href="compte-epargne-temps-guide.html"><div class="ic">🏦</div><h3>Compte Épargne-Temps (CET)</h3><p>Stocker ses HS, RTT, congés. Déblocage monétaire ou en temps.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="accident-travail-droits.html"><div class="ic">⚠️</div><h3>Accident du travail</h3><p>IJSS AT à 60/80 %, HS dans la base de calcul, protection.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conge-parental-educatif-guide.html"><div class="ic">👨‍👩‍👧</div><h3>Congé parental d'éducation</h3><p>Jusqu'aux 3 ans, temps partiel, PREPARE, ancienneté.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="droit-deconnexion-guide.html"><div class="ic">📵</div><h3>Droit à la déconnexion</h3><p>Emails hors horaires, charge réelle, HS générées.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travail-dominical-zones-touristiques-guide.html"><div class="ic">🏖️</div><h3>Dimanche en zones touristiques</h3><p>ZTI, ZAC · majoration 30 % minimum, volontariat.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="maladie-enfant-conges-guide.html"><div class="ic">👶</div><h3>Congés familiaux 2026</h3><p>Enfant malade, mariage, décès — durées légales actualisées.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="greve-droits-salaries-guide.html"><div class="ic">✊</div><h3>Grève & heures supplémentaires</h3><p>Retenues proportionnelles, HS hors grève, protection.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="interim-cdd-droits-specifiques-guide.html"><div class="ic">📋</div><h3>CDD & intérim : droits spécifiques</h3><p>Prime de précarité sur HS, égalité de traitement, CDI intérim.</p><span class="go">Lire →</span></a>
+        
+        <a class="guide-card" href="salaire-minimum-garanti-guide.html"><div class="ic">💶</div><h3>SMIC & minima conventionnels 2026</h3><p>12,31 €/h, grilles CCN, rappel de salaire sur 3 ans.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prud-hommes-procedure-guide.html"><div class="ic">⚖️</div><h3>Saisir les prud'hommes</h3><p>Procédure, délais, preuves, ce qu'on peut obtenir.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="epargne-salariale-participation-guide.html"><div class="ic">📈</div><h3>Épargne salariale & participation</h3><p>Participation, intéressement, PEE · HS dans la base.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="inspection-travail-signalement-guide.html"><div class="ic">🏛️</div><h3>Signaler à l'inspection du travail</h3><p>DREETS · confidentiel · HS non payées.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="teletravail-international-frontalier-guide.html"><div class="ic">🌍</div><h3>Télétravail international & frontaliers</h3><p>Quelle loi, SS applicable, accord 2023.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="agences-travail-temporaire-droits.html"><div class="ic">🤝</div><h3>Agences d'intérim : guide complet</h3><p>IFM sur HS, égalité de traitement, CDI intérimaire.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="negociation-salaire-heures-supplementaires.html"><div class="ic">🤝</div><h3>Négocier ses heures sup</h3><p>Stratégies, mise en demeure, dossier chiffré, CSE.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="maladie-professionnelle-inaptitude-heures-supplementaires.html"><div class="ic">🔴</div><h3>Inaptitude & HS</h3><p>HS dues avant inaptitude, prescription, indemnités.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travail-de-nuit-majoration.html"><div class="ic">🌙</div><h3>Travail de nuit</h3><p>Pas de taux légal — ce qui dépend de ta convention.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="dimanche-jours-feries.html"><div class="ic">🎉</div><h3>Dimanche & jours fériés</h3><p>1er mai payé double. Le reste dépend de ta CCN.</p><span class="go">Lire →</span></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PAR CONVENTION ===== -->
+  <div id="tab-ccn" class="tab-panel">
+    <div class="pnj-scene">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard · Guide</div>
+        Ta convention collective, c'est <b>ton contrat de secteur</b>. Contingent, taux de majoration, forfait jours… chaque branche a ses règles. L'appli couvre 477 CCN — trouve la tienne.
+      </div>
+    </div>
     <div class="guide-grid">
-
-      <a class="guide-card" href="heures-supplementaires-guide.html">
-        <div class="ic">⏱️</div>
-        <h3>Heures supplémentaires : le guide 2026</h3>
-        <p>Le seuil de 35 h, les majorations de 25 % et 50 %, le contingent annuel et le repos compensateur.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="restauration-hcr.html">
-        <div class="ic">🍽️</div>
-        <h3>Heures sup en restauration (HCR)</h3>
-        <p>Le secteur à 39 h, les taux de 10 %, 20 % et 50 %, et le contingent spécifique de la convention HCR.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="temps-partiel-heures-complementaires.html">
-        <div class="ic">🦊</div>
-        <h3>Temps partiel : heures complémentaires</h3>
-        <p>Majorations de 10 % et 25 %, la limite du tiers, et la règle des 12 semaines qui révise ton contrat.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="forfait-jours-cadres.html">
-        <div class="ic">⚖️</div>
-        <h3>Forfait jours : cadres autonomes</h3>
-        <p>Le plafond de 218 jours, les jours de repos, et les cas où la convention de forfait peut être annulée.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="heures-non-payees.html">
-        <div class="ic">📄</div>
-        <h3>Heures sup non payées : que faire&nbsp;?</h3>
-        <p>La charge de la preuve, les délais pour réclamer, et comment constituer un dossier solide.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="grille-salaire-convention.html">
-        <div class="ic">💶</div>
-        <h3>Grille de salaire par convention</h3>
-        <p>Le SMIC 2026, les minima conventionnels, et comment situer ton salaire dans ta grille.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="defiscalisation-heures-supplementaires.html">
-        <div class="ic">🧾</div>
-        <h3>Heures sup défiscalisées</h3>
-        <p>Exonération d'impôt jusqu'à 7 500 €/an et réduction de cotisations de 11,31 %, expliquées avec un exemple.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="transport-routier-heures-supplementaires.html">
-        <div class="ic">🚛</div>
-        <h3>Transport routier</h3>
-        <p>Sédentaire, courte distance, longue distance : plusieurs régimes selon ton poste, et le piège de la 44ᵉ heure.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="btp-heures-supplementaires.html">
-        <div class="ic">🏗️</div>
-        <h3>BTP : bâtiment et travaux publics</h3>
-        <p>Le contingent réduit à 180 h pour les ouvriers, et 220 h pour les ETAM et cadres.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="metallurgie-heures-supplementaires.html">
-        <div class="ic">⚙️</div>
-        <h3>Métallurgie</h3>
-        <p>La convention unique de 2024, le contingent de 220 h (175 h en modulation) et le contingent complémentaire de 80 h.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="syntec-heures-supplementaires.html">
-        <div class="ic">💻</div>
-        <h3>Syntec : ESN, conseil, ingénierie</h3>
-        <p>Les 3 modalités de temps de travail, et un forfait jours plus protecteur que le minimum légal.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="rtt-calcul-2026.html">
-        <div class="ic">🗓️</div>
-        <h3>RTT : calcul et rachat</h3>
-        <p>RTT ou heures sup, jamais les deux. Le calcul 2026 (9 jours au forfait) et le rachat avec majoration.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="travail-de-nuit-majoration.html">
-        <div class="ic">🌙</div>
-        <h3>Travail de nuit</h3>
-        <p>Pas de taux légal de majoration — seul le repos compensateur est garanti. Voici ce qui dépend de ta convention.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="dimanche-jours-feries.html">
-        <div class="ic">🎉</div>
-        <h3>Dimanche &amp; jours fériés</h3>
-        <p>Seul le 1ᵉʳ mai est obligatoirement payé double. Le reste dépend de ta convention — voici comment t'y retrouver.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="astreinte-guide.html">
-        <div class="ic">📟</div>
-        <h3>Astreinte</h3>
-        <p>L'astreinte n'est pas du temps de travail, sauf intervention. La différence avec la garde et les heures sup.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="assurance-heures-supplementaires.html">
-        <div class="ic">🗂️</div>
-        <h3>Assurance</h3>
-        <p>Contingent très bas (70 h) et forfait jours très répandu pour les cadres.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="boulangerie-heures-supplementaires.html">
-        <div class="ic">🥐</div>
-        <h3>Boulangerie-pâtisserie</h3>
-        <p>Contingent large (329 h), dimanche dérogatoire et horaires décalés.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="proprete-heures-supplementaires.html">
-        <div class="ic">🧹</div>
-        <h3>Propreté</h3>
-        <p>Souvent à temps partiel, parfois sur plusieurs sites. Contingent 190 h, nuit majorée à 20 %.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="hospitalisation-privee-heures-supplementaires.html">
-        <div class="ic">🏥</div>
-        <h3>Hospitalisation privée</h3>
-        <p>Cycles, gardes, modulation : contingent 130 h (70 h en modulation).</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="coiffure-heures-supplementaires.html">
-        <div class="ic">✂️</div>
-        <h3>Coiffure</h3>
-        <p>Le poids du samedi dans le calcul des heures sup. Contingent 200 h.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="medico-social-heures-supplementaires.html">
-        <div class="ic">🦊</div>
-        <h3>Médico-social (CCNT 66)</h3>
-        <p>Internats, roulements, astreintes. Contingent réduit à 110 h.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="securite-privee-heures-supplementaires.html">
-        <div class="ic">🛡️</div>
-        <h3>Sécurité privée</h3>
-        <p>Vacations longues, jusqu'à 46 h/semaine possible. Contingent large de 329 h.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="pharmacie-heures-supplementaires.html">
-        <div class="ic">💊</div>
-        <h3>Pharmacie</h3>
-        <p>Officine (150 h) ou industrie (145 h) : deux conventions différentes à ne pas confondre.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="chimie-heures-supplementaires.html">
-        <div class="ic">🧪</div>
-        <h3>Industries chimiques</h3>
-        <p>Travail posté, feu continu, contingent 130 h.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="centres-sociaux-heures-supplementaires.html">
-        <div class="ic">🏠</div>
-        <h3>Centres sociaux</h3>
-        <p>Séjours et sorties ponctuelles. Contingent réduit à 100 h.</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
-      <a class="guide-card" href="animation-heures-supplementaires.html">
-        <div class="ic">🎨</div>
-        <h3>Animation (ECLAT)</h3>
-        <p>Le contingent le plus bas étudié : 70 h (140 h en CDI intermittent périscolaire).</p>
-        <span class="go">Lire le guide →</span>
-      </a>
-
+      <a class="guide-card" href="restauration-hcr.html"><div class="ic">🍽️</div><h3>Restauration (HCR)</h3><p>39h, +10%/20%/50%, contingent 360h. IDCC 1979.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="transport-routier-heures-supplementaires.html"><div class="ic">🚛</div><h3>Transport routier</h3><p>3 régimes selon poste. IDCC 16.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="btp-heures-supplementaires.html"><div class="ic">🏗️</div><h3>BTP</h3><p>Contingent 180h ouvriers, 220h ETAM. IDCC 1596/1597.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="metallurgie-heures-supplementaires.html"><div class="ic">⚙️</div><h3>Métallurgie</h3><p>Convention unique 2024, 220h (175h en modulation). IDCC 3248.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="syntec-heures-supplementaires.html"><div class="ic">💻</div><h3>Syntec</h3><p>3 modalités, forfait jours protecteur. IDCC 1486.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="hospitalisation-privee-heures-supplementaires.html"><div class="ic">🏥</div><h3>Hospitalisation privée</h3><p>130h (70h en modulation). IDCC 2264.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="medico-social-heures-supplementaires.html"><div class="ic">🦊</div><h3>Médico-social (CCNT 66)</h3><p>Contingent réduit 110h. IDCC 1921.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="proprete-heures-supplementaires.html"><div class="ic">🧹</div><h3>Propreté</h3><p>190h, nuit +20%. IDCC 3043.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="securite-privee-heures-supplementaires.html"><div class="ic">🛡️</div><h3>Sécurité privée</h3><p>Jusqu'à 46h/semaine, contingent 329h. IDCC 1351.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="assurance-heures-supplementaires.html"><div class="ic">🗂️</div><h3>Assurance</h3><p>Contingent très bas 70h. IDCC 1672.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="boulangerie-heures-supplementaires.html"><div class="ic">🥐</div><h3>Boulangerie-pâtisserie</h3><p>Contingent 329h, dimanche dérogatoire. IDCC 843.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="coiffure-heures-supplementaires.html"><div class="ic">✂️</div><h3>Coiffure</h3><p>Le poids du samedi. Contingent 200h. IDCC 1040.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="pharmacie-heures-supplementaires.html"><div class="ic">💊</div><h3>Pharmacie</h3><p>Officine 150h (IDCC 2104) ou industrie 145h (IDCC 216).</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="chimie-heures-supplementaires.html"><div class="ic">🧪</div><h3>Industries chimiques</h3><p>Travail posté, 130h. IDCC 44.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="centres-sociaux-heures-supplementaires.html"><div class="ic">🏠</div><h3>Centres sociaux</h3><p>100h. IDCC 1261.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="animation-heures-supplementaires.html"><div class="ic">🎨</div><h3>Animation (ECLAT)</h3><p>70h (140h CDI intermittent). IDCC 1518.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="grande-distribution-heures-supplementaires.html"><div class="ic">🛒</div><h3>Grande distribution</h3><p>Supermarchés, hypermarchés. Contingent 180h. IDCC 2216.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="restauration-rapide-heures-supplementaires.html"><div class="ic">🍔</div><h3>Restauration rapide</h3><p>Fast-food, boulangeries rapides. Taux 25/50 %. IDCC 1501.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="restauration-collective-heures-supplementaires.html"><div class="ic">🍽️</div><h3>Restauration collective</h3><p>Cantines, self d'entreprise. 220h. IDCC 1539.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="commerce-detail-heures-supplementaires.html"><div class="ic">🛍️</div><h3>Commerce de détail</h3><p>Mode, chaussures, culture. Contingent 180h. IDCC 1517.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="habillement-heures-supplementaires.html"><div class="ic">👗</div><h3>Habillement</h3><p>Prêt-à-porter, lingerie. 220h. IDCC 1483.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="banque-heures-supplementaires.html"><div class="ic">🏦</div><h3>Banque (AFB)</h3><p>Forfait jours cadres, 220h non-cadres. IDCC 675.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="travaux-publics-heures-supplementaires.html"><div class="ic">🚧</div><h3>Travaux publics</h3><p>Routes, réseaux, terrassements. 180h. IDCC 1604.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="automobile-heures-supplementaires.html"><div class="ic">🚗</div><h3>Automobile</h3><p>Garages, concessions, réparation. 220h. IDCC 1090.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="immobilier-heures-supplementaires.html"><div class="ic">🏠</div><h3>Immobilier</h3><p>Agences, syndics, gestionnaires. Forfait jours. IDCC 1527.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="informatique-heures-supplementaires.html"><div class="ic">💻</div><h3>Informatique & numérique</h3><p>Développeurs, consultants. Forfait jours IC. IDCC 1678.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="proprete-services-heures-supplementaires.html"><div class="ic">🧽</div><h3>Propreté (détail)</h3><p>Nuit +20 %, temps partiel multi-sites. IDCC 3043.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="aide-domicile-heures-supplementaires.html"><div class="ic">🤲</div><h3>Aide à domicile (BASS)</h3><p>Temps de trajet inter-interventions = travail. IDCC 2941.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="transport-voyageurs-heures-supplementaires.html"><div class="ic">🚌</div><h3>Transport voyageurs</h3><p>Bus, cars, contingent 195h, amplitude 12h. IDCC 650.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="sante-privee-heures-supplementaires.html"><div class="ic">🩺</div><h3>Santé privée (cliniques)</h3><p>Cycles 12h, gardes, modulation 130h. IDCC 413.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="formation-professionnelle-heures-supplementaires.html"><div class="ic">🎓</div><h3>Formation professionnelle</h3><p>Formateurs, forfait jours, préparation = travail. IDCC 1516.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="particuliers-employeurs-heures-supplementaires.html"><div class="ic">🏡</div><h3>Particuliers employeurs</h3><p>CESU, garde d'enfants, aide ménagère. IDCC 3220.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="travail-interimaire-heures-supplementaires.html"><div class="ic">📋</div><h3>Intérim</h3><p>Égalité de traitement, IFM inclut les HS. IDCC 1321.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="plasturgie-heures-supplementaires.html"><div class="ic">🔩</div><h3>Plasturgie</h3><p>Travail posté, 220 h, temps d'habillage. IDCC 292.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="textile-heures-supplementaires.html"><div class="ic">🧵</div><h3>Industrie textile</h3><p>Filature, tissage, confection industrielle. 220 h. IDCC 247.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="logistique-heures-supplementaires.html"><div class="ic">📦</div><h3>Logistique & entreposage</h3><p>Contingent 180 h, Black Friday, nuit. IDCC 1611.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="imprimerie-heures-supplementaires.html"><div class="ic">🖨️</div><h3>Imprimerie</h3><p>Contingent 180 h, bouclages, travail posté. IDCC 405.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="agroalimentaire-heures-supplementaires.html"><div class="ic">🥫</div><h3>Agroalimentaire (IAA)</h3><p>Contingent 180 h, saisonnalité, annualisation. IDCC 504.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="expertise-comptable-heures-supplementaires.html"><div class="ic">🧮</div><h3>Expertise comptable</h3><p>Forfait jours, périodes fiscales. IDCC 787.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="cabinet-medical-heures-supplementaires.html"><div class="ic">🩺</div><h3>Cabinets médicaux</h3><p>Secrétaires médicales, assistants, 220 h. IDCC 776.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="sport-heures-supplementaires.html"><div class="ic">⚽</div><h3>Secteur sportif</h3><p>Éducateurs, entraîneurs, week-ends. IDCC 2511.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="spectacle-vivant-heures-supplementaires.html"><div class="ic">🎭</div><h3>Spectacle vivant</h3><p>Techniciens, permanents, bouclages. IDCC 951.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="hotellerie-plein-air-heures-supplementaires.html"><div class="ic">🏕️</div><h3>Hôtellerie de plein air</h3><p>Campings, saisonniers, 220 h. IDCC 1631.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="pompes-funebres-heures-supplementaires.html"><div class="ic">🕯️</div><h3>Pompes funèbres</h3><p>Astreintes, week-ends, Toussaint. IDCC 759.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="nettoyage-entretien-heures-supplementaires.html"><div class="ic">👔</div><h3>Blanchisserie & nettoyage</h3><p>Horaires décalés, 220 h. IDCC 1316.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="gardiennage-immeuble-heures-supplementaires.html"><div class="ic">🏢</div><h3>Gardiens d'immeubles</h3><p>Unités de valeur, logement de fonction. IDCC 1043.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="optique-heures-supplementaires.html"><div class="ic">👓</div><h3>Optique & lunetterie</h3><p>Galeries marchandes, samedi, 220 h. IDCC 1624.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="fleuriste-heures-supplementaires.html"><div class="ic">🌸</div><h3>Fleuristes & jardineries</h3><p>Fête des mères, Toussaint, pics. IDCC 2583.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="bijouterie-heures-supplementaires.html"><div class="ic">💎</div><h3>Bijouterie & joaillerie</h3><p>Noël, Saint-Valentin, 220 h. IDCC 1538.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="boucherie-heures-supplementaires.html"><div class="ic">🥩</div><h3>Boucherie & charcuterie</h3><p>Horaires matinaux, dimanche, 220 h. IDCC 992.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="coiffure-esthetique-heures-supplementaires.html"><div class="ic">💅</div><h3>Esthétique & cosmétique</h3><p>Samedi, fêtes, 220 h. IDCC 2596.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="presse-media-heures-supplementaires.html"><div class="ic">📰</div><h3>Presse & médias</h3><p>Forfait jours journalistes, bouclages. IDCC 1480.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="tourisme-agences-heures-supplementaires.html"><div class="ic">✈️</div><h3>Tourisme & agences de voyage</h3><p>Saisonnalité, guides, 220 h.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="enseignement-prive-heures-supplementaires.html"><div class="ic">📚</div><h3>Enseignement privé</h3><p>Préparations, réunions, forfait jours. IDCC 2409.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="creche-petite-enfance-heures-supplementaires.html"><div class="ic">👶</div><h3>Crèches & petite enfance</h3><p>Roulements, transmissions, 220 h. IDCC 1767.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="association-insertion-heures-supplementaires.html"><div class="ic">🤝</div><h3>Associations d'insertion (ESS)</h3><p>Travail social, urgences, modulation. IDCC 1762.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="agriculture-heures-supplementaires.html"><div class="ic">🌾</div><h3>Agriculture</h3><p>Saisonnalité, vendanges, CCN département. IDCC 9811.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="energie-gaz-heures-supplementaires.html"><div class="ic">⚡</div><h3>Énergie & gaz</h3><p>Astreintes urgence, statut IEG. IDCC 1499.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="avocats-heures-supplementaires.html"><div class="ic">⚖️</div><h3>Cabinets d'avocats</h3><p>Forfait jours, collaborateurs, urgences. IDCC 218.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="assurance-mutuelle-heures-supplementaires.html"><div class="ic">🛡️</div><h3>Mutuelles & courtage</h3><p>Contingent 70 h très bas. IDCC 3257.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="securite-sociale-heures-supplementaires.html"><div class="ic">🏛️</div><h3>Sécurité sociale (CPAM, CAF…)</h3><p>Forfait jours cadres, pics réforme. IDCC 21200.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="transport-aerien-heures-supplementaires.html"><div class="ic">🛫</div><h3>Transport aérien</h3><p>PNT, personnel au sol, FTL. IDCC 673.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="vente-distance-heures-supplementaires.html"><div class="ic">🛒</div><h3>Vente à distance & e-commerce</h3><p>Black Friday, centres d'appels, 220 h. IDCC 1659.</p><span class="go">Lire →</span></a>
     </div>
-  </section>
 
-  <div class="appblock">
-    <div class="fox">🦊</div>
-    <h2>Un doute sur ta paie&nbsp;? Vérifie en 2 minutes</h2>
-    <p>Le simulateur calcule tes majorations selon ta convention, suit ton compteur et exporte un récapitulatif PDF. Sans inscription, hors-ligne.</p>
-    <div class="feats">
-      <span class="feat">100 % gratuit</span>
-      <span class="feat">sans compte</span>
-      <span class="feat">fonctionne hors-ligne</span>
-      <span class="feat">tes données restent chez toi</span>
+    <div class="pnj-scene right" style="margin-top:2rem">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard · Guide</div>
+        Tu ne trouves pas ta convention ? <b>477 CCN sont dans l'appli</b>. Lance le simulateur, tape le nom de ton secteur ou l'IDCC, les bonnes règles s'appliquent automatiquement.
+      </div>
     </div>
-    <div id="hs-app-cta"></div>
+
+    <div class="appblock" style="margin-top:1rem">
+      <div class="fox">🦊</div>
+      <h2>477 conventions dans l'appli</h2>
+      <p>Ouvre le simulateur, saisis ton secteur ou ton IDCC — les bonnes règles s'appliquent automatiquement.</p>
+      <div id="hs-app-cta-ccn"></div>
+    </div>
   </div>
 
   <div class="disc">
-    Outil pédagogique indépendant, sans affiliation à un organisme officiel. Les calculs et informations sont <b>indicatifs</b> : seul ton bulletin de paie fait foi. Les règles évoluent et ne couvrent pas toutes les situations. En cas de litige, rapproche-toi d'un avocat en droit du travail, d'un syndicat, ou de l'inspection du travail.
+    Outil pédagogique indépendant, sans affiliation officielle. Informations <b>indicatives</b> — seul ton bulletin de paie fait foi. En cas de litige, consulte un avocat en droit du travail, un syndicat ou l'inspection du travail.
   </div>
 
 </main>
-
 <div id="hs-footer"></div>
-
-
 <script src="assets/site-data.js"></script>
 <script src="assets/core.js"></script>
-</div><!-- /page-shell -->
+<script>
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+  var panel = document.getElementById('tab-' + name);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  var S = window.HS_SITE || {};
+  var appUrl = S.appUrl || 'https://simulateurheuressupfrance.pages.dev/menu';
+  var psUrl  = S.playStoreUrl || '#';
+  ['hs-app-cta-modules','hs-app-cta-outils','hs-app-cta-ccn'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el && el.children.length === 0) {
+      el.innerHTML = '<div class="btn-group" style="justify-content:center">' +
+        '<a class="btn-light" href="'+appUrl+'" target="_blank" rel="noopener"><span class="plat-ic">📱</span> iPhone (web) <span class="arr">→</span></a>' +
+        '<a class="btn-outline-light" href="'+psUrl+'" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Android <span class="arr">→</span></a>' +
+        '</div>';
+    }
+  });
+}
+function switchTabByName(name) {
+  var btns = document.querySelectorAll('.tab-btn');
+  var found = null;
+  btns.forEach(function(b){ if (b.getAttribute('onclick') && b.getAttribute('onclick').indexOf("'"+name+"'") > -1) found = b; });
+  switchTab(name, found);
+  window.scrollTo({top: document.querySelector('.tabs-nav').offsetTop - 20, behavior:'smooth'});
+}
+</script>
+</div>
 </body>
 </html>
