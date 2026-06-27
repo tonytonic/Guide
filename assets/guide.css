@@ -56,7 +56,11 @@ body{
   font-size:17px;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
+  overflow-wrap:break-word;
+  word-break:break-word;
 }
+
+img{max-width:100%;height:auto}
 
 /* ---------- décor : photo fixe en arrière-plan ----------
    La photo reste immobile ; c'est l'encart crème (.page-shell) qui
@@ -115,6 +119,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(33px,7.6vw,49px);l
 .rung{display:grid;grid-template-columns:1fr;gap:6px;margin-bottom:15px}
 .rung:last-of-type{margin-bottom:0}
 .rung-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rung-label{min-width:0}
 .rung-label{font-family:var(--mono);font-size:13.5px;color:var(--charbon)}
 .rung-pct{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:-.01em;color:var(--champagne-2)}
 .track{height:11px;border-radius:6px;background:var(--champagne-3);overflow:hidden}
@@ -155,7 +160,7 @@ a.inline{color:var(--champagne-2);text-decoration:underline;text-decoration-colo
 .tbl{width:100%;border-collapse:collapse;margin:6px 0 12px;font-size:15px}
 .tbl th,.tbl td{text-align:left;padding:12px 12px;border-bottom:1px solid var(--line)}
 .tbl th{font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--pierre)}
-.tbl td:first-child{font-family:var(--mono);font-size:13.5px;white-space:nowrap}
+.tbl td:first-child{font-family:var(--mono);font-size:13.5px}
 .tbl .v{font-family:var(--display);font-weight:700;color:var(--champagne-2);font-size:17px}
 .tbl tr:last-child td{border-bottom:none}
 
@@ -164,7 +169,7 @@ a.inline{color:var(--champagne-2);text-decoration:underline;text-decoration-colo
 .ex-head{font-family:var(--mono);font-size:12px;color:var(--pierre);margin-bottom:14px}
 .ex-line{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px;gap:12px}
 .ex-line:last-of-type{border-bottom:none}
-.ex-line .h{color:var(--charbon-2)}
+.ex-line .h{color:var(--charbon-2);min-width:0}
 .ex-line .h b{font-family:var(--mono);font-weight:500}
 .ex-line .amt{font-family:var(--mono);font-weight:500;color:var(--charbon);white-space:nowrap}
 .ex-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:14px;border-top:2px solid var(--charbon);gap:12px}
@@ -267,6 +272,8 @@ footer a{color:var(--pierre)}
   line-height: 1.65;
   box-shadow: 0 2px 10px rgba(0,0,0,.07);
   max-width: 540px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .pnj.right .pnj-bubble { border-radius: 1.1rem 1.1rem .25rem 1.1rem; }
 .pnj-bubble strong { color: var(--amber, #c8852a); }
