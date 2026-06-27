@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heures Supplémentaires France — Guide complet du droit du travail 2026</title>
-<meta name="description" content="Bienvenue dans la Famille Renards. 8 modules, 105 outils, guides clairs sur les heures supplémentaires, conventions collectives — avec le simulateur gratuit.">
+<meta name="description" content="Bienvenue dans la Famille Renards. 7 modules, 105 outils, guides clairs sur les heures supplémentaires, conventions collectives — avec le simulateur gratuit.">
 <link rel="canonical" href="https://simulateurheuressupfrance.pages.dev/guides">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Heures Supplémentaires France — Guide 2026">
-<meta property="og:description" content="La Famille Renards est là pour toi. 8 modules, 105 outils, guides juridiques — gratuit, sans compte.">
+<meta property="og:description" content="La Famille Renards est là pour toi. 7 modules, 105 outils, guides juridiques — gratuit, sans compte.">
 <meta property="og:locale" content="fr_FR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,6 +76,25 @@
 }
 @media(max-width:400px){.outils-grid{grid-template-columns:1fr}}
 </style>
+<style>
+/* ===== MOTEUR DE RECHERCHE ===== */
+#hs-search-wrap{margin:1.5rem 0 .5rem;padding:0}
+#hs-search-box{display:flex;align-items:center;gap:.6rem;background:#faf7f2;border:2px solid #d4b896;border-radius:.8rem;padding:.55rem 1rem;transition:border-color .2s,box-shadow .2s}
+#hs-search-box:focus-within{border-color:#c8852a;box-shadow:0 0 0 3px rgba(200,133,42,.15)}
+#hs-search-icon{font-size:1.1rem;flex-shrink:0;opacity:.6}
+#hs-search-input{flex:1;border:none;background:transparent;font-family:'Outfit',sans-serif;font-size:.95rem;color:#1a1a1a;outline:none}
+#hs-search-input::placeholder{color:#999;font-size:.88rem}
+#hs-search-clear{background:none;border:none;cursor:pointer;font-size:1rem;color:#999;padding:0 .2rem;display:none;line-height:1}
+#hs-search-clear.visible{display:block}
+#hs-search-status{font-size:.82rem;color:#888;margin:.4rem 0 0 .2rem;min-height:1.2em}
+.guide-card.hs-hidden{display:none!important}
+.hs-search-active .tabs-nav{opacity:.4;pointer-events:none;user-select:none}
+.hs-search-active .tab-panel{display:block!important}
+.hs-search-active .tab-panel .section-title{display:none}
+.hs-hl{background:rgba(200,133,42,.28);border-radius:2px;padding:0 1px}
+#hs-search-results-zone{display:none}
+#hs-search-results-zone.active{display:block}
+</style>
 </head>
 <body>
 <div class="bg-fixed"></div>
@@ -86,7 +105,7 @@
   <div class="wrap">
     <div class="eyebrow rise d1">La Famille Renards 🦊</div>
     <h1 class="rise d1">Bienvenue dans la Famille Renards.</h1>
-    <p class="lead rise d2">On est là pour toi. Ce guide est ta <strong>bible du droit du travail vulgarisé</strong> — 8 modules, 105 outils, et tous les guides pour comprendre tes droits et vérifier ta paie. Gratuit, sans compte, tes données restent chez toi.</p>
+    <p class="lead rise d2">On est là pour toi. Ce guide est ta <strong>bible du droit du travail vulgarisé</strong> — 7 modules, 105 outils, et tous les guides pour comprendre tes droits et vérifier ta paie. Gratuit, sans compte, tes données restent chez toi.</p>
     <div id="hs-hero-cta" data-label="Ouvrir le simulateur" data-sub="iPhone via ce lien (web), Android sur le Play Store."></div>
   </div>
 </header>
@@ -101,10 +120,27 @@
     </div>
   </div>
 
+  <!-- ===== MOTEUR DE RECHERCHE ===== -->
+  <div id="hs-search-wrap">
+    <div id="hs-search-box">
+      <span id="hs-search-icon">🔍</span>
+      <input
+        id="hs-search-input"
+        type="search"
+        placeholder="Rechercher sans accent — ex : medecin, greve, btp, forfait jours…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Rechercher un guide ou une convention"
+      >
+      <button id="hs-search-clear" aria-label="Effacer" title="Effacer">✕</button>
+    </div>
+    <div id="hs-search-status" aria-live="polite"></div>
+  </div>
+
   <!-- TABS -->
   <div class="tabs-nav" role="tablist">
     <button class="tab-btn active" role="tab" onclick="switchTab('general',this)">🏠 Accueil</button>
-    <button class="tab-btn" role="tab" onclick="switchTab('modules',this)">📱 8 Modules</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('modules',this)">📱 7 Modules</button>
     <button class="tab-btn" role="tab" onclick="switchTab('outils',this)">🛠️ 105 Outils</button>
     <button class="tab-btn" role="tab" onclick="switchTab('guides',this)">📖 Guides juridiques</button>
     <button class="tab-btn" role="tab" onclick="switchTab('ccn',this)">📋 Par convention</button>
@@ -116,7 +152,7 @@
       <div class="wt">Tes heures, <span>tes droits.</span><br>On t'explique tout.</div>
       <p>Tu travailles, tu te demandes si ta paie est juste. Ce service est fait pour toi — <strong>gratuit, sans compte, tes données ne quittent jamais ton téléphone</strong>. L'appli calcule, les guides expliquent. Ensemble, on forme la Famille Renards.</p>
       <div class="stats-row">
-        <div class="stat-badge"><div class="sn">8</div><div class="sl">modules</div></div>
+        <div class="stat-badge"><div class="sn">7</div><div class="sl">modules</div></div>
         <div class="stat-badge"><div class="sn">105</div><div class="sl">outils</div></div>
         <div class="stat-badge"><div class="sn">477</div><div class="sl">conventions</div></div>
         <div class="stat-badge"><div class="sn">600</div><div class="sl">scénarios FOX</div></div>
@@ -128,7 +164,7 @@
       <div class="guide-grid">
         <a class="guide-card" onclick="switchTabByName('modules')">
           <div class="ic">📱</div>
-          <h3>Les 8 modules</h3>
+          <h3>Les 7 modules</h3>
           <p>Du suivi annuel au carnet de frais pro, en passant par le moteur juridique FOX et le module cadres Zenji. Découvre chaque écran.</p>
           <span class="go">Explorer →</span>
         </a>
@@ -182,7 +218,7 @@
     <div class="appblock">
       <div class="fox">🦊</div>
       <h2>Prêt(e) à vérifier ta paie&nbsp;?</h2>
-      <p>8 modules, 105 outils, 477 conventions collectives. Gratuit, sans compte, hors-ligne.</p>
+      <p>7 modules, 105 outils, 477 conventions collectives. Gratuit, sans compte, hors-ligne.</p>
       <div class="feats">
         <span class="feat">100 % gratuit</span><span class="feat">sans compte</span>
         <span class="feat">hors-ligne</span><span class="feat">tes données chez toi</span>
@@ -197,7 +233,7 @@
       <div class="pnj-avatar">🦊</div>
       <div class="pnj-bubble">
         <div class="pnj-name">Renard · Guide</div>
-        L'appli est organisée en <b>8 modules</b>. Chacun répond à un profil et un besoin précis. Voilà comment on se répartit le travail dans la Famille Renards.
+        L'appli est organisée en <b>7 modules</b>. Chacun répond à un profil et un besoin précis. Voilà comment on se répartit le travail dans la Famille Renards.
       </div>
     </div>
 
@@ -281,7 +317,7 @@
       </div>
 
       <div class="module-card">
-        <img class="module-card-img" src="assets/img/foxplayer-8.PNG" alt="M8 — Carnet de frais pro (dans la Trousse)" loading="lazy">
+        <img class="module-card-img" src="assets/img/foxplayer-8.PNG" alt="Trousse · Carnet de frais pro" loading="lazy">
         <div class="module-card-body">
           <div class="module-card-tag">Trousse · Outil</div>
           <div class="module-card-ic">🧾</div>
@@ -304,7 +340,7 @@
     <div class="appblock" style="margin-top:1.5rem">
       <div class="fox">🦊</div>
       <h2>Lance l'appli maintenant</h2>
-      <p>Les 8 modules t'attendent. Gratuit, sans compte, tes données restent sur ton téléphone.</p>
+      <p>Les 7 modules t'attendent. Gratuit, sans compte, tes données restent sur ton téléphone.</p>
       <div id="hs-app-cta-modules"></div>
     </div>
   </div>
@@ -543,7 +579,7 @@
         <a class="guide-card" href="formation-cpf.html"><div class="ic">🎓</div><h3>CPF et formation</h3><p>500 €/an, reste à charge 100 € depuis 2024, formations éligibles.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="conges-maternite-paternite.html"><div class="ic">👶</div><h3>Maternité &amp; paternité</h3><p>Durées, IJSS, congé paternité 25 j obligatoire, protection licenciement.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="harcelement-moral-travail.html"><div class="ic">⚠️</div><h3>Harcèlement moral</h3><p>Définition légale, constitution du dossier, recours et protection.</p><span class="go">Lire →</span></a>
-        <a class="guide-card" href="retraite-calcul-trimestres.html"><div class="ic">🏛️</div><h3>Retraite 2026</h3><p>Âge légal 64 ans, 172 trimestres, calcul pension, décote et surcote.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="retraite-calcul-trimestres.html"><div class="ic">🏛️</div><h3>Retraite 2026</h3><p>Réforme suspendue : 62 ans 9 mois, 170 trimestres pour 1964-1968 dès sept. 2026.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="cse-droits-salaries.html"><div class="ic">🏢</div><h3>CSE et représentation</h3><p>Seuils, attributions, ASC, droit d'alerte et droit de retrait.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="modulation-annualisation-temps-travail.html"><div class="ic">📊</div><h3>Modulation du temps de travail</h3><p>Annualisation, 1 607 h, calcul HS en fin de période, accord obligatoire.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="saisie-sur-salaire.html"><div class="ic">⚖️</div><h3>Saisie sur salaire</h3><p>Barème officiel 2026, part insaisissable, procédure tribunal.</p><span class="go">Lire →</span></a>
@@ -563,11 +599,148 @@
         <a class="guide-card" href="epargne-salariale-participation-guide.html"><div class="ic">📈</div><h3>Épargne salariale & participation</h3><p>Participation, intéressement, PEE · HS dans la base.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="inspection-travail-signalement-guide.html"><div class="ic">🏛️</div><h3>Signaler à l'inspection du travail</h3><p>DREETS · confidentiel · HS non payées.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="teletravail-international-frontalier-guide.html"><div class="ic">🌍</div><h3>Télétravail international & frontaliers</h3><p>Quelle loi, SS applicable, accord 2023.</p><span class="go">Lire →</span></a>
+        
+        
+        
+        
+        
+        <a class="guide-card" href="conges-payes-maladie-report-guide.html"><div class="ic">🏥</div><h3>CP pendant la maladie & report</h3><p>Loi DDADUE 2024 : acquisition 2 j/mois, fenêtre rattrapage close.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="amenagement-temps-partiel-aidant.html"><div class="ic">💙</div><h3>Mi-temps thérapeutique & familial</h3><p>Reprise progressive, IJSS complémentaires, proche aidant.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="rachat-trimestres-retraite-hs.html"><div class="ic">🏦</div><h3>Rachat de trimestres de retraite</h3><p>Coût, HS dans le SAM, déductibilité fiscale.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="optimisation-fiscale-remuneration.html"><div class="ic">📈</div><h3>Optimisation fiscale rémunération</h3><p>HS 7 500 €, PEE, PER — triple combinaison légale.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="guide-redaction-lettre-mise-en-demeure.html"><div class="ic">✉️</div><h3>Mise en demeure pour HS non payées</h3><p>Modèle LRAR, délai 15 jours, annexe M1.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-dom-guide.html"><div class="ic">🌴</div><h3>HS dans les DOM-TOM</h3><p>Mêmes règles, LODEOM, CCN locales. Mayotte, Martinique, Réunion.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="jurisprudence-hs-recentes-guide.html"><div class="ic">📰</div><h3>Jurisprudence HS 2025-2026</h3><p>Cass. 10 sept. 2025 (CP/HS), forfait jours, WhatsApp comme preuve.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="hs-fonctionnaires-agents-publics.html"><div class="ic">🏛️</div><h3>HS des fonctionnaires</h3><p>IHTS, CET agents publics, exonération IR identique.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="calcul-conges-payes-hs.html"><div class="ic">🔁</div><h3>CP et HS : toutes les interactions</h3><p>1/10e sur HS, CP qui déclenchent HS (2025), rétroactivité.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="hs-salaires-nets-bruts-guide.html"><div class="ic">💰</div><h3>HS brut vs net : ce que tu touches vraiment</h3><p>15,39 € brut → ~13,74 € net. Détail des prélèvements.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="questions-frequentes-hs-guide.html"><div class="ic">❓</div><h3>FAQ : 30 questions sur les HS</h3><p>Toutes les questions fréquentes avec réponses sourçées.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="periode-essai-rupture-guide.html"><div class="ic">🔍</div><h3>Rupture de période d'essai</h3><p>Délais de prévenance, HS dues, discrimination interdite.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="taux-cotisations-2026-guide.html"><div class="ic">📊</div><h3>Taux de cotisations 2026</h3><p>CSG, retraite, chômage — lire son bulletin et vérifier.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ticket-restaurant-titres-avantages.html"><div class="ic">🍽️</div><h3>Titres-restaurant & avantages en nature</h3><p>TR 7,32 € plafond, véhicule, logement — valeurs 2026.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="preavis-dispense-indemnite.html"><div class="ic">📅</div><h3>Préavis et dispense</h3><p>Indemnité compensatrice incluant les HS habituelles.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="dpae-formalites-embauche-guide.html"><div class="ic">📋</div><h3>DPAE & formalités d'embauche</h3><p>Déclaration obligatoire, travail dissimulé, 6 mois d'indemnité.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="auto-entrepreneur-salarie-deguise.html"><div class="ic">🎭</div><h3>Salarié déguisé en auto-entrepreneur</h3><p>Lien de subordination, requalification en CDI, rappel 3 ans.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="credit-impot-services-personne.html"><div class="ic">🏠</div><h3>Services à la personne</h3><p>Seuil HS à 40 h (IDCC 3220), CESU, crédit d'impôt.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conge-sabbatique-enrichi.html"><div class="ic">✈️</div><h3>Congé sabbatique</h3><p>36 mois ancienneté, 6-11 mois, CET pour financer.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="negociation-individuelle-avenant.html"><div class="ic">✍️</div><h3>Avenants au contrat</h3><p>Modification substantielle vs changement conditions — quand refuser.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="interim-vs-cdd-vs-cdi-comparatif.html"><div class="ic">⚖️</div><h3>CDI, CDD, intérim : comparatif</h3><p>Tableau complet HS, prime précarité, ARE, ancienneté.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="regles-hs-transport-routier-detail.html"><div class="ic">🚛</div><h3>Transport routier : règles HS détaillées</h3><p>Durée de service, contingent 130 h, tachygraphe.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="durees-maximales-travail-guide.html"><div class="ic">⏱️</div><h3>Durées maximales de travail</h3><p>10h/j, 48h/sem, 44h/12sem, repos 11h — plafonds absolus.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="cumul-emplois-obligation-loyaute.html"><div class="ic">💼</div><h3>Cumul d'emplois</h3><p>Ce qui est autorisé, loyauté, durées cumulées.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="don-jours-repos-solidarite.html"><div class="ic">🎁</div><h3>Don de jours de repos</h3><p>Loi Mathys, congé solidarité familiale, jours cessibles.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="surveillance-vie-privee-travail.html"><div class="ic">🔒</div><h3>Surveillance & vie privée</h3><p>Géolocalisation, emails, monitoring — ce qui est légal.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="mobilite-volontaire-securisee-guide.html"><div class="ic">🚀</div><h3>Mobilité volontaire sécurisée</h3><p>Tester un autre emploi avec droit au retour garanti.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="contrat-professionnalisation-guide.html"><div class="ic">🎓</div><h3>Contrat de professionnalisation</h3><p>Rémunération selon l'âge, HS en alternance.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="accord-performance-collective-guide.html"><div class="ic">📊</div><h3>Accord de performance collective</h3><p>APC : modification du contrat, refus possible, 1 mois.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="fiche-paie-dematerialisee-guide.html"><div class="ic">💾</div><h3>Fiche de paie dématérialisée</h3><p>50 ans d'archivage, refus possible, accès après départ.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travail-equipe-feu-continu-guide.html"><div class="ic">🔄</div><h3>Travail posté & feu continu</h3><p>3×8, 4×8, temps habillage, passation consignes.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="preretrait-dispotifs-fin-carriere.html"><div class="ic">🌅</div><h3>Préretraite & fin de carrière</h3><p>CATS, amiante, retraite progressive, CET senior.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="groupement-employeurs-temps-partage.html"><div class="ic">🏢</div><h3>Groupements d'employeurs</h3><p>Multi-employeurs, HS globales, responsabilité solidaire.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prevention-addictions-travail-guide.html"><div class="ic">🩺</div><h3>Addictions au travail</h3><p>Tests alcool/stupéfiants, protection salarié, médecin travail.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="salaire-variable-commissions-bonus.html"><div class="ic">💹</div><h3>Salaires variables & commissions</h3><p>Commissions dans la base HS, taux horaire moyen réel.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="inaptitude-guide.html"><div class="ic">🩺</div><h3>Inaptitude au travail</h3><p>Avis médecin, reclassement, indemnité doublée en AT/MP.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="maladie-professionnelle-guide.html"><div class="ic">⚕️</div><h3>Maladie professionnelle</h3><p>Tableaux MP, CRRMP, rente IPP, TMS, burn-out.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="negociation-collective-accord-entreprise.html"><div class="ic">🤝</div><h3>Accords collectifs d'entreprise</h3><p>Ce qui peut être négocié sur les HS et le temps de travail.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="portabilite-droits-mobilite-guide.html"><div class="ic">🎒</div><h3>Portabilité des droits</h3><p>Mutuelle, CPF, ARE — ce qui te suit après la rupture.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="teletravail-sante-securite-guide.html"><div class="ic">🏡</div><h3>Télétravail & santé au travail</h3><p>AT à domicile, ergonomie, HS en télétravail.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="indemnite-transport-guide.html"><div class="ic">🚌</div><h3>Indemnités de transport</h3><p>50 % TC obligatoire, FMD vélo 800 €, km voiture.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="negociation-salaire-guide.html"><div class="ic">💬</div><h3>Négocier son salaire</h3><p>Minima CCN, HS non valorisées, égalité — arguments légaux.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="protection-lanceur-alerte-guide.html"><div class="ic">🔔</div><h3>Lanceur d'alerte</h3><p>Loi Waserman 2022, protection renforcée, signalement direct.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conge-creation-entreprise-guide.html"><div class="ic">🚀</div><h3>Congé pour création d'entreprise</h3><p>2 ans max, droit au retour, ARE possible sur démission.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="regles-paie-bulletins-specifiques.html"><div class="ic">🔍</div><h3>Erreurs de bulletin de paie</h3><p>Les 12 erreurs les plus fréquentes et comment les corriger.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travail-saisonnier-droits.html"><div class="ic">☀️</div><h3>Travailleurs saisonniers</h3><p>CDD saisonnier, HS en saison, clause de reconduction.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="retraite-progressive-guide.html"><div class="ic">🌅</div><h3>Retraite progressive</h3><p>60 ans + 150 trim., temps partiel + pension partielle 2026.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prise-acte-rupture-guide.html"><div class="ic">⚡</div><h3>Prise d'acte de rupture</h3><p>HS non payées = manquement grave. Procédure et risques.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="organisation-temps-travail-guide.html"><div class="ic">📅</div><h3>Organisation du temps de travail</h3><p>Hebdo, annualisation, forfait jours, cycles — comparatif.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="charte-ethique-deontologie-guide.html"><div class="ic">📜</div><h3>Chartes d'entreprise</h3><p>Valeur juridique, limites, ce qu'elles ne peuvent pas modifier.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="protection-representants-personnel.html"><div class="ic">🛡️</div><h3>Représentants du personnel</h3><p>Protection mandat, heures délégation, non-discrimination.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prevoyance-incapacite-invalidite-guide.html"><div class="ic">💊</div><h3>Prévoyance incapacité-invalidité</h3><p>Rente IPP, SAM, HS déclarées = meilleure couverture.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="reconversion-professionnelle-guide.html"><div class="ic">🔄</div><h3>Reconversion professionnelle</h3><p>CPF 150 € reste à charge, Pro-A, PTP, VAE 2026.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="risques-psychosociaux-prevention-guide.html"><div class="ic">🧠</div><h3>Risques psychosociaux (RPS)</h3><p>DUERP, droit de retrait, HS excessives et burn-out.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="agences-travail-temporaire-droits.html"><div class="ic">🤝</div><h3>Agences d'intérim : guide complet</h3><p>IFM sur HS, égalité de traitement, CDI intérimaire.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="negociation-salaire-heures-supplementaires.html"><div class="ic">🤝</div><h3>Négocier ses heures sup</h3><p>Stratégies, mise en demeure, dossier chiffré, CSE.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="maladie-professionnelle-inaptitude-heures-supplementaires.html"><div class="ic">🔴</div><h3>Inaptitude & HS</h3><p>HS dues avant inaptitude, prescription, indemnités.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="travail-de-nuit-majoration.html"><div class="ic">🌙</div><h3>Travail de nuit</h3><p>Pas de taux légal — ce qui dépend de ta convention.</p><span class="go">Lire →</span></a>
         <a class="guide-card" href="dimanche-jours-feries.html"><div class="ic">🎉</div><h3>Dimanche & jours fériés</h3><p>1er mai payé double. Le reste dépend de ta CCN.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="rgpd-dossier-salarie-guide.html"><div class="ic">🔒</div><h3>RGPD & dossier salarié</h3><p>Durées de conservation, droit d'accès, géolocalisation.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="mise-a-pied-disciplinaire-conservatoire-guide.html"><div class="ic">⏸️</div><h3>Mise à pied : disciplinaire vs conservatoire</h3><p>Salaire payé ou non, procédure, ne pas confondre.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prime-anciennete-conventionnelle-guide.html"><div class="ic">📈</div><h3>Prime d'ancienneté</h3><p>Pas une obligation légale générale — vérifie ta CCN.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="refere-prudhommal-guide.html"><div class="ic">⚡</div><h3>Référé prud'homal</h3><p>Obtenir une décision rapide pour salaire impayé.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="transfert-entreprise-l1224-guide.html"><div class="ic">🔁</div><h3>Transfert d'entreprise (L1224-1)</h3><p>Ton contrat maintenu automatiquement en cas de cession.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="detachement-salarie-ue-guide.html"><div class="ic">🌍</div><h3>Détachement salarié UE</h3><p>Formulaire A1, 24 mois, détachement vs expatriation.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="appel-jugement-prudhommal-guide.html"><div class="ic">📑</div><h3>Appel d'un jugement prud'homal</h3><p>Délai 1 mois, avocat obligatoire, exécution provisoire.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="mediation-conventionnelle-mard-guide.html"><div class="ic">🤲</div><h3>Médiation & MARD</h3><p>Alternative au procès, plus rapide et confidentielle.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="transaction-apres-licenciement-guide.html"><div class="ic">✍️</div><h3>Transaction après licenciement</h3><p>Ce que la signature t'empêche de réclamer ensuite.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prescription-salaires-rappel-guide.html"><div class="ic">⏳</div><h3>Prescription des salaires</h3><p>Délai de 3 ans, comment l'interrompre.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="preuve-illicite-employeur-guide.html"><div class="ic">🎥</div><h3>Preuve illicite de l'employeur</h3><p>Vidéosurveillance, mails — ce qui est recevable.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="execution-provisoire-jugement-guide.html"><div class="ic">⚖️</div><h3>Exécution provisoire</h3><p>Ton jugement s'applique même en cas d'appel.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="acompte-avance-salaire-guide.html"><div class="ic">💰</div><h3>Acompte sur salaire</h3><p>Un droit pour les mensualisés, différent de l'avance.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="indemnite-salissure-outillage-guide.html"><div class="ic">🧰</div><h3>Indemnités salissure & outillage</h3><p>Conventionnelles, pas une obligation légale générale.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="attestation-france-travail-erreurs-guide.html"><div class="ic">📋</div><h3>Attestation France Travail</h3><p>Erreurs fréquentes qui réduisent ton allocation.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="certificat-travail-contenu-guide.html"><div class="ic">📄</div><h3>Certificat de travail</h3><p>Mentions obligatoires et interdites.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="csp-contrat-securisation-professionnelle-guide.html"><div class="ic">🛡️</div><h3>CSP licenciement économique</h3><p>ASP à 75% du SJR, 12 mois, sans carence.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ifc-indemnite-fin-cdd-detail-guide.html"><div class="ic">🧮</div><h3>Indemnité de fin de CDD</h3><p>Calcul détaillé 10%/6%, cas d'exclusion.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="salarie-etranger-titre-travail-guide.html"><div class="ic">🛂</div><h3>Salarié étranger</h3><p>Titre de séjour, autorisation de travail.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="expatriation-vs-detachement-guide.html"><div class="ic">✈️</div><h3>Expatriation vs détachement</h3><p>Sécurité sociale, contrat, retour en France.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="charte-informatique-entreprise-guide.html"><div class="ic">💻</div><h3>Charte informatique</h3><p>BYOD, limites de la surveillance.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="cybersecurite-responsabilite-salarie-guide.html"><div class="ic">🔐</div><h3>Cybersécurité & responsabilité</h3><p>Phishing, négligence, sanctions proportionnées.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ia-recrutement-discrimination-guide.html"><div class="ic">🤖</div><h3>IA et recrutement</h3><p>Biais algorithmique, droit à l'intervention humaine.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="bspce-actionnariat-salarie-guide.html"><div class="ic">📈</div><h3>BSPCE & actionnariat salarié</h3><p>Vesting, fiscalité, perte en cas de départ.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="duerp-document-unique-guide.html"><div class="ic">📋</div><h3>DUERP</h3><p>Obligatoire dès 1 salarié, conservation 40 ans.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="droit-de-retrait-guide.html"><div class="ic">🚫</div><h3>Droit de retrait</h3><p>Danger grave et imminent, sans sanction.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="faute-inexcusable-employeur-guide.html"><div class="ic">⚠️</div><h3>Faute inexcusable</h3><p>Majoration de rente, indemnisation complémentaire.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="equivalences-horaires-transport-hotellerie-guide.html"><div class="ic">⏱️</div><h3>Équivalences horaires</h3><p>Pourquoi certains métiers ne comptent pas 1h pour 1h.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="habillage-deshabillage-temps-travail-guide.html"><div class="ic">🥼</div><h3>Habillage & déshabillage</h3><p>Quand ce temps est payé comme du travail.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prejudice-anxiete-amiante-guide.html"><div class="ic">😟</div><h3>Préjudice d'anxiété</h3><p>Indemnisé sans attendre une maladie déclarée.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="delegue-syndical-heures-delegation-guide.html"><div class="ic">🪧</div><h3>Délégué syndical</h3><p>Différent de l'élu CSE, rôle de négociateur.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="referendum-entreprise-guide.html"><div class="ic">🗳️</div><h3>Référendum d'entreprise</h3><p>Valider un accord par consultation directe.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="bdese-base-donnees-guide.html"><div class="ic">📊</div><h3>BDESE</h3><p>Volet environnemental, accès permanent du CSE.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="expert-cse-recours-guide.html"><div class="ic">🔍</div><h3>Expert CSE</h3><p>Cas de recours, qui finance l'expertise.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="accord-methode-negociation-guide.html"><div class="ic">🤝</div><h3>Accord de méthode</h3><p>Organiser une négociation avant un PSE.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="gpec-gepp-guide.html"><div class="ic">🧭</div><h3>GEPP (ex-GPEC)</h3><p>Anticiper l'évolution des emplois.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="plan-sauvegarde-emploi-pse-guide.html"><div class="ic">🛟</div><h3>PSE</h3><p>Seuils, contenu obligatoire, contestation.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="rupture-conventionnelle-collective-rcc-guide.html"><div class="ic">🤲</div><h3>RCC</h3><p>Volontariat exclusif, sans licenciement économique.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="coemploi-guide.html"><div class="ic">🏢</div><h3>Coemploi</h3><p>Reconnaissance très restrictive depuis 2014.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="pret-main-oeuvre-illicite-marchandage-guide.html"><div class="ic">⚠️</div><h3>Prêt de main-d'œuvre illicite</h3><p>Limite avec l'intérim légal.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="sous-traitance-donneur-ordre-guide.html"><div class="ic">🔗</div><h3>Sous-traitance & donneur d'ordre</h3><p>Responsabilité solidaire en cas de défaillance.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="cession-fonds-commerce-salarie-guide.html"><div class="ic">🏪</div><h3>Cession de fonds de commerce</h3><p>Ton contrat maintenu ou pas.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="byod-equipement-personnel-guide.html"><div class="ic">💻</div><h3>BYOD au travail</h3><p>Équipement personnel, frais, charte informatique.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="retrogradation-disciplinaire-guide.html"><div class="ic">📉</div><h3>Rétrogradation disciplinaire</h3><p>Sanction grave, droit de refus si le contrat change.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="dossier-disciplinaire-salarie-guide.html"><div class="ic">🗂️</div><h3>Dossier disciplinaire</h3><p>Accès, durée de conservation, limite des 3 ans.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="retraite-supplementaire-per-entreprise-guide.html"><div class="ic">🏦</div><h3>PER entreprise</h3><p>PERECO facultatif vs PERO obligatoire, abondement.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="negociation-annuelle-obligatoire-nao-guide.html"><div class="ic">🤝</div><h3>NAO</h3><p>Thèmes obligatoires, périodicité, PV de désaccord.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="clause-mobilite-geographique-guide.html"><div class="ic">🗺️</div><h3>Clause de mobilité géographique</h3><p>Validité, zone précise, droit de refus.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="clause-dedit-formation-guide.html"><div class="ic">🎓</div><h3>Clause de dédit-formation</h3><p>Conditions de validité, montant proportionné.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="videosurveillance-travail-guide.html"><div class="ic">📹</div><h3>Vidéosurveillance au travail</h3><p>Finalité proportionnée, information, preuve illicite.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conge-menstruel-guide.html"><div class="ic">🩸</div><h3>Congé menstruel</h3><p>Aucune loi nationale en 2026, le point précis.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-martinique-guide.html"><div class="ic">🌴</div><h3>Heures sup en Martinique</h3><p>12 jours fériés, congé bonifié, BTP zone Antilles.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-guadeloupe-guide.html"><div class="ic">🌴</div><h3>Heures sup en Guadeloupe</h3><p>27 mai férié, Mi-carême chômée par usage.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-guyane-guide.html"><div class="ic">🌴</div><h3>Heures sup en Guyane</h3><p>10 juin férié, sites isolés et éloignement.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-reunion-guide.html"><div class="ic">🌴</div><h3>Heures sup à La Réunion</h3><p>20 décembre Fèt Kaf, alertes cycloniques.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-mayotte-guide.html"><div class="ic">🌴</div><h3>Heures sup à Mayotte</h3><p>Congés décalés, convergence sociale, fêtes locales.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travailleur-frontalier-luxembourg-heures-supplementaires.html"><div class="ic">🇱🇺</div><h3>Frontalier Luxembourg</h3><p>Droit luxembourgeois, seuil télétravail 34 j/an.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travailleur-frontalier-belgique-heures-supplementaires.html"><div class="ic">🇧🇪</div><h3>Frontalier Belgique</h3><p>Droit belge, seuil télétravail 34 j/an.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travailleur-frontalier-allemagne-heures-supplementaires.html"><div class="ic">🇩🇪</div><h3>Frontalier Allemagne</h3><p>Arbeitszeitgesetz, seuils de télétravail à vérifier.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travailleur-frontalier-espagne-andorre-heures-supplementaires.html"><div class="ic">🇪🇸</div><h3>Frontalier Espagne / Andorre</h3><p>Deux régimes distincts, Andorre hors UE.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="harcelement-sexuel-travail-guide.html"><div class="ic">🚫</div><h3>Harcèlement sexuel</h3><p>Acte unique suffisant si grave, distinct du moral.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="discrimination-embauche-recrutement-guide.html"><div class="ic">⚖️</div><h3>Discrimination à l'embauche</h3><p>25 critères protégés, preuve par testing.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="risque-routier-professionnel-guide.html"><div class="ic">🚗</div><h3>Risque routier professionnel</h3><p>1re cause de mortalité au travail, prévention.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="honoraires-avocat-prudhommes-guide.html"><div class="ic">💼</div><h3>Honoraires d'avocat aux prud'hommes</h3><p>Coût, aide juridictionnelle, article 700.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="salarie-impatrie-regime-fiscal-guide.html"><div class="ic">🌍</div><h3>Régime fiscal de l'impatrié</h3><p>Exonération d'IR, 8 ans, conditions.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="prime-partage-valeur-ppv-guide.html"><div class="ic">💶</div><h3>Prime de partage de la valeur (PPV)</h3><p>Plafond 3 000€/6 000€, exonérations 2026.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="horaires-individualises-guide.html"><div class="ic">🕐</div><h3>Horaires individualisés</h3><p>Plages fixes et variables, avis du CSE.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="net-social-bulletin-paie-guide.html"><div class="ic">🧾</div><h3>Montant net social</h3><p>RSA, prime d'activité, depuis 2024.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="lettre-demission-modele-guide.html"><div class="ic">✉️</div><h3>Lettre de démission</h3><p>Aucun formalisme légal, pièges à éviter.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="checklist-depart-retraite-guide.html"><div class="ic">📋</div><h3>Checklist départ à la retraite</h3><p>Démarches, préavis, indemnité, soldes.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="clause-exclusivite-temps-partiel-guide.html"><div class="ic">🚫</div><h3>Clause d'exclusivité</h3><p>Nulle de plein droit à temps partiel.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="travail-egal-salaire-egal-guide.html"><div class="ic">⚖️</div><h3>À travail égal, salaire égal</h3><p>Charge de la preuve, justifications admises.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="demission-legitime-are-guide.html"><div class="ic">🤝</div><h3>Démission légitime et ARE</h3><p>Cas reconnus, démission-reconversion.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="preavis-recherche-emploi-heures-guide.html"><div class="ic">🔍</div><h3>Heures de recherche d'emploi</h3><p>Pas de droit légal général, souvent conventionnel.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-polynesie-francaise-guide.html"><div class="ic">🌴</div><h3>Heures sup en Polynésie française</h3><p>Code propre, 39h/semaine, SMIG en XPF.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-saint-pierre-miquelon-guide.html"><div class="ic">🌴</div><h3>Heures sup à Saint-Pierre-et-Miquelon</h3><p>SMIC métropolitain, climat nord-atlantique.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-saint-martin-saint-barthelemy-guide.html"><div class="ic">🌴</div><h3>Heures sup à St-Martin / St-Barthélemy</h3><p>Autonomie fiscale, SMIC métropolitain.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="heures-supplementaires-wallis-futuna-guide.html"><div class="ic">🌴</div><h3>Heures sup à Wallis-et-Futuna</h3><p>Code de 1952, SMIG en FCFP.</p><span class="go">Lire →</span></a>
       </div>
     </section>
   </div>
@@ -655,6 +828,90 @@
       </div>
     </div>
 
+    <section style="margin-top:2rem">
+      <h2 class="title">Par métier</h2>
+      <div class="guide-grid">
+        <a class="guide-card" href="grutier-btp-heures-supplementaires.html"><div class="ic">🏗️</div><h3>Grutier BTP</h3><p>CACES, intempéries, grands déplacements. IDCC 1596.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="magasinier-cariste-heures-supplementaires.html"><div class="ic">📦</div><h3>Magasinier-cariste</h3><p>Annualisation entrepôt, CACES. IDCC 1611.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="secretaire-medicale-heures-supplementaires.html"><div class="ic">🩺</div><h3>Secrétaire médicale</h3><p>Débordements de consultation. IDCC 776.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="animateur-periscolaire-heures-supplementaires.html"><div class="ic">🎈</div><h3>Animateur périscolaire</h3><p>CEE vs contrat classique, annualisation. IDCC 1518.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ouvrier-agricole-saisonnier-heures-supplementaires.html"><div class="ic">🍇</div><h3>Ouvrier agricole saisonnier</h3><p>Vendanges, CDD court, dès la 1ère semaine. IDCC 9811.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="soudeur-industrie-heures-supplementaires.html"><div class="ic">🔧</div><h3>Soudeur métallurgie</h3><p>Équipes 2x8/3x8, habilitations. IDCC 3248.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="aide-medico-psychologique-heures-supplementaires.html"><div class="ic">🦊</div><h3>AMP / AES</h3><p>Nuits couchées, rappel sur repos. IDCC 413.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ambulancier-heures-supplementaires.html"><div class="ic">🚑</div><h3>Ambulancier</h3><p>Amplitude vs équivalence horaire. IDCC 16.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="auxiliaire-puericulture-heures-supplementaires.html"><div class="ic">👶</div><h3>Auxiliaire de puériculture</h3><p>Transmissions du soir, réunions d'équipe. IDCC 1767.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="brancardier-heures-supplementaires.html"><div class="ic">🏥</div><h3>Brancardier</h3><p>Rappels imprévus, contingent réduit. IDCC 2264.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="kinesitherapeute-salarie-heures-supplementaires.html"><div class="ic">🩺</div><h3>Kinésithérapeute salarié</h3><p>Forfait jours ou horaires classiques. IDCC 776.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="technicien-laboratoire-heures-supplementaires.html"><div class="ic">🔬</div><h3>Technicien de laboratoire</h3><p>Astreintes, analyses urgentes. IDCC 959.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="agent-service-hospitalier-heures-supplementaires.html"><div class="ic">🧹</div><h3>ASH</h3><p>Horaires coupés, contingent réduit. IDCC 2264.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="sage-femme-salariee-heures-supplementaires.html"><div class="ic">👶</div><h3>Sage-femme salariée</h3><p>Accouchements imprévus, gardes. IDCC 2264.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conducteur-travaux-heures-supplementaires.html"><div class="ic">📐</div><h3>Conducteur de travaux</h3><p>Forfait jours ou HS classiques ? IDCC 1597.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="plombier-chauffagiste-heures-supplementaires.html"><div class="ic">🔧</div><h3>Plombier-chauffagiste</h3><p>Interventions d'urgence, astreinte. IDCC 1596.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="carreleur-heures-supplementaires.html"><div class="ic">🏗️</div><h3>Carreleur</h3><p>Préparation support, délais serrés. IDCC 1596.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="charpentier-heures-supplementaires.html"><div class="ic">🪵</div><h3>Charpentier</h3><p>Sécurité hauteur, intempéries. IDCC 1596.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="peintre-batiment-heures-supplementaires.html"><div class="ic">🎨</div><h3>Peintre en bâtiment</h3><p>Préparation surfaces, retouches. IDCC 1596.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="operateur-cnc-heures-supplementaires.html"><div class="ic">⚙️</div><h3>Opérateur CNC</h3><p>Réglage machine, équipes successives. IDCC 3248.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="technicien-bureau-etudes-heures-supplementaires.html"><div class="ic">📊</div><h3>Technicien bureau d'études</h3><p>Deadlines projet, modalités Syntec. IDCC 3248/1486.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="electricien-industriel-heures-supplementaires.html"><div class="ic">⚡</div><h3>Électricien industriel</h3><p>Astreinte technique, pannes production. IDCC 3248.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="employe-libre-service-heures-supplementaires.html"><div class="ic">🛒</div><h3>Employé libre-service</h3><p>Mise en rayon, inventaires de nuit. IDCC 2216.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="responsable-rayon-heures-supplementaires.html"><div class="ic">📦</div><h3>Responsable de rayon</h3><p>Statut cadre/agent de maîtrise à vérifier. IDCC 1517.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="plongeur-commis-cuisine-heures-supplementaires.html"><div class="ic">🍽️</div><h3>Plongeur / commis de cuisine</h3><p>Régime HCR 39h, +10%/20%/50%. IDCC 1979.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="receptionniste-hotel-heures-supplementaires.html"><div class="ic">🛎️</div><h3>Réceptionniste d'hôtel</h3><p>Veilleur de nuit, check-in tardifs. IDCC 1979.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="chauffeur-bus-heures-supplementaires.html"><div class="ic">🚌</div><h3>Chauffeur de bus</h3><p>Amplitude, coupures réglementées. IDCC 650.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="coursier-velo-heures-supplementaires.html"><div class="ic">🚲</div><h3>Coursier à vélo salarié</h3><p>Distinct de l'auto-entrepreneur plateforme. IDCC 1694.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="controleur-sncf-heures-supplementaires.html"><div class="ic">🚆</div><h3>Contrôleur ferroviaire</h3><p>Découpes de service, statut. IDCC 2002.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="barman-sommelier-heures-supplementaires.html"><div class="ic">🍷</div><h3>Barman / sommelier</h3><p>Régime HCR, pourboires hors calcul. IDCC 1979.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="hote-accueil-heures-supplementaires.html"><div class="ic">🙋</div><h3>Hôte d'accueil</h3><p>Missions événementielles courtes. IDCC 1734.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="televendeur-centre-appel-heures-supplementaires.html"><div class="ic">📞</div><h3>Télévendeur centre d'appel</h3><p>Connexion, débriefing, pauses. IDCC 1734.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="juriste-entreprise-heures-supplementaires.html"><div class="ic">⚖️</div><h3>Juriste d'entreprise</h3><p>Forfait jours : vérifie ta propre clause.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="community-manager-heures-supplementaires.html"><div class="ic">📱</div><h3>Community manager</h3><p>Modération hors horaires, astreinte. IDCC 1486.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="agent-nettoyage-heures-supplementaires.html"><div class="ic">🧹</div><h3>Agent de nettoyage</h3><p>Multi-sites, garantie d'emploi. IDCC 3043.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="maitre-chien-securite-heures-supplementaires.html"><div class="ic">🐕</div><h3>Maître-chien sécurité</h3><p>Contingent 329h, soin de l'animal. IDCC 1351.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="agent-surete-aeroportuaire-heures-supplementaires.html"><div class="ic">✈️</div><h3>Agent de sûreté aéroportuaire</h3><p>Pics de trafic, habilitations. IDCC 1351.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="technicien-hygiene-proprete-heures-supplementaires.html"><div class="ic">🧪</div><h3>Technicien hygiène-propreté</h3><p>Protocoles, temps de séchage. IDCC 3043.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="boulanger-patissier-heures-supplementaires.html"><div class="ic">🥖</div><h3>Boulanger-pâtissier</h3><p>Horaires nocturnes/matinaux. IDCC 1747.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="boucher-charcutier-heures-supplementaires.html"><div class="ic">🥩</div><h3>Boucher-charcutier</h3><p>Marché, pics de fêtes de fin d'année. IDCC 1534.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="fleuriste-vendeur-heures-supplementaires.html"><div class="ic">💐</div><h3>Fleuriste</h3><p>Pics saisonniers, contingent réduit. IDCC 1077.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="fromager-cremier-heures-supplementaires.html"><div class="ic">🧀</div><h3>Fromager-crémier</h3><p>Marché, chaîne du froid. IDCC 1505.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="apiculteur-heures-supplementaires.html"><div class="ic">🐝</div><h3>Apiculteur salarié</h3><p>Transhumance, miellée. IDCC 9811.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="horticulteur-pepiniere-heures-supplementaires.html"><div class="ic">🌱</div><h3>Horticulteur-pépiniériste</h3><p>Pic de printemps, serres. IDCC 7018.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ouvrier-viticole-permanent-heures-supplementaires.html"><div class="ic">🍇</div><h3>Ouvrier viticole permanent</h3><p>Annualisation, distinct du saisonnier. IDCC 9811.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="tapissier-decorateur-heures-supplementaires.html"><div class="ic">🪑</div><h3>Tapissier-décorateur</h3><p>Restauration de mobilier, délais clients. IDCC 1558.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="avocat-salarie-cabinet-heures-supplementaires.html"><div class="ic">⚖️</div><h3>Avocat salarié</h3><p>Distinct du collaborateur libéral. IDCC 1000.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="notaire-assistant-heures-supplementaires.html"><div class="ic">📜</div><h3>Assistant notarial</h3><p>Signatures, période de rentrée. IDCC 2205.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ingenieur-etudes-heures-supplementaires.html"><div class="ic">📐</div><h3>Ingénieur d'études</h3><p>Les 3 modalités Syntec à vérifier.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="chef-projet-it-heures-supplementaires.html"><div class="ic">💻</div><h3>Chef de projet IT</h3><p>Forfait jours, mises en production de nuit.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="architecte-salarie-heures-supplementaires.html"><div class="ic">📐</div><h3>Architecte salarié</h3><p>Nuits de rendu de concours. IDCC 2332.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="controleur-gestion-heures-supplementaires.html"><div class="ic">📊</div><h3>Contrôleur de gestion</h3><p>Clôtures mensuelles, forfait à vérifier.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ingenieur-securite-systemes-heures-supplementaires.html"><div class="ic">🔐</div><h3>Ingénieur sécurité systèmes</h3><p>Astreinte SOC, gestion de crise cyber.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="expert-comptable-stagiaire-heures-supplementaires.html"><div class="ic">🧮</div><h3>Expert-comptable stagiaire</h3><p>Période fiscale mars-mai.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="orthoptiste-salarie-heures-supplementaires.html"><div class="ic">👁️</div><h3>Orthoptiste salarié</h3><p>Multi-employeurs fréquent. IDCC 1147.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ergotherapeute-salarie-heures-supplementaires.html"><div class="ic">🧩</div><h3>Ergothérapeute salarié</h3><p>Cabinet ou médico-social. IDCC 1147 / 413.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="psychologue-salarie-heures-supplementaires.html"><div class="ic">🧠</div><h3>Psychologue salarié</h3><p>Forfait jours très fréquent chez les cadres.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="osteopathe-salarie-heures-supplementaires.html"><div class="ic">🦴</div><h3>Ostéopathe salarié</h3><p>Statut rare, distinct de la collaboration libérale.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="podologue-salarie-heures-supplementaires.html"><div class="ic">🦶</div><h3>Pédicure-podologue salarié</h3><p>Stérilisation entre patients. IDCC 1147.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="manucure-prothesiste-ongulaire-heures-supplementaires.html"><div class="ic">💅</div><h3>Manucure / prothésiste ongulaire</h3><p>Forfait par prestation encadré par le SMIC. IDCC 2596.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="tatoueur-salarie-heures-supplementaires.html"><div class="ic">🖋️</div><h3>Tatoueur salarié</h3><p>À distinguer de la location de chaise.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="data-scientist-heures-supplementaires.html"><div class="ic">📊</div><h3>Data scientist</h3><p>Syntec IDCC 1486, jobs de calcul nocturnes.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="devops-ingenieur-heures-supplementaires.html"><div class="ic">🛠️</div><h3>Ingénieur DevOps</h3><p>Astreinte de production, indemnité distincte.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="vendeur-jardinerie-heures-supplementaires.html"><div class="ic">🌱</div><h3>Vendeur en jardinerie</h3><p>10h/jour max, forte saisonnalité. IDCC 1760.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="vendeur-animalerie-heures-supplementaires.html"><div class="ic">🐾</div><h3>Vendeur en animalerie</h3><p>Soin des animaux même jours fermés. IDCC 1760.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="toiletteur-animalier-heures-supplementaires.html"><div class="ic">🐶</div><h3>Toiletteur animalier salarié</h3><p>Jardinerie (1760) ou clinique vétérinaire (1875).</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="audioprothesiste-salarie-heures-supplementaires.html"><div class="ic">👂</div><h3>Audioprothésiste salarié</h3><p>Essais d'appareillage hors créneaux prévus.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="ascensoriste-heures-supplementaires.html"><div class="ic">🛗</div><h3>Ascensoriste</h3><p>Astreintes de dépannage très fréquentes.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="cordiste-heures-supplementaires.html"><div class="ic">🧗</div><h3>Cordiste</h3><p>Travaux en hauteur, arrêts météo.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="couvreur-heures-supplementaires.html"><div class="ic">🏠</div><h3>Couvreur</h3><p>Régime intempéries BTP. IDCC 1597.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="poissonnier-heures-supplementaires.html"><div class="ic">🐟</div><h3>Poissonnier</h3><p>Arrivages très matinaux.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="caviste-heures-supplementaires.html"><div class="ic">🍷</div><h3>Caviste</h3><p>Soirées dégustation, période de fêtes.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="maitre-hotel-heures-supplementaires.html"><div class="ic">🍽️</div><h3>Maître d'hôtel</h3><p>Coupures, contingent HCR 360h.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="voiturier-hotel-heures-supplementaires.html"><div class="ic">🚗</div><h3>Voiturier d'hôtel</h3><p>Trajets parking, soirées événementielles.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="conducteur-autocar-tourisme-heures-supplementaires.html"><div class="ic">🚌</div><h3>Conducteur d'autocar de tourisme</h3><p>Double équipage, temps de conduite réglementé.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="office-manager-heures-supplementaires.html"><div class="ic">🏢</div><h3>Office manager</h3><p>Statut cadre ou non selon le contrat.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="surveillant-nuit-etablissement-social-guide.html"><div class="ic">🌙</div><h3>Surveillant de nuit</h3><p>Équivalence horaire nocturne. CCN66.</p><span class="go">Lire →</span></a>
+        <a class="guide-card" href="animateur-bafa-contrat-engagement-educatif-guide.html"><div class="ic">⛺</div><h3>Animateur BAFA en CEE</h3><p>Régime forfaitaire dérogatoire, 80 jours max.</p><span class="go">Lire →</span></a>
+      </div>
+    </section>
+
     <div class="appblock" style="margin-top:1rem">
       <div class="fox">🦊</div>
       <h2>477 conventions dans l'appli</h2>
@@ -667,7 +924,43 @@
     Outil pédagogique indépendant, sans affiliation officielle. Informations <b>indicatives</b> — seul ton bulletin de paie fait foi. En cas de litige, consulte un avocat en droit du travail, un syndicat ou l'inspection du travail.
   </div>
 
-</main>
+<a class="guide-card" href="chef-chantier-heures-supplementaires.html"><div class="ic">🏗️</div><h3>Chef de chantier BTP</h3><p>BTP ouvriers · contingent 145 h, urgences de fin de chantier.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="conducteur-travaux-hs.html"><div class="ic">🦺</div><h3>Conducteur de travaux</h3><p>Forfait jours fréquent, fin de chantier, entretien de charge absent.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="grutier-levagiste-heures-supplementaires.html"><div class="ic">🏗️</div><h3>Grutier et levagiste</h3><p>Habilitations CACES, montages de nuit, HS + majoration nocturne.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="plombier-chauffagiste-btp-hs.html"><div class="ic">🔧</div><h3>Plombier-chauffagiste</h3><p>Chantiers + dépannages urgents : deux sources de HS.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="carreleur-poseur-revetement-hs.html"><div class="ic">🪵</div><h3>Carreleur et poseur de revêtements</h3><p>BTP 145 h, finitions sous pression du promoteur.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="charpentier-couvreur-hs.html"><div class="ic">🏠</div><h3>Charpentier et couvreur</h3><p>Météo qui dicte les semaines, intempéries ≠ compensation HS.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="soudeur-chaudronnier-heures-supplementaires.html"><div class="ic">⚙️</div><h3>Soudeur et chaudronniste</h3><p>Arrêts d'usine 60 h/sem, qualifications = taux plus élevé.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="macon-coffreur-hs.html"><div class="ic">🏛️</div><h3>Maçon et coffreur-bancheur</h3><p>Coulées de béton non interruptibles, HS inévitables.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="ingenieur-bureau-etudes-hs.html"><div class="ic">📐</div><h3>Ingénieur bureau d'études</h3><p>Remises d'offres 55-65 h/sem, ETAM ou cadre Syntec.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="kinesitherapeute-salarie-hs.html"><div class="ic">💪</div><h3>Kinésithérapeute salarié</h3><p>Santé privée 70 h, bilans et comptes-rendus hors séance.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="sage-femme-salariee-hs.html"><div class="ic">👶</div><h3>Sage-femme salariée</h3><p>Gardes de 24h, maternité privée contingent 70 h.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="aide-medico-psychologique-hs.html"><div class="ic">🤝</div><h3>AMP et accompagnant éducatif (AES)</h3><p>CCNT 66 · 110 h, nuits actives en ESMS.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="educateur-specialise-hs.html"><div class="ic">📚</div><h3>Éducateur spécialisé</h3><p>Séjours éducatifs 60 h/sem, CCNT 66 · 110 h.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="auxiliaire-puericulture-hs.html"><div class="ic">🍼</div><h3>Auxiliaire de puériculture</h3><p>Crèche, dépassements de fermeture = HS méconnues.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="brancardier-agent-service-hospitalier-hs.html"><div class="ic">🏥</div><h3>Brancardier et ASH</h3><p>Hospitalisation privée 70 h, remplacements urgents.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="psychologue-salarie-hs.html"><div class="ic">🧠</div><h3>Psychologue salarié</h3><p>CCNT 66 ou Syntec, bilans imposés chez soi.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="employe-libre-service-hs.html"><div class="ic">🛒</div><h3>Employé libre-service</h3><p>Grande distribution 180 h, mise en rayon nocturne.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="responsable-rayon-grande-surface-hs.html"><div class="ic">🏪</div><h3>Responsable de rayon</h3><p>Forfait jours sans entretien de charge = HS réclamables.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="vendeur-automobile-hs.html"><div class="ic">🚗</div><h3>Vendeur automobile</h3><p>Commissions dans la base HS, fins de mois chargées.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="merchandiser-commercial-terrain-hs.html"><div class="ic">🗺️</div><h3>Merchandiser et commercial terrain</h3><p>Tournées, déplacements entre clients = durée de service.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="hote-accueil-standardiste-hs.html"><div class="ic">📞</div><h3>Hôte d'accueil et standardiste</h3><p>Remplacements urgents, extensions de plage.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="televendeur-centre-appels-hs.html"><div class="ic">🎧</div><h3>Télévendeur et agent centre d'appels</h3><p>20 min de dépassement/jour = 86 h de HS/an.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="community-manager-digital-hs.html"><div class="ic">📱</div><h3>Community manager</h3><p>Crises réseaux = HS nocturnes, ETAM ou cadre Syntec.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="juriste-entreprise-hs.html"><div class="ic">⚖️</div><h3>Juriste d'entreprise</h3><p>Due diligences, compliance, forfait jours souvent nul.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="charge-clientele-assurance-hs.html"><div class="ic">🛡️</div><h3>Chargé de clientèle assurance</h3><p>Contingent 70 h, pics sinistres, échéances.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="employe-banque-guichet-hs.html"><div class="ic">🏦</div><h3>Employé de banque au guichet</h3><p>Clôtures fin de mois, remplacements urgents.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="chauffeur-poids-lourd-hs.html"><div class="ic">🚛</div><h3>Chauffeur poids lourd (PL)</h3><p>Durée de service ≠ conduite, tachygraphe incomplet.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="magasinier-cariste-hs.html"><div class="ic">📦</div><h3>Magasinier cariste</h3><p>Logistique 180 h, Black Friday 25 HS/sem.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="controleur-sncf-conducteur-train-hs.html"><div class="ic">🚂</div><h3>Contrôleur SNCF et conducteur de train</h3><p>Régime ferroviaire, perturbations réseau = HS imprévues.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="coursier-velo-livreur-hs.html"><div class="ic">🚴</div><h3>Coursier à vélo et livreur urbain</h3><p>Salarié ou requalifié : attentes en restaurant = HS.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="ouvrier-agricole-saisonnier-hs.html"><div class="ic">🌾</div><h3>Ouvrier agricole saisonnier</h3><p>Récoltes 50-70 h/sem, pièce ≠ HS supprimées.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="sommelier-barman-hs.html"><div class="ic">🍷</div><h3>Sommelier et barman</h3><p>HCR 10/20/50 %, services tardifs jusqu'à 2h.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="plongeur-commis-cuisine-hs.html"><div class="ic">🍽️</div><h3>Plongeur et commis de cuisine</h3><p>HCR, seuil 39 h, repas du personnel obligatoire.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="femme-valet-chambre-hs.html"><div class="ic">🛏️</div><h3>Femme de chambre et valet d'étage</h3><p>Quotas de chambres ≠ HS supprimées.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="agent-quai-manutentionnaire-hs.html"><div class="ic">🚢</div><h3>Agent de quai et manutentionnaire</h3><p>Arrivées tardives de camions = HS imprévues.</p><span class="go">Lire →</span></a>
+      <a class="guide-card" href="boucher-charcutier-hs.html"><div class="ic">🥩</div><h3>Boucher et charcutier</h3><p>Boucherie 220 h, Noël et Pâques très chargés.</p><span class="go">Lire →</span></a>
+      </main>
 <div id="hs-footer"></div>
 <script src="assets/site-data.js"></script>
 <script src="assets/core.js"></script>
@@ -700,5 +993,110 @@ function switchTabByName(name) {
 }
 </script>
 </div>
+<script>
+/* ============================================================
+   MOTEUR DE RECHERCHE SANS ACCENTS — index.html
+   Recherche dans titre h3, description p, et href de chaque .guide-card
+   Normalisation NFD pour ignorer les accents
+   ============================================================ */
+(function(){
+  "use strict";
+
+  function norm(str){
+    return (str||"")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g,"")
+      .toLowerCase()
+      .replace(/['\-_]/g," ");
+  }
+
+  var input  = document.getElementById("hs-search-input");
+  var clear  = document.getElementById("hs-search-clear");
+  var status = document.getElementById("hs-search-status");
+  var wrap   = document.getElementById("hs-search-wrap");
+  var body   = document.body;
+
+  if(!input) return;
+
+  // Construire l'index au premier focus (lazy)
+  var idx = null;
+  function buildIndex(){
+    if(idx) return;
+    idx = [];
+    var cards = document.querySelectorAll(".guide-card");
+    cards.forEach(function(card){
+      var h3   = card.querySelector("h3");
+      var p    = card.querySelector("p");
+      var href = card.getAttribute("href")||"";
+      idx.push({
+        el:   card,
+        text: norm((h3?h3.textContent:"") + " " + (p?p.textContent:"") + " " + href)
+      });
+    });
+  }
+
+  function search(query){
+    buildIndex();
+    var q = norm(query).trim();
+
+    if(!q){
+      reset();
+      return;
+    }
+
+    // Mots-clés (espace sépare les termes, tous doivent matcher — AND)
+    var terms = q.split(/\s+/).filter(Boolean);
+
+    body.classList.add("hs-search-active");
+    clear.classList.add("visible");
+
+    var shown = 0;
+    idx.forEach(function(item){
+      var match = terms.every(function(t){ return item.text.indexOf(t)!==-1; });
+      if(match){
+        item.el.classList.remove("hs-hidden");
+        shown++;
+      } else {
+        item.el.classList.add("hs-hidden");
+      }
+    });
+
+    status.textContent = shown === 0
+      ? "Aucun résultat pour « " + query + " »"
+      : shown + " résultat" + (shown>1?"s":"") + " pour « " + query + " »";
+  }
+
+  function reset(){
+    body.classList.remove("hs-search-active");
+    clear.classList.remove("visible");
+    status.textContent = "";
+    if(idx) idx.forEach(function(item){ item.el.classList.remove("hs-hidden"); });
+    input.value = "";
+  }
+
+  var timer;
+  input.addEventListener("input", function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){ search(input.value); }, 180);
+  });
+
+  input.addEventListener("keydown", function(e){
+    if(e.key==="Escape"){ reset(); input.blur(); }
+  });
+
+  clear.addEventListener("click", function(){ reset(); input.focus(); });
+
+  // Réindexer après changement d'onglet (les cards peuvent changer de visibility)
+  document.querySelectorAll(".tab-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      if(!body.classList.contains("hs-search-active")) return;
+      // Remettre l'index à null pour le reconstruire sur la nouvelle vue
+      idx = null;
+      setTimeout(function(){ search(input.value); }, 50);
+    });
+  });
+
+})();
+</script>
 </body>
 </html>
