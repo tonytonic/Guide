@@ -157,6 +157,14 @@ C'est là qu'est ton avantage : tes 477 CCN. Tu ne réécris pas une page à la 
 
 ---
 
+## ✅ 8ᵉ module + navigation Précédent/Suivant (28 juin 2026)
+
+**Carte module Lumina ajoutée** dans le grid (entre Zenji et Mimizuku) — elle manquait. Le guide passe de 7 à 8 modules affichés (texte mis à jour partout dans `index.html`). Images remplacées : M4/DTE (renard scientifique), Lumina (renard avocat/CCN), Trousse·Carnet de frais (renard bricoleur).
+
+**Navigation Précédent/Suivant** ajoutée en haut ET en bas des **850 pages** (placeholders `hs-prevnext-top` / `hs-prevnext-bottom`, rendus par `core.js`). L'ordre suit l'index alphabétique de `search-index.js` — donc toute nouvelle page ajoutée à l'avenir doit être présente dans `assets/search-index.js` (régénéré côté script Python) pour apparaître dans la séquence. Chaque page charge maintenant aussi `assets/search-index.js` (~300 Ko, mis en cache par le navigateur après la première page visitée).
+
+---
+
 ## ✅ Migration de domaine effectuée (28 juin 2026)
 
 Le find-replace annoncé plus bas a été fait : `https://simulateurheuressupfrance.pages.dev` → `https://simulateurheuressupfrance.fr` dans les balises `canonical` des **851 pages** et dans `sitemap.xml` (672 URLs). C'est ce décalage de domaine (sitemap soumis sous la propriété `.fr` dans Search Console, mais qui listait encore des URLs `.pages.dev`) qui causait les 672 erreurs « URL non autorisée » dans Search Console.
