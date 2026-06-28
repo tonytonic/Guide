@@ -324,3 +324,13 @@ footer a{color:var(--pierre)}
   #hs-back-guides .hs-bg-txt{display:none}
   #hs-back-guides{padding:10px;border-radius:50%}
 }
+
+/* ===== INVITE "TÉLÉCHARGER L'APPLI" — clic sur un module/outil non-cliquable depuis le guide ===== */
+#hs-app-prompt{position:fixed;inset:0;display:flex;align-items:flex-end;justify-content:center;z-index:90;padding:16px;background:rgba(26,23,20,.35)}
+#hs-app-prompt .hs-ap-card{position:relative;background:var(--ivoire,#F7F3ED);border:1.5px solid var(--champagne,#C4A35A);border-radius:18px;padding:20px 20px 18px;max-width:380px;width:100%;box-shadow:0 -6px 30px rgba(0,0,0,.25);animation:hsApIn .22s ease}
+@keyframes hsApIn{from{transform:translateY(18px);opacity:0}to{transform:translateY(0);opacity:1}}
+#hs-app-prompt .hs-ap-close{position:absolute;top:10px;right:12px;background:none;border:none;font-size:1rem;color:var(--pierre,#8A847C);cursor:pointer;padding:6px;line-height:1}
+#hs-app-prompt .hs-ap-fox{font-size:1.9rem;margin-bottom:6px}
+#hs-app-prompt .hs-ap-text{font-size:.92rem;color:var(--charbon,#1A1714);line-height:1.5;margin:0 28px 16px 0}
+#hs-app-prompt .hs-ap-actions{display:flex;gap:8px;flex-wrap:wrap}
+#hs-app-prompt .hs-ap-actions a{font-size:.85rem}

@@ -149,6 +149,71 @@
     });
   }
 
+  function extractToolName(a) {
+    var on = a.querySelector(".on");
+    if (on) return on.textContent.trim();
+    var txt = (a.textContent || "").replace(/→/g, "").trim();
+    if (!txt || txt.length > 40 || /ouvrir l.?appli/i.test(txt)) return "Cet outil";
+    return txt;
+  }
+
+  function showAppPrompt(toolName) {
+    var old = document.getElementById("hs-app-prompt");
+    if (old) old.remove();
+
+    var platform = detectPlatform();
+    var ctaHref, ctaLabel, extra;
+    if (platform === "android") {
+      ctaHref = S.playStoreUrl;
+      ctaLabel = "Télécharger sur le Play Store";
+      extra = "";
+    } else if (platform === "ios") {
+      ctaHref = S.appUrl;
+      ctaLabel = "Ouvrir la web app";
+      extra = "";
+    } else {
+      ctaHref = S.appUrl;
+      ctaLabel = "Web app (iPhone)";
+      extra = '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">Play Store (Android)</a>';
+    }
+
+    var wrap = document.createElement("div");
+    wrap.id = "hs-app-prompt";
+    wrap.innerHTML =
+      '<div class="hs-ap-card">' +
+        '<button class="hs-ap-close" type="button" aria-label="Fermer">✕</button>' +
+        '<div class="hs-ap-fox">🦊</div>' +
+        '<div class="hs-ap-text"><b>' + escapeHtml(toolName) + "</b> s'utilise dans l'application — gratuite, sans compte, tes données restent sur ton téléphone.</div>" +
+        '<div class="hs-ap-actions">' +
+          '<a class="btn-light" href="' + ctaHref + '" target="_blank" rel="noopener">' + ctaLabel + ' <span class="arr">→</span></a>' +
+          extra +
+        "</div>" +
+      "</div>";
+    document.body.appendChild(wrap);
+
+    wrap.querySelector(".hs-ap-close").addEventListener("click", function () { wrap.remove(); });
+    wrap.addEventListener("click", function (e) {
+      if (e.target === wrap) wrap.remove(); // clic sur l'overlay, hors de la carte
+    });
+  }
+
+  function interceptAppLinks() {
+    var appHost;
+    try { appHost = new URL(S.appUrl, location.href).hostname; }
+    catch (e) { appHost = "simulateurheuressupfrance.pages.dev"; }
+
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a") : null;
+      if (!a || !a.href) return;
+      var url;
+      try { url = new URL(a.href); } catch (e2) { return; }
+      if (url.hostname !== appHost) return;
+      // Lien direct vers une page vivante de l'appli (module, outil, menu) : on intercepte
+      e.preventDefault();
+      showAppPrompt(extractToolName(a));
+    });
+  }
+
   function renderPrevNext(mountId) {
     var mount = document.getElementById(mountId);
     if (!mount) return;
@@ -176,7 +241,7 @@
     mount.outerHTML = html;
   }
 
-  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToGuides, renderBackToTop].forEach(function (fn) {
+  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToGuides, renderBackToTop, interceptAppLinks].forEach(function (fn) {
     try { fn(); } catch (e) { /* une balise manquante ne doit jamais casser la page */ }
   });
 
