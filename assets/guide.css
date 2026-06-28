@@ -324,3 +324,56 @@ footer a{color:var(--pierre)}
   #hs-back-guides .hs-bg-txt{display:none}
   #hs-back-guides{padding:10px;border-radius:50%}
 }
+/* ===== CORRECTIFS MOBILE PORTRAIT — tableaux + exemples ===== */
+
+/* --- Tableaux responsive : scroll horizontal si trop larges --- */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 12px}
+.tbl{margin:0;white-space:normal}
+
+@media (max-width:560px){
+  /* Tableaux : réduire le padding et la taille de police */
+  .tbl th,.tbl td{padding:9px 8px;font-size:13.5px}
+  .tbl th{font-size:10px}
+  .tbl .v{font-size:14px}
+  .tbl td:first-child{font-size:12.5px}
+
+  /* Blocs exemples chiffrés : forcer le flex en colonne sur mobile */
+  .ex-line{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:3px;
+    padding:10px 0;
+  }
+  .ex-line .h{
+    font-size:13.5px;
+    line-height:1.45;
+  }
+  .ex-line .amt{
+    font-size:14px;
+    align-self:flex-end;
+    color:var(--champagne-2,#c8852a);
+    font-weight:700;
+  }
+
+  /* Total : passer en colonne aussi si texte long */
+  .ex-total{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+  }
+  .ex-total .amt{
+    font-size:20px;
+  }
+
+  /* En-tête de l'exemple : plus petit */
+  .ex-head{font-size:11.5px}
+
+  /* Ex : padding réduit */
+  .ex{padding:16px 14px}
+}
+
+/* Breakpoint intermédiaire : 560-700px */
+@media (min-width:561px) and (max-width:700px){
+  .tbl th,.tbl td{padding:10px 9px}
+  .ex-line .h{font-size:14px}
+}
