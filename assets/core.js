@@ -32,6 +32,13 @@
     return S.brand.replace(/ /g, "&nbsp;");
   }
 
+  function detectPlatform() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera || "";
+    if (/android/i.test(ua)) return "android";
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "ios";
+    return "other";
+  }
+
   function renderTopbar() {
     var mount = document.getElementById("hs-topbar");
     if (!mount) return;
@@ -47,14 +54,29 @@
     var mount = document.getElementById("hs-hero-cta");
     if (!mount) return;
     var label = mount.getAttribute("data-label") || "Ouvrir le simulateur";
-    var sub = mount.getAttribute("data-sub") ||
+    var customSub = mount.getAttribute("data-sub") ||
       "iPhone via ce lien (web), Android sur le Play Store.";
+    var platform = detectPlatform();
+
+    var btnIosPrimary      = '<a class="btn" href="' + S.appUrl + '" target="_blank" rel="noopener">' + label + ' <span class="arr">→</span></a>';
+    var btnAndroidPrimary  = '<a class="btn" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Télécharger sur le Play Store <span class="arr">→</span></a>';
+    var btnAndroidSecondary = '<a class="btn-outline" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Version Android <span class="arr">→</span></a>';
+
+    var buttons, sub;
+    if (platform === "android") {
+      buttons = btnAndroidPrimary;
+      sub = "Gratuit — disponible sur le Play Store.";
+    } else if (platform === "ios") {
+      buttons = btnIosPrimary;
+      sub = "Gratuit, sans compte — web app, ajoute-la à ton écran d'accueil.";
+    } else {
+      buttons = btnIosPrimary + btnAndroidSecondary;
+      sub = customSub;
+    }
+
     mount.outerHTML =
       '<div class="cta-row rise d3">' +
-        '<div class="btn-group">' +
-          '<a class="btn" href="' + S.appUrl + '" target="_blank" rel="noopener">' + label + ' <span class="arr">→</span></a>' +
-          '<a class="btn-outline" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Version Android <span class="arr">→</span></a>' +
-        "</div>" +
+        '<div class="btn-group">' + buttons + "</div>" +
         '<span class="btn-sub"><b>Gratuit, sans compte</b> — ' + sub + "</span>" +
       "</div>";
   }
@@ -62,11 +84,18 @@
   function renderAppCta() {
     var mount = document.getElementById("hs-app-cta");
     if (!mount) return;
-    mount.outerHTML =
-      '<div class="btn-group" style="justify-content:center">' +
-        '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener"><span class="plat-ic">📱</span> iPhone (web) <span class="arr">→</span></a>' +
-        '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Android (Play Store) <span class="arr">→</span></a>' +
-      "</div>";
+    var platform = detectPlatform();
+
+    var btnIos             = '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener"><span class="plat-ic">📱</span> iPhone (web) <span class="arr">→</span></a>';
+    var btnAndroidPrimary  = '<a class="btn-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Télécharger sur le Play Store <span class="arr">→</span></a>';
+    var btnAndroidOutline  = '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Android (Play Store) <span class="arr">→</span></a>';
+
+    var content;
+    if (platform === "android") content = btnAndroidPrimary;
+    else if (platform === "ios") content = btnIos;
+    else content = btnIos + btnAndroidOutline;
+
+    mount.outerHTML = '<div class="btn-group" style="justify-content:center">' + content + "</div>";
   }
 
   function renderFooter() {
