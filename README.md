@@ -157,10 +157,22 @@ C'est là qu'est ton avantage : tes 477 CCN. Tu ne réécris pas une page à la 
 
 ---
 
+## ✅ Migration de domaine effectuée (28 juin 2026)
+
+Le find-replace annoncé plus bas a été fait : `https://simulateurheuressupfrance.pages.dev` → `https://simulateurheuressupfrance.fr` dans les balises `canonical` des **851 pages** et dans `sitemap.xml` (672 URLs). C'est ce décalage de domaine (sitemap soumis sous la propriété `.fr` dans Search Console, mais qui listait encore des URLs `.pages.dev`) qui causait les 672 erreurs « URL non autorisée » dans Search Console.
+
+`assets/core.js` et `assets/site-data.js` gardent volontairement `appUrl: "https://simulateurheuressupfrance.pages.dev/menu"` — c'est le lien vers l'**appli**, qui reste sur `.pages.dev`. Ne pas toucher.
+
+**À faire côté toi :** dans Search Console, va dans Sitemaps → soumets à nouveau `sitemap.xml` (sous la propriété `.fr`). Les 672 erreurs devraient se résorber au prochain crawl (quelques jours).
+
+**Recherche d'accueil refaite :** le moteur ne cherchait que parmi les ~410 cartes affichées sur la page d'accueil. Il indexe maintenant les 850 pages du dossier (titre + h1 + meta description, via `assets/search-index.js`) et affiche les résultats en menu déroulant sous la barre de recherche au lieu de filtrer les cartes plus bas dans la page.
+
+---
+
 ## 🔍 Dire à Google de venir (à faire une fois)
 
 1. Crée un compte **Google Search Console** (gratuit) et vérifie ton site.
-2. Soumets le sitemap : `simulateurheuressupfrance.pages.dev/guides/sitemap.xml`.
+2. Soumets le sitemap : `simulateurheuressupfrance.fr/sitemap.xml`.
 3. Reviens dans quelques semaines voir pour quelles requêtes tu ressors, et quelles pages Google lit bien.
 
 Le SEO est lent : compte **3 à 6 mois** avant que ça bouge vraiment sur un domaine neuf. C'est normal.
