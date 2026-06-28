@@ -139,7 +139,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(33px,7.6vw,49px);l
 
 /* ---------- platform buttons : iPhone (web) vs Android (Play Store) ---------- */
 .btn-group{display:flex;flex-wrap:wrap;gap:10px}
-.plat-ic{font-size:15px;line-height:1}
+.plat-ic{width:18px;height:18px;border-radius:24%;object-fit:cover;vertical-align:-4px;flex-shrink:0}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--charbon);border:1.5px solid var(--charbon-3);text-decoration:none;font-family:var(--body);font-weight:500;font-size:15.5px;padding:13.5px 22px;border-radius:12px;transition:transform .18s ease,background .18s ease}
 .btn-outline:hover{transform:translateY(-2px);background:var(--ivoire-2)}
 .btn-light{display:inline-flex;align-items:center;gap:9px;background:var(--champagne);color:var(--charbon);text-decoration:none;font-weight:600;font-size:16.5px;padding:15px 28px;border-radius:12px;transition:transform .18s ease,background .18s ease}

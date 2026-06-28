@@ -41,6 +41,8 @@
     return "other";
   }
 
+  var appIconHtml = '<img class="plat-ic" src="assets/img/app-icon.png" alt="" loading="lazy">';
+
   function renderTopbar() {
     var mount = document.getElementById("hs-topbar");
     if (!mount) return;
@@ -61,8 +63,8 @@
     var platform = detectPlatform();
 
     var btnIosPrimary      = '<a class="btn" href="' + S.appUrl + '" target="_blank" rel="noopener">' + label + ' <span class="arr">→</span></a>';
-    var btnAndroidPrimary  = '<a class="btn" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Télécharger sur le Play Store <span class="arr">→</span></a>';
-    var btnAndroidSecondary = '<a class="btn-outline" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Version Android <span class="arr">→</span></a>';
+    var btnAndroidPrimary  = '<a class="btn" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
+    var btnAndroidSecondary = '<a class="btn-outline" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Version Android <span class="arr">→</span></a>';
 
     var buttons, sub;
     if (platform === "android") {
@@ -88,9 +90,9 @@
     if (!mount) return;
     var platform = detectPlatform();
 
-    var btnIos             = '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener"><span class="plat-ic">📱</span> iPhone (web) <span class="arr">→</span></a>';
-    var btnAndroidPrimary  = '<a class="btn-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Télécharger sur le Play Store <span class="arr">→</span></a>';
-    var btnAndroidOutline  = '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Android (Play Store) <span class="arr">→</span></a>';
+    var btnIos             = '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' iPhone (web) <span class="arr">→</span></a>';
+    var btnAndroidPrimary  = '<a class="btn-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
+    var btnAndroidOutline  = '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Android (Play Store) <span class="arr">→</span></a>';
 
     var content;
     if (platform === "android") content = btnAndroidPrimary;
