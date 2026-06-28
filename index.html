@@ -87,13 +87,19 @@
 #hs-search-clear{background:none;border:none;cursor:pointer;font-size:1rem;color:#999;padding:0 .2rem;display:none;line-height:1}
 #hs-search-clear.visible{display:block}
 #hs-search-status{font-size:.82rem;color:#888;margin:.4rem 0 0 .2rem;min-height:1.2em}
-.guide-card.hs-hidden{display:none!important}
-.hs-search-active .tabs-nav{opacity:.4;pointer-events:none;user-select:none}
-.hs-search-active .tab-panel{display:block!important}
-.hs-search-active .tab-panel .section-title{display:none}
 .hs-hl{background:rgba(200,133,42,.28);border-radius:2px;padding:0 1px}
-#hs-search-results-zone{display:none}
-#hs-search-results-zone.active{display:block}
+
+/* ===== DROPDOWN DE RÉSULTATS ===== */
+#hs-search-dropdown{display:none;position:absolute;left:0;right:0;top:calc(100% + .4rem);background:#fff;border:1.5px solid #d4b896;border-radius:.8rem;box-shadow:0 10px 30px rgba(0,0,0,.14);max-height:70vh;overflow-y:auto;z-index:40}
+#hs-search-dropdown.open{display:block}
+.hs-result{display:block;padding:.7rem .9rem;text-decoration:none;border-bottom:1px solid rgba(212,184,150,.4)}
+.hs-result:last-child{border-bottom:none}
+.hs-result:hover,.hs-result:focus{background:rgba(200,133,42,.08)}
+.hs-result-title{font-family:'Outfit',sans-serif;font-weight:600;font-size:.92rem;color:#1a1a1a;line-height:1.35}
+.hs-result-excerpt{font-size:.78rem;color:#777;line-height:1.4;margin-top:.15rem;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.hs-result-empty{padding:1rem .9rem;font-size:.85rem;color:#888;text-align:center}
+#hs-search-box{position:relative}
+#hs-search-wrap{position:relative}
 </style>
 </head>
 <body>
@@ -135,6 +141,7 @@
       <button id="hs-search-clear" aria-label="Effacer" title="Effacer">✕</button>
     </div>
     <div id="hs-search-status" aria-live="polite"></div>
+    <div id="hs-search-dropdown" role="listbox"></div>
   </div>
 
   <!-- TABS -->
@@ -1052,6 +1059,7 @@ function switchTabByName(name) {
 }
 </script>
 </div>
+<script src="assets/search-index.js"></script>
 <script>
 /* ============================================================
    MOTEUR DE RECHERCHE SANS ACCENTS — index.html
@@ -1069,29 +1077,81 @@ function switchTabByName(name) {
       .replace(/['\-_]/g," ");
   }
 
-  var input  = document.getElementById("hs-search-input");
-  var clear  = document.getElementById("hs-search-clear");
-  var status = document.getElementById("hs-search-status");
-  var wrap   = document.getElementById("hs-search-wrap");
-  var body   = document.body;
+  function escapeHtml(str){
+    return (str||"").replace(/[&<>"]/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];
+    });
+  }
+
+  var input    = document.getElementById("hs-search-input");
+  var clear    = document.getElementById("hs-search-clear");
+  var status   = document.getElementById("hs-search-status");
+  var dropdown = document.getElementById("hs-search-dropdown");
+  var wrap     = document.getElementById("hs-search-wrap");
+  var body     = document.body;
 
   if(!input) return;
 
-  // Construire l'index au premier focus (lazy)
+  var MAX_RESULTS = 12;
+
+  // Construit l'index à partir de search-index.js (toutes les pages du site).
+  // Si le fichier n'a pas pu charger, on retombe sur les cartes visibles de la page.
   var idx = null;
   function buildIndex(){
     if(idx) return;
     idx = [];
-    var cards = document.querySelectorAll(".guide-card");
-    cards.forEach(function(card){
-      var h3   = card.querySelector("h3");
-      var p    = card.querySelector("p");
-      var href = card.getAttribute("href")||"";
-      idx.push({
-        el:   card,
-        text: norm((h3?h3.textContent:"") + " " + (p?p.textContent:"") + " " + href)
+    if(typeof HS_SEARCH_INDEX !== "undefined" && HS_SEARCH_INDEX.length){
+      HS_SEARCH_INDEX.forEach(function(p){
+        idx.push({
+          url: p.url,
+          title: p.title || p.h1 || p.url,
+          excerpt: p.excerpt || "",
+          text: norm((p.title||"") + " " + (p.h1||"") + " " + (p.excerpt||"") + " " + (p.url||""))
+        });
       });
+    } else {
+      document.querySelectorAll(".guide-card").forEach(function(card){
+        var h3 = card.querySelector("h3");
+        var p  = card.querySelector("p");
+        idx.push({
+          url: card.getAttribute("href")||"",
+          title: h3 ? h3.textContent : (card.getAttribute("href")||""),
+          excerpt: p ? p.textContent : "",
+          text: norm((h3?h3.textContent:"") + " " + (p?p.textContent:"") + " " + (card.getAttribute("href")||""))
+        });
+      });
+    }
+  }
+
+  function openDropdown(){ dropdown.classList.add("open"); }
+  function closeDropdown(){ dropdown.classList.remove("open"); dropdown.innerHTML=""; }
+
+  function render(results, query){
+    dropdown.innerHTML = "";
+    if(!results.length){
+      var empty = document.createElement("div");
+      empty.className = "hs-result-empty";
+      empty.textContent = "Aucun résultat pour « " + query + " »";
+      dropdown.appendChild(empty);
+      openDropdown();
+      return;
+    }
+    results.forEach(function(item){
+      var a = document.createElement("a");
+      a.className = "hs-result";
+      a.setAttribute("href", item.url);
+      a.setAttribute("role", "option");
+      var t = document.createElement("div");
+      t.className = "hs-result-title";
+      t.textContent = item.title;
+      var e = document.createElement("div");
+      e.className = "hs-result-excerpt";
+      e.textContent = item.excerpt;
+      a.appendChild(t);
+      if(item.excerpt) a.appendChild(e);
+      dropdown.appendChild(a);
     });
+    openDropdown();
   }
 
   function search(query){
@@ -1099,44 +1159,51 @@ function switchTabByName(name) {
     var q = norm(query).trim();
 
     if(!q){
-      reset();
+      closeDropdown();
+      clear.classList.remove("visible");
+      status.textContent = "";
       return;
     }
+
+    clear.classList.add("visible");
 
     // Mots-clés (espace sépare les termes, tous doivent matcher — AND)
     var terms = q.split(/\s+/).filter(Boolean);
 
-    body.classList.add("hs-search-active");
-    clear.classList.add("visible");
-
-    var shown = 0;
-    idx.forEach(function(item){
-      var match = terms.every(function(t){ return item.text.indexOf(t)!==-1; });
-      if(match){
-        item.el.classList.remove("hs-hidden");
-        shown++;
-      } else {
-        item.el.classList.add("hs-hidden");
-      }
+    var matches = idx.filter(function(item){
+      return terms.every(function(t){ return item.text.indexOf(t)!==-1; });
     });
 
-    status.textContent = shown === 0
+    // Les correspondances dans le titre passent devant celles trouvées seulement dans l'extrait
+    matches.sort(function(a,b){
+      var at = norm(a.title), bt = norm(b.title);
+      var as = terms.every(function(t){ return at.indexOf(t)!==-1; }) ? 0 : 1;
+      var bs = terms.every(function(t){ return bt.indexOf(t)!==-1; }) ? 0 : 1;
+      return as - bs;
+    });
+
+    status.textContent = matches.length === 0
       ? "Aucun résultat pour « " + query + " »"
-      : shown + " résultat" + (shown>1?"s":"") + " pour « " + query + " »";
+      : matches.length + " résultat" + (matches.length>1?"s":"") + " pour « " + query + " »" + (matches.length>MAX_RESULTS ? " (top "+MAX_RESULTS+")" : "");
+
+    render(matches.slice(0, MAX_RESULTS), query);
   }
 
   function reset(){
-    body.classList.remove("hs-search-active");
+    closeDropdown();
     clear.classList.remove("visible");
     status.textContent = "";
-    if(idx) idx.forEach(function(item){ item.el.classList.remove("hs-hidden"); });
     input.value = "";
   }
 
   var timer;
   input.addEventListener("input", function(){
     clearTimeout(timer);
-    timer = setTimeout(function(){ search(input.value); }, 180);
+    timer = setTimeout(function(){ search(input.value); }, 150);
+  });
+
+  input.addEventListener("focus", function(){
+    if(input.value.trim()) search(input.value);
   });
 
   input.addEventListener("keydown", function(e){
@@ -1145,14 +1212,9 @@ function switchTabByName(name) {
 
   clear.addEventListener("click", function(){ reset(); input.focus(); });
 
-  // Réindexer après changement d'onglet (les cards peuvent changer de visibility)
-  document.querySelectorAll(".tab-btn").forEach(function(btn){
-    btn.addEventListener("click", function(){
-      if(!body.classList.contains("hs-search-active")) return;
-      // Remettre l'index à null pour le reconstruire sur la nouvelle vue
-      idx = null;
-      setTimeout(function(){ search(input.value); }, 50);
-    });
+  // Ferme le dropdown si on clique en dehors de la zone de recherche
+  document.addEventListener("click", function(e){
+    if(!wrap.contains(e.target)) closeDropdown();
   });
 
 })();
