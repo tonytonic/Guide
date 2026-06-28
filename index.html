@@ -1057,10 +1057,11 @@ function switchTab(name, btn) {
   ['hs-app-cta-modules','hs-app-cta-outils','hs-app-cta-ccn'].forEach(function(id){
     var el = document.getElementById(id);
     if (el && el.children.length === 0) {
-      el.innerHTML = '<div class="btn-group" style="justify-content:center">' +
-        '<a class="btn-light" href="'+appUrl+'" target="_blank" rel="noopener"><span class="plat-ic">📱</span> iPhone (web) <span class="arr">→</span></a>' +
-        '<a class="btn-outline-light" href="'+psUrl+'" target="_blank" rel="noopener"><span class="plat-ic">🤖</span> Android <span class="arr">→</span></a>' +
-        '</div>';
+      var html = (typeof window.HS_appCtaHtml === 'function')
+        ? window.HS_appCtaHtml()
+        : '<a class="btn-light" href="'+appUrl+'" target="_blank" rel="noopener">iPhone (web) <span class="arr">→</span></a>' +
+          '<a class="btn-outline-light" href="'+psUrl+'" target="_blank" rel="noopener">Android <span class="arr">→</span></a>';
+      el.innerHTML = '<div class="btn-group" style="justify-content:center">' + html + '</div>';
     }
   });
 }
