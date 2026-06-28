@@ -111,6 +111,17 @@
       "</div></footer>";
   }
 
+  function renderBackToGuides() {
+    if (document.getElementById("hs-back-guides")) return; // déjà présent
+    var page = (location.pathname.split("/").pop() || "").toLowerCase();
+    if (page === "" || page === "index.html") return; // déjà sur la liste des guides, inutile ici
+    var a = document.createElement("a");
+    a.id = "hs-back-guides";
+    a.href = "index.html";
+    a.innerHTML = '<span class="hs-bg-ic">🦊</span><span class="hs-bg-txt">Tous les guides</span>';
+    document.body.appendChild(a);
+  }
+
   function renderBackToTop() {
     if (document.getElementById("hs-back-to-top")) return; // déjà présent, ne pas dupliquer
     var btn = document.createElement("button");
@@ -165,7 +176,7 @@
     mount.outerHTML = html;
   }
 
-  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToTop].forEach(function (fn) {
+  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToGuides, renderBackToTop].forEach(function (fn) {
     try { fn(); } catch (e) { /* une balise manquante ne doit jamais casser la page */ }
   });
 

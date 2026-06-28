@@ -312,3 +312,15 @@ footer a{color:var(--pierre)}
 @media (max-width:600px){
   #hs-back-to-top{bottom:16px;right:14px;width:42px;height:42px;font-size:1.1rem}
 }
+
+/* ===== BOUTON FLOTTANT — retour vers la liste des guides (injecté par core.js) ===== */
+#hs-back-guides{position:fixed;bottom:22px;left:18px;display:flex;align-items:center;gap:7px;background:var(--charbon);color:var(--ivoire);border:1.5px solid var(--champagne);border-radius:24px;padding:10px 16px 10px 12px;font-family:var(--mono);font-size:12.5px;font-weight:500;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22);z-index:50;transition:transform .2s ease,border-color .2s ease}
+#hs-back-guides:hover{transform:translateY(-2px);border-color:var(--champagne-2)}
+#hs-back-guides .hs-bg-ic{font-size:1.05rem;line-height:1}
+@media (max-width:600px){
+  #hs-back-guides{bottom:16px;left:14px;padding:9px 13px 9px 10px;font-size:11px}
+}
+@media (max-width:340px){
+  #hs-back-guides .hs-bg-txt{display:none}
+  #hs-back-guides{padding:10px;border-radius:50%}
+}
