@@ -15,6 +15,8 @@
      <script src="assets/site-data.js"></script>
      <script src="assets/core.js"></script>
    ========================================================================== */
+/* Bouton flottant "retour en haut" : injecté automatiquement sur TOUTE page
+   qui charge ce script — pas de balise à ajouter, rien à re-pousser. */
 
 (function () {
   "use strict";
@@ -109,6 +111,27 @@
       "</div></footer>";
   }
 
+  function renderBackToTop() {
+    if (document.getElementById("hs-back-to-top")) return; // déjà présent, ne pas dupliquer
+    var btn = document.createElement("button");
+    btn.id = "hs-back-to-top";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Retour en haut de page");
+    btn.innerHTML = "↑";
+    document.body.appendChild(btn);
+
+    function toggle() {
+      if (window.scrollY > 400) btn.classList.add("visible");
+      else btn.classList.remove("visible");
+    }
+    window.addEventListener("scroll", toggle, { passive: true });
+    toggle();
+
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
   function escapeHtml(str) {
     return (str || "").replace(/[&<>"]/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c];
@@ -142,7 +165,7 @@
     mount.outerHTML = html;
   }
 
-  [renderTopbar, renderHeroCta, renderAppCta, renderFooter].forEach(function (fn) {
+  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToTop].forEach(function (fn) {
     try { fn(); } catch (e) { /* une balise manquante ne doit jamais casser la page */ }
   });
 
