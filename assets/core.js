@@ -85,21 +85,22 @@
       "</div>";
   }
 
-  function renderAppCta() {
-    var mount = document.getElementById("hs-app-cta");
-    if (!mount) return;
+  function appCtaHtml() {
     var platform = detectPlatform();
-
     var btnIos             = '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' iPhone (web) <span class="arr">→</span></a>';
     var btnAndroidPrimary  = '<a class="btn-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
     var btnAndroidOutline  = '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Android (Play Store) <span class="arr">→</span></a>';
 
-    var content;
-    if (platform === "android") content = btnAndroidPrimary;
-    else if (platform === "ios") content = btnIos;
-    else content = btnIos + btnAndroidOutline;
+    if (platform === "android") return btnAndroidPrimary;
+    if (platform === "ios") return btnIos;
+    return btnIos + btnAndroidOutline;
+  }
+  window.HS_appCtaHtml = appCtaHtml; // réutilisable par d'autres scripts de la page (ex: switchTab dans index.html)
 
-    mount.outerHTML = '<div class="btn-group" style="justify-content:center">' + content + "</div>";
+  function renderAppCta() {
+    var mount = document.getElementById("hs-app-cta");
+    if (!mount) return;
+    mount.outerHTML = '<div class="btn-group" style="justify-content:center">' + appCtaHtml() + "</div>";
   }
 
   function renderFooter() {
