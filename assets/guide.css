@@ -233,6 +233,31 @@ a.inline{color:var(--champagne-2);text-decoration:underline;text-decoration-colo
 .guide-card p{font-size:13.5px;color:var(--pierre);line-height:1.5}
 .guide-card .go{font-family:var(--mono);font-size:11.5px;color:var(--champagne-2);margin-top:12px;display:inline-block}
 
+/* ---------- sommaire à tiroirs (généré par assets/sommaire.js) ---------- */
+.som-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.som-total{font-family:var(--mono);font-size:12px;color:var(--pierre)}
+.som-toggle-all{font-family:var(--body);font-weight:500;font-size:13px;color:var(--charbon);background:#fff;border:1.5px solid var(--champagne);border-radius:20px;padding:7px 16px;cursor:pointer;transition:background .15s ease,transform .15s ease}
+.som-toggle-all:hover{background:var(--champagne-3);transform:translateY(-1px)}
+.som-empty{color:var(--pierre);font-size:14px}
+
+.som-cat{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden;box-shadow:var(--shadow)}
+.som-cat summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;padding:17px 18px;position:relative}
+.som-cat summary::-webkit-details-marker{display:none}
+.som-ic{font-size:22px;line-height:1;flex-shrink:0}
+.som-label{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:-.005em;color:var(--charbon);flex:1;min-width:0;line-height:1.3}
+.som-count{font-family:var(--mono);font-size:11.5px;color:var(--champagne-2);background:var(--champagne-3);border-radius:20px;padding:3px 10px;flex-shrink:0}
+.som-cat summary::after{content:"+";font-size:20px;color:var(--pierre);margin-left:6px;flex-shrink:0;transition:transform .2s ease}
+.som-cat[open] summary::after{transform:rotate(45deg)}
+.som-list{padding:0 10px 10px;border-top:1px solid var(--line);max-height:420px;overflow-y:auto}
+.som-link{display:block;padding:11px 10px;font-size:14px;color:var(--charbon-2);text-decoration:none;border-bottom:1px dashed var(--line);transition:background .15s ease,color .15s ease}
+.som-link:last-child{border-bottom:none}
+.som-link:hover,.som-link:focus{background:var(--ivoire-2);color:var(--charbon)}
+@media(max-width:560px){
+  .som-label{font-size:15.5px}
+  .som-ic{font-size:19px}
+  .som-list{max-height:360px}
+}
+
 /* ---------- footer (injecté par core.js dans #hs-footer) ---------- */
 footer{border-top:1px solid var(--line);margin-top:44px;padding:24px 0 46px}
 footer .wrap{font-size:12.5px;color:var(--pierre);line-height:1.6}
