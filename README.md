@@ -126,6 +126,34 @@ Une seule modif dans `assets/guide.css` = toutes les pages changent d'un coup.
 
 ---
 
+## 🗂️ Sommaire complet auto-généré (29 juin 2026)
+
+**Le problème réglé :** la page d'accueil (`index.html`) n'affichait que ~410 pages en dur (onglets « Guides juridiques » et « Par convention »), alors que `search-index.js` en référence **914**. Plus de 500 pages n'étaient donc accessibles que par la recherche ou la nav Précédent/Suivant — quelqu'un qui arrive par hasard sans savoir quoi chercher ne les voyait jamais.
+
+**La solution :** un nouvel onglet **« 🗂️ Sommaire complet »** dans `index.html`. C'est un sommaire « à tiroirs » : un gros titre par catégorie (avec icône + nombre de pages), repliable, et un clic déroule la liste des pages de cette catégorie. Replié par défaut → vision d'ensemble immédiate de tout ce que couvre le guide, sans noyer le visiteur dans 914 liens d'un coup.
+
+**Le point important — la synchro automatique.** Ce sommaire ne touche jamais à `index.html` : il est entièrement généré au chargement par `assets/sommaire.js`, à partir de `assets/search-index.js`. Chaque entrée de `search-index.js` porte maintenant un champ `"cat"` (ex. `"metiers-sante"`, `"contrat-rupture"`…) en plus de `url`/`title`/`h1`/`excerpt`. **Tant que la page que tu ajoutes au search-index a un `cat`, elle rejoint automatiquement la bonne catégorie du sommaire — rien d'autre à toucher.**
+
+```json
+{"url":"nouvelle-page.html","title":"...","h1":"...","excerpt":"...","cat":"metiers-sante"}
+```
+
+Si tu oublies le `cat`, ou si tu inventes un id de catégorie qui n'existe pas encore dans `sommaire.js`, la page n'est **pas perdue** : elle atterrit dans une catégorie générique « Autres pages » plutôt que de disparaître silencieusement.
+
+**23 catégories actuellement définies dans `assets/sommaire.js`** (`CAT_META`) : les fondamentaux, temps de travail, rémunération, contrat & rupture, congés, santé/sécurité, représentation du personnel, contentieux, statuts particuliers, retraite, outre-mer, lexique, et 10 catégories « Métiers » (transport, santé, services à la personne, éducation, BTP/industrie, commerce, hôtellerie-restauration, agriculture, bureau/numérique, sécurité/funéraire, + un fourre-tout culture/sport/médias).
+
+**Pour assigner le `cat` automatiquement** quand tu génères nouvelles pages par script Python (comme tu le fais déjà pour `search-index.js`), le fichier `categorize.py` fourni à côté de ce zip contient la logique de classement par mots-clés utilisée pour catégoriser les 914 pages actuelles — tu peux la réutiliser comme point de départ et l'enrichir avec de nouveaux mots-clés à chaque nouveau lot de pages plutôt que de classer à la main.
+
+**Fichiers touchés par cette mise à jour :**
+- `assets/search-index.js` — régénéré avec un `"cat"` par entrée (ordre des 914 entrées inchangé, donc la nav Précédent/Suivant n'est pas affectée).
+- `assets/sommaire.js` — **nouveau fichier**, génère le sommaire à tiroirs depuis `search-index.js`.
+- `assets/guide.css` — nouvelles règles `.som-*` (même charte Ivoire/Charbon/Champagne, même logique que les `<details>` du FAQ).
+- `index.html` — nouvel onglet et nouveau panneau `#tab-sommaire`, chargement de `assets/sommaire.js` après `assets/search-index.js`.
+
+Les autres onglets (« Guides juridiques », « Par convention ») n'ont pas été touchés — leurs cartes illustrées à la main restent telles quelles. Le sommaire est un complément, pas un remplacement.
+
+---
+
 ## ✅ Vérification de fraîcheur (faite le 23 juin 2026)
 
 Avant d'enrichir ce dossier, j'ai vérifié sur le web si des changements étaient prévus d'ici septembre 2026 sur les sujets couverts. Résultat :

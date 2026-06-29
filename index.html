@@ -154,6 +154,7 @@
     <button class="tab-btn" role="tab" onclick="switchTab('outils',this)">🛠️ 105 Outils</button>
     <button class="tab-btn" role="tab" onclick="switchTab('guides',this)">📖 Guides juridiques</button>
     <button class="tab-btn" role="tab" onclick="switchTab('ccn',this)">📋 Par convention</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('sommaire',this)">🗂️ Sommaire complet</button>
   </div>
 
   <!-- ===== ACCUEIL ===== -->
@@ -1037,6 +1038,22 @@
     </div>
   </div>
 
+  <!-- ===== SOMMAIRE COMPLET (auto-généré depuis search-index.js) ===== -->
+  <div id="tab-sommaire" class="tab-panel">
+    <div class="pnj-scene">
+      <div class="pnj-avatar">🦊</div>
+      <div class="pnj-bubble">
+        <div class="pnj-name">Renard · Guide</div>
+        Tu débarques par hasard et tu ne sais pas trop ce que tu cherches ? <b>Voici tout le terrier, d'un coup d'œil</b>. Chaque gros titre est une catégorie — clique pour dérouler ses pages. Toute nouvelle page ajoutée au site apparaît ici automatiquement.
+      </div>
+    </div>
+    <section style="margin-top:1.2rem">
+      <h2 class="title">Sommaire complet du guide</h2>
+      <p class="section-intro">Toutes les pages du site, classées par thème. Replié par défaut pour rester lisible — déplie une catégorie qui t'intéresse, ou clique sur « Tout déplier ».</p>
+      <div id="hs-sommaire"></div>
+    </section>
+  </div>
+
   <div class="disc">
     Outil pédagogique indépendant, sans affiliation officielle. Informations <b>indicatives</b> — seul ton bulletin de paie fait foi. En cas de litige, consulte un avocat en droit du travail, un syndicat ou l'inspection du travail.
   </div>
@@ -1075,6 +1092,7 @@ function switchTabByName(name) {
 </script>
 </div>
 <script src="assets/search-index.js"></script>
+<script src="assets/sommaire.js"></script>
 <script>
 /* ============================================================
    MOTEUR DE RECHERCHE SANS ACCENTS — index.html
