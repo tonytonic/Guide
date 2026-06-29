@@ -324,11 +324,28 @@ footer a{color:var(--pierre)}
   #hs-back-guides .hs-bg-txt{display:none}
   #hs-back-guides{padding:10px;border-radius:50%}
 }
-/* ===== CORRECTIFS MOBILE PORTRAIT — tableaux + exemples ===== */
+/* ===== CORRECTIFS MOBILE PORTRAIT — tableaux + exemples + listes ===== */
 
 /* --- Tableaux responsive : scroll horizontal si trop larges --- */
 .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 12px}
 .tbl{margin:0;white-space:normal}
+
+/* --- Checklists (.crit) : correctif anti-colonnes -------------------
+   Le layout flex d'origine crée un "flex item" anonyme pour le texte qui,
+   sans min-width:0, se réduit à la largeur du mot le plus long (texte en
+   colonne verticale sur mobile). On repasse en flux normal : le picto ✓
+   est positionné en absolu, le texte coule normalement sur toute la largeur. */
+.crit li{
+  display:block;
+  position:relative;
+  padding:14px 16px 14px 46px;
+}
+.crit li::before{
+  position:absolute;
+  left:16px;
+  top:15px;
+  margin-top:0;
+}
 
 @media (max-width:560px){
   /* Tableaux : réduire le padding et la taille de police */
@@ -337,6 +354,10 @@ footer a{color:var(--pierre)}
   .tbl .v{font-size:14px}
   .tbl td:first-child{font-size:12.5px}
 
+  /* Checklists : padding resserré */
+  .crit li{padding:13px 14px 13px 42px;font-size:14.5px;line-height:1.5}
+  .crit li::before{left:14px;top:14px}
+
   /* Blocs exemples chiffrés : forcer le flex en colonne sur mobile */
   .ex-line{
     flex-direction:column;
@@ -344,10 +365,7 @@ footer a{color:var(--pierre)}
     gap:3px;
     padding:10px 0;
   }
-  .ex-line .h{
-    font-size:13.5px;
-    line-height:1.45;
-  }
+  .ex-line .h{font-size:13.5px;line-height:1.45}
   .ex-line .amt{
     font-size:14px;
     align-self:flex-end;
@@ -356,19 +374,11 @@ footer a{color:var(--pierre)}
   }
 
   /* Total : passer en colonne aussi si texte long */
-  .ex-total{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:4px;
-  }
-  .ex-total .amt{
-    font-size:20px;
-  }
+  .ex-total{flex-direction:column;align-items:flex-start;gap:4px}
+  .ex-total .amt{font-size:20px}
 
-  /* En-tête de l'exemple : plus petit */
+  /* En-tête + padding de l'exemple */
   .ex-head{font-size:11.5px}
-
-  /* Ex : padding réduit */
   .ex{padding:16px 14px}
 }
 
