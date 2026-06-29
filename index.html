@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/guide.css">
+<link rel="stylesheet" href="assets/guide.css?v=2">
 <style>
 /* ===== PNJ ===== */
 .pnj-scene{display:flex;align-items:flex-end;gap:1rem;margin:2.5rem 0}
@@ -69,6 +69,30 @@
 
 /* ===== MISC ===== */
 .section-intro{font-size:.95rem;color:#555;line-height:1.7;margin-bottom:1.3rem;max-width:680px}
+
+/* ===== CTA SOMMAIRE — mis en avant comme "premier bouton à cliquer" ===== */
+.som-hero-cta{display:flex;align-items:center;gap:1rem;background:linear-gradient(135deg,#e3c98f,#c8852a);border:none;border-radius:1.1rem;padding:1.15rem 1.3rem;margin:1.6rem 0 0;text-decoration:none;color:#1a1714;box-shadow:0 10px 26px -10px rgba(200,133,42,.55);transition:transform .18s ease,box-shadow .18s ease;cursor:pointer}
+.som-hero-cta:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(200,133,42,.65)}
+.som-hero-ic{font-size:2.1rem;line-height:1;flex-shrink:0;animation:som-bounce 2.2s ease-in-out infinite}
+.som-hero-txt{flex:1;min-width:0}
+.som-hero-eyebrow{font-family:'DM Mono',monospace;font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;color:#5c3f00;font-weight:600;margin-bottom:.2rem}
+.som-hero-title{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.18rem;line-height:1.25;margin-bottom:.2rem;color:#1a1714}
+.som-hero-sub{font-size:.85rem;color:#3a3128;line-height:1.4}
+.som-hero-arrow{font-size:1.5rem;flex-shrink:0;transition:transform .18s ease}
+.som-hero-cta:hover .som-hero-arrow{transform:translateX(4px)}
+@keyframes som-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media(prefers-reduced-motion: reduce){.som-hero-ic{animation:none}}
+@media(max-width:480px){.som-hero-title{font-size:1.02rem}.som-hero-sub{font-size:.78rem}.som-hero-ic{font-size:1.7rem}}
+
+/* carte vedette dans la grille "Comment utiliser ce guide" */
+.guide-card.featured{background:linear-gradient(135deg,#faf3e4,#f0e3c0);border-color:#c8852a}
+.guide-card.featured .go{color:#8B6914;font-weight:700}
+
+/* bouton d'onglet "Sommaire" mis en avant dans la barre d'onglets */
+.tab-btn.featured{background:rgba(200,133,42,.16);border-color:rgba(200,133,42,.4);color:#7A5C00;font-weight:700}
+.tab-btn.featured:hover{background:rgba(200,133,42,.26)}
+.tab-btn.featured.active{background:var(--ivory,#faf7f2);border-color:var(--champagne,#d4b896);color:var(--charcoal,#1a1a1a)}
+
 @media(max-width:600px){
   .module-grid{grid-template-columns:1fr}
   .outils-grid{grid-template-columns:1fr 1fr}
@@ -154,11 +178,21 @@
     <button class="tab-btn" role="tab" onclick="switchTab('outils',this)">🛠️ 105 Outils</button>
     <button class="tab-btn" role="tab" onclick="switchTab('guides',this)">📖 Guides juridiques</button>
     <button class="tab-btn" role="tab" onclick="switchTab('ccn',this)">📋 Par convention</button>
-    <button class="tab-btn" role="tab" onclick="switchTab('sommaire',this)">🗂️ Sommaire complet</button>
+    <button class="tab-btn featured" role="tab" onclick="switchTab('sommaire',this)">🗂️ Sommaire complet</button>
   </div>
 
   <!-- ===== ACCUEIL ===== -->
   <div id="tab-general" class="tab-panel active">
+    <a href="#" class="som-hero-cta" onclick="switchTabByName('sommaire');return false;">
+      <div class="som-hero-ic">🗂️</div>
+      <div class="som-hero-txt">
+        <div class="som-hero-eyebrow">Tu débarques ? Commence ici</div>
+        <div class="som-hero-title">Le sommaire complet — <span id="som-hero-count">914</span> pages classées</div>
+        <div class="som-hero-sub">Vision d'ensemble en un coup d'œil, classée par thème.</div>
+      </div>
+      <div class="som-hero-arrow">→</div>
+    </a>
+
     <div class="welcome-band">
       <div class="wt">Tes heures, <span>tes droits.</span><br>On t'explique tout.</div>
       <p>Tu travailles, tu te demandes si ta paie est juste. Ce service est fait pour toi — <strong>gratuit, sans compte, tes données ne quittent jamais ton téléphone</strong>. L'appli calcule, les guides expliquent. Ensemble, on forme la Famille Renards.</p>
@@ -173,6 +207,12 @@
     <section class="block">
       <h2 class="title">Comment utiliser ce guide&nbsp;?</h2>
       <div class="guide-grid">
+        <a class="guide-card featured" onclick="switchTabByName('sommaire')">
+          <div class="ic">🗂️</div>
+          <h3>★ Sommaire complet</h3>
+          <p>Perdu·e ? Toutes les pages du site, classées par thème, repliées par défaut. Le point de départ si tu ne sais pas par où commencer.</p>
+          <span class="go">Voir le sommaire →</span>
+        </a>
         <a class="guide-card" onclick="switchTabByName('modules')">
           <div class="ic">📱</div>
           <h3>Les 8 modules</h3>
@@ -1059,8 +1099,8 @@
   </div>
 </main>
 <div id="hs-footer"></div>
-<script src="assets/site-data.js"></script>
-<script src="assets/core.js"></script>
+<script src="assets/site-data.js?v=2"></script>
+<script src="assets/core.js?v=2"></script>
 <script>
 function switchTab(name, btn) {
   document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});
@@ -1091,8 +1131,8 @@ function switchTabByName(name) {
 }
 </script>
 </div>
-<script src="assets/search-index.js"></script>
-<script src="assets/sommaire.js"></script>
+<script src="assets/search-index.js?v=2"></script>
+<script src="assets/sommaire.js?v=2"></script>
 <script>
 /* ============================================================
    MOTEUR DE RECHERCHE SANS ACCENTS — index.html
