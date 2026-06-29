@@ -133,6 +133,9 @@
 
     mount.innerHTML = html;
 
+    var heroCount = document.getElementById("som-hero-count");
+    if (heroCount) heroCount.textContent = total;
+
     var toggleBtn = document.getElementById("som-toggle-all");
     if (toggleBtn) {
       toggleBtn.addEventListener("click", function () {
