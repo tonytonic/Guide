@@ -69,10 +69,10 @@
     var buttons, sub;
     if (platform === "android") {
       buttons = btnAndroidPrimary;
-      sub = "Gratuit — disponible sur le Play Store.";
+      sub = "disponible sur le Play Store.";
     } else if (platform === "ios") {
       buttons = btnIosPrimary;
-      sub = "Gratuit, sans compte — web app, ajoute-la à ton écran d'accueil.";
+      sub = "web app, ajoute-la à ton écran d'accueil.";
     } else {
       buttons = btnIosPrimary + btnAndroidSecondary;
       sub = customSub;
