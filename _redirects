@@ -1,0 +1,34 @@
+# ============================================================================
+#  _redirects — A FUSIONNER avec le _redirects existant (racine du deploiement)
+#  Place ces regles AVANT toute regle catch-all "/*".
+# ============================================================================
+
+# 1) Anciennes URLs /guides/* -> racine, en 301 permanent
+/guides/*    /:splat    301
+
+# 2) SOFT-404 : ne PAS laisser un catch-all renvoyer l'accueil en code 200.
+#    Si une regle  /*  /index.html  200  existe pour l'appli (SPA),
+#    remplace-la par des regles CIBLEES, ex :
+#      /menu*      /index.html   200
+#      /module*    /index.html   200
+#    Toute URL inconnue renverra alors la vraie 404.html (code 404).
+
+# 3) (OPTIONNEL) Fusion DURE des 18 doublons en 301 (sinon deja gere par canonical).
+# /aide-medico-psychologique-hs    /aide-medico-psychologique-heures-supplementaires    301
+# /animateur-periscolaire-hs    /animateur-periscolaire-heures-supplementaires    301
+# /auxiliaire-puericulture-hs    /auxiliaire-puericulture-heures-supplementaires    301
+# /boucher-charcutier-hs    /boucher-charcutier-heures-supplementaires    301
+# /charge-clientele-assurance-hs    /charge-clientele-assurance-heures-supplementaires    301
+# /chef-projet-it-hs    /chef-projet-it-heures-supplementaires    301
+# /conducteur-travaux-hs    /conducteur-travaux-heures-supplementaires    301
+# /educateur-specialise-hs    /educateur-specialise-heures-supplementaires    301
+# /employe-libre-service-hs    /employe-libre-service-heures-supplementaires    301
+# /juriste-entreprise-hs    /juriste-entreprise-heures-supplementaires    301
+# /kinesitherapeute-salarie-hs    /kinesitherapeute-salarie-heures-supplementaires    301
+# /magasinier-cariste-hs    /magasinier-cariste-heures-supplementaires    301
+# /ouvrier-agricole-saisonnier-hs    /ouvrier-agricole-saisonnier-heures-supplementaires    301
+# /plongeur-commis-cuisine-hs    /plongeur-commis-cuisine-heures-supplementaires    301
+# /psychologue-salarie-hs    /psychologue-salarie-heures-supplementaires    301
+# /sage-femme-salariee-hs    /sage-femme-salariee-heures-supplementaires    301
+# /travailleur-frontalier-luxembourg-hs    /travailleur-frontalier-luxembourg-heures-supplementaires    301
+# /vendeur-automobile-hs    /vendeur-automobile-heures-supplementaires    301
