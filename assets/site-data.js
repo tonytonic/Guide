@@ -9,6 +9,7 @@ window.HS_SITE = {
   appUrl:       "https://simulateurheuressupfrance.pages.dev/menu",
   playStoreUrl: "https://play.google.com/store/apps/details?id=com.tonytonic.heuressup",
   cguUrl:       "conditions-utilisation.html",
+  privacyUrl:   "confidentialite.html",
   stampDefault: "à jour juin 2026",
   smic: {
     horaire:  "12,31 €/h",

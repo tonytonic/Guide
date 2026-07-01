@@ -107,10 +107,13 @@
     var mount = document.getElementById("hs-footer");
     if (!mount) return;
     var cgu = S.cguUrl || "conditions-utilisation.html";
+    var privacy = S.privacyUrl || "confidentialite.html";
     mount.outerHTML =
       "<footer><div class=\"wrap\">" +
         S.brand + " · Simulateur indépendant du droit du travail français · " + S.year + "<br>" +
-        "Informations à titre indicatif — <a href=\"" + cgu + "\">conditions d'utilisation</a>." +
+        "Informations à titre indicatif — " +
+        "<a href=\"" + cgu + "\">Mentions légales &amp; CGU</a> · " +
+        "<a href=\"" + privacy + "\">Confidentialité</a>." +
       "</div></footer>";
   }
 
