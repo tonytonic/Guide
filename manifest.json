@@ -1,0 +1,19 @@
+{
+  "name": "Heures Supplémentaires France — Guide",
+  "short_name": "Guide HS",
+  "description": "Guides clairs sur le droit du travail et les heures supplémentaires, avec simulateur gratuit. Sans compte, hors-ligne.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/assets/img/app-icon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

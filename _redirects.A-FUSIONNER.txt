@@ -1,0 +1,31 @@
+# ============================================================================
+#  RÈGLES À FUSIONNER DANS TON FICHIER _redirects À LA RACINE DU DÉPLOIEMENT
+#  ----------------------------------------------------------------------------
+#  ⚠️ NE PAS déposer ce fichier tel quel : son nom est volontairement
+#     "_redirects.A-FUSIONNER.txt" pour qu'il ne soit PAS pris en compte par
+#     Cloudflare et n'écrase PAS le _redirects existant de l'application.
+#
+#  Copie les lignes utiles ci-dessous dans le VRAI fichier "_redirects"
+#  (sans extension) qui se trouve à la racine de ta branche de déploiement.
+# ============================================================================
+
+# 1) Rediriger les anciennes URLs /guides/* (canonicals & sitemap d'avant la
+#    correction) vers leur équivalent à la racine, en 301 permanent.
+#    Place cette ligne AVANT toute règle catch-all "/*".
+/guides/*    /:splat    301
+
+# 2) S'ASSURER que les URLs inconnues renvoient une vraie 404 (page 404.html
+#    fournie), et NON la page d'accueil en code 200 (problème actuel de
+#    "soft-404").
+#
+#    👉 Vérifie qu'AUCUNE règle du type :
+#         /*    /index.html    200
+#       n'attrape les pages du guide. Si une telle règle existe pour faire
+#       fonctionner l'appli (SPA) sous /menu, /module6, etc., restreins-la
+#       à ces chemins précis, par exemple :
+#         /menu*      /index.html   200
+#         /module*    /index.html   200
+#       au lieu d'un "/*" global.
+#
+#    Cloudflare Pages sert automatiquement /404.html (code 404) pour tout
+#    chemin non trouvé DÈS LORS qu'aucun catch-all "/* ... 200" ne l'intercepte.
