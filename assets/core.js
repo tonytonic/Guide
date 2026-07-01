@@ -25,7 +25,7 @@
     brand:        "Heures Supplémentaires France",
     appUrl:       "https://simulateurheuressupfrance.pages.dev/menu",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.tonytonic.heuressup",
-    cguUrl:       "conditions-utilisation.html",
+    cguUrl:       "conditions-utilisation",
     stampDefault: "à jour juin 2026",
     year:         2026
   };
@@ -49,7 +49,7 @@
     var stamp = mount.getAttribute("data-stamp") || S.stampDefault;
     mount.outerHTML =
       '<div class="topbar"><div class="wrap">' +
-        '<a class="brand" href="index.html"><span class="mark">🦊</span> ' + brandHtml() + "</a>" +
+        '<a class="brand" href="/"><span class="mark">🦊</span> ' + brandHtml() + "</a>" +
         '<div class="stamp">' + stamp + "</div>" +
       "</div></div>";
   }
@@ -106,8 +106,8 @@
   function renderFooter() {
     var mount = document.getElementById("hs-footer");
     if (!mount) return;
-    var cgu = S.cguUrl || "conditions-utilisation.html";
-    var privacy = S.privacyUrl || "confidentialite.html";
+    var cgu = S.cguUrl || "conditions-utilisation";
+    var privacy = S.privacyUrl || "confidentialite";
     mount.outerHTML =
       "<footer><div class=\"wrap\">" +
         S.brand + " · Simulateur indépendant du droit du travail français · " + S.year + "<br>" +
@@ -123,7 +123,7 @@
     if (page === "" || page === "index.html") return; // déjà sur la liste des guides, inutile ici
     var a = document.createElement("a");
     a.id = "hs-back-guides";
-    a.href = "index.html";
+    a.href = "/";
     a.innerHTML = '<span class="hs-bg-ic">🦊</span><span class="hs-bg-txt">Tous les guides</span>';
     document.body.appendChild(a);
   }
@@ -173,7 +173,7 @@
     html += prev
       ? '<a class="hs-pn prev" href="' + prev.url + '"><span class="hs-pn-arrow">←</span><span class="hs-pn-txt">' + escapeHtml(prev.title) + "</span></a>"
       : '<span class="hs-pn disabled"><span class="hs-pn-arrow">←</span><span class="hs-pn-txt">Début du guide</span></span>';
-    html += '<a class="hs-pn home" href="index.html" title="Tous les guides">🦊</a>';
+    html += '<a class="hs-pn home" href="/" title="Tous les guides">🦊</a>';
     html += next
       ? '<a class="hs-pn next" href="' + next.url + '"><span class="hs-pn-txt">' + escapeHtml(next.title) + '</span><span class="hs-pn-arrow">→</span></a>'
       : '<span class="hs-pn disabled next"><span class="hs-pn-txt">Fin du guide</span><span class="hs-pn-arrow">→</span></span>';
