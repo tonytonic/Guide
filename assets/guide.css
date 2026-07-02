@@ -349,6 +349,19 @@ footer a{color:var(--pierre)}
   #hs-back-guides .hs-bg-txt{display:none}
   #hs-back-guides{padding:10px;border-radius:50%}
 }
+
+/* ===== BOUTON FLOTTANT — retour à la page précédente (historique navigateur) ===== */
+#hs-back-prev{position:fixed;bottom:74px;left:18px;display:flex;align-items:center;gap:7px;background:var(--ivoire);color:var(--charbon);border:1.5px solid var(--line);border-radius:24px;padding:10px 16px 10px 12px;font-family:var(--mono);font-size:12.5px;font-weight:500;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.14);z-index:50;transition:transform .2s ease,border-color .2s ease}
+#hs-back-prev:hover{transform:translateY(-2px);border-color:var(--champagne-2)}
+#hs-back-prev .hs-bp-ic{font-family:var(--mono);font-size:1.05rem;line-height:1}
+@media (max-width:600px){
+  #hs-back-prev{bottom:64px;left:14px;padding:9px 13px 9px 10px;font-size:11px}
+}
+@media (max-width:340px){
+  #hs-back-prev .hs-bp-txt{display:none}
+  #hs-back-prev{padding:10px;border-radius:50%}
+}
+
 /* ===== CORRECTIFS MOBILE PORTRAIT — tableaux + exemples + listes ===== */
 
 /* --- Tableaux responsive : scroll horizontal si trop larges --- */

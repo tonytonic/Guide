@@ -128,6 +128,36 @@
     document.body.appendChild(a);
   }
 
+  /* Bouton "← Retour" : revient à la page précédente dans l'historique du
+     navigateur (recherche, sommaire, guide précédent...) au lieu de toujours
+     ramener à l'accueil. Ne s'affiche que s'il y a réellement un historique
+     de navigation à consulter ; sinon on laisse uniquement "Tous les guides". */
+  function renderBackPrev() {
+    if (document.getElementById("hs-back-prev")) return; // déjà présent
+    var page = (location.pathname.split("/").pop() || "").toLowerCase();
+    if (page === "" || page === "index.html") return; // pas utile sur l'accueil
+    if (!(window.history && window.history.length > 1)) return; // rien à quoi revenir
+
+    var btn = document.createElement("button");
+    btn.id = "hs-back-prev";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Retour à la page précédente");
+    btn.innerHTML = '<span class="hs-bp-ic">←</span><span class="hs-bp-txt">Retour</span>';
+    document.body.appendChild(btn);
+
+    btn.addEventListener("click", function () {
+      // Un referrer externe (ex: résultat Google) doit quand même ramener
+      // au sommaire du site plutôt que de faire sortir l'utilisateur du site.
+      var ref = document.referrer;
+      var sameOrigin = ref && ref.indexOf(location.origin) === 0;
+      if (sameOrigin || window.history.length > 2) {
+        window.history.back();
+      } else {
+        location.href = "/";
+      }
+    });
+  }
+
   function renderBackToTop() {
     if (document.getElementById("hs-back-to-top")) return; // déjà présent, ne pas dupliquer
     var btn = document.createElement("button");
@@ -182,7 +212,7 @@
     mount.outerHTML = html;
   }
 
-  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToGuides, renderBackToTop].forEach(function (fn) {
+  [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToGuides, renderBackPrev, renderBackToTop].forEach(function (fn) {
     try { fn(); } catch (e) { /* une balise manquante ne doit jamais casser la page */ }
   });
 
