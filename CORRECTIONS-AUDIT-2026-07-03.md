@@ -38,9 +38,17 @@ code.travail.gouv.fr retient **220 h** pour l'IDCC 843 (l'art. 22 de la CCN renv
 
 Syntec (130 h ETAM / 90 h modulation / 220 h cadres : déjà complet sur la page), sécurité privée 329 h (confirmé Légifrance), propreté 190 h, hospitalisation privée 130/70 h, assurance 70 h, HCR 360 h, transport 195/130/480 h, métallurgie 220 h + 80 h volontaires, tous les chiffres de droit commun (SMIC 12,31 €, 7 500 €, 11,31 %, 220 h, prescription 3 ans), et la jurisprudence Cass. 10 sept. 2025 / 7 janv. 2026.
 
-## ⚠️ Reste à faire à la main (2 choses)
 
-1. **`_redirects`** : le fichier final contient la règle `/guides/* → 301` active et un **bloc SPA commenté** (`/menu*`, `/module*`). Avant déploiement, vérifie le fichier d'entrée réel de l'appli et fusionne avec son `_redirects` si elle en a un — sans jamais réintroduire de catch-all `/* … 200`. Tests post-déploiement : `/menu` (appli OK), `/guides/restauration-hcr` (301), URL bidon (vraie 404).
-2. **Jour J (septembre)** : après contrôle qu'aucune revalorisation SMIC n'est annoncée fin août (indice INSEE), harmoniser les bandeaux :
+## 🔵 Complément du 3 juillet (audit croisé avec l'application)
+
+**ALISFA corrigé : 100 h → 60 h** — Légifrance (texte de base CCN 1261, art. 1.4) fixe le contingent à **60 heures** (100 h uniquement pour les CDI intermittents — nuance ajoutée en FAQ). L'application avait la bonne valeur ; c'est le guide qui était faux. Corrigé sur la page centres-sociaux (title, og, meta, JSON-LD, hero, H2, corps, FAQ ×2), la tuile d'accueil et search-index. Au passage, la cellule comparative « CCN Éclat 100 h/an » a été alignée sur 70 h (valeur commune app + page animation du guide).
+
+**Industrie pharmaceutique tranchée : 145 h → 220 h** — la fiche officielle code.travail.gouv.fr (contribution/176) fixe le contingent de l'IDCC 176 à **220 heures** (droit commun) ; là encore l'application avait la bonne valeur et le guide la mauvaise. Corrigé sur les 3 pages pharma (meta, JSON-LD, FAQ ×2, tableaux, barres comparatives, pitchs), la tuile d'accueil, la puce de la page chimie et search-index.
+
+**`_redirects` : fusion DÉFINITIVE livrée** — les règles réelles de l'application ont été extraites de son dépôt (`/heures`, `/paye`, `/fox`, `/module4` → 200, aucun catch-all) et fusionnées avec la règle guide `/guides/* → 301`. Le fichier `_redirects` de ce dossier est désormais **prêt à déployer tel quel** : l'action manuelle n°1 ci-dessous est soldée.
+
+## ⚠️ Reste à faire à la main (1 chose)
+
+1. **Jour J (septembre)** : après contrôle qu'aucune revalorisation SMIC n'est annoncée fin août (indice INSEE), harmoniser les bandeaux :
    `grep -rl 'à jour juin 2026' *.html | xargs sed -i 's/à jour juin 2026/à jour sept. 2026/g'`
    Et penser à incrémenter le `?v=` des assets + re-soumettre le sitemap en Search Console. Mettre une alerte **novembre 2026** : sort du PLF 2027 sur la monétisation RTT (le dispositif expire le 31/12/2026 — 12 mentions sur le site à mettre à jour selon l'issue).
