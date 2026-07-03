@@ -1,19 +1,22 @@
 # ============================================================================
-#  _redirects — A FUSIONNER avec le _redirects existant (racine du deploiement)
-#  Place ces regles AVANT toute regle catch-all "/*".
+#  _redirects — version finale (audit + corrections du 3 juillet 2026)
+#  Ordre des règles = ordre de priorité Cloudflare Pages.
 # ============================================================================
 
-# 1) Anciennes URLs /guides/* -> racine, en 301 permanent
+# 1) Anciennes URLs /guides/* -> racine, 301 permanent (canonicals/sitemap pré-correction)
 /guides/*    /:splat    301
 
-# 2) SOFT-404 : ne PAS laisser un catch-all renvoyer l'accueil en code 200.
-#    Si une regle  /*  /index.html  200  existe pour l'appli (SPA),
-#    remplace-la par des regles CIBLEES, ex :
-#      /menu*      /index.html   200
-#      /module*    /index.html   200
-#    Toute URL inconnue renverra alors la vraie 404.html (code 404).
+# 2) ROUTES DE L'APPLI (SPA) — ⚠️ À VÉRIFIER AVANT DÉPLOIEMENT ⚠️
+#    Si l'appli web (iPhone) est servie par CE déploiement, décommente et adapte
+#    les lignes ci-dessous au fichier d'entrée réel de l'appli. NE PAS utiliser
+#    de catch-all "/*  ...  200" : c'est lui qui créait les soft-404.
+#    Si l'appli a son propre _redirects sur la branche, FUSIONNER les deux fichiers
+#    (les règles /guides/* et l'absence de catch-all doivent survivre à la fusion).
+# /menu*      /index.html    200
+# /module*    /index.html    200
 
-# 3) (OPTIONNEL) Fusion DURE des 18 doublons en 301 (sinon deja gere par canonical).
+# 3) (OPTIONNEL) Fusion dure des 18 doublons en 301 — les canonicals gèrent déjà,
+#    décommenter pour consolider le référencement sur les versions longues.
 # /aide-medico-psychologique-hs    /aide-medico-psychologique-heures-supplementaires    301
 # /animateur-periscolaire-hs    /animateur-periscolaire-heures-supplementaires    301
 # /auxiliaire-puericulture-hs    /auxiliaire-puericulture-heures-supplementaires    301
