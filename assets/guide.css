@@ -170,10 +170,10 @@ a.inline{color:var(--champagne-2);text-decoration:underline;text-decoration-colo
 .ex-line:last-of-type{border-bottom:none}
 .ex-line .h{color:var(--charbon-2);min-width:0}
 .ex-line .h b{font-family:var(--mono);font-weight:500}
-.ex-line .amt{font-family:var(--mono);font-weight:500;color:var(--charbon);white-space:nowrap}
+.ex-line .amt{font-family:var(--mono);font-weight:500;color:var(--charbon)}
 .ex-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:14px;border-top:2px solid var(--charbon);gap:12px}
 .ex-total .lbl{font-family:var(--display);font-weight:600;font-size:16px}
-.ex-total .amt{font-family:var(--display);font-weight:700;font-size:23px;color:var(--champagne-2);white-space:nowrap}
+.ex-total .amt{font-family:var(--display);font-weight:700;font-size:23px;color:var(--champagne-2)}
 .ex-foot{font-size:12.5px;color:var(--pierre);margin-top:14px}
 
 /* ---------- callout ---------- */
@@ -408,6 +408,8 @@ footer a{color:var(--pierre)}
     align-self:flex-end;
     color:var(--champagne-2,#c8852a);
     font-weight:700;
+    white-space:normal;
+    text-align:right;
   }
 
   /* Total : passer en colonne aussi si texte long */
