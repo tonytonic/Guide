@@ -463,6 +463,37 @@ faible par recherche.
   principal partout ailleurs sur la même page). Mis à jour pour mentionner
   "IDCC 3239 (ex-2111, fusion 2021)" par cohérence avec le reste de la page.
 
+## Tour 15 — quatre corrections dans le secteur culturel/audiovisuel
+
+Découverte utile : une source spécialisée dans les conventions du secteur
+culturel a permis de clarifier plusieurs codes systématiquement mal
+étiquetés sur trois pages proches (édition musicale, enregistrement,
+radiodiffusion).
+
+- **musique-enregistrement-heures-supplementaires.html** : "IDCC 1790" était
+  présenté comme l'édition musicale/phonographique — **1790 est en réalité
+  la convention des loisirs, attractions et culturels** (parcs d'attraction,
+  salles de sport, débits de boissons...), sans rapport. Corrigé en
+  **IDCC 2121** (édition, qui a absorbé l'édition phonographique 2770 par
+  fusion de 2019). La mention "production audiovisuelle IDCC 3090" a
+  également été corrigée : 3090 est en réalité le **spectacle vivant**, pas
+  l'audiovisuel — remplacé par le code déjà correct 2642 (production
+  audiovisuelle) présent ailleurs sur la même page.
+- **edition-musicale-heures-supplementaires.html** : même erreur, "IDCC 1790"
+  → corrigé en **IDCC 2121** (édition).
+- **audiovisuel-radio-heures-supplementaires.html** : "IDCC 1780" pour la
+  radiodiffusion — non identifié comme correspondant à ce secteur. Corrigé en
+  **IDCC 1922** (radiodiffusion), confirmé via une source spécialisée du
+  secteur culturel qui distingue clairement radiodiffusion (1922) d'édition
+  phonographique (2121/ex-2770).
+
+### Confirmé correct
+
+- **industrie-papier-emballage-heures-supplementaires.html** : IDCC 3238
+  (production et transformation des papiers et cartons) confirmé correct,
+  convention unifiée depuis 2022 qui a fusionné 4 anciennes conventions du
+  secteur.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
