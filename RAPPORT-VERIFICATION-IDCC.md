@@ -129,6 +129,57 @@ correction (2583→1978) + 2 points de vigilance identifiés pour vérification
 future. Le rythme ralentit volontairement sur les cas ambigus, conformément à
 la consigne de privilégier la justesse à la vitesse.
 
+## Tour 4 — conflit résolu + nouvelle erreur corrigée + table de référence étendue
+
+### Conflit du tour 3 résolu
+
+**jardinerie (1760) vs fleuriste/jardinerie (1978)** : les deux conventions
+sont bien **distinctes et toutes les deux légitimes** — 1760 (brochure 3272)
+concerne spécifiquement les jardineries/graineteries (NAF 4776Z), tandis que
+1978 (brochure 3010) concerne fleuristes/jardineries/animaleries. Les deux
+champs se chevauchent partiellement dans leur description mais restent deux
+conventions séparées. Pas de changement nécessaire : **vendeur-jardinerie**
+(1760) et **fleuriste** (1978, corrigé au tour 3) sont chacun corrects pour
+leur contenu respectif.
+
+### Nouvelle erreur trouvée et corrigée
+
+- **vente-distance-heures-supplementaires.html** : utilisait IDCC 1659, qui
+  est en réalité la convention du **rouissage-teillage de lin** (traitement
+  du lin), sans aucun rapport avec le e-commerce. Corrigé en **IDCC 2198**
+  (commerce à distance et e-commerce, brochure **3333**), confirmé sur
+  Légifrance et code.travail.gouv.fr.
+
+### Table de référence étendue (source : accord OCAPIAT du 18/12/2018,
+recoupée avec Légifrance) — codes confirmés sans avoir eu besoin de les
+corriger sur une page existante, à conserver pour la suite du travail
+
+| Code | Convention |
+|---|---|
+| 501 | Crédit agricole |
+| 7502 / 75X1 / 75X2 | Mutualité sociale agricole (MSA) |
+| 2728 | Sucreries, sucreries-distilleries, raffineries de sucre |
+| 3109 | Cinq branches des industries alimentaires diverses |
+| 112 | Industries laitières |
+| 1586 | Industries charcutières |
+| 1396 | Industries de produits alimentaires élaborés |
+| 200 | Exploitations frigorifiques |
+| 1534 | Industrie et commerces en gros des viandes |
+| 1987 | Industrie des pâtes alimentaires |
+| 506 | Industries des produits exotiques |
+| 2075 | Conditionnement/transformation des œufs (confirme que le 2075 vu sur vins-spiritueux au tout début de l'audit était bien une erreur — sans rapport avec le vin) |
+| 1747 | Boulangerie pâtisserie industrielle (confirme que son usage dans un tableau comparatif "agroalimentaire/chambre froide" était correct) |
+| 2156 | Grands magasins (brochure 3082) |
+| 3076 | Électroménager |
+| 43 | Import-export (confirmé correct, déjà utilisé ainsi) |
+
+## Rythme
+
+Ce tour : 1 conflit résolu (sans correction nécessaire), 1 nouvelle erreur
+corrigée (1659→2198), et 16 codes supplémentaires confirmés d'un coup grâce à
+une source de référence officielle (liste OCAPIAT) qui a permis de vérifier
+plusieurs codes en une seule recherche.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
