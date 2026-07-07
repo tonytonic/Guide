@@ -224,6 +224,34 @@ assurance-mutuelle et — il y a plusieurs tours — securite-sociale), et
 identification d'un nouveau schéma d'erreur (confusion brochure/IDCC) à
 garder en tête pour le reste de la vérification.
 
+## Tour 6 — trois nouvelles erreurs corrigées
+
+- **enseignant-prive-professeur-hs.html** : utilisait IDCC 2582 pour
+  "l'enseignement technique privé" — **2582 est en réalité un code territorial
+  du BTP de Savoie**, sans aucun rapport. Corrigé en **IDCC 3218**
+  (enseignement privé non lucratif, EPNL) pour la situation "sous contrat", et
+  le second code déjà présent "2407" (également douteux, non identifié
+  formellement) a été remplacé par **IDCC 2691** (enseignement privé
+  indépendant/hors contrat), confirmé via l'historique de fusion EPI/EPNL sur
+  Légifrance. Le tableau IDCC/Brochure du haut de page a aussi été corrigé
+  (2582→3218).
+- **chauffeur-bus-heures-supplementaires.html** : utilisait IDCC 650, qui est
+  en réalité la convention des **ingénieurs et cadres de la métallurgie**,
+  sans rapport avec le transport de voyageurs. Corrigé en **IDCC 1424**
+  (réseaux de transports publics urbains de voyageurs), confirmé sur une
+  source recensant les IDCC par numéro. À noter : ce code couvre le transport
+  urbain ; un chauffeur de car interurbain pourrait en théorie relever d'une
+  convention différente (transport routier de voyageurs), point qui n'a pas
+  été creusé plus avant faute de temps.
+
+## Rythme
+
+Ce tour : 2 fichiers corrigés (3 erreurs au total, l'un des deux fichiers en
+contenant deux). Le rythme reste stable sur les recherches ciblées, mais
+certains codes révèlent des situations à deux conventions (sous contrat/hors
+contrat, urbain/interurbain) qui demandent un peu plus de temps que les cas
+simples à un seul code.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
