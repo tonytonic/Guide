@@ -617,6 +617,19 @@ rythme peut continuer sur le même principe à la prochaine session.
   (négoce des matériaux de construction, un code vu dans une recherche
   précédente) au lieu de 3177 — repéré et corrigé avant livraison.
 
+## Tour 22 — deux corrections dans le secteur tech/électronique
+
+- **ia-data-cyber-heures-supplementaires.html** : utilisait IDCC 1750 (IA) et
+  1751 (cybersécurité) — **aucun des deux codes n'existe**. Corrigé en
+  **IDCC 1486** (Syntec) partout : confirmé que 89% des salariés du code APE
+  6202A (conseil en systèmes et logiciels informatiques) relèvent de cette
+  convention, qui couvre naturellement data science, IA et cybersécurité en
+  ESN/SSII.
+- **industrie-electronique-composants-heures-supplementaires.html** :
+  utilisait IDCC 1648 (déjà identifié comme ancien code métallurgie régional
+  fusionné lors d'un lot précédent) → corrigé en **IDCC 3248** (métallurgie
+  unifiée depuis 2024, qui couvre explicitement l'électronique).
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
