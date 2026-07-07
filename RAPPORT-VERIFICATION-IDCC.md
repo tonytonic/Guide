@@ -630,6 +630,20 @@ rythme peut continuer sur le même principe à la prochaine session.
   fusionné lors d'un lot précédent) → corrigé en **IDCC 3248** (métallurgie
   unifiée depuis 2024, qui couvre explicitement l'électronique).
 
+## Tour 23 — deux pages jumelles sur les huissiers/commissaires de justice corrigées
+
+- **huissiers-commissaires-justice-heures-supplementaires.html** : utilisait
+  IDCC 2372 partout, présenté comme "ex-huissiers de justice" — **2372 est en
+  réalité la convention de la distribution directe**, aucun rapport. Corrigé
+  en **IDCC 3250** (commissaires de justice et sociétés de ventes
+  volontaires), la convention actuelle qui a fusionné huissiers de justice
+  et commissaires-priseurs judiciaires en 2022.
+- **huissier-commissaire-justice-hs-supplementaires.html** (page jumelle) :
+  utilisait 1626 et 2125 (non identifiés) en codes principaux, et 1921
+  (huissiers de justice, brochure 3037 — l'ancien code, confirmé
+  historiquement correct mais superseded) dans un exemple de calcul. Tout
+  harmonisé sur **IDCC 3250**, cohérent avec la page jumelle ci-dessus.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
