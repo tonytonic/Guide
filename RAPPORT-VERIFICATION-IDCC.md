@@ -58,11 +58,39 @@ priorité lors de la prochaine session :
 - **franchise-commerce-heures-supplementaires.html** : 1501 non vérifié,
   apparaît dans 10 pages.
 
+## Tour 2 — codes vérifiés et corrections appliquées
+
+| Code | Brochure | Convention | Statut |
+|---|---|---|---|
+| 1090 | 3034 | Services de l'automobile (contrôle technique inclus) | Confirmé correct |
+| 16 | 3085 | Transports routiers (couvre aussi messagerie/fret express/coursiers urbains, confirmé à 99,7% des salariés du code APE messagerie) | Confirmé correct |
+| 1672 | 3265 | Sociétés d'assurances (assureurs directs — PAS les mutuelles) | Confirmé correct pour son usage propre |
+| 2002 | - | Teinturerie/nettoyage (pressing) | Confirmé correct dans habillement-heures-supplementaires.html |
+
+### Erreurs trouvées et corrigées
+
+- **coursier-velo-livreur-hs.html** : utilisait IDCC 1694 pour "messagerie" —
+  **1694 ne correspond à rien**. Corrigé en **IDCC 16** (transports routiers),
+  qui couvre explicitement la messagerie, le fret express et les coursiers
+  urbains selon les statistiques officielles du code APE 5229A (99,7% des
+  salariés de ce code relèvent de cette convention).
+- **conseiller-clientele-mutuelle-heures-supplementaires.html** : incohérence
+  interne — le texte affirmait correctement IDCC 2128 (mutualité) partout,
+  mais la ligne de calcul du taux horaire utilisait par erreur IDCC 1672
+  (sociétés d'assurances, une convention différente pour les assureurs
+  directs, pas les mutuelles). Corrigé pour cohérence avec le reste de la
+  page.
+
+## Rythme
+
+4 codes vérifiés + 2 nouvelles erreurs corrigées dans ce tour. Il reste
+environ 185 codes à vérifier.
+
 ## Prochaine étape proposée
 
-Continuer les vérifications par lots de 15-20 codes (dans l'ordre de
-fréquence du fichier `idcc_todo.txt`), en appliquant les corrections
-directement dans les fichiers du corpus au fur et à mesure (comme fait pour
-technicien-alarme-securite-electronique ci-dessus), sans reprendre
-l'agrémentation complète (FAQ/Cas particuliers/témoignage) tant que la
-vérification n'est pas terminée.
+Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
+`idcc_todo.txt`), en appliquant les corrections directement dans les fichiers
+du corpus au fur et à mesure, sans reprendre l'agrémentation complète
+(FAQ/Cas particuliers/témoignage) tant que la vérification n'est pas
+terminée.
+
