@@ -412,6 +412,35 @@ individuellement même si un "jumeau" a déjà été corrigé.
   l'édition de livres (2121), aucun rapport avec le jeu vidéo. Retiré,
   laissant uniquement le code confirmé Syntec (1486).
 
+## Tour 13 — une correction supplémentaire
+
+- **guide-touristique-heures-supplementaires.html** : "Agences de voyages
+  IDCC 1476" — 1476 n'a pas pu être confirmé comme correspondant à quoi que
+  ce soit d'identifiable pour ce secteur. Corrigé en **IDCC 3245**
+  (opérateurs de voyages et des guides), déjà confirmé et cohérent avec la
+  page tourisme-agences déjà corrigée. La mention "spectacle IDCC 1285" a été
+  laissée telle quelle : 1285 est confirmé être la convention des
+  "entreprises artistiques et culturelles" (Dairia Avocats/Légifrance), ce
+  qui reste plausible pour un guide-conférencier intervenant dans un contexte
+  culturel/spectacle — pas d'erreur certaine identifiée sur ce second code.
+
+## Bilan de cette longue session de vérification
+
+Sur l'ensemble de cette session (tours 1 à 13), **plus de 30 corrections
+concrètes** ont été appliquées sur des pages du corpus (dont plusieurs pages
+déjà livrées précédemment, reprises et corrigées), et plus de 40 codes
+supplémentaires ont été formellement confirmés corrects sans besoin de
+modification. Le detail complet de chaque correction et confirmation est
+conservé dans les sections précédentes de ce document.
+
+**Il reste environ 140 codes non encore vérifiés individuellement** sur les
+265 recensés au départ (certains à faible fréquence, 1 à 3 pages chacun). Le
+rythme de vérification reste rigoureux — chaque code fait l'objet d'une
+recherche sur au moins une source officielle (Légifrance ou
+code.travail.gouv.fr) avant toute correction — mais la longue traîne des
+codes rares demande proportionnellement plus de recherches pour un gain plus
+faible par recherche.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
