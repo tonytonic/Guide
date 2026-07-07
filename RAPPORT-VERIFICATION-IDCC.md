@@ -180,6 +180,50 @@ corrigée (1659→2198), et 16 codes supplémentaires confirmés d'un coup grâc
 une source de référence officielle (liste OCAPIAT) qui a permis de vérifier
 plusieurs codes en une seule recherche.
 
+## Tour 5 — découverte d'un nouveau type d'erreur : brochure confondue avec IDCC
+
+### Nouvelle catégorie d'erreur identifiée
+
+**"3257" n'est pas du tout un IDCC** : c'est le **numéro de brochure** de la
+convention "Activités de marchés financiers", dont le véritable IDCC est
+**2931**. Quelqu'un (très probablement le référentiel de l'app d'origine) a
+confondu numéro de brochure et numéro IDCC pour cette convention précise, et
+ce nombre s'est retrouvé injecté comme "IDCC" sur des pages n'ayant aucun
+rapport avec la bourse ou les marchés financiers :
+
+- **assurance-mutuelle-heures-supplementaires.html** (page déjà livrée,
+  lot 12) : "IDCC 3257" pour les mutuelles → corrigé en **IDCC 2128**
+  (mutualité, déjà confirmé précédemment).
+- **plombier-chauffagiste-btp-hs.html** : "IDCC 3257" pour "Plombier
+  artisanal" dans un tableau comparatif → corrigé en **IDCC 1596** (BTP
+  ouvriers), le code 998 restant correct pour la ligne "équipements
+  thermiques/génie climatique" déjà présente sur la même page.
+
+### Autre erreur corrigée
+
+- **banque-heures-supplementaires.html** : "IDCC 675" pour la convention
+  bancaire AFB — 675 est en réalité la convention des maisons à succursales
+  de vente au détail d'habillement, aucun rapport. Corrigé en **IDCC 2120**
+  (banque, brochure 3161), confirmé sur Légifrance et le site de l'AFB
+  elle-même. Note : le Crédit Agricole a sa propre convention distincte
+  (IDCC 2240), à ne pas confondre si une future page le concerne
+  spécifiquement.
+
+### Codes confirmés correct au passage
+
+- **998** (plombier chauffagiste, équipements thermiques et génie
+  climatique) — confirmé.
+- **2120** (banque AFB, brochure 3161) — confirmé.
+- **2931** (marchés financiers, brochure 3257) — confirmé, à ne pas confondre
+  avec son propre numéro de brochure.
+
+## Rythme
+
+Ce tour : 3 corrections appliquées (dont 2 sur des pages déjà livrées :
+assurance-mutuelle et — il y a plusieurs tours — securite-sociale), et
+identification d'un nouveau schéma d'erreur (confusion brochure/IDCC) à
+garder en tête pour le reste de la vérification.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
