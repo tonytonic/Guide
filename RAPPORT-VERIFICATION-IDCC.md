@@ -370,6 +370,29 @@ et chacune peut porter une erreur IDCC différente même quand le sujet est
 identique — donc pas de raccourci possible, chaque fichier doit être vérifié
 individuellement même si un "jumeau" a déjà été corrigé.
 
+## Tour 11 — trois corrections + une confirmation
+
+- **aide-a-domicile-garde-malade-heures-supplementaires.html** : "particuliers
+  employeurs (IDCC 3220)" — **3220 est en réalité les offices publics de
+  l'habitat (OPH/HLM)**, aucun rapport. Corrigé en **IDCC 3239** (branche des
+  particuliers employeurs), déjà confirmé à plusieurs reprises dans cet
+  audit. Le code 2941 (aide/accompagnement/soins à domicile) déjà présent sur
+  la même page reste correct pour l'autre cas de figure (salarié d'une
+  structure associative/prestataire).
+- **hote-accueil-standardiste-hs.html** : "IDCC 1982 ou Commerce" dans un
+  exemple de calcul — 1982 est en réalité le négoce et les prestations de
+  services dans les domaines médico-techniques, sans rapport avec l'accueil
+  standard. Corrigé en **IDCC 2098** (prestataires de services du secteur
+  tertiaire), déjà confirmé pour ce type de poste transversal.
+- **coach-sportif** et **paysagiste** : corrections déjà appliquées au tour
+  précédent, non reprises ici.
+
+### Confirmé correct
+
+- **franchise-commerce-heures-supplementaires.html** : "Restauration rapide
+  IDCC 1501" dans un tableau comparatif — confirmé correct (1501 =
+  restauration rapide/restauration livrée), aucune correction nécessaire.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
