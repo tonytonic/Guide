@@ -597,6 +597,26 @@ Il reste une longue traîne de codes à très faible fréquence (1 page chacun,
 souvent des cas très spécifiques) non encore vérifiés individuellement. Le
 rythme peut continuer sur le même principe à la prochaine session.
 
+## Tour 21 — quatre corrections (rythme accéléré)
+
+- **caves-cooperatives-viticoles-heures-supplementaires.html** : IDCC 7516
+  (non identifiable) → corrigé en **IDCC 7005** (caves coopératives
+  vinicoles et leurs unions), cohérent avec la correction déjà appliquée sur
+  vins-spiritueux-heures-supplementaires.html.
+- **agence-communication-publicite-heures-supplementaires.html** : utilisait
+  deux codes différents pour agence (1699) et régie (1729) — **aucun des
+  deux n'existe pour ce secteur**. Corrigé en **IDCC 86** partout (brochure
+  **3073**, confirmé), cohérent avec la correction déjà appliquée sur
+  publicite-regies-heures-supplementaires.html il y a plusieurs lots.
+- **transport-aerien-sol-heures-supplementaires.html** : reprenait la même
+  erreur que transport-aerien-heures-supplementaires.html (déjà corrigée) —
+  IDCC 1999 et une référence résiduelle à IDCC 412 (guides touristiques,
+  sans rapport). Corrigé en **IDCC 275** partout (brochure **3177**,
+  confirmé), y compris dans le tableau récapitulatif en tête de page.
+  ⚠️ Auto-correction : j'avais d'abord inscrit par erreur la brochure 3216
+  (négoce des matériaux de construction, un code vu dans une recherche
+  précédente) au lieu de 3177 — repéré et corrigé avant livraison.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
