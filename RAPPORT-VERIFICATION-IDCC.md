@@ -494,6 +494,22 @@ radiodiffusion).
   convention unifiée depuis 2022 qui a fusionné 4 anciennes conventions du
   secteur.
 
+## Tour 16 — incohérence interne corrigée + confirmation
+
+- **industrie-ceramique-verre-heures-supplementaires.html** : incohérence
+  interne repérée — le titre/meta de la page affirmait "céramique (IDCC 1540)
+  et verre (IDCC 200)", alors que le corps de la page utilisait déjà
+  correctement plus bas "IDCC 1558" pour la céramique et "IDCC 669" pour le
+  verre/cristallerie dans un tableau comparatif. **1540 et 200 ne
+  correspondent à rien pour ce secteur** (200 est en réalité les
+  exploitations frigorifiques). Corrigé pour que le titre et le corps de la
+  page utilisent les mêmes codes corrects partout (1558 céramique, 669
+  verre).
+
+### Confirmé correct
+
+- **1558** (industries céramiques de France, brochure 3238) reconfirmé.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
