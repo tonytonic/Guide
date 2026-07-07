@@ -308,6 +308,41 @@ gazeux et produits pétroliers, brochure 3004) — moins avantageuse que
 l'IDCC 1388 des majors. À garder en tête si une future page distingue
 salarié de station-service indépendante vs salarié de raffinerie/major.
 
+## Tour 9 — quatre corrections, dont deux sur des pages déjà livrées
+
+- **conducteur-engins-travaux-publics-hs.html** : IDCC 1604 (en réalité un
+  code territorial de la métallurgie de Rouen/Dieppe, aucun rapport) →
+  corrigé en **IDCC 1702** (ouvriers des travaux publics, brochure 3005
+  tome 2), confirmé sur Légifrance et convention.fr.
+- **transport-aerien-heures-supplementaires.html** (page déjà livrée, lot 16) :
+  l'affirmation "IDCC 412 (PNT)" pour les pilotes de ligne a été **retirée
+  complètement** — 412 est en réalité la convention des guides
+  accompagnateurs et guides touristiques, totalement sans rapport avec
+  l'aviation. Ma correction précédente avait déjà nuancé cette affirmation
+  mais laissait encore le chiffre affiché dans le titre/meta ; c'est
+  maintenant totalement retiré, ne laissant que le code confirmé 275
+  (personnel au sol).
+- **moniteur-auto-ecole-hs.html** : IDCC 1673 (non identifié, sans rapport
+  trouvé) → corrigé en **IDCC 1090** (services de l'automobile, brochure
+  3034), confirmé couvrir explicitement l'enseignement de la conduite
+  (94,1% des salariés du code APE 8553Z), même convention déjà confirmée
+  pour le contrôle technique automobile.
+- **energie-gaz-heures-supplementaires.html** (page déjà livrée, lot 14) :
+  IDCC 1499 utilisé comme code principal pour "l'industrie du gaz" — **1499
+  est en réalité la convention de la miroiterie et du négoce du verre**,
+  aucun rapport avec l'énergie. Corrigé en **IDCC 1408** (négoce et
+  distribution de combustibles solides, liquides, gazeux et produits
+  pétroliers, brochure 3004) pour le gaz hors statut IEG, le code 5001 restant
+  la référence principale pour le statut IEG.
+
+## Rythme
+
+Ce tour : 4 fichiers corrigés, dont 2 déjà livrés antérieurement (transport-
+aerien et energie-gaz) qui contenaient des traces de l'erreur malgré une
+correction partielle précédente — utile rappel de revérifier l'intégralité
+d'un fichier après une première correction, pas seulement la phrase
+initialement repérée.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
