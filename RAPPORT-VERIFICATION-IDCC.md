@@ -276,6 +276,38 @@ vérification reste soutenu mais chaque nouvelle recherche demande de plus en
 plus de recoupement car les codes restants sont plus dispersés et moins
 souvent regroupés dans une même source de référence.
 
+## Tour 8 — pétrole
+
+Suite à ta question directe sur le pétrole, vérification ciblée :
+
+### Erreur trouvée et corrigée
+
+- **petrole-heures-supplementaires.html** utilisait IDCC 669 — qui est en
+  réalité la convention des **industries de fabrication mécanique du verre**,
+  aucun rapport avec le pétrole. Corrigé en **IDCC 1388** (industrie du
+  pétrole, brochure 3001), confirmé sur Légifrance et plusieurs sources
+  spécialisées : cette convention couvre le raffinage, le stockage, le
+  transport par pipeline et la distribution par les grandes compagnies
+  ("majors").
+
+### Confirmé correct au passage
+
+- **industrie-chimique-petrochimie-heures-supplementaires.html** utilisait
+  déjà correctement IDCC 1388 pour le volet pétrochimie (et 44 pour la
+  chimie, déjà confirmé) — cette page n'avait pas d'erreur.
+- **669** reste donc confirmé correct pour son usage légitime : les
+  industries de fabrication mécanique du verre (verre-heures-
+  supplementaires.html, à vérifier si cette page existe déjà dans le corpus).
+
+### Point utile identifié en passant
+
+Une convention voisine mais différente existe pour les **négociants
+indépendants de carburant** (stations-service non intégrées à une major) :
+**IDCC 1408** (négoce et distribution de combustibles solides, liquides,
+gazeux et produits pétroliers, brochure 3004) — moins avantageuse que
+l'IDCC 1388 des majors. À garder en tête si une future page distingue
+salarié de station-service indépendante vs salarié de raffinerie/major.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
