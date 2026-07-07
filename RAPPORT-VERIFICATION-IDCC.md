@@ -393,6 +393,25 @@ individuellement même si un "jumeau" a déjà été corrigé.
   IDCC 1501" dans un tableau comparatif — confirmé correct (1501 =
   restauration rapide/restauration livrée), aucune correction nécessaire.
 
+## Tour 12 — une confirmation + une correction
+
+### Confirmé correct (pas d'erreur)
+
+- **educateur-specialise-hs.html** : le code principal CCNT 66 (IDCC 413) est
+  correct, et la mention secondaire "CCN Éclat IDCC 1518" dans un tableau
+  comparatif pour un poste d'animation socioculturelle est également
+  **correcte** — 1518 (ÉCLAT, brochure 3246) couvre bien l'éducation, la
+  culture, les loisirs et l'animation. Les deux usages coexistent
+  légitimement sur la même page selon le type de poste comparé.
+
+### Erreur corrigée
+
+- **jeux-video-studio-heures-supplementaires.html** : proposait "Syntec IDCC
+  1486 ou IDCC 2770" comme alternative pour développeur/game designer —
+  **2770 est en réalité l'édition phonographique** (musique), fusionnée avec
+  l'édition de livres (2121), aucun rapport avec le jeu vidéo. Retiré,
+  laissant uniquement le code confirmé Syntec (1486).
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
