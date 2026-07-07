@@ -644,6 +644,31 @@ rythme peut continuer sur le même principe à la prochaine session.
   historiquement correct mais superseded) dans un exemple de calcul. Tout
   harmonisé sur **IDCC 3250**, cohérent avec la page jumelle ci-dessus.
 
+## Tour 24 — deux corrections + une page confirmée déjà correcte
+
+### Confirmé déjà correct
+
+- **transports-ports-manutention-heures-supplementaires.html** : distingue
+  déjà correctement IDCC 538 (manutention ferroviaire, brochure 3170) et
+  IDCC 3017 (ports et manutention unifiée, brochure 3375) — les deux
+  confirmés, rien à corriger.
+
+### Corrections
+
+- **cariste-frigorifique-heures-supplementaires.html** : utilisait IDCC 1611
+  (routage postal, déjà identifié comme erreur récurrente sur d'autres
+  pages) → corrigé en **IDCC 200** (exploitations frigorifiques), qui
+  correspond bien mieux au contexte (contraintes du froid, équipements
+  spécifiques).
+- **atsem-agent-scolaire-hs.html** : mentionnait IDCC 1761 (non identifié) et
+  IDCC 2582 (déjà identifié comme un code territorial du BTP de Savoie, sans
+  rapport). Corrigé : 1761 → **1261** (SNAECSO, déjà confirmé plausible pour
+  les structures associatives d'accueil de jeunes enfants), et la mention de
+  2582 remplacée par une formulation prudente ("un accord"), les ATSEM étant
+  très majoritairement des agents de la fonction publique territoriale
+  (statut public, sans convention collective privée), sauf exception dans
+  certaines structures associatives ou privées.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
