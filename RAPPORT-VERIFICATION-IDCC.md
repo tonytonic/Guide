@@ -441,6 +441,28 @@ code.travail.gouv.fr) avant toute correction — mais la longue traîne des
 codes rares demande proportionnellement plus de recherches pour un gain plus
 faible par recherche.
 
+## Tour 14 — un code obsolète mis à jour + une page confirmée déjà correcte
+
+### Confirmé déjà correct (aucune erreur)
+
+- **boulangerie-industrielle-heures-supplementaires.html** : distingue déjà
+  correctement IDCC 1747 (boulangerie industrielle, code principal) de
+  IDCC 843 (boulangerie-pâtisserie artisanale, mentionné en comparaison) —
+  les deux codes sont confirmés corrects pour leurs usages respectifs. Point
+  mineur à surveiller : IDCC 1747 a été remplacé par IDCC 3255 depuis le
+  1ᵉʳ octobre 2024 (fusion avec les professionnels de l'œuf) — non corrigé
+  ici car 1747 reste juridiquement une référence historique valide pendant
+  la période de transition, mais à moderniser si le site souhaite être
+  totalement à jour.
+
+### Code obsolète mis à jour
+
+- **employe-maison-particulier-heures-supplementaires.html** : une note de
+  calcul utilisait encore "IDCC 2111 (emplois familiaux)" — ce code existe
+  bien mais **a fusionné en 2021 dans l'IDCC 3239** (déjà utilisé comme code
+  principal partout ailleurs sur la même page). Mis à jour pour mentionner
+  "IDCC 3239 (ex-2111, fusion 2021)" par cohérence avec le reste de la page.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
