@@ -252,6 +252,30 @@ certains codes révèlent des situations à deux conventions (sous contrat/hors
 contrat, urbain/interurbain) qui demandent un peu plus de temps que les cas
 simples à un seul code.
 
+## Tour 7 — une correction + deux confirmations
+
+### Erreur corrigée
+
+- **habillement-heures-supplementaires.html** : la ligne "Commerce vêtements"
+  d'un tableau comparatif utilisait IDCC 1505, qui est en réalité le
+  **commerce de détail alimentaire non spécialisé** — aucun rapport avec
+  l'habillement. Corrigé en **IDCC 1483**, déjà utilisé et confirmé comme le
+  bon code pour cette page ailleurs (cohérence interne restaurée).
+
+### Codes confirmés corrects
+
+- **2332** (entreprises d'architecture, brochure 3062) — confirmé pour
+  architecture-interieure-decoration-heures-supplementaires.html.
+- **1504** (poissonnerie — commerce de détail, demi-gros et gros) — confirmé
+  pour mareyeur-poissonnerie-gros-heures-supplementaires.html.
+
+## Rythme
+
+Ce tour a été plus court : 1 correction + 2 confirmations. Le rythme de
+vérification reste soutenu mais chaque nouvelle recherche demande de plus en
+plus de recoupement car les codes restants sont plus dispersés et moins
+souvent regroupés dans une même source de référence.
+
 ## Prochaine étape proposée
 
 Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
