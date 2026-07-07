@@ -81,10 +81,53 @@ priorité lors de la prochaine session :
   directs, pas les mutuelles). Corrigé pour cohérence avec le reste de la
   page.
 
+## Tour 3 — découverte majeure + corrections
+
+### ⚠️ Erreur significative trouvée sur une page déjà livrée
+
+**securite-sociale-heures-supplementaires.html** (page déjà enrichie et livrée
+il y a plusieurs lots) utilisait **IDCC 21200** — un nombre à 5 chiffres qui
+n'existe pas (les IDCC font 4 chiffres maximum, de 0001 à 9999). Le vrai code
+est **IDCC 218** (organismes de sécurité sociale — CPAM, CAF, URSSAF, CARSAT),
+confirmé sur Légifrance et code.travail.gouv.fr, **sans numéro de brochure**
+associé (particularité de cette convention). Corrigé partout dans le fichier.
+
+### Autre erreur corrigée
+
+- **fleuriste-heures-supplementaires.html** : IDCC 2583 (en réalité "sociétés
+  concessionnaires ou exploitantes d'autoroutes" — aucun rapport) → corrigé en
+  **IDCC 1978** (fleuristes, vente et services des animaux familiers, brochure
+  **3010**), confirmé sur Légifrance : cette convention couvre explicitement
+  fleuristes, jardineries, animaleries, salons de toilettage et pensions
+  canines (code APE 47.76Z).
+
+### Point à trancher — conflit à vérifier
+
+- **vendeur-jardinerie-heures-supplementaires.html** (déjà enrichi, lot 13)
+  utilise IDCC 1760, confirmé à l'époque comme "jardineries et graineteries".
+  Mais la recherche ci-dessus montre que "jardineries" est explicitement dans
+  le champ d'application de la convention 1978 (fleuristes/jardineries/
+  animaleries). Il est possible que 1760 et 1978 couvrent des segments
+  différents (graineterie/jardinerie agricole vs jardinerie généraliste avec
+  fleurs et animaux), mais ça n'a pas été confirmé formellement — **à
+  vérifier en priorité au prochain tour** avant de considérer le sujet clos.
+
+### Autre point noté pour revue
+
+- **2642** est confirmé être la "production audiovisuelle" (Légifrance). Lors
+  d'un lot précédent, ce code avait été retiré de
+  publicite-regies-heures-supplementaires.html au profit de IDCC 86
+  (publicité). Cette correction reste probablement bonne pour les *agences*
+  de publicité, mais mérite une revérification : une entreprise de
+  *production* de films publicitaires pourrait légitimement relever du 2642
+  plutôt que du 86. Non tranché, à vérifier.
+
 ## Rythme
 
-4 codes vérifiés + 2 nouvelles erreurs corrigées dans ce tour. Il reste
-environ 185 codes à vérifier.
+Ce tour : 1 découverte majeure sur une page déjà livrée (21200→218) + 1 autre
+correction (2583→1978) + 2 points de vigilance identifiés pour vérification
+future. Le rythme ralentit volontairement sur les cas ambigus, conformément à
+la consigne de privilégier la justesse à la vitesse.
 
 ## Prochaine étape proposée
 
