@@ -121,10 +121,43 @@ demande explicite) : 748 restantes. Après lot 12 (10 pages) : 738 restantes.
 Après lot 13 (10 pages) : 728 restantes. Après lot 14 (10 pages) : 718 restantes.
 Après lot 15 (10 pages) : 708 restantes. Après lot 16 (10 pages) : 698 restantes.
 Après lot 17 (10 pages) : 688 restantes. Après lot 18 (10 pages) : 678 restantes.
+Après lot 19 (10 pages) : 668 restantes.
 
 Note : la taille de lot peut être ajustée sur demande, mais le rythme par
 défaut est de 10 pages/lot — c'est celui qui permet une vérification Légifrance
 dédiée par code IDCC suspect plutôt que des recherches groupées.
+
+## 22. Pause exceptionnelle : vérification IDCC/brochure de fond (42 tours)
+
+Entre le lot 18 et le lot 19, l'agrémentation a été mise en pause à la
+demande du porteur du projet pour une session dédiée de vérification
+systématique des codes IDCC et numéros de brochure sur l'intégralité des 982
+pages du corpus (pas seulement les pages déjà agrémentées). Résultat :
+**plus de 88 corrections concrètes** appliquées, dont plusieurs sur des
+pages déjà livrées lors de lots précédents (energie-gaz, transport-aerien,
+assurance-mutuelle, securite-sociale, notamment). Trois occurrences d'un
+nouveau type d'erreur ont été identifiées : un numéro de **brochure confondu
+avec un numéro IDCC** par le référentiel d'origine (codes 3257, 3159, et le
+schéma qui a permis de les repérer). Le détail complet de cette session est
+disponible dans `RAPPORT-VERIFICATION-IDCC.md` (livré séparément lors de
+cette session, non inclus dans ce zip d'agrémentation).
+
+## 23. Retour du lot 19 — une correction IDCC supplémentaire
+
+- **enseignement-prive-heures-supplementaires.html** : découverte pendant la
+  reprise de l'agrémentation — la page utilisait IDCC 2409 (en réalité les
+  cadres des travaux publics, aucun rapport) et IDCC 2582 (déjà identifié
+  comme un code territorial du BTP de Savoie). Corrigés respectivement en
+  **IDCC 3218** (enseignement privé non lucratif) et **IDCC 2691**
+  (enseignement privé indépendant/hors contrat), cohérent avec la page
+  jumelle enseignant-prive-professeur-hs.html déjà corrigée précédemment.
+
+Codes confirmés corrects sans changement ce lot-ci : **cordonnier** (1561,
+déjà corrigé pendant la session de vérification), **barman-sommelier**
+(1979 HCR), **product-owner-scrum-master** (1486 Syntec), **sanitaire-
+social-prive** (29/413 CCN51/CCNT66), **spectacle-vivant** (3090/1285),
+**chauffeur-livreur-vl** (16 transports routiers).
+
 
 ## 21. Retour du lot 18 — deux corrections IDCC + un cas "pas de code unique"
 
