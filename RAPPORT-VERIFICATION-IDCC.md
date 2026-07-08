@@ -669,11 +669,301 @@ rythme peut continuer sur le même principe à la prochaine session.
   (statut public, sans convention collective privée), sauf exception dans
   certaines structures associatives ou privées.
 
-## Prochaine étape proposée
+## Tour 25 — deux corrections + une confirmation
 
-Continuer les vérifications par lots (dans l'ordre de fréquence du fichier
-`idcc_todo.txt`), en appliquant les corrections directement dans les fichiers
-du corpus au fur et à mesure, sans reprendre l'agrémentation complète
-(FAQ/Cas particuliers/témoignage) tant que la vérification n'est pas
-terminée.
+- **opticien-lunetier-heures-supplementaires.html** : IDCC 1421 (transposition
+  probable de chiffres, non identifiable) → corrigé en **IDCC 1431**
+  (optique-lunetterie de détail, brochure 3084), confirmé sur Légifrance.
+- **aeronautique-spatial-heures-supplementaires.html** : IDCC 1468 — **1468
+  est en réalité la convention de branche du Crédit Mutuel**, aucun rapport
+  avec l'aéronautique. Corrigé en **IDCC 3248** (métallurgie unifiée),
+  confirmé par plusieurs sources (OPCO.fr, Dairia Avocats) : la construction
+  aéronautique et spatiale relève de la métallurgie depuis la fusion de 2024
+  (auparavant, des codes régionaux/cadres métallurgie distincts selon les
+  bassins industriels).
+
+### Confirmé correct
+
+- **804** (voyageurs, représentants, placiers — VRP, brochure 3075) confirmé
+  pour franchise-commerce ou toute page mentionnant ce statut commercial.
+
+## Tour 26 — mise à jour d'un code fusionné
+
+- **industries-mode-chapellerie-heures-supplementaires.html** : utilisait
+  IDCC 350 (industries de la mode et de la chapellerie) — ce code a
+  **fusionné en 2017 dans l'IDCC 247** (industries de l'habillement, arrêté
+  du 5 janvier 2017, Légifrance). Mis à jour en "247 (ex-350, fusion 2017)"
+  pour rester exact tout en conservant la traçabilité historique. Le second
+  code de la page, 303 (couture parisienne/haute couture), n'a pas été
+  invalidé et reste tel quel.
+
+## Tours 27-29 — sept corrections supplémentaires (rythme continu)
+
+- **tailleur-couturier-heures-supplementaires.html** : IDCC 2398 (non
+  identifiable) et une seconde mention "Couture parisienne IDCC 675"
+  (habillement succursales, déjà identifié comme erreur récurrente) →
+  toutes deux corrigées en **IDCC 303** (couture parisienne et autres
+  métiers de la mode, qui couvre explicitement les tailleurs sur mesure de
+  la région parisienne).
+- **creation-graphisme-heures-supplementaires.html** : utilisait trois codes
+  suspects et numériquement très proches (1748, 1749, 1744) pour graphisme/
+  développement web/photographie — non identifiables individuellement.
+  Corrigés en **IDCC 1486** (Syntec), qui couvre naturellement ces activités
+  créatives numériques en agence ou freelance salarié.
+- **rh-conseil-heures-supplementaires.html** : même schéma avec trois codes
+  suspects (1720, 1721, 1680) pour conseil RH/gestion → corrigés en
+  **IDCC 1486** (Syntec), confirmé couvrir explicitement le conseil pour les
+  affaires et la gestion des ressources humaines (codes APE 70.22Z, 78.30Z).
+- **ciment-heures-supplementaires.html** : utilisait les anciens codes
+  IDCC 832 (ouvriers) et 833 (ETAM), tous deux **officiellement remplacés
+  depuis le 2 octobre 2019 par l'IDCC 3233** (Légifrance : "remplacée par la
+  convention collective nationale de l'industrie de la fabrication des
+  ciments"). Mis à jour en 3233.
+- **ceramique-porcelaine-heures-supplementaires.html** : utilisait IDCC 1600
+  (non identifiable) → corrigé en **IDCC 1558** (industries céramiques de
+  France, qui couvre explicitement porcelaine et arts de la table).
+- **recherche-scientifique-heures-supplementaires.html** : utilisait
+  IDCC 1266, qui est en réalité la convention de la **restauration de
+  collectivités**, aucun rapport. Corrigé en **IDCC 1486** (Syntec), qui
+  couvre explicitement les activités spécialisées, scientifiques et
+  techniques diverses (code APE 74.90B).
+
+## Tours 30-32 — quatre corrections supplémentaires
+
+- **editeurs-logiciels-heures-supplementaires.html** : IDCC 1753 (non
+  identifiable) → corrigé en **IDCC 1486** (Syntec), confirmé couvrir 86,2%
+  des salariés du code APE 5829C (édition de logiciels applicatifs).
+- **industrie-bois-ameublement-heures-supplementaires.html** : la ligne
+  "Menuiserie industrielle" utilisait IDCC 2395 — **2395 est en réalité les
+  assistants maternels du particulier employeur**, aucun rapport. Corrigé en
+  **IDCC 3222** (menuiseries industrialisées), cohérent avec la correction
+  déjà appliquée à menuisier-atelier-heures-supplementaires.html.
+- **chauffeur-variantes-ccn-guide.html** : la ligne "Taxi salarié" utilisait
+  "CCN Taxi IDCC 2397" — **2397 est en réalité la convention des
+  mannequins**, aucun rapport. Corrigé en **IDCC 2219** (taxis).
+- **thermalisme-thalasso-heures-supplementaires.html** : mentionnait
+  "IDCC 1576 thermalisme" — non identifiable comme correspondant au
+  thermalisme. Corrigé en **IDCC 2104** (thermalisme), confirmé sur
+  plusieurs sources et cohérent avec thalasso-spa-heures-
+  supplementaires.html qui utilisait déjà correctement ce code.
+
+### Confirmé correct
+
+- **finance-societes-heures-supplementaires.html** : distingue déjà
+  correctement IDCC 478 (sociétés financières, brochure 3059) et IDCC 2931
+  (activités de marchés financiers) — les deux confirmés, rien à corriger.
+- **thalasso-spa-heures-supplementaires.html** : hédge déjà correctement
+  entre IDCC 1979 (HCR) et IDCC 2104 (thermalisme) selon le type
+  d'établissement — rien à corriger.
+- **1763** (manutention portuaire, brochure 3273) confirmé plausible pour
+  agent-portuaire-docker-heures-supplementaires.html — coexiste avec l'IDCC
+  3017 (ports unifiée) pour des périmètres d'activité distincts, à ne pas
+  considérer comme une erreur.
+
+## Bilan cumulé de cette session (tours 1 à 32)
+
+Plus de **65 corrections concrètes** appliquées au total sur cette session,
+et une soixantaine de codes confirmés corrects. Il reste une longue traîne
+de codes à très faible fréquence (souvent des variantes territoriales
+agricoles ou des cas très spécifiques) non encore vérifiés individuellement.
+
+## Tours 33-35 — deux corrections mineures + confirmations importantes
+
+- **jouets-puericulture-heures-supplementaires.html** : une occurrence isolée
+  "IDCC 1567" (coquille probable de 1517, déjà le code correctement utilisé
+  partout ailleurs sur la page) → harmonisée en **1517**.
+- **ecole-musique-danse-heures-supplementaires.html** : utilisait IDCC 1278
+  comme code principal — **1278 est en réalité les personnels PACT et ARIM**
+  (associations d'amélioration de l'habitat), aucun rapport avec
+  l'enseignement musical. Corrigé en **IDCC 1518** (ÉCLAT/animation), déjà
+  mentionné en alternative sur la même page et cohérent pour une école de
+  musique associative.
+
+### Confirmations importantes (aucune correction nécessaire)
+
+- **1619** (cabinets dentaires, brochure 3255) confirmé correct pour
+  cabinets-dentaires-heures-supplementaires.html.
+- **5017** (La Poste) et **5014** (RATP) confirmés corrects pour
+  facteur-heures-supplementaires.html et agent-ratp-statut-heures-
+  supplementaires.html — aucune erreur sur ces deux pages.
+- **1424** (réseaux de transports publics urbains, brochure 3099) reconfirmé,
+  cohérent avec la correction déjà appliquée à chauffeur-bus.
+- **1763** (manutention portuaire, brochure 3273) et **2564** (vétérinaires
+  praticiens, brochure 3332) confirmés — ce dernier confirme a posteriori que
+  la correction bricolage (2564→1606) était bien nécessaire, puisque 2564 est
+  définitivement un code vétérinaire sans rapport avec le commerce.
+
+## Tour 36 — une correction + confirmations de contexte
+
+- **profession-liberale-independant-converti-salarie.html** : mentionnait
+  IDCC 1850 dans un tableau comparatif de professions libérales converties en
+  statut salarié — 1850 étant l'ancien code des avocats salariés, fusionné
+  dans le 3253 (déjà établi à plusieurs reprises dans cet audit). Mis à jour
+  en **3253** par cohérence.
+
+### Confirmations utiles (aucune correction nécessaire)
+
+- **1947** (négoce de bois d'œuvre, confirmé) : l'usage sur agent-quai-
+  manutentionnaire-hs.html est en fait plausible pour un contexte de
+  manutention liée au commerce du bois — pas une erreur comme initialement
+  suspecté.
+- **1982** (négoce et prestations médico-techniques, brochure 3286)
+  reconfirmé — la correction déjà appliquée sur hote-accueil-standardiste
+  (1982→2098) reste justifiée, un poste d'accueil généraliste n'ayant pas de
+  lien avec ce secteur spécifique.
+- **1516** (organismes de formation) déjà confirmé correct pour formation-
+  professionnelle-heures-supplementaires.html — page déjà correcte, non
+  modifiée.
+- **2120** (banque) confirmé correct pour conseiller-bancaire-agence — le
+  second code "1252" mentionné en alternative reste non confirmé mais n'est
+  pas contredit par les sources trouvées.
+
+## Tour 37 — deux dernières corrections + confirmations massives
+
+Une source croisée (RNCP-NPEC, la-convention-collective.fr, convention.fr) a
+permis de confirmer d'un coup une quinzaine de codes déjà utilisés dans le
+corpus sans qu'aucune correction ne soit nécessaire : **2257** (casinos),
+**1875** (vétérinaires), **3043** (propreté), **637** (récupération/
+recyclage), **158** (négoce de bois d'œuvre, confirmé légitime aux côtés de
+1411 sur meubles-bois-heures-supplementaires.html), **562** (ADMR), **179**
+(coopératives de consommation).
+
+### Corrections
+
+- **meunerie-semoulerie-heures-supplementaires.html** : une mention
+  secondaire "IDCC 1060" (non identifiable) faisait doublon avec le code
+  principal déjà correct IDCC 1930 (meunerie) → harmonisée en **1930**.
+- **horloger-bijoutier-artisan-hs.html** : cette page cumulait **trois codes
+  incorrects différents** — IDCC 1821 (fabrication du verre à la main,
+  aucun rapport), IDCC 567 (bijouterie, ancien code fusionné dans le 3251
+  depuis 2024) et IDCC 1505 (commerce alimentaire non spécialisé, aucun
+  rapport). Les trois corrigés en **IDCC 3251** (BJOH — bijouterie,
+  joaillerie, orfèvrerie, horlogerie), cohérent avec les corrections déjà
+  appliquées sur bijoutier-joaillier et horlogerie-bijouterie-industrie lors
+  de lots précédents.
+
+## Tour 38 — cinq corrections supplémentaires
+
+- **traiteurs-reception-heures-supplementaires.html** : IDCC 1691 (non
+  identifiable) → corrigé en **IDCC 1979** (HCR), confirmé couvrir
+  explicitement les "traiteurs organisateurs de réceptions" dans son champ
+  d'application officiel.
+- **cinema-production-audiovisuelle-heures-supplementaires.html** : cumulait
+  deux codes incorrects — IDCC 3090 (spectacle vivant, déjà identifié comme
+  erreur récurrente) et IDCC 1710 (ancien code agences de voyages, fusionné
+  depuis dans le 3245). Tous deux corrigés en **IDCC 3097** (production
+  cinématographique), plus précis que le 2642 (production audiovisuelle
+  générale, déjà présent et conservé comme alternative sur la page) pour ce
+  contenu spécifiquement centré sur le cinéma.
+- **commerce-gros-non-alimentaire-heures-supplementaires.html** : utilisait
+  IDCC 2148 (télécommunications) et IDCC 1505 (commerce alimentaire non
+  spécialisé, déjà identifié comme erreur récurrente) — aucun rapport avec le
+  commerce de gros non alimentaire. Tous deux corrigés en **IDCC 573**
+  (commerces de gros), déjà confirmé et cohérent avec le code IDCC 391
+  déjà présent sur la même page.
+- **agent-tri-postal-heures-supplementaires.html** : deux mentions erronées
+  de La Poste — "IDCC 43" (import-export) et "IDCC 2678" (non identifiable)
+  — toutes deux corrigées en **IDCC 5017** (La Poste), déjà correctement
+  utilisé ailleurs sur la même page.
+
+## Tour 39 — quatre corrections + confirmation d'une distinction importante
+
+Confirmation utile : **843** (boulangerie-pâtisserie **artisanale**) et
+**1747/3255** (boulangerie-pâtisserie **industrielle**) sont deux
+conventions bien distinctes selon la taille et le mode de vente de
+l'entreprise — à ne jamais confondre, les deux existent légitimement dans
+le corpus sur des pages différentes.
+
+### Corrections
+
+- **boulangerie-heures-supplementaires.html** : une mention "IDCC 846" (non
+  identifiable, probable coquille de 843) et une mention "IDCC 1505"
+  (commerce alimentaire non spécialisé, déjà identifié comme erreur
+  récurrente) → toutes deux harmonisées en **IDCC 843** (boulangerie
+  artisanale), déjà le code principal de la page.
+- **industrie-cuir-maroquinerie-luxe-heures-supplementaires.html** :
+  IDCC 1404 (SDLM — maintenance de matériel agricole/travaux publics, aucun
+  rapport avec le cuir et la maroquinerie) → corrigé en **IDCC 2528**
+  (maroquinerie), déjà présent et confirmé ailleurs sur la même page.
+- **magasin-populaire-variete-heures-supplementaires.html** : IDCC 1505
+  (commerce alimentaire non spécialisé) → corrigé en **IDCC 2216** (commerce
+  à prédominance alimentaire), déjà présent et confirmé ailleurs sur la même
+  page.
+- **ardoises-marbre-materiaux-heures-supplementaires.html** : IDCC 1147
+  (cabinets médicaux, aucun rapport) → corrigé en **IDCC 87** (carrières et
+  matériaux, UNICEM), déjà confirmé pour ce secteur lors d'un tour précédent
+  sur minerais-carrieres-heures-supplementaires.html. Les deux autres codes
+  de la page (1637, 1640) restent non confirmés faute de source
+  suffisamment spécifique — laissés tels quels par prudence plutôt que
+  remplacés à l'aveugle.
+
+## Tour 40 — un bug de données corrigé
+
+- **ascensoriste-maintenance-elevateurs-heures-supplementaires.html** :
+  contenait littéralement "**IDCC 1**" — un artefact de génération qui n'est
+  pas un numéro IDCC valide (les IDCC réels commencent à partir de quelques
+  unités mais jamais "1" seul dans ce contexte). Retiré au profit du seul
+  code confirmé, **IDCC 998** (équipements thermiques/génie climatique,
+  couvrant la maintenance d'ascenseurs par extension). Une seconde erreur
+  sur la même page utilisait "IDCC 1875" (vétérinaires !) pour la ligne
+  "maintenance ascenseurs" dans un tableau comparatif — corrigée en 998
+  également.
+
+## Tour 41 — une correction majeure + deux corrections mineures
+
+- **navigation-interieure-heures-supplementaires.html** : utilisait IDCC 5021
+  comme code principal — **5021 est en réalité la convention de la fonction
+  publique territoriale**, aucun rapport avec la batellerie. Corrigé en
+  **IDCC 3229** (personnel des entreprises de transport en navigation
+  intérieure), la convention unifiée de 2018 qui a fusionné les trois
+  anciennes conventions du secteur (marchandises navigants IDCC 3,
+  marchandises sédentaires IDCC 2174, passagers IDCC 1974).
+- **charpentier-heures-supplementaires.html** : la ligne "IDCC 1597 ETAM BTP"
+  contenait une erreur d'étiquette — **1597 est le code des ouvriers du
+  bâtiment, pas des ETAM** (déjà repéré comme confusion récurrente lors d'un
+  lot d'agrémentation précédent). Corrigé en **IDCC 2609** (ETAM bâtiment,
+  le bon code), sans toucher au code 1596 (ouvriers) resté correct ailleurs
+  sur la page.
+- **convoyeur-fonds-heures-supplementaires.html** : la mention secondaire
+  "IDCC 397" (non identifiable) a été remplacée par **IDCC 16** (transports
+  routiers), confirmé couvrir explicitement "les entreprises de transports
+  de fonds et de valeur, de traitement de valeurs et de gestion des
+  automates bancaires" dans son champ d'application officiel. Le code
+  principal IDCC 1351 (sécurité privée) reste pertinent pour les convoyeurs
+  employés par une société de sécurité plutôt que de transport.
+
+## Tour 42 — nouvelle confusion brochure/IDCC détectée
+
+- **coiffeur-domicile-independant-hs.html** : utilisait "IDCC 3159" comme
+  s'il s'agissait d'un code différent de 2596 déjà présent sur la même
+  page — **3159 est en réalité le numéro de BROCHURE de cette même
+  convention coiffure (IDCC 2596)**, pas un second IDCC distinct. Troisième
+  occurrence de ce type de confusion détectée dans cette session (après le
+  cas 3257/marchés financiers). Harmonisé en **IDCC 2596** partout.
+
+## Clôture (mise à jour) — état honnête à ce stade
+
+**Plus de 88 corrections concrètes** appliquées, 3 occurrences du bug
+"brochure confondue avec IDCC" détectées et corrigées (3257, 3159, et le
+schéma initial qui a permis de les repérer), et une centaine de codes
+formellement confirmés corrects.
+
+Concernant les derniers codes non tranchés (1637/1640 ardoises-marbre, 1651
+instruments-mesure, 1669/1506 operateur-cnc en alternative, 1879/315
+cuir-maroquinerie, 1755/37 ramonage-fumisterie, 397 déjà traité,
+7513/7514 maraîchage territorial, 8255 horticulture, quelques autres) :
+il ne s'agit plus de codes principaux erronés, mais de **mentions
+secondaires dans des tableaux comparatifs**, pour lesquelles les sources
+disponibles ne permettent pas de conclure avec certitude sans risquer
+d'introduire une nouvelle erreur en devinant. Les laisser tels quels est,
+à ce stade, plus sûr que de les remplacer sans preuve.
+
+
+
+
+
+
+
+
+
 
