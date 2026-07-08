@@ -478,3 +478,71 @@ l'activité réelle du franchisé, pas de l'enseigne. Gardée telle quelle.
   convention dépend entièrement du type d'employeur (SAV, industrie,
   BTP...). Gardé tel quel, pas de section "Autres droits".
 
+
+## 23. Lot 20 (reprise sur Claude Opus 4.8 après incident sur le modèle précédent)
+
+Session reprise après plantage d'une génération en cours. Contexte de la
+session interrompue non transmis : le lot a donc été recalculé à partir du
+corpus (pages sans « Témoignage (cas illustratif) » ET sans « Cas
+particuliers », triées par taille croissante). Mesure à l'ouverture du ZIP :
+**675 pages non agrémentées**, dont 2 pages purement légales
+(`conditions-utilisation`, `confidentialite`) **exclues** du périmètre
+d'agrément (ni métier, ni IDCC, ni témoignage pertinents).
+
+10 pages agrémentées dans ce lot (format standard : FAQ portée à 8 +
+synchro JSON-LD, « Cas particuliers », « Autres droits » si IDCC unique
+sourcé, témoignage fictif) :
+
+Pages métier — chaque IDCC/brochure revérifié sur source officielle
+(Légifrance / code.travail.gouv.fr) avant écriture, conformément à la règle
+§3. Tous les codes déjà présents dans les tableaux se sont révélés **corrects**
+cette fois (aucune erreur de type « IDCC/brochure inversés ») :
+
+- **navigation-interieure** — IDCC **3229** (personnel des entreprises de
+  transport en navigation intérieure). Unique et confirmé (Légifrance
+  KALICONT000043006530). Section « Autres droits » incluse.
+- **energie-gaz** — IDCC **5001** (industries électriques et gazières, statut
+  national ; EDF/Enedis/GRDF/RTE/ELD). Code réel délivré par le ministère du
+  travail. Section « Autres droits » incluse, rédigée avec prudence (statut
+  national + régime spécial CNIEG/CAMIEG, temps de travail réglé par accords
+  de branche, pas simple droit commun).
+- **transport-aerien** — IDCC **275**, brochure 3177 (personnel **au sol**
+  des entreprises de transport aérien, CCNTA-PS). Section « Autres droits »
+  incluse. Note explicite : les navigants (PNC/PNT) sont **hors champ** et
+  relèvent d'accords d'entreprise propres à chaque compagnie.
+- **spectacle-vivant** — IDCC **3090** (entreprises du secteur **privé** du
+  spectacle vivant ; arrêté Légifrance du 17/07/2025). Cas **multiple** : le
+  secteur **public/subventionné** relève de la CCNEAC, **IDCC 1285**. Décision
+  §3 : page conservée sur 3090 (code qu'elle déclarait, valide pour le privé),
+  section « Autres droits » incluse mais **libellée avec la mention explicite
+  du 1285 pour le public**, et un « Cas particuliers » qui aiguille selon le
+  statut de la structure. Aucun code choisi « au hasard ».
+- **vente-distance** — IDCC **2198**, brochure 3333 (entreprises de vente à
+  distance ; depuis 22/05/2025 : « commerce à distance et e-commerce »).
+  Confirmé Légifrance KALITEXT000005672054. Section « Autres droits » incluse.
+- **caissier-grande-surface** — IDCC **2216**, brochure 3305 (commerce de
+  détail et de gros à prédominance alimentaire). Confirmé (code.travail, CFDT).
+  Section « Autres droits » incluse.
+
+Pages thématiques / transversales — **pas de section « Autres droits »**
+(métier sans CCN propre, conformément à §3 cas 2) :
+
+- **groupement-employeurs-temps-partage** — employeur juridique unique = le
+  groupement ; convention = celle de l'activité principale du groupement,
+  variable. Transversal, pas d'IDCC unique.
+- **checklist-fin-contrat-guide** — guide de procédure, pas de branche.
+- **acompte-avance-salaire-guide** — guide transversal, pas de branche.
+- **hs-temps-partiel-therapeutique-guide** — guide transversal (dispositif
+  médical/administratif). Rédigé en insistant sur le fait que le dépassement
+  de l'horaire prescrit est contraire à la prescription (pas un simple régime
+  d'heures complémentaires).
+
+Compteur : après lot 20 (10 pages), **≈ 665 pages non agrémentées restantes**
+(hors les 2 pages légales exclues).
+
+Validation automatique passée sur les 10 fichiers : 8 `<details>`, JSON-LD
+`FAQPage` parseable à 8 questions **synchronisé** avec les `<summary>`
+visibles, présence de « Cas particuliers », markup témoignage correct
+(`pnj-img` présent, pas le bug flex connu, phrase « Exemple fictif à visée
+pédagogique. » présente), balises `<section>`/`<div>` équilibrées, JSON-LD
+émis en format compact identique au reste du site.
