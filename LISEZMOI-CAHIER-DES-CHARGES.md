@@ -1011,3 +1011,61 @@ Compteur : après lot 28 (10 pages), **≈ 583 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 32. Lot 29
+
+10 pages agrémentées. **2 erreurs IDCC réelles trouvées et corrigées**
+(dont une découverte en profondeur en lisant au-delà du tableau principal).
+
+**boucher-charcutier-heures-supplementaires** — affichait **IDCC 1534** sur
+5 occurrences, systématiquement qualifié de « boucherie ». Mais 1534 est en
+réalité le code des entreprises de l'**industrie et du commerce de gros**
+des viandes — pas le commerce de détail. Le bon code pour une
+boucherie-charcuterie de quartier est **IDCC 992** (boucherie,
+boucherie-charcuterie et boucherie hippophagique, triperie, commerce de
+volailles et gibiers), confirmé sur plusieurs sources. Corrigé partout ;
+1534 reste mentionné une fois, à dessein, dans la section « Autres droits »
+pour signaler explicitement que le commerce de gros relève d'un code
+différent — nuance volontaire, pas une erreur résiduelle.
+
+**chauffeur-bus-heures-supplementaires** — cas à deux niveaux :
+1. La cellule du tableau récapitulatif principal affichait **IDCC 650**
+   (ingénieurs et cadres de la métallurgie — sans aucun rapport), alors que
+   le reste de la page (meta, topbar, intro) disait déjà correctement
+   **1424** (réseaux de transports publics urbains de voyageurs). Erreur
+   isolée corrigée par cohérence interne, même schéma que banque (lot 26)
+   et audiovisuel-radio (lot 22).
+2. **Erreur supplémentaire trouvée en lisant plus loin dans le corps de la
+   page** (au-delà du tableau IDCC initial) : un second tableau comparatif
+   assignait « FPT ou Transdev/Keolis CCN **IDCC 1596** » à la ligne
+   « Bus urbain (réseau public) » — 1596 est le code des ouvriers du
+   bâtiment (≤10 salariés), totalement hors sujet pour un opérateur de
+   transport urbain. Corrigé vers **1424**, cohérent avec le fait que les
+   délégataires privés (Transdev, Keolis) appliquent la même convention que
+   les régies publiques dès lors que l'activité principale reste le
+   transport urbain de voyageurs.
+
+Cette double erreur sur la même page confirme l'intérêt de lire l'intégralité
+du corps de texte (pas seulement le premier tableau IDCC) avant de valider
+une page comme correcte.
+
+Codes vérifiés et confirmés corrects (sans modification) :
+- **developpeur-web-hs-guide** — IDCC 1486 (Syntec), confirmé.
+- **devops-ingenieur** — IDCC 1486 (Syntec), confirmé.
+- **operateur-cnc-machiniste** — IDCC 3248 (métallurgie), confirmé à
+  plusieurs reprises lors de sessions précédentes.
+
+Codes identifiés et ajoutés :
+- **credit-impot-services-personne** — IDCC 3239 (particuliers employeurs
+  et emploi à domicile), déjà confirmé lors d'une recherche précédente
+  (lot 24, TISF).
+
+Pages transversales sans section « Autres droits » : regles-hs-transport-
+routier-detail (généraliste, malgré la mention IDCC 16 dans « Autres
+droits » — en fait inclus), interim-vs-cdd-vs-cdi-comparatif,
+dpae-formalites-embauche-guide, coemploi-guide.
+
+Compteur : après lot 29 (10 pages), **≈ 573 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
