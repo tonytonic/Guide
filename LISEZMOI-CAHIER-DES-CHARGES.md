@@ -610,3 +610,76 @@ Compteur : après lot 21 (10 pages), **≈ 653 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères que lot 20).
+
+## 25. Lot 22
+
+10 pages agrémentées. Session avec un nombre inhabituellement élevé de
+corrections IDCC — **3 erreurs réelles trouvées et corrigées**, en plus des
+nuances habituelles sur les cas multiples. Détail :
+
+**fleuriste-vendeur-heures-supplementaires** — affichait **IDCC 1077**
+(entreprises du négoce et de l'industrie des produits du sol, engrais et
+produits connexes — un secteur agricole B2B sans rapport avec la
+fleuristerie). Fait notable : la page contenait déjà, plus bas dans un
+tableau ajouté lors d'une session précédente, la mention correcte « CCN
+Fleuristes, IDCC 1978 » — auto-contradiction interne. Corrigé partout vers
+**IDCC 1978** (fleuristes, vente et services des animaux familiers), confirmé
+sur plusieurs sources dont code.travail.gouv.fr. 4 occurrences corrigées.
+
+**agent-tri-postal-heures-supplementaires** — affichait **IDCC 5017** à 7
+endroits, y compris dans un tableau comparatif où ce même numéro était
+attribué à la fois à « La Poste (salariés de droit privé) » et aux
+« opérateurs alternatifs (DPD, Chronopost) » — deux entités distinctes ne
+peuvent pas partager un IDCC, signe que la valeur était fabriquée (confirmé
+par des sources tierces se contredisant sur l'identité du 5017, l'une disant
+« La Poste », une autre « Église »). Corrigé :
+- La Poste (salariés de droit privé) → **IDCC 5516** (Convention Commune La
+  Poste / La Banque Postale), confirmé.
+- Opérateurs alternatifs (DPD, Chronopost) → **IDCC 16** (transports routiers
+  et activités auxiliaires du transport, brochure 3085), confirmé
+  (juritravail cite explicitement Chronopost sous ce code).
+- La Poste (fonctionnaires) : la page indiquait déjà correctement « statut
+  fonctionnaire, pas d'IDCC » — laissé tel quel.
+
+**audiovisuel-radio-heures-supplementaires** — cas différent : toute la page
+(meta, JSON-LD, topbar, intro) citait déjà correctement **IDCC 1922**
+(radiodiffusion), sauf une cellule isolée du tableau récapitulatif qui
+affichait « 1780 » (= ouvriers du bâtiment PACA +10 salariés — sans aucun
+rapport, probablement une faute de frappe/copier-coller sur une seule
+cellule). Corrigée vers 1922 par cohérence interne avec le reste de la page.
+Nuance ajoutée en « Cas particuliers »/« Autres droits » : le secteur a
+plusieurs conventions distinctes selon l'activité exacte — radiodiffusion
+privée (1922), production audiovisuelle TV (2642), et les journalistes
+relèvent en parallèle systématique de l'IDCC 1480 quel que soit l'employeur
+(confirmé via l'accord professionnel AFDAS du 19/11/2018 qui liste tous les
+codes du secteur spectacle enregistré/audiovisuel).
+
+**peremption-instance-prudhommes-guide** — anomalie différente, sans lien
+avec les IDCC : la page avait une FAQ visible (3 questions) mais **aucun
+JSON-LD FAQPage** correspondant (seul un JSON-LD `Article` était présent).
+Le script d'agrémentation a détecté l'absence et inséré un nouveau bloc
+JSON-LD FAQPage à 8 questions, synchronisé avec le bloc visible, plutôt que
+d'échouer silencieusement.
+
+Codes vérifiés et confirmés corrects (pas d'erreur) :
+- **editeurs-logiciels** — IDCC 1486 (Syntec), confirmé, NAF 5829C
+  explicitement listé dans le champ de cette convention.
+- **electricien-batiment** — IDCC 1596 (ouvriers bâtiment ≤10 salariés),
+  correct mais nuance ajoutée : entreprise de +10 salariés → IDCC 1597 ; ETAM
+  → IDCC 2609 ; cadres → IDCC 2420. C'est l'effectif de l'entreprise, pas le
+  métier, qui tranche.
+- **enseignant-prive-professeur-hs** — IDCC 3218 (enseignement privé non
+  lucratif), confirmé. Nuance : le statut de rémunération de l'enseignement
+  proprement dit suit des règles particulières distinctes du droit commun.
+- **teleconseiller-assurance** — IDCC 2247 (courtage d'assurances/
+  réassurances), confirmé mais nuance ajoutée : un téléconseiller salarié
+  direct d'une compagnie d'assurance (non un courtier) peut relever d'une
+  convention différente.
+
+Pages transversales sans section « Autres droits » : indemnite-transport-guide,
+chiffres-cles-heures-supplementaires-france, peremption-instance-prudhommes-guide.
+
+Compteur : après lot 22 (10 pages), **≈ 643 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
