@@ -1069,3 +1069,57 @@ Compteur : après lot 29 (10 pages), **≈ 573 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 33. Lot 30
+
+10 pages agrémentées. **1 erreur IDCC franche corrigée**, plus **1
+incohérence de hiérarchisation corrigée** sur une deuxième page opticien
+rencontrée sur le corpus (distincte de celle du lot 27).
+
+**messagerie-livraison-heures-supplementaires** — affichait **IDCC 1694**
+sur 7 occurrences, sans qu'aucune source consultée ne confirme l'existence
+d'une convention portant ce numéro (probable valeur fabriquée, comme
+plusieurs cas précédents cette session). Corrigé vers **IDCC 16**
+(transports routiers et activités auxiliaires du transport), dont le champ
+d'application cite explicitement et à plusieurs reprises « messagerie et
+fret express », « livraison du dernier kilomètre » et « coursiers urbains ».
+
+**opticien-lunetier-heures-supplementaires** — cas différent des erreurs
+habituelles : la page ne contenait pas un code faux à proprement parler,
+mais une **hiérarchisation trompeuse**. Elle présentait IDCC 1517 (commerce
+de détail non alimentaire, générique) comme « le plus courant » pour un
+opticien, alors qu'un tableau ajouté plus bas dans la même page (lors d'une
+session antérieure) citait déjà correctement IDCC 1431 (optique-lunetterie
+de détail, la convention **spécifique** au métier) — auto-contradiction
+interne du même type que sur fleuriste-heures-supplementaires (lot 23).
+Or une convention spécifique à l'activité principale prévaut en principe
+sur une convention généraliste. Corrigé : 1431 promu en position
+principale, 1517 conservé mais reformulé comme cas de repli pour les
+réseaux non spécialisés (parapharmacies, grands magasins) où l'optique
+reste une activité accessoire.
+
+Codes vérifiés et confirmés corrects (sans modification) :
+- **coach-sportif-salarie** — IDCC 2511 (sport), confirmé. Nuance ajoutée :
+  un coach indépendant (statut TNS) est hors champ de cette convention.
+- **orthoptiste-salarie** — IDCC 1147 (cabinets médicaux), confirmé pour
+  l'exercice en cabinet libéral, avec nuance clinique (IDCC 2264 possible).
+- **carrossier-peintre-auto** — IDCC 1090 (commerce et réparation
+  automobile), confirmé.
+
+Cas volontairement non tranchés (règle §3), pas de section « Autres droits »
+forcée :
+- **juriste-entreprise** — pas de convention unique pour la profession de
+  juriste en général ; dépend entièrement du secteur réel de l'employeur
+  (Syntec pour un cabinet de conseil, convention de la branche pour un
+  juriste intégré en entreprise industrielle/commerciale).
+- **technicien-qualite-industrie** — même logique : le poste existe dans
+  presque tous les secteurs industriels, chacun avec sa propre convention.
+
+Pages transversales sans section « Autres droits » : ifc-indemnite-fin-cdd-
+detail-guide, transaction-apres-licenciement-guide, apprenti-alternant-hs-
+guide.
+
+Compteur : après lot 30 (10 pages), **≈ 563 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
