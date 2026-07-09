@@ -786,3 +786,108 @@ Compteur : après lot 24 (10 pages), **≈ 623 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 28. Lot 25
+
+10 pages agrémentées. **2 erreurs IDCC réelles trouvées et corrigées**, plus
+une fausse alerte utile à documenter.
+
+**travaux-publics-heures-supplementaires** — affichait **IDCC 1604** sur 10
+occurrences (titre, meta, JSON-LD, topbar, eyebrow, tableau, paragraphe).
+Code sans rapport identifié avec les travaux publics. Corrigé vers
+**IDCC 1702** (ouvriers des travaux publics, tome II, brochure 3005T2),
+confirmé sur code.travail.gouv.fr et plusieurs sources professionnelles. Note
+ajoutée : les ETAM des travaux publics relèvent de l'IDCC 2614, les cadres
+de l'IDCC 3212 — conventions distinctes de celle des ouvriers.
+
+**manucure-prothesiste-ongulaire-heures-supplementaires** — affichait
+**IDCC 2596**, systématiquement qualifié de « Esthétique-cosmétique » dans
+le texte (5 occurrences) — mais 2596 est en réalité le code de la
+**coiffure et des professions connexes**, une branche voisine mais
+distincte. Le bon code pour l'esthétique-cosmétique (qui couvre
+explicitement « manucure, stylisme ongulaire » dans son champ d'application
+officiel) est **IDCC 3032**. Corrigé partout.
+
+**Fausse alerte instructive** — `infirmier-hopital-heures-supplementaires`
+affiche IDCC 2264 (hospitalisation privée), ce qui aurait pu sembler
+incohérent avec un slug/titre générique « hôpital ». Vérification du
+contenu réel de la page : le texte précise déjà explicitement « hôpital
+**privé** » et « hospitalisation privée » dans son intro et son corps —
+2264 est donc correct, aucune erreur. Nuance ajoutée quand même en
+« Cas particuliers » et dans le libellé « Autres droits » pour clarifier
+qu'à l'hôpital **public**, l'infirmier relève du statut de la fonction
+publique hospitalière (pas d'IDCC), au cas où un lecteur arriverait sur la
+page en cherchant des informations plus larges sur « infirmier hôpital ».
+Leçon retenue : toujours lire le corps du texte avant de conclure à une
+erreur sur la base du seul slug ou titre de la page.
+
+Codes vérifiés et confirmés corrects (sans modification) :
+- **commerce-detail** — IDCC 1517 (commerces de détail non alimentaires),
+  cohérent avec le modèle déjà utilisé en session précédente (page
+  vendeur-conseil-magasin). Section « Autres droits » incluse.
+- **gardiennage-immeuble** — IDCC 1043 (gardiens, concierges et employés
+  d'immeubles), confirmé. Section « Autres droits » incluse.
+- **services-personne** — IDCC 3127 (entreprises de services à la personne),
+  confirmé. La page posait déjà elle-même la question de la distinction
+  avec l'IDCC 3220 dans sa FAQ native — nuance conservée et développée en
+  « Cas particuliers » plutôt que tranchée arbitrairement.
+- **infirmier-hopital** — IDCC 2264 confirmé correct (voir fausse alerte
+  ci-dessus).
+
+Codes identifiés et ajoutés (la page ne déclarait aucun IDCC) :
+- **courtier-assurance-salarie** — IDCC 2247 (courtage d'assurances/
+  réassurances), même code que teleconseiller-assurance du lot 22, avec la
+  même nuance courtier/assureur direct.
+- **agent-collecte-dechets** — IDCC 2149 (activités du déchet), confirmé.
+- **animateur-bafa-contrat-engagement-educatif** — IDCC 1518 (ÉCLAT,
+  ex-Animation), confirmé, avec la nuance que le CEE lui-même déroge au
+  droit commun du temps de travail (forfait journalier, repos spécifique) —
+  la convention encadre la structure employeuse, pas le régime du CEE en
+  tant que tel.
+
+Pages transversales sans section « Autres droits » : reconversion-
+professionnelle-guide.
+
+Compteur : après lot 25 (10 pages), **≈ 613 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 29. Lot 26
+
+10 pages agrémentées. **1 erreur IDCC trouvée et corrigée** (erreur isolée,
+même type que le cas audiovisuel-radio du lot 22).
+
+**banque-heures-supplementaires** — la cellule du tableau récapitulatif
+affichait **IDCC 675**, alors que tout le reste de la page (meta, topbar,
+eyebrow, paragraphe sous le tableau) citait déjà correctement **IDCC 2120**
+(banque AFB, brochure 3161). Erreur de saisie isolée sur une seule cellule,
+corrigée par cohérence interne avec le reste de la page. IDCC 2120 confirmé
+sur code.travail.gouv.fr et Légifrance. Nuance ajoutée : les banques
+mutualistes (Crédit Agricole IDCC 2240, Caisses d'Épargne, Banques
+Populaires, Crédit Mutuel) disposent de conventions ou statuts propres,
+distincts de l'AFB qui ne couvre que les banques commerciales.
+
+Codes vérifiés et confirmés corrects (sans modification) :
+- **psychomotricien-salarie** — IDCC 413 (Convention 66, établissements et
+  services pour personnes inadaptées et handicapées), confirmé. Section
+  « Autres droits » incluse.
+- **podologue-salarie** — IDCC 1147 (cabinets médicaux), déjà correctement
+  déclaré avec son libellé. Confirmé applicable à un podologue salarié d'un
+  professionnel de santé libéral. Nuance ajoutée : en clinique privée,
+  IDCC 2264 s'applique à la place.
+- **equipements-thermiques** — IDCC 998 (OETAM) confirmé, avec IDCC 1256
+  pour les cadres/ingénieurs de la même branche.
+- **journaliste-pigiste-requalification** — IDCC 1480 (journalistes),
+  bien établi et déjà confirmé à plusieurs reprises lors de sessions
+  précédentes (lot 22, recherches sur l'audiovisuel).
+
+Pages transversales sans section « Autres droits » (6 sur 10 ce lot-ci) :
+religion-laicite-entreprise-guide, droit-deconnexion-hs-guide,
+regles-paie-bulletins-specifiques, attestation-france-travail-erreurs-guide,
+prud-hommes-procedure-guide.
+
+Compteur : après lot 26 (10 pages), **≈ 603 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
