@@ -949,3 +949,65 @@ Compteur : après lot 27 (10 pages), **≈ 593 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 31. Lot 28
+
+10 pages agrémentées. **2 erreurs IDCC réelles trouvées et corrigées**.
+Session avec une **troisième page fleuriste** rencontrée sur le corpus —
+vérifié que ce n'est pas un doublon de contenu (fleuriste-vendeur-heures-
+supplementaires, lot 22 ; fleuriste-heures-supplementaires, lot 23 ;
+fleuriste-vendeur-boutique-hs, ce lot-ci — trois pages au contenu distinct,
+coexistence normale sur un corpus de ~1000 pages avec de nombreux angles
+par métier).
+
+**hote-accueil-heures-supplementaires** — affichait **IDCC 1734** sur 5
+occurrences, alors même que le texte nommait déjà correctement le type de
+convention (« prestataires de services tertiaires ») — mais avec le
+mauvais numéro : 1734 est en réalité le code des artistes-interprètes
+engagés pour des émissions de télévision (repéré dès le lot 22 dans le
+contexte audiovisuel), sans aucun rapport avec l'accueil. Le bon code,
+**IDCC 2098**, a été confirmé explicitement : son champ d'application cite
+noir sur blanc « les services d'accueil à caractère événementiel ».
+Corrigé partout.
+
+**fleuriste-vendeur-boutique-hs** — affichait **IDCC 2583** sur 5
+occurrences, qualifié à tort de « convention nationale des fleuristes ».
+2583 est en réalité le code des sociétés concessionnaires ou exploitantes
+d'autoroutes — un secteur sans le moindre rapport, un des écarts les plus
+absurdes recensés dans ce chantier. Corrigé vers **IDCC 1978** (fleuristes,
+vente et services des animaux familiers), déjà confirmé à deux reprises
+lors de sessions précédentes (lots 22 et 23).
+
+Codes vérifiés et confirmés corrects (sans modification) :
+- **conducteur-autocar-tourisme** — IDCC 16, déjà correctement libellé
+  « Transport routier, annexe voyageurs ».
+- **preparateur-pharmacie-officine** — IDCC 1996 (pharmacie d'officine),
+  confirmé.
+- **agent-service-hospitalier** — IDCC 2264 confirmé correct ; la page
+  précise déjà explicitement « en clinique privée » dans son texte
+  d'intro, donc pas d'erreur malgré un titre générique. Nuance FPH ajoutée
+  pour le public.
+- **convoyeur-fonds** — IDCC 1351 (prévention et sécurité) confirmé comme
+  le code dominant en pratique pour ce métier (armes, habilitations,
+  activité de sécurité), même si l'IDCC 16 (transports routiers) couvre
+  également nommément le « transport de fonds et de valeurs » dans son
+  champ d'application. Cas non tranché de façon définitive : les deux
+  conventions sont défendables selon la classification réelle de
+  l'entreprise. Nuance explicite ajoutée plutôt que de choisir arbitrairement.
+
+Codes identifiés et ajoutés (la page ne déclarait aucun IDCC) :
+- **infirmier-bloc-operatoire-ibode** — IDCC 2264 pour le cadre clinique
+  privée (la page posait déjà elle-même la question du régime public vs
+  privé dans sa FAQ native), avec nuance FPH pour le secteur public.
+- **conducteur-machine-agricole-eta** — IDCC 7024 (production agricole et
+  CUMA), les entreprises de travaux agricoles (ETA) relevant généralement
+  de la même convention nationale que les exploitations classiques, sous
+  réserve d'accords départementaux spécifiques comme déjà noté au lot 21.
+
+Pages transversales sans section « Autres droits » : saisie-salaire-hs-
+guide, organisation-temps-travail-guide.
+
+Compteur : après lot 28 (10 pages), **≈ 583 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
