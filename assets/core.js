@@ -58,13 +58,10 @@
     var mount = document.getElementById("hs-hero-cta");
     if (!mount) return;
     var label = mount.getAttribute("data-label") || "Ouvrir le simulateur";
-    var customSub = mount.getAttribute("data-sub") ||
-      "iPhone via ce lien (web), Android sur le Play Store.";
     var platform = detectPlatform();
 
     var btnIosPrimary      = '<a class="btn" href="' + S.appUrl + '" target="_blank" rel="noopener">' + label + ' <span class="arr">→</span></a>';
     var btnAndroidPrimary  = '<a class="btn" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
-    var btnAndroidSecondary = '<a class="btn-outline" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Version Android <span class="arr">→</span></a>';
 
     var buttons, sub;
     if (platform === "android") {
@@ -74,8 +71,9 @@
       buttons = btnIosPrimary;
       sub = "web app, ajoute-la à ton écran d'accueil.";
     } else {
-      buttons = btnIosPrimary + btnAndroidSecondary;
-      sub = customSub;
+      // PC/Mac : pas de lien direct vers l'appli, optimisée mobile uniquement.
+      buttons = '<span class="btn-outline" style="cursor:default">📱 Optimisée mobile</span>';
+      sub = "ouvre cette page sur iPhone ou Android pour accéder au simulateur.";
     }
 
     mount.outerHTML =
@@ -89,11 +87,11 @@
     var platform = detectPlatform();
     var btnIos             = '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' iPhone (web) <span class="arr">→</span></a>';
     var btnAndroidPrimary  = '<a class="btn-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
-    var btnAndroidOutline  = '<a class="btn-outline-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Android (Play Store) <span class="arr">→</span></a>';
+    var desktopNotice      = '<span class="btn-outline-light" style="cursor:default">📱 Optimisée mobile — ouvre cette page sur iPhone ou Android</span>';
 
     if (platform === "android") return btnAndroidPrimary;
     if (platform === "ios") return btnIos;
-    return btnIos + btnAndroidOutline;
+    return desktopNotice; // PC/Mac : pas de lien direct vers l'appli, optimisée mobile uniquement.
   }
   window.HS_appCtaHtml = appCtaHtml; // réutilisable par d'autres scripts de la page (ex: switchTab dans index.html)
 
