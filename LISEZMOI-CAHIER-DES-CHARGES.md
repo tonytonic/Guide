@@ -745,3 +745,44 @@ Compteur : après lot 23 (10 pages), **≈ 633 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 27. Lot 24
+
+10 pages agrémentées. Aucune erreur IDCC détectée cette fois — tous les
+codes déjà présents (504, 179, plus le nouveau 1147 identifié) se sont
+révélés corrects. Session dominée par des pages transversales (6 sur 10
+sans CCN propre) et un cas volontairement non tranché.
+
+Codes vérifiés et confirmés corrects :
+- **agroalimentaire** — IDCC 504 (industries alimentaires diverses,
+  agroalimentaire, groupe des 5 branches), brochure 3092, confirmé
+  Légifrance. Section « Autres droits » incluse.
+- **cooperatives-consommation** — IDCC 179 (personnel des coopératives de
+  consommation), brochure 3072, confirmé Légifrance. Section « Autres
+  droits » incluse.
+- **secretaire-medicale** — IDCC 1147 (personnel des cabinets médicaux),
+  identifié et confirmé (code.travail.gouv.fr + Légifrance). Nuance ajoutée :
+  ce code ne couvre que les cabinets de médecine **libérale** ; une
+  secrétaire médicale en clinique privée relève de l'IDCC 2264
+  (hospitalisation privée), et en hôpital public d'un statut différent.
+  Section « Autres droits » incluse sur 1147 avec cette réserve explicite.
+
+Cas volontairement non tranché (règle §3) :
+- **chercheur-ingenieur-recherche-hs** — pas de section « Autres droits »
+  unique. Il n'existe pas de convention collective dédiée à la recherche
+  privée en général : la convention applicable dépend entièrement du
+  secteur réel de l'employeur (pharmaceutique, chimie, Syntec pour un bureau
+  d'études/conseil, etc.). Les chercheurs des organismes publics
+  (CNRS, INSERM) relèvent d'un statut public, hors droit commun du travail.
+  Le "Cas particuliers" détaille ces situations plutôt que d'inventer un
+  code générique "recherche".
+
+Pages transversales sans section « Autres droits » (6 sur 10 ce lot-ci) :
+protection-lanceur-alerte-hs-guide, portabilite-droits-mobilite-guide,
+bureau-conciliation-orientation-bco-guide, conge-sabbatique-enrichi,
+taux-cotisations-2026-guide, geolocalisation-vehicules-professionnels-guide.
+
+Compteur : après lot 24 (10 pages), **≈ 623 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
