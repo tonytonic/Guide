@@ -683,3 +683,65 @@ Compteur : après lot 22 (10 pages), **≈ 643 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 26. Lot 23
+
+10 pages agrémentées. Aucune erreur IDCC cette fois (tous les codes déjà
+présents se sont révélés corrects), mais deux découvertes utiles pour la
+suite du chantier :
+
+**Bug de script détecté et corrigé** — `hospitalisation-privee-heures-
+supplementaires` utilisait un format JSON-LD FAQPage **multi-lignes indenté**
+(`{`\n`  "@context":...`) au lieu du format compact sur une ligne utilisé
+partout ailleurs sur le site. Le script d'agrémentation ne le reconnaissait
+pas et échouait. Corrigé en rendant la regex de détection tolérante à un
+saut de ligne entre l'accolade ouvrante et `"@context"`. À garder en tête :
+toutes les pages ne suivent pas rigoureusement le même format JSON-LD selon
+la session/l'outil qui les a générées à l'origine.
+
+**fleuriste-heures-supplementaires** (distincte de `fleuriste-vendeur-
+heures-supplementaires`, déjà traitée au lot 22 — ce n'est pas un doublon)
+affichait déjà correctement **IDCC 1978**. Aucune correction nécessaire.
+
+Codes vérifiés et confirmés corrects :
+- **hotellerie-plein-air** — IDCC 1631, confirmé (code.travail.gouv.fr).
+  Section « Autres droits » incluse.
+- **traiteurs-reception** — IDCC 1979 (HCR) : confirmé comme la convention
+  **majoritaire** pour ce secteur, mais pas systématique — une source
+  professionnelle (convention.fr, données par code NAF 5621Z) montre que HCR
+  ne couvre que 71,8 % des salariés de ce code NAF ; le reste se répartit
+  entre plusieurs autres conventions (charcuterie-traiteur, restauration
+  collective, boulangerie-pâtisserie, restauration rapide). Page conservée
+  sur 1979 (majoritaire et déjà déclaré) mais nuance explicite ajoutée en
+  « Cas particuliers » et dans le libellé « Autres droits » plutôt que de
+  présenter 1979 comme universel.
+- **comptable-expert-hs-guide** — IDCC 787 (cabinets d'experts-comptables et
+  de commissaires aux comptes), confirmé. Section « Autres droits » incluse.
+- **hospitalisation-privee** — IDCC 2264 (hospitalisation privée), confirmé
+  et ajouté en section « Autres droits » (la page ne l'affichait pas dans un
+  tableau IDCC mais le titre y faisait déjà référence via le contingent de
+  130 h propre à cette convention).
+
+Cas multiples traités par nuance en texte (règle §3), sans section « Autres
+droits » univoque forcée :
+- **technicien-intervention-sociale-familiale-tisf** — cas principal : salarié
+  associatif relevant de la branche de l'aide à domicile (IDCC 2941,
+  confirmé — TISF explicitement cité dans la classification de cette
+  convention). Nuancé : un TISF employé en direct par un particulier (CESU)
+  relève de l'IDCC 3239 (particuliers-employeurs) ; un TISF en établissement
+  social ou médico-social peut relever d'une autre convention — non
+  chiffrée, faute de vérification, pour ne pas inventer un numéro.
+- **infirmier-anesthesiste-iade** — duel de statut déjà pressenti par la FAQ
+  existante de la page (question native : « le régime change-t-il si je
+  passe d'une clinique privée à un hôpital public ? »). Confirmé : clinique
+  privée → IDCC 2264 (hospitalisation privée) ; hôpital public → statut de la
+  fonction publique hospitalière, pas d'IDCC. Section « Autres droits »
+  bâtie sur 2264 avec la nuance FPH explicitement mentionnée dans le titre.
+
+Pages transversales sans section « Autres droits » : inaptitude-guide,
+solde-tout-compte-verification-guide, accord-performance-collective-guide.
+
+Compteur : après lot 23 (10 pages), **≈ 633 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
