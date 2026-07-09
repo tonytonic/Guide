@@ -891,3 +891,61 @@ Compteur : après lot 26 (10 pages), **≈ 603 pages non agrémentées
 restantes**.
 
 Validation automatique passée sur les 10 fichiers (mêmes critères).
+
+## 30. Lot 27
+
+10 pages agrémentées. **1 erreur IDCC réelle trouvée et corrigée**, plus une
+nuance Syntec importante ajoutée pour éviter une généralisation abusive.
+
+**opticien-lunetier-conseil-hs** — affichait **IDCC 1624** sur 5
+occurrences (meta, topbar, tableau, paragraphe), systématiquement qualifié
+d'« optique-lunetterie de détail » dans le texte — mais 1624 est en réalité
+le code de la confiserie/chocolaterie/biscuiterie (déjà repéré comme piège
+classique au lot 20, absorbé dans le 573 depuis 2017). Le bon code pour
+l'optique-lunetterie de détail est **IDCC 1431**, confirmé sur Légifrance et
+plusieurs sources professionnelles. Corrigé partout.
+
+**Nuance importante ajoutée sur Syntec** — `recherche-scientifique-heures-
+supplementaires` déclarait déjà IDCC 1486 (Syntec). Ce code n'est pas
+incorrect en soi, mais son usage doit être borné : Syntec ne couvre que les
+entreprises dont l'activité principale est de **vendre des prestations de
+R&D à des clients** (bureaux d'études, sociétés de conseil, R&D
+externalisée). Un département R&D **interne** à une entreprise
+pharmaceutique, chimique ou industrielle relève de la convention de sa
+propre branche, pas de Syntec. Cette distinction, déjà actée en creux au
+lot 24 pour la page `chercheur-ingenieur-recherche-hs` (qui n'avait
+volontairement aucune section « Autres droits » pour cette raison), est
+maintenant explicitée dans le « Cas particuliers » de cette page-ci plutôt
+que de laisser 1486 apparaître comme une réponse universelle au secteur
+R&D.
+
+**tailleur-couturier-heures-supplementaires** — la page elle-même
+mentionnait déjà, dans son texte d'introduction, que le métier « relève
+d'une convention propre à la couture ou du commerce de détail selon le type
+d'employeur ». Cette nuance native a été respectée : pas de section
+« Autres droits » forcée, « Cas particuliers » détaillant les trois
+configurations plausibles (atelier de haute couture, confection
+industrielle, commerce de détail de l'habillement) sans trancher au hasard.
+
+Codes vérifiés et confirmés corrects (sans modification) :
+- **carreleur-poseur-revetement-hs** — IDCC 1596 (bâtiment ≤10 salariés),
+  même nuance qu'électricien-bâtiment et grutier-BTP sur l'effectif.
+- **plasturgie** — IDCC 292, confirmé.
+- **mecanicien-auto** — IDCC 1090 (commerce et réparation automobile),
+  confirmé.
+- **cariste-frigorifique** — IDCC 200 (exploitations frigorifiques),
+  confirmé.
+- **manipulateur-radio** — IDCC 2264 (hospitalisation privée) confirmé pour
+  le cadre clinique, avec nuance : cabinet de radiologie libéral hors
+  clinique → IDCC 1147 possible ; hôpital public → statut FPH.
+- **grutier-btp** — IDCC 1596, même nuance que carreleur/électricien.
+
+Codes identifiés et ajoutés :
+- **portage-salarial-hs-avance-guide** — IDCC 3219 (branche du portage
+  salarial), déjà repéré comme code confirmé lors d'une recherche
+  précédente (lot 21, en lien avec le tableau IDCC/brochure de l'AFDAS).
+
+Compteur : après lot 27 (10 pages), **≈ 593 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères).
