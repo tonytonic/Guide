@@ -546,3 +546,67 @@ visibles, présence de « Cas particuliers », markup témoignage correct
 (`pnj-img` présent, pas le bug flex connu, phrase « Exemple fictif à visée
 pédagogique. » présente), balises `<section>`/`<div>` équilibrées, JSON-LD
 émis en format compact identique au reste du site.
+
+## 24. Lot 21
+
+10 pages agrémentées (format standard identique aux lots précédents).
+
+**Correction IDCC significative repérée et appliquée** — `avocats-heures-supplementaires` :
+la page déclarait **IDCC 218**, qui est en réalité le code des *organismes de
+sécurité sociale*, sans aucun rapport avec les cabinets d'avocats. Erreur
+présente sur 10 occurrences dans le fichier (meta description, og:title,
+JSON-LD Article, BreadcrumbList, topbar `data-stamp`, eyebrow, paragraphe
+d'intro, tableau). Corrigée vers **IDCC 3253** — la nouvelle convention
+collective unique des salariés des cabinets d'avocats, signée le 21 juin 2024,
+étendue par arrêté du 18 septembre 2025 (JORF 26/09/2025), en vigueur depuis
+le 1er octobre 2025. Elle fusionne les deux anciennes conventions : IDCC 1000
+(personnel non-avocat des cabinets) et IDCC 1850 (avocats salariés). Confirmé
+sur Légifrance (KALICONT000052331573, KALISCTA000050220002) et
+code.travail.gouv.fr. Ce n'est pas une simple erreur d'inversion IDCC/brochure
+comme sur commerce-gros-non-alimentaire : c'était un code totalement étranger
+au métier de la page. Section « Autres droits » rédigée sur la base du 3253,
+avec mention explicite de la fusion 1000/1850 dans le « Cas particuliers ».
+
+Autres pages métier — codes vérifiés, tous corrects :
+
+- **soudeur-industrie** — IDCC **3248** (métallurgie). Confirmé. Section
+  « Autres droits » incluse ; note sur le contingent conventionnel pouvant
+  différer du contingent légal selon accords territoriaux.
+- **agriculture** — IDCC **7024** (production agricole et CUMA, convention
+  du 15/09/2020). Confirmé Légifrance (KALICONT000043036630). Nuance
+  importante ajoutée en « Cas particuliers » : des **accords départementaux/
+  territoriaux** (anciens IDCC locaux, ex. 9191, 9291, 8433...) continuent de
+  s'appliquer en complément du socle national — la page ne prétend pas que
+  le 7024 épuise le sujet.
+- **creation-graphisme** — IDCC **1486** (Syntec — bureaux d'études
+  techniques, cabinets d'ingénieurs-conseils et sociétés de conseils).
+  Confirmé, et le code.travail.gouv.fr liste explicitement l'infographiste/
+  graphiste multimédia dans le champ de cette convention. Nuance ajoutée en
+  « Cas particuliers » : les agences de **publicité pure** (non numérique/
+  conseil) peuvent relever d'une convention différente — non tranché au
+  hasard, signalé sans inventer de second numéro.
+
+Pages transversales — **pas de section « Autres droits »** (pas de CCN
+propre ou dispositif légal générique), conformément à §3 cas 2 :
+
+- **mobilite-volontaire-securisee-guide** (dispositif légal, entreprises 300+)
+- **execution-provisoire-jugement-guide** (procédure prud'homale)
+- **bdese-base-donnees-guide** (obligation CSE)
+- **visite-medicale-reprise-apres-absence-guide** (médecine du travail)
+- **forfait-heures-cadre-guide** (dispositif contractuel transversal)
+
+Cas multiple traité selon §3 (explication en texte, aucun code choisi au
+hasard) :
+
+- **caviste** — pas de section « Autres droits » unique. Le métier s'exerce
+  sous des statuts d'employeur très différents : cave indépendante
+  commerçante (souvent IDCC 3237, métiers du commerce de détail alimentaire
+  spécialisé), négociant/distillerie (souvent IDCC 493, vins-cidres-
+  spiritueux-liqueurs), ou salarié d'une exploitation viticole (convention
+  agricole locale). Le « Cas particuliers » explicite les trois cas plutôt que
+  de trancher un code unique.
+
+Compteur : après lot 21 (10 pages), **≈ 653 pages non agrémentées
+restantes**.
+
+Validation automatique passée sur les 10 fichiers (mêmes critères que lot 20).
