@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/guide.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Les fours ne peuvent pas s'arrêter. Cela justifie-t-il des HS non payées ?","acceptedAnswer":{"@type":"Answer","text":"Non. La contrainte technique de continuité est une réalité industrielle, mais elle ne dispense pas l'employeur de payer les HS qui en résultent."}},{"@type":"Question","name":"En céramique, les cycles de cuisson varient. Comment calculer mes HS sur des semaines irrégulières ?","acceptedAnswer":{"@type":"Answer","text":"Semaine par semaine, indépendamment des cycles de cuisson. Le M1 calcule la durée de service hebdomadaire réelle et détermine les HS."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Les fours ne peuvent pas s'arrêter. Cela justifie-t-il des HS non payées ?","acceptedAnswer":{"@type":"Answer","text":"Non. La contrainte technique de continuité est une réalité industrielle, mais elle ne dispense pas l'employeur de payer les HS qui en résultent."}},{"@type":"Question","name":"En céramique, les cycles de cuisson varient. Comment calculer mes HS sur des semaines irrégulières ?","acceptedAnswer":{"@type":"Answer","text":"Semaine par semaine, indépendamment des cycles de cuisson. Le M1 calcule la durée de service hebdomadaire réelle et détermine les HS."}},{"@type":"Question","name":"Les fours ne peuvent pas s'arrêter. Cela justifie-t-il des HS non payées ?","acceptedAnswer":{"@type":"Answer","text":"Non, quelle que soit la contrainte technique du fonctionnement continu des fours, toutes les heures effectuées au-delà du seuil applicable restent des heures supplémentaires dues et majorées, sauf accord de modulation formalisé prévoyant un calcul différent."}},{"@type":"Question","name":"En céramique, les cycles de cuisson varient. Comment calculer mes HS sur des semaines irrégulières ?","acceptedAnswer":{"@type":"Answer","text":"Le travail posté suit un cycle défini par accord ; les heures supplémentaires apparaissent au-delà de la moyenne prévue par ce cycle, avec régularisation en fin de période de référence, plutôt qu'à chaque semaine isolément."}},{"@type":"Question","name":"Pourquoi cette page ne donne-t-elle pas un seul code IDCC pour ce secteur ?","acceptedAnswer":{"@type":"Answer","text":"Parce que céramique et verre relèvent de conventions distinctes selon le matériau et l'activité précise : IDCC 1558 pour la céramique technique, IDCC 669 pour la verrerie industrielle et la cristallerie ; un autre numéro parfois cité (200) correspond en réalité aux exploitations frigorifiques, un secteur totalement différent."}},{"@type":"Question","name":"Le temps de vérification de la température des fours est-il payé ?","acceptedAnswer":{"@type":"Answer","text":"Oui, cette surveillance technique fait partie intégrante de l'activité et constitue du temps de travail effectif si elle est imposée par l'employeur."}},{"@type":"Question","name":"L'exposition à la chaleur des fours donne-t-elle droit à des compensations ?","acceptedAnswer":{"@type":"Answer","text":"Un suivi médical renforcé et des pauses spécifiques sont généralement prévus pour cette exposition, distincts du paiement des heures supplémentaires."}},{"@type":"Question","name":"Le chargement des pièces avant cuisson est-il un temps de travail distinct ?","acceptedAnswer":{"@type":"Answer","text":"Non, il fait partie intégrante de l'activité de production et suit les mêmes règles de décompte que le reste du poste."}}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Industrie de la céramique et du verre : heures supplémentaires 2026","description":"Opérateur céramique, souffleur de verre, verrier — céramique (IDCC 1558) et verre (IDCC 669). Fours continus, contraintes de cuisson.","url":"https://simulateurheuressupfrance.fr/industrie-ceramique-verre-heures-supplementaires","inLanguage":"fr-FR","publisher":{"@type":"Organization","name":"Heures Supplémentaires France","url":"https://simulateurheuressupfrance.fr/"},"author":{"@type":"Organization","name":"Heures Supplémentaires France"},"dateModified":"2026-06-27"}
@@ -37,7 +37,7 @@
 <body>
 <div class="bg-fixed"></div>
 <div class="page-shell">
-<div id="hs-topbar" data-stamp="à jour sept. 2026 · IDCC 200"></div>
+<div id="hs-topbar" data-stamp="à jour sept. 2026 · IDCC 1558 ou 669"></div>
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow rise d1">Guide 2026 · Céramique et verre</div>
@@ -67,7 +67,7 @@
     <table class="tbl">
       <thead><tr><th>Paramètre</th><th>Valeur</th><th>Source</th></tr></thead>
       <tbody>
-        <tr><td>IDCC</td><td class="v">200</td><td>Légifrance</td></tr>
+        <tr><td>IDCC</td><td class="v">1558 (céramique) ou 669 (verre)</td><td>Légifrance</td></tr>
         <tr><td>Brochure JO</td><td class="v">3120</td><td>Journal Officiel</td></tr>
         <tr><td>Seuil heures sup</td><td class="v">35 h/semaine</td><td>Art. L3121-27 C. trav.</td></tr>
         <tr><td>Majoration palier 1</td><td class="v">+25 %</td><td>Convention collective</td></tr>
@@ -75,7 +75,7 @@
         <tr><td>Contingent annuel</td><td class="v">220 heures</td><td>Convention collective</td></tr>
       </tbody>
     </table>
-    <p>L'industrie du verre (IDCC 200) et la céramique (IDCC 1558) ont des processus de production continus qui ne peuvent pas être interrompus. Les HS y sont structurelles.</p>
+    <p>L'industrie du verre (IDCC 669) et la céramique (IDCC 1558) ont des processus de production continus qui ne peuvent pas être interrompus. Les HS y sont structurelles.</p>
   </section>
 
   <section class="block">
@@ -96,8 +96,29 @@
   </section>
 
   <section class="block">
+    <h2 class="title">Cas particuliers</h2>
+    <table class="tbl">
+      <tr><th>Situation</th><th>Traitement</th><th>À vérifier</th></tr>
+      <tr><td>Fours en fonctionnement continu</td><td>HS toujours dues malgré la contrainte technique</td><td>Existence d'un accord de modulation éventuel</td></tr><tr><td>Cycles de cuisson irréguliers en céramique</td><td>HS au-delà de la moyenne du cycle défini</td><td>Accord de cycle applicable dans l'entreprise</td></tr><tr><td>Confusion avec IDCC 200 (exploitations frigorifiques)</td><td>200 sans rapport, 1558 ou 669 selon le matériau produit</td><td>Vérification sur le bulletin de paie</td></tr><tr><td>Vérification de température des fours</td><td>Temps de travail effectif si imposée</td><td>Caractère obligatoire de cette surveillance</td></tr>
+    </table>
+  </section>
+
+  <section class="block">
+    <h2 class="title">Autres droits de la convention (IDCC 1558 (céramique technique) ou IDCC 669 (verrerie industrielle, cristallerie) selon le matériau produit par l'employeur)</h2>
+    <table class="tbl">
+      <tr><th>Droit</th><th>Ce que prévoit généralement la branche</th><th>À vérifier</th></tr>
+      <tr><td>Suivi médical renforcé</td><td>Lié à l'exposition à la chaleur et aux poussières</td><td>Mise en œuvre effective par l'employeur</td></tr><tr><td>Travail posté (3x8)</td><td>Cycles de rotation encadrés par accord</td><td>Accord de cycle applicable dans l'entreprise</td></tr><tr><td>Classification</td><td>Grille par catégories (ouvriers, techniciens, cadres)</td><td>Positionnement réel du poste</td></tr><tr><td>Prévoyance</td><td>Régime de branche selon la convention réellement applicable</td><td>Contrat en place dans l'entreprise</td></tr>
+    </table>
+  </section>
+
+  <div class="pnj">
+    <img class="pnj-img" src="assets/img/pnj-Explorateur.PNG" alt="Témoignage illustratif">
+    <div class="pnj-bubble"><div class="pnj-name">Témoignage (cas illustratif)</div>Bilal, 31 ans, opérateur en verrerie industrielle en 3x8, avait du mal à comprendre le calcul de ses heures supplémentaires sur les semaines de production intensive liées aux cycles de four. En se référant à l'accord de cycle de son entreprise, il a vérifié que son décompte respectait bien la moyenne prévue par cet accord. <i>Exemple fictif à visée pédagogique.</i></div>
+  </div>
+
+  <section class="block">
     <h2 class="title">Questions fréquentes</h2>
-    <div class="faq"><details><summary>Les fours ne peuvent pas s'arrêter. Cela justifie-t-il des HS non payées ?</summary><p>Non. La contrainte technique de continuité est une réalité industrielle, mais elle ne dispense pas l'employeur de payer les HS qui en résultent.</p></details><details><summary>En céramique, les cycles de cuisson varient. Comment calculer mes HS sur des semaines irrégulières ?</summary><p>Semaine par semaine, indépendamment des cycles de cuisson. Le M1 calcule la durée de service hebdomadaire réelle et détermine les HS.</p></details></div>
+    <div class="faq"><details><summary>Les fours ne peuvent pas s'arrêter. Cela justifie-t-il des HS non payées ?</summary><p>Non. La contrainte technique de continuité est une réalité industrielle, mais elle ne dispense pas l'employeur de payer les HS qui en résultent.</p></details><details><summary>En céramique, les cycles de cuisson varient. Comment calculer mes HS sur des semaines irrégulières ?</summary><p>Semaine par semaine, indépendamment des cycles de cuisson. Le M1 calcule la durée de service hebdomadaire réelle et détermine les HS.</p></details><details><summary>Les fours ne peuvent pas s'arrêter. Cela justifie-t-il des HS non payées ?</summary><p>Non, quelle que soit la contrainte technique du fonctionnement continu des fours, toutes les heures effectuées au-delà du seuil applicable restent des heures supplémentaires dues et majorées, sauf accord de modulation formalisé prévoyant un calcul différent.</p></details><details><summary>En céramique, les cycles de cuisson varient. Comment calculer mes HS sur des semaines irrégulières ?</summary><p>Le travail posté suit un cycle défini par accord ; les heures supplémentaires apparaissent au-delà de la moyenne prévue par ce cycle, avec régularisation en fin de période de référence, plutôt qu'à chaque semaine isolément.</p></details><details><summary>Pourquoi cette page ne donne-t-elle pas un seul code IDCC pour ce secteur ?</summary><p>Parce que céramique et verre relèvent de conventions distinctes selon le matériau et l'activité précise : IDCC 1558 pour la céramique technique, IDCC 669 pour la verrerie industrielle et la cristallerie ; un autre numéro parfois cité (200) correspond en réalité aux exploitations frigorifiques, un secteur totalement différent.</p></details><details><summary>Le temps de vérification de la température des fours est-il payé ?</summary><p>Oui, cette surveillance technique fait partie intégrante de l'activité et constitue du temps de travail effectif si elle est imposée par l'employeur.</p></details><details><summary>L'exposition à la chaleur des fours donne-t-elle droit à des compensations ?</summary><p>Un suivi médical renforcé et des pauses spécifiques sont généralement prévus pour cette exposition, distincts du paiement des heures supplémentaires.</p></details><details><summary>Le chargement des pièces avant cuisson est-il un temps de travail distinct ?</summary><p>Non, il fait partie intégrante de l'activité de production et suit les mêmes règles de décompte que le reste du poste.</p></details></div>
   </section>
 
   <section class="block">
