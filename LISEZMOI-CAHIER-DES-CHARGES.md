@@ -1,42 +1,62 @@
 
-## 87. Lot 80 — 10 pages déjà riches, aucune erreur IDCC détectée
+## 88. Lot 81 — trois récidives exactes d'erreurs déjà corrigées ce chantier
 
-10 pages agrémentées, **toutes déjà largement enrichies** (même
-phénomène que les lots 77-79) : tableaux de statuts, exemples chiffrés,
-bulles de renard expert/juriste, section « Cas particuliers » complète,
-8 questions FAQ avec JSON-LD. Il ne manquait que le bloc « Témoignage
-(cas illustratif) » final sur les 10 pages, ajouté sans toucher au reste
-du contenu déjà présent.
+10 pages agrémentées (dont 2 pages déjà entièrement complètes copiées
+telles quelles, et 7 pages riches n'ayant nécessité qu'un témoignage).
+**3 erreurs IDCC corrigées, toutes des récidives exactes** de codes déjà
+identifiés comme fabriqués ou mal appliqués à d'autres pages ce
+chantier :
 
-**Aucune erreur IDCC détectée** ce lot-ci, avec un point d'attention
-particulier vérifié : **infirmier-liberal-salarie-heures-
-supplementaires** cite IDCC 1147 (cabinets médicaux) — code déjà connu
-ce chantier pour avoir été identifié comme totalement hors sujet au lot
-49 (appliqué à tort à un contexte minier). Ici, le contexte est
-légitime : un infirmier libéral salarié employé par un cabinet médical
-relève bien de cette convention ; confirmation que ce n'est pas le code
-lui-même qui pose problème mais son application à un secteur qui ne
-correspond pas à son champ réel.
+**conducteur-de-ligne-agroalimentaire-hs** — affichait « CCN IAA IDCC
+1747 » — exactement le même code obsolète (ancienne boulangerie
+industrielle) déjà corrigé au lot 55 pour industries-agroalimentaires-
+diverses. Corrigé vers **IDCC 3109** (industries alimentaires diverses),
+comme au lot 55.
+
+**graphiste-studio-heures-supplementaires** — citait « la convention de
+la publicité (IDCC 1729) » — exactement la même confusion NAF/IDCC
+(fabrication de carton confondue avec la publicité) déjà corrigée aux
+lots 62 (community-manager) et 77 (pilote-drone-salarie). Troisième
+occurrence confirmée de cette erreur précise. Corrigée vers **IDCC 86**
+(publicité), le code réel déjà établi.
+
+**chauffeur-ambulance-heures-supplementaires** — affichait « CCN
+transport sanitaire IDCC 33 » — exactement le même code introuvable déjà
+corrigé au lot 66 pour transport-sanitaire-ambulancier. Corrigé vers
+**IDCC 16** (transports routiers), comme au lot 66.
+
+**Bilan actualisé des récidives** : le code 1729 (confusion NAF carton/
+IDCC) atteint désormais 3 occurrences corrigées ; plusieurs autres
+métiers proches du même secteur (ambulancier, agroalimentaire) montrent
+que certaines erreurs se propagent visiblement à des pages voisines
+générées dans un même lot ou une même période, renforçant l'hypothèse
+d'une origine commune dans le processus de génération initiale plutôt
+que des erreurs strictement indépendantes.
 
 Codes vérifiés et confirmés corrects (sans modification) :
-**jardinier-paysagiste-heures-supplementaires** (IDCC 7018, page
-distincte de paysagiste-heures-supplementaires du lot 78, même code
-correct, cohérence maintenue), **infirmier-liberal-salarie-heures-
-supplementaires** (IDCC 1147/2264/2941, nuance selon le statut de
-l'employeur), **photographe-salarie-heures-supplementaires** (IDCC
-1480/2642, déjà confirmés), **mediateur-social-heures-supplementaires**
-(IDCC 1518/413, déjà confirmés), **esn-ssii-heures-supplementaires**
-(IDCC 1486, Syntec, déjà confirmé de nombreuses fois).
+**analyste-credit-heures-supplementaires** (IDCC 2120, banques, contexte
+cohérent), **assistante-dentaire-heures-supplementaires** (IDCC 1619,
+cabinets dentaires), **notaire-assistant-heures-supplementaires** (IDCC
+2205, notariat, déjà confirmé de nombreuses fois).
 
-Pages transversales sans code IDCC forcé : gestionnaire-paie-hs-guide,
-black-friday-heures-supplementaires, chef-equipe-nuit-heures-
-supplementaires, refere-prudhommal-guide, csp-contrat-securisation-
-professionnelle-guide.
+**Deux pages déjà entièrement complètes** copiées sans modification de
+contenu (après vérification manuelle) : **infirmier-anesthesiste-heures-
+supplementaires** (section équivalente à « Cas particuliers » intitulée
+différemment : « HS en bloc opératoire : cas concrets ») et
+**heures-supplementaires-wallis-futuna-guide** (témoignage manquant
+ajouté après une première vérification insuffisante — leçon
+méthodologique : toujours vérifier explicitement la présence du
+témoignage avant de considérer une page comme terminée, même si les FAQ
+et la section équivalente semblent complètes).
 
-Compteur : après lot 80 (10 pages), **≈ 63 pages non agrémentées
+Pages transversales sans code IDCC forcé : responsable-hse-heures-
+supplementaires, travail-dissimule-travail-noir-guide (page classique
+traitée avec le gabarit standard, 3 FAQ existantes complétées à 8).
+
+Compteur : après lot 81 (10 pages), **≈ 53 pages non agrémentées
 restantes**.
 
-Validation manuelle complète effectuée sur les 10 fichiers via un
-contrôle adapté normalisant les espaces insécables (`&nbsp;`) entre le
-JSON-LD et les résumés visibles, confirmant que les 10 pages sont
-parfaitement synchronisées et complètes.
+Validation manuelle complète effectuée sur les 10 fichiers avec un
+contrôle adapté (normalisation des espaces insécables et entités HTML),
+confirmant que toutes les pages sont désormais parfaitement
+synchronisées et complètes.
