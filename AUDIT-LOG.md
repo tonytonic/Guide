@@ -2457,3 +2457,1479 @@ Compteur : lots 1-46/98 terminés sur la base fraîche. **518 pages
 restantes** à vérifier.
 
 **Taux d'erreur cumulé : 52/460 pages = 11,3%**
+
+## Lot 47/98 — pages 461 à 470 (lot exceptionnellement riche en
+découvertes)
+
+Pages revues : hlm-bailleurs-heures-supplementaires, honoraires-avocat-
+prudhommes-guide, horaires-individualises-guide, horloger-bijoutier-
+artisan-hs, horloger-reparateur-heures-supplementaires, horlogerie-
+bijouterie-industrie-heures-supplementaires, horticulteur-pepiniere-
+heures-supplementaires, horticulture-pepiniere-heures-supplementaires,
+hospitalisation-privee-heures-supplementaires, hote-accueil-heures-
+supplementaires.
+
+### Découverte majeure : l'existence de conventions collectives
+DÉPARTEMENTALES agricoles
+
+En vérifiant des codes à première vue suspects sur horticulture-
+pepiniere-heures-supplementaires (9502, 9661, 8113), découverte qu'il
+s'agit en réalité de **véritables conventions collectives
+départementales** propres à l'agriculture française — un type de
+convention jamais rencontré jusqu'ici sur ce chantier, confirmé par de
+multiples sources dont Légifrance lui-même (arrêtés d'extension
+nominatifs par département). Exemples confirmés : IDCC 9502 (Manche),
+IDCC 9661 (Pyrénées-Orientales), IDCC 8113 (Île-de-France, arboriculture
+maraîchage). La page elle-même explique déjà très justement que le
+numéro 7502, parfois cité par erreur, correspond en réalité à la MSA
+(Mutualité sociale agricole) et non à une convention collective — cette
+explication s'est révélée exacte. Référentiel mis à jour : une plage de
+numéros IDCC à 4-5 chiffres commençant par 8 ou 9 correspond
+généralement à des conventions départementales/régionales agricoles
+réelles, à ne plus considérer comme suspectes par défaut.
+
+### 3 corrections
+
+**horloger-reparateur-heures-supplementaires** — utilisait IDCC 567
+partout, or ce code couvre la **fabrication industrielle** de bijoux/
+horlogerie, explicitement hors champ pour les ateliers de réparation en
+boutique. Recherche confirmant que **IDCC 1487** (commerce de détail de
+l'horlogerie-bijouterie) couvre explicitement dans son propre champ les
+« horlogers-réparateurs salariés » et les « ateliers de réparation
+attachés au commerce ». Corrigée vers **IDCC 1487**.
+
+**horloger-bijoutier-artisan-hs** — page par ailleurs exemplaire (avec
+une FAQ dédiée expliquant justement la distinction entre 3251 pour
+l'atelier de fabrication et 1487 pour la boutique/réparation), mais
+contenant une ligne isolée en contradiction avec sa propre logique :
+« Vendeur en bijouterie » étiqueté « Commerce IDCC 3251 » alors qu'un
+poste de vente en boutique relève, selon la logique même de la page, de
+IDCC 1487. Corrigée.
+
+**hote-accueil-heures-supplementaires** — citait « CCN Prestataires de
+services IDCC 1982 », mais 1982 est en réalité la convention du
+**négoce et des prestations de services dans les domaines médico-
+techniques** (location/vente de matériel médical à domicile) — un
+secteur sans rapport avec l'accueil/réception. Corrigée vers **IDCC
+2098**, déjà présent et correctement utilisé par ailleurs sur cette même
+page pour ce type de poste.
+
+### Code confirmé correct, distinction légitime
+
+**hlm-bailleurs-heures-supplementaires** (IDCC 2150, personnels des
+sociétés anonymes et fondations d'HLM, confirmé) — distinct de IDCC 3220
+(organismes publics et coopératifs de l'habitat social, déjà confirmé
+aux lots précédents) : deux structures juridiques différentes au sein du
+même secteur HLM (sociétés privées HLM vs offices publics), toutes deux
+légitimes selon le statut de l'employeur.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+horlogerie-bijouterie-industrie-heures-supplementaires (IDCC 3251),
+hospitalisation-privee-heures-supplementaires (IDCC 2264).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+honoraires-avocat-prudhommes-guide, horaires-individualises-guide.
+
+Compteur : lots 1-47/98 terminés sur la base fraîche. **508 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 55/470 pages = 11,7%**
+
+## Lot 48/98 — pages 471 à 480
+
+Pages revues : hote-accueil-standardiste-hs, hotellerie-chaine-heures-
+supplementaires, hotellerie-plein-air-heures-supplementaires, hotesse-
+air-heures-supplementaires, hs-cdd-remplacement-guide, hs-cdi-
+intermittent-guide, hs-fonctionnaires-agents-publics, hs-groupement-
+employeurs-guide, hs-horaires-variables-imposes, hs-jour-ferie-
+travaille-guide.
+
+### Aucune correction
+
+**hote-accueil-standardiste-hs** — vérification prioritaire compte tenu
+de l'erreur similaire trouvée sur la page voisine hote-accueil-heures-
+supplementaires au lot précédent. Cette page-ci s'avère déjà correcte :
+le code IDCC 1794 n'y apparaît que dans une explication pédagogique déjà
+présente (« pourquoi 2098 et non 1794 »), confirmant qu'elle avait déjà
+neutralisé une confusion différente de celle de sa page sœur. Aucune
+anomalie.
+
+**hotesse-air-heures-supplementaires** — page évitant délibérément de
+citer un numéro IDCC unique pour le personnel navigant commercial (PNC),
+au profit d'une formulation « variable selon l'accord d'entreprise ».
+Recherche confirmant que le paysage conventionnel du secteur aérien est
+effectivement très fragmenté (conventions spécifiques distinctes pour le
+personnel des essais et réceptions – IDCC 1612 –, le personnel navigant
+technique des hélicoptères – IDCC 1944 –, mais aucune convention IDCC
+nationale unique et univoque identifiée pour le personnel de cabine des
+grandes compagnies commerciales, souvent couvert par des accords
+d'entreprise propres). L'approche prudente de la page, qui n'avance pas
+de numéro non vérifiable, est jugée appropriée plutôt que lacunaire.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+hotellerie-chaine-heures-supplementaires (IDCC 1979/800), hotellerie-
+plein-air-heures-supplementaires (IDCC 1631).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+hs-cdd-remplacement-guide, hs-cdi-intermittent-guide, hs-fonctionnaires-
+agents-publics, hs-groupement-employeurs-guide, hs-horaires-variables-
+imposes, hs-jour-ferie-travaille-guide.
+
+Compteur : lots 1-48/98 terminés sur la base fraîche. **498 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 55/480 pages = 11,5%**
+
+## Lot 49/98 — pages 481 à 490
+
+Pages revues : hs-mandataire-social-dirigeant-guide, hs-meme-groupe-
+entreprises, hs-non-pris-en-compte-entreprise-rachetee, hs-parent-
+isole-guide, hs-pendant-conge-paye, hs-pendant-preavis-guide,
+hs-portage-salarial-guide, hs-salaires-nets-bruts-guide, hs-salarie-
+handicape-rqth-guide, hs-sous-effectif-impose-guide.
+
+### 1 correction
+
+**hs-portage-salarial-guide** — page utilisant correctement IDCC 3219
+(déjà confirmé) dans la majorité de son contenu, mais un titre de
+section secondaire (« Autres droits de la convention ») citait « IDCC
+2921 » pour désigner cette même convention du portage salarial — numéro
+introuvable dans toutes les sources consultées. Corrigé vers **IDCC
+3219**, cohérent avec le reste de la page.
+
+### Note utile pour le référentiel
+
+Recherche confirmant, en marge de la vérification principale, que le
+secteur du **BTP dispose lui aussi de conventions collectives
+régionales et départementales** distinctes des conventions nationales
+(1596/1597/2609/2420), à l'image de ce qui a été découvert pour
+l'agriculture au lot 47. Cette information sera prise en compte si de
+tels codes régionaux/départementaux apparaissent sur de futures pages
+du secteur BTP.
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+hs-mandataire-social-dirigeant-guide, hs-meme-groupe-entreprises,
+hs-non-pris-en-compte-entreprise-rachetee, hs-parent-isole-guide,
+hs-pendant-conge-paye, hs-pendant-preavis-guide, hs-salaires-nets-
+bruts-guide, hs-salarie-handicape-rqth-guide, hs-sous-effectif-impose-
+guide.
+
+Compteur : lots 1-49/98 terminés sur la base fraîche. **488 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 56/490 pages = 11,4%**
+
+## Lot 50/98 — pages 491 à 500 (mi-parcours du chantier)
+
+Pages revues : hs-teletravail-partiel-guide, hs-temps-partiel-
+therapeutique-guide, hs-travail-a-distance-international, huissier-
+commissaire-justice-hs-supplementaires, huissiers-commissaires-justice-
+heures-supplementaires, hypermarche-supermarche-heures-supplementaires,
+ia-data-cyber-heures-supplementaires, ia-recrutement-discrimination-
+guide, ifc-indemnite-fin-cdd-detail-guide, ifsi-ecole-soins-infirmiers-
+heures-supplementaires.
+
+### Aucune correction — page exemplaire trouvée
+
+**huissier-commissaire-justice-hs-supplementaires** — page remarquable :
+utilise IDCC 3250 (commissaires de justice et sociétés de ventes
+volontaires) partout comme code principal, avec les anciens codes 1921
+(huissiers de justice) et 2785 (commissaires-priseurs judiciaires)
+mentionnés uniquement en contexte historique explicatif (fusion signée
+le 16 novembre 2022, étendue le 10 juillet 2024). La page anticipe même
+une **troisième confusion possible** (le code 2125) avec une question
+FAQ dédiée expliquant pourquoi ce numéro ne correspond à aucune
+convention identifiable. Aucune erreur.
+
+**huissiers-commissaires-justice-heures-supplementaires** — page sœur
+cohérente, utilisant IDCC 3250 seul sans contradiction.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+hypermarche-supermarche-heures-supplementaires (IDCC 2216), ia-data-
+cyber-heures-supplementaires (IDCC 1486), ifsi-ecole-soins-infirmiers-
+heures-supplementaires (IDCC 2264/29).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+hs-teletravail-partiel-guide, hs-temps-partiel-therapeutique-guide,
+hs-travail-a-distance-international, ia-recrutement-discrimination-
+guide, ifc-indemnite-fin-cdd-detail-guide.
+
+Compteur : lots 1-50/98 terminés sur la base fraîche — **mi-parcours du
+chantier atteint**. **478 pages restantes** à vérifier.
+
+**Taux d'erreur cumulé : 56/500 pages = 11,2%**
+
+## Lot 51/98 — pages 501 à 510
+
+Pages revues : immobilier-heures-supplementaires, import-export-heures-
+supplementaires, imprimerie-heures-supplementaires, imprimeur-
+technicien-prepresse-hs, inaptitude-amenagement-poste-hs-guide,
+inaptitude-guide, indemnite-kilometrique-bareme-guide, indemnite-
+licenciement-calcul, indemnite-salissure-outillage-guide, indemnite-
+transport-guide.
+
+### Aucune correction — lot entièrement propre
+
+**import-export-heures-supplementaires** — utilise IDCC 43 (import-
+export et commerce international) dans son contexte parfaitement
+légitime cette fois, confirmant que ce code, déjà rencontré à plusieurs
+reprises comme erreur lorsqu'il était mal appliqué à d'autres secteurs
+(messagerie, notamment), est bien réel et correct dans son propre champ.
+
+**imprimerie-heures-supplementaires** et **imprimeur-technicien-
+prepresse-hs** — utilisent de façon cohérente IDCC 184 (imprimerie de
+labeur et industries graphiques), déjà confirmé.
+
+**indemnite-kilometrique-bareme-guide** — page expliquant le mécanisme
+du barème kilométrique fiscal (tranches selon la puissance fiscale et
+la distance annuelle) sans figer de montants précis en euros par
+kilomètre, une approche pertinente compte tenu de la révision annuelle
+de ce barème par l'administration fiscale. Contenu conceptuellement
+exact.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+immobilier-heures-supplementaires (IDCC 1527).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+inaptitude-amenagement-poste-hs-guide, inaptitude-guide, indemnite-
+licenciement-calcul, indemnite-salissure-outillage-guide, indemnite-
+transport-guide.
+
+Compteur : lots 1-51/98 terminés sur la base fraîche. **468 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 56/510 pages = 11,0%**
+
+## Lot 52/98 — pages 511 à 520 (lot le plus dense en corrections de tout
+le chantier)
+
+Pages revues : indemnites-kilometriques-bareme-guide, index-egalite-
+seniors-guide, industrie-bois-ameublement-heures-supplementaires,
+industrie-ceramique-verre-heures-supplementaires, industrie-chimique-
+petrochimie-heures-supplementaires, industrie-cuir-maroquinerie-luxe-
+heures-supplementaires, industrie-electronique-composants-heures-
+supplementaires, industrie-papier-emballage-heures-supplementaires,
+industrie-pharmaceutique-heures-supplementaires, industrie-textile-
+habillement-heures-supplementaires.
+
+### 4 pages corrigées, 12 erreurs cumulées au total
+
+**industrie-bois-ameublement-heures-supplementaires** (3 erreurs) —
+page au corps principal exemplaire (IDCC 1411 pour l'ameublement, IDCC
+158 pour les scieries, avec FAQ dédiée), mais un second tableau
+contredisait cette logique : « Scierie et 1re transformation » citait
+« 1947 ou 2094 » alors que 158 couvre déjà, dans son intitulé officiel
+complet, le « travail mécanique du bois, des scieries, **du négoce et
+de l'importation des bois** » — champ suffisamment large pour couvrir
+ce cas sans code supplémentaire ; « Commerce de meubles » citait le 1505
+déjà quatre fois confirmé faux. Corrigées vers **IDCC 158** et **IDCC
+1517** respectivement.
+
+**industrie-cuir-maroquinerie-luxe-heures-supplementaires** (2 erreurs)
+— page déjà excellente sur son code principal (FAQ dédiée « 2528 et non
+1404 »), mais deux lignes supplémentaires du tableau détaillé
+citaient des codes non confirmés : « Industrie de la chaussure » avec
+« 1879 » (introuvable) au lieu du véritable **IDCC 1580** (confirmé par
+de multiples sources), et « Tannerie » avec « 315 » (introuvable) au
+lieu du véritable **IDCC 207** (industrie des cuirs et peaux, fusionné
+dans 2528 depuis 2019, mais toujours la référence historique correcte
+pour la tannerie spécifiquement).
+
+**industrie-textile-habillement-heures-supplementaires** (2 erreurs) —
+« Bonneterie » citait 1496 et « Teinturerie industrielle » citait 693
+(en réalité la presse quotidienne départementale, totalement hors
+sujet) ; recherche confirmant que **IDCC 18** (industrie textile, déjà
+utilisé ailleurs sur la page) couvre déjà en interne, comme branches
+classificatoires à part entière, à la fois la bonneterie et la teinture/
+apprêts, rendant ces deux codes séparés inutiles et incorrects. Les deux
+lignes consolidées sur **IDCC 18**.
+
+**industrie-electronique-composants-heures-supplementaires** (3
+erreurs) — le code IDCC 1637, déjà rencontré sans confirmation possible
+au lot 7 (ardoises-marbre), refait surface ici sur trois lignes
+différentes, accompagné une fois du code 1383 (confirmé être en réalité
+le commerce de quincaillerie interrégionale, sans rapport). Aucune
+confirmation de 1637 trouvée après deux recherches ciblées distinctes
+sur deux lots différents — code très probablement fabriqué. Les trois
+occurrences consolidées sur **IDCC 3248** (métallurgie), déjà
+correctement utilisé ailleurs sur cette même page pour ce secteur.
+
+**industrie-papier-emballage-heures-supplementaires** (1 erreur) — « 
+Carton ondulé / emballage » citait l'IDCC 1495, un code réel mais
+**remplacé depuis le 29 janvier 2021 par l'IDCC 3238** (production et
+transformation des papiers et cartons), qui a explicitement annulé et
+remplacé quatre anciens textes distincts (700, 707, 1492, 1495) selon
+Légifrance. Corrigée vers **IDCC 3238 (ex-1495)**.
+
+### Deux pages déjà exemplaires (aucune erreur)
+
+**industrie-ceramique-verre-heures-supplementaires** — page avec sa
+propre FAQ expliquant pourquoi elle cite plusieurs codes selon le
+matériau (1558 céramique, 669 verrerie/cristallerie, tous deux
+confirmés), avec 200 correctement écarté comme relevant en réalité des
+exploitations frigorifiques.
+
+**industrie-chimique-petrochimie-heures-supplementaires** et
+**industrie-pharmaceutique-heures-supplementaires** — IDCC 1388
+(industrie du pétrole) et IDCC 44 (chimie) d'une part, IDCC 176
+(pharmaceutique) d'autre part, tous confirmés sans anomalie.
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+indemnites-kilometriques-bareme-guide (doublon de titre avec la page
+indemnite-kilometrique-bareme-guide du lot 51, contenu cohérent entre
+les deux), index-egalite-seniors-guide.
+
+Compteur : lots 1-52/98 terminés sur la base fraîche. **458 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 60/520 pages = 11,5%**
+
+## Lot 53/98 — pages 521 à 530
+
+Pages revues : industries-agroalimentaires-diverses-heures-
+supplementaires, industries-mode-chapellerie-heures-supplementaires,
+infirmier-anesthesiste-heures-supplementaires, infirmier-anesthesiste-
+iade-heures-supplementaires, infirmier-bloc-operatoire-ibode-heures-
+supplementaires, infirmier-clinique-privee-heures-supplementaires,
+infirmier-hopital-heures-supplementaires, infirmier-liberal-salarie-
+heures-supplementaires, information-salaries-cession-entreprise-2026-
+guide, informatique-heures-supplementaires.
+
+### 1 correction
+
+**industries-agroalimentaires-diverses-heures-supplementaires** — page
+déjà globalement exemplaire (FAQ dédiée « pourquoi 3109 et non 1747 »),
+mais la ligne « Produits laitiers » citait « IDCC 3109 ou 968 », ce
+dernier numéro introuvable. Recherche confirmant que **IDCC 112**
+(industrie laitière) est le code réel et dédié à ce secteur spécifique.
+Corrigée vers **IDCC 3109 ou 112**.
+
+### Page déjà exemplaire (aucune correction)
+
+**industries-mode-chapellerie-heures-supplementaires** — page
+remarquable qui encadre systématiquement, à travers tout le document (y
+compris dans le titre SEO et les données structurées), la mention « ex-
+350, fusion 2017 » à chaque occurrence du code IDCC 247, avec un tableau
+dédié confirmant explicitement « Fusion habillement/chapellerie de
+2017 : IDCC 350 intégré dans IDCC 247 ». Recherche confirmant l'exactitude
+totale de cette présentation : l'accord du 7 décembre 2016, entré en
+application le 1er juillet 2017, a bien fusionné la chapellerie (IDCC
+350) dans les industries de l'habillement (IDCC 247). Aucune erreur.
+
+### Cohérence remarquable entre pages proches
+
+**infirmier-anesthesiste-heures-supplementaires**, **infirmier-
+anesthesiste-iade-heures-supplementaires**, **infirmier-bloc-
+operatoire-ibode-heures-supplementaires**, **infirmier-clinique-privee-
+heures-supplementaires** et **infirmier-hopital-heures-
+supplementaires** — les cinq pages utilisent de façon parfaitement
+cohérente IDCC 2264 (hospitalisation privée), déjà confirmé, sans aucune
+contradiction entre elles.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+infirmier-liberal-salarie-heures-supplementaires (IDCC 1147/2264/2941),
+informatique-heures-supplementaires (IDCC 1486).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+information-salaries-cession-entreprise-2026-guide.
+
+Compteur : lots 1-53/98 terminés sur la base fraîche. **448 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 61/530 pages = 11,5%**
+
+## Lot 54/98 — pages 531 à 540
+
+Pages revues : ingenieur-bureau-etudes-hs, ingenieur-etudes-heures-
+supplementaires, ingenieur-qhse-hs, ingenieur-securite-systemes-heures-
+supplementaires, inspection-travail-signalement-guide, instruments-
+mesure-precision-heures-supplementaires, intelligence-artificielle-
+surveillance-travail-guide, interessement-mise-en-place-guide,
+interim-agence-emploi-heures-supplementaires, interim-cdd-droits-
+specifiques-guide.
+
+### 1 correction
+
+**instruments-mesure-precision-heures-supplementaires** — citait « IDCC
+1651 » partout (8 occurrences) comme code principal pour la fabrication
+d'instruments de mesure, code introuvable dans toutes les sources
+consultées. La page distinguait par ailleurs correctement ce secteur de
+celui des instruments d'écriture (IDCC 715, déjà confirmé au lot 42,
+fusionné dans le cartonnage IDCC 489 depuis 2019 mais toujours la
+référence historique correcte pour ce sous-secteur spécifique). Faute de
+code confirmé spécifique aux instruments de mesure/précision, corrigée
+vers **IDCC 3248** (métallurgie unifiée), qui couvre déjà largement la
+fabrication mécanique et électronique de précision selon les
+confirmations déjà obtenues à plusieurs reprises ce chantier.
+
+### Cohérence confirmée
+
+**ingenieur-bureau-etudes-hs**, **ingenieur-etudes-heures-
+supplementaires**, **ingenieur-qhse-hs** et **ingenieur-securite-
+systemes-heures-supplementaires** — toutes cohérentes avec IDCC 1486
+(Syntec), déjà confirmé ; ingenieur-qhse-hs y ajoute légitimement IDCC
+3248 pour un contexte industriel.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : interim-
+agence-emploi-heures-supplementaires (IDCC 1413/2378).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+inspection-travail-signalement-guide, intelligence-artificielle-
+surveillance-travail-guide, interessement-mise-en-place-guide,
+interim-cdd-droits-specifiques-guide.
+
+Compteur : lots 1-54/98 terminés sur la base fraîche. **438 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 62/540 pages = 11,5%**
+
+## Lot 55/98 — pages 541 à 550
+
+Pages revues : interim-longue-duree-hs-guide, interim-longue-mission-
+hs, interim-vs-cdd-vs-cdi-comparatif, intermittent-spectacle-heures-
+supplementaires, interprete-lsf-statut-guide, jardinier-espaces-verts-
+municipal-hs, jardinier-paysagiste-heures-supplementaires, jeune-
+travailleur-mineur-hs, jeux-video-studio-heures-supplementaires,
+job-etudiant-cdd-etudiant-guide.
+
+### 1 correction
+
+**jeux-video-studio-heures-supplementaires** — mentionnait une
+« convention IA (IDCC 1750) » comme alternative à Syntec, mais ce code
+n'a pu être confirmé par aucune source malgré une recherche dédiée, et
+n'apparaissait que dans deux mentions superficielles (méta-description,
+un seul paragraphe), alors que l'intégralité du tableau détaillé de la
+page (développeur, game designer, testeur QA, producteur) repose déjà
+exclusivement et systématiquement sur IDCC 1486 (Syntec). Référence
+supprimée, page consolidée sur **IDCC 1486** seul, cohérent avec le
+reste du contenu.
+
+### Deux fausses alertes positives
+
+**interim-longue-duree-hs-guide** — la mention d'IDCC 1597 (BTP) s'est
+révélée être un exemple illustratif légitime au sein d'une explication
+correcte du principe général (l'agence d'intérim applique la convention
+de l'entreprise utilisatrice, pas la sienne propre). Aucune erreur.
+
+**jardinier-espaces-verts-municipal-hs** — la mention d'IDCC 1686
+(commerces et services de l'audiovisuel/électronique/équipement
+ménager, sans rapport avec le jardinage) s'est révélée être déjà
+neutralisée par une explication pédagogique intentionnelle (« pourquoi
+le bon code privé est 7018 et non 1686 »). Aucune erreur, confirmation
+supplémentaire du bon usage d'IDCC 7018 pour ce secteur.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+interprete-lsf-statut-guide (IDCC 413), jardinier-paysagiste-heures-
+supplementaires (IDCC 7018).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+interim-longue-mission-hs, interim-vs-cdd-vs-cdi-comparatif,
+intermittent-spectacle-heures-supplementaires, jeune-travailleur-
+mineur-hs, job-etudiant-cdd-etudiant-guide.
+
+Compteur : lots 1-55/98 terminés sur la base fraîche. **428 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 63/550 pages = 11,5%**
+
+## Lot 56/98 — pages 551 à 560
+
+Pages revues : jouets-puericulture-heures-supplementaires, jour-
+solidarite-lundi-pentecote-guide, journaliste-pigiste-requalification-
+hs, journaliste-salarie-heures-supplementaires, jurisprudence-hs-2024-
+2025-guide, jurisprudence-hs-recentes-guide, juriste-entreprise-heures-
+supplementaires, juriste-entreprise-hs, kinesitherapeute-salarie-
+heures-supplementaires, kinesitherapeute-salarie-hs.
+
+### 2 corrections (récidives d'erreurs déjà documentées)
+
+**kinesitherapeute-salarie-heures-supplementaires** — citait « IDCC
+776 » à cinq reprises, le même code déjà identifié comme erroné dès le
+tout début de ce chantier (le bon code étant IDCC 1147, cabinets
+médicaux). Toutes les occurrences corrigées vers **IDCC 1147**.
+
+**kinesitherapeute-salarie-hs** — citait « FEHAP IDCC 51 », la même
+confusion entre le petit nom usuel de la convention (« convention 51 »,
+en référence à l'année 1951) et son numéro IDCC réel, déjà rencontrée et
+corrigée sur dialyse-centres-heures-supplementaires au lot 32. Corrigée
+vers **IDCC 29**.
+
+### Vérification approfondie réussie
+
+**jurisprudence-hs-recentes-guide** — l'arrêt du 10 septembre 2025
+présenté comme une « révolution discrète » a été vérifié en profondeur :
+confirmé par de multiples sources officielles et spécialisées
+concordantes (Cour de cassation, chambre sociale, n°23-14.455, publié au
+bulletin) comme un revirement de jurisprudence effectivement majeur,
+intégrant désormais les périodes de congés payés dans le calcul du seuil
+de déclenchement des heures supplémentaires pour les salariés en
+décompte hebdomadaire — la qualification de la page est bien justifiée.
+
+**jurisprudence-hs-2024-2025-guide** et **jurisprudence-hs-recentes-
+guide** — vérification de cohérence entre les deux pages : couvrent des
+périodes complémentaires et distinctes (2024-2025 vs 2025-2026), sans
+redondance ni contradiction.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+jouets-puericulture-heures-supplementaires (IDCC 1517), journaliste-
+pigiste-requalification-hs et journaliste-salarie-heures-
+supplementaires (IDCC 1480, cohérentes entre elles), juriste-
+entreprise-hs (IDCC 1486).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+jour-solidarite-lundi-pentecote-guide, juriste-entreprise-heures-
+supplementaires.
+
+Compteur : lots 1-56/98 terminés sur la base fraîche. **418 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 65/560 pages = 11,6%**
+
+## Lot 57/98 — pages 561 à 570
+
+Pages revues : labo-biologie-heures-supplementaires, lettre-demission-
+modele-guide, lettre-licenciement-motivation-guide, lexique-sigles-rh-
+guide, librairie-heures-supplementaires, licenciement-economique-guide,
+licenciement-faute-guide, licenciement-nul-causes-guide, licenciement-
+particulier-employeur-guide, livreur-restauration-rapide-heures-
+supplementaires.
+
+### 1 correction majeure (page entière erronée)
+
+**librairie-heures-supplementaires** — l'intégralité de la page (titre,
+méta, JSON-LD, topbar, tableau, section « autres droits », soit 11
+occurrences) citait « IDCC 1747 » — le code de la boulangerie-
+pâtisserie industrielle, sans aucun rapport avec une librairie.
+Recherche confirmant que le code réel et dédié aux librairies est
+**IDCC 3013**, déjà répertorié dans le référentiel consolidé mais
+jamais encore vérifié directement sur cette page. Toutes les occurrences
+corrigées.
+
+### Code confirmé correct
+
+**labo-biologie-heures-supplementaires** (IDCC 959, laboratoires de
+biologie médicale extra-hospitaliers, brochure 3114, confirmé par de
+très nombreuses sources officielles et spécialisées).
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+licenciement-particulier-employeur-guide (IDCC 3239), livreur-
+restauration-rapide-heures-supplementaires (IDCC 1501).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+lettre-demission-modele-guide, lettre-licenciement-motivation-guide,
+lexique-sigles-rh-guide, licenciement-economique-guide, licenciement-
+faute-guide, licenciement-nul-causes-guide.
+
+Compteur : lots 1-57/98 terminés sur la base fraîche. **408 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 66/570 pages = 11,6%**
+
+## Lot 58/98 — pages 571 à 580 (lot exceptionnellement dense en
+récidives)
+
+Pages revues : location-vehicules-heures-supplementaires, logistique-
+heures-supplementaires, loi-hs-2025-nouveautes-guide, loueur-courte-
+duree-heures-supplementaires, macon-coffreur-hs, magasin-populaire-
+variete-heures-supplementaires, magasinier-cariste-heures-
+supplementaires, magasinier-cariste-hs, magasinier-livreur-heures-
+supplementaires, maintien-salaire-maladie-maternite-guide.
+
+### 6 pages corrigées, récidives multiples de schémas déjà identifiés
+
+**logistique-heures-supplementaires** et **magasinier-cariste-heures-
+supplementaires** — citaient toutes deux « IDCC 1611 » (publicité
+directe, déjà confirmé faux au lot 3) comme code principal pour la
+logistique générale. Corrigées vers **IDCC 16**.
+
+**magasinier-cariste-hs** — même schéma déjà rencontré au lot 3 : «
+Logistique e-commerce → IDCC 1947 ou 1184 », les deux déjà confirmés
+faux. Corrigée vers **IDCC 16**.
+
+**macon-coffreur-hs** — 13ème occurrence du schéma de récidive ouvrier/
+ETAM du BTP, avec le même double schéma déjà rencontré ailleurs :
+« Chef d'équipe maçonnerie (ETAM) → IDCC 1597 » (faux) et « Maçon
+artisanal → IDCC 3257 » (fabriqué). Corrigées vers **IDCC 2609** et
+**IDCC 1596**.
+
+**loueur-courte-duree-heures-supplementaires** — page au corps
+principal exemplaire (IDCC 16 pour la location de véhicules, avec FAQ
+dédiée « pourquoi 16 et non 1661 »), mais un second tableau couvrant
+l'autre sens possible du titre (conciergerie de logements type Airbnb)
+cumulait deux erreurs : « Agent de conciergerie » citait IDCC 1505
+(déjà confirmé faux à six reprises) et « Femme de ménage conciergerie »
+citait IDCC 2111 — ce dernier étant en réalité l'ancien code
+« Employés de maison / particuliers employeurs », **obsolète depuis le
+1er janvier 2022** (remplacé par IDCC 3239), et sans lien avec les
+« entreprises de propreté » comme la page le prétendait à tort.
+Corrigées vers **IDCC 1979/2098** et **IDCC 3043** respectivement.
+
+**Bilan actualisé du schéma de récidive BTP** : 13 pages désormais
+concernées sur l'ensemble de l'audit.
+
+### Code confirmé correct
+
+**magasin-populaire-variete-heures-supplementaires** (IDCC 2156, grands
+magasins et magasins populaires, déjà confirmé au lot 47, cohérent avec
+IDCC 2216 également présent).
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : location-
+vehicules-heures-supplementaires (IDCC 1090/16).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+loi-hs-2025-nouveautes-guide, magasinier-livreur-heures-supplementaires,
+maintien-salaire-maladie-maternite-guide.
+
+Compteur : lots 1-58/98 terminés sur la base fraîche. **398 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 72/580 pages = 12,4%**
+
+## Lot 59/98 — pages 581 à 590
+
+Pages revues : maisons-familiales-rurales-heures-supplementaires,
+maitre-chien-securite-heures-supplementaires, maitre-hotel-heures-
+supplementaires, maitre-nageur-sauveteur-heures-supplementaires,
+maladie-enfant-conges-guide, maladie-professionnelle-guide, maladie-
+professionnelle-hs-reconstitution-guide, maladie-professionnelle-
+inaptitude-heures-supplementaires, manager-equipe-production-hs,
+manager-fast-food-heures-supplementaires.
+
+### Aucune correction — lot entièrement propre
+
+**maisons-familiales-rurales-heures-supplementaires** (IDCC 7508,
+Maisons familiales rurales, instituts ruraux et centres, confirmé par
+de très nombreuses sources dont l'OPCO OCAPIAT lui-même — nouvelle
+confirmation de l'existence de conventions spécifiques à l'enseignement
+agricole privé, dans la continuité de la découverte du lot 47 sur les
+conventions départementales agricoles).
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : maitre-
+chien-securite-heures-supplementaires (IDCC 1351), maitre-hotel-heures-
+supplementaires (IDCC 1979), maitre-nageur-sauveteur-heures-
+supplementaires (IDCC 2511, sport), maladie-professionnelle-
+inaptitude-heures-supplementaires (IDCC 413), manager-equipe-
+production-hs (IDCC 3248), manager-fast-food-heures-supplementaires
+(IDCC 1501).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+maladie-enfant-conges-guide, maladie-professionnelle-guide, maladie-
+professionnelle-hs-reconstitution-guide.
+
+Compteur : lots 1-59/98 terminés sur la base fraîche. **388 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 72/590 pages = 12,2%**
+
+## Lot 60/98 — pages 591 à 600
+
+Pages revues : mandataire-judiciaire-collaborateur-hs, mandataire-
+judiciaire-protection-majeurs-guide, manipulateur-radio-heures-
+supplementaires, mannequin-salarie-presomption-heures-supplementaires,
+manucure-prothesiste-ongulaire-heures-supplementaires, maraichage-
+horticulture-heures-supplementaires, mareyeur-poissonnerie-gros-heures-
+supplementaires, marin-pecheur-salarie-heures-supplementaires, marine-
+marchande-marins-heures-supplementaires, maroquinerie-cuir-heures-
+supplementaires.
+
+### 2 corrections majeures
+
+**mandataire-judiciaire-collaborateur-hs** — utilisait « CCN avocats
+IDCC 1850 » à travers toute la page (9 occurrences) — le même code
+obsolète (avocats salariés, fusionné dans IDCC 3253 depuis septembre
+2025) déjà identifié et corrigé sur une autre page au lot 8. Corrigée
+vers **IDCC 3253**.
+
+**maraichage-horticulture-heures-supplementaires** — page cumulant
+**trois erreurs distinctes**, chacune déjà documentée séparément lors
+de lots précédents mais réapparaissant ici groupées : « IDCC 7513 »
+présenté comme le code du maraîchage (en réalité les CIVAM, centres
+d'initiatives pour valoriser l'agriculture, déjà identifié au lot 4),
+« IDCC 7502 » présenté comme le code des pépinières (en réalité la
+Mutualité sociale agricole, MSA, qui n'est pas une convention
+collective, déjà identifié au lot 47), et « IDCC 7514 » présenté comme
+le code des serres horticoles (en réalité les organismes de la
+Confédération paysanne, un syndicat professionnel, sans rapport avec
+l'emploi en serre). Les trois codes corrigés et consolidés sur **IDCC
+7024** (production agricole et CUMA), déjà correctement présenté par
+ailleurs sur la page comme code de référence à défaut d'accord
+départemental spécifique — la page reconnaissait d'ailleurs déjà
+elle-même l'existence de tels accords territoriaux, ce qui en fait une
+correction cohérente avec sa propre logique déjà juste sur ce point.
+
+### Deux pages déjà exemplaires (aucune correction)
+
+**marine-marchande-marins-heures-supplementaires** — distinction
+parfaite et déjà bien expliquée entre officiers (IDCC 3223, convention
+de 2012) et personnel d'exécution (IDCC 5521, convention de 1950), avec
+FAQ anticipant la confusion avec un numéro voisin (5021, explicitement
+écarté). **mareyeur-poissonnerie-gros-heures-supplementaires** — IDCC
+3254 (boucherie-poissonnerie, fusion très récente de 2024-2025
+remplaçant les anciennes conventions 3102 et 3243) confirmé exact,
+cohérent avec IDCC 1504 (poissonnerie détail) et IDCC 992 (boucherie)
+déjà établis.
+
+### Code confirmé correct
+
+**marin-pecheur-salarie-heures-supplementaires** (IDCC 5619, pêche
+professionnelle maritime, confirmé par de nombreuses sources dont
+Légifrance).
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+manipulateur-radio-heures-supplementaires (IDCC 2264), manucure-
+prothesiste-ongulaire-heures-supplementaires (IDCC 2596), maroquinerie-
+cuir-heures-supplementaires (IDCC 2528), mandataire-judiciaire-
+protection-majeurs-guide (IDCC 413).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+mannequin-salarie-presomption-heures-supplementaires.
+
+Compteur : lots 1-60/98 terminés sur la base fraîche. **378 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 74/600 pages = 12,3%**
+
+## Lot 61/98 — pages 601 à 610
+
+Pages revues : maxi-discount-hard-discount-heures-supplementaires,
+mecanicien-auto-heures-supplementaires, medecin-pharmacien-salarie-hs,
+medecin-travail-role-visites-guide, mediateur-social-heures-
+supplementaires, mediation-conventionnelle-mard-guide, medico-social-
+heures-supplementaires, mentions-obligatoires-contrat-travail-guide,
+menuisier-atelier-heures-supplementaires, merchandiser-commercial-
+terrain-hs.
+
+### Aucune correction — lot entièrement propre
+
+**menuisier-atelier-heures-supplementaires** — vérification prioritaire
+compte tenu du schéma de récidive BTP déjà documenté à 13 reprises :
+utilise correctement et uniquement IDCC 3222 (menuiseries, charpentes et
+constructions industrialisées, déjà confirmé au lot 52), sans confusion
+ouvrier/ETAM. Aucune erreur.
+
+**medecin-pharmacien-salarie-hs** (IDCC 1996, pharmacie d'officine,
+confirmé par de très nombreuses sources ; cohérent avec IDCC 1147 et
+2264 déjà présents sur la même page pour les autres contextes médicaux).
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : maxi-
+discount-hard-discount-heures-supplementaires (IDCC 2216), mecanicien-
+auto-heures-supplementaires (IDCC 1090), mediateur-social-heures-
+supplementaires (IDCC 1518/413), medico-social-heures-supplementaires
+(IDCC 2264/2941/413), merchandiser-commercial-terrain-hs (IDCC 1517/
+573).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+medecin-travail-role-visites-guide, mediation-conventionnelle-mard-
+guide, mentions-obligatoires-contrat-travail-guide.
+
+Compteur : lots 1-61/98 terminés sur la base fraîche. **368 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 74/610 pages = 12,1%**
+
+## Lot 62/98 — pages 611 à 620
+
+Pages revues : messagerie-livraison-heures-supplementaires, metallurgie-
+heures-supplementaires, meubles-bois-heures-supplementaires, meunerie-
+semoulerie-heures-supplementaires, micro-entrepreneur-freelance-
+conversion-salariat-hs, militaire-gendarmerie-reserve-hs, minerais-
+carrieres-heures-supplementaires, mise-a-la-retraite-guide, mise-a-
+pied-disciplinaire-conservatoire-guide, mise-en-demeure-hs-guide.
+
+### Découverte majeure : le code 87 (carrières), confirmé à plusieurs
+reprises ce chantier, a lui-même été remplacé
+
+Recherche révélant que la convention unifiée des industries de carrières
+et matériaux de construction (**IDCC 3249**, signée le 6 juillet 2022,
+étendue le 24 septembre 2024, entrée en vigueur le **18 novembre
+2024**) a fusionné les trois anciens textes distincts du secteur :
+ouvriers (IDCC 87, déjà confirmé à plusieurs reprises ce chantier comme
+« carrières et matériaux »), ETAM (IDCC 135) et cadres (IDCC 211). Le
+code 87 n'est donc pas erroné en soi mais **obsolète depuis fin 2024**,
+remplacé par le nouveau code unifié. Référentiel mis à jour en
+conséquence.
+
+### 2 corrections
+
+**minerais-carrieres-heures-supplementaires** — page déjà largement
+excellente (identifiant déjà correctement 3249 comme « la nouvelle »
+convention dans sa FAQ, et anticipant même la confusion avec 1147 via
+une anecdote), mais utilisant encore l'ancien 87 dans le titre, la méta
+et plusieurs lignes de tableau, ainsi que deux erreurs distinctes :
+« Carrières (granulats) → IDCC 87 ou 2528 » (2528 étant en réalité la
+maroquinerie, sans rapport) et « Mines et minerais → IDCC 2014 » (2014
+étant en réalité les agences de presse, sans rapport). Page entièrement
+harmonisée sur **IDCC 3249**, avec une explication enrichie de la
+fusion 2024 conservée à des fins pédagogiques.
+
+**meunerie-semoulerie-heures-supplementaires** — « Meunerie (farine) »
+citait « IAA IDCC 1747 ou 1930 » — 1747 étant la boulangerie-pâtisserie
+industrielle (elle-même remplacée par 3255 depuis 2024), sans rapport
+avec la meunerie. Corrigée vers **IDCC 1930** seul, déjà confirmé et
+cohérent avec le reste de la page (semoulerie, minoterie).
+
+### Confirmation utile
+
+**messagerie-livraison-heures-supplementaires** — utilise déjà
+correctement et uniquement IDCC 16, cohérent avec toutes les
+corrections précédentes sur ce type de contexte (logistique/messagerie).
+Aucune erreur.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+metallurgie-heures-supplementaires (IDCC 3248), meubles-bois-heures-
+supplementaires (IDCC 1411/158, déjà confirmés au lot 52).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+micro-entrepreneur-freelance-conversion-salariat-hs, militaire-
+gendarmerie-reserve-hs, mise-a-la-retraite-guide, mise-a-pied-
+disciplinaire-conservatoire-guide, mise-en-demeure-hs-guide.
+
+Compteur : lots 1-62/98 terminés sur la base fraîche. **358 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 76/620 pages = 12,3%**
+
+## Lot 63/98 — pages 621 à 630
+
+Pages revues : mobilite-volontaire-securisee-guide, modification-
+contrat-travail-refus-guide, modulation-annualisation-temps-travail,
+modulation-annualisation-temps-travail-2026, monaco-travailleurs-
+frontaliers-heures-supplementaires, moniteur-atelier-esat-heures-
+supplementaires, moniteur-auto-ecole-hs, moniteur-educateur-heures-
+supplementaires, moniteur-ski-heures-supplementaires, monteur-
+audiovisuel-heures-supplementaires.
+
+### 2 corrections (duplications de contenu)
+
+**modulation-annualisation-temps-travail-2026** — duplication de trois
+questions FAQ sur les six premières entrées, à la fois dans le JSON-LD
+et dans le HTML visible (versions courtes/génériques coexistant avec
+des versions plus longues et précises), même schéma déjà rencontré aux
+lots 1 et 45. Page nettoyée : 5 questions uniques conservées (les
+versions les plus complètes).
+
+**monaco-travailleurs-frontaliers-heures-supplementaires** — même
+coquille « Renard Renard Omniscient » déjà corrigée une fois au lot 11
+sur une autre page, ici présente à nouveau (2 occurrences). Corrigée en
+« Renard Omniscient ».
+
+### Vérification de cohérence entre pages proches
+
+**modulation-annualisation-temps-travail** et **modulation-
+annualisation-temps-travail-2026** — malgré des titres très proches, les
+deux pages couvrent des questions substantiellement différentes sans
+réel chevauchement de fond, confirmant qu'il ne s'agit pas d'un doublon
+pur mais de deux angles complémentaires sur le même thème.
+
+**monaco-travailleurs-frontaliers-heures-supplementaires** — relecture
+du contenu au-delà de la coquille corrigée : approche prudente et
+appropriée, renvoyant systématiquement vers le droit monégasque propre
+et les Caisses sociales de Monaco sans avancer de chiffres non
+vérifiables (seuils, majorations locales), tout en écartant explicitement
+toute transposition automatique des règles françaises.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+moniteur-atelier-esat-heures-supplementaires (IDCC 413), moniteur-auto-
+ecole-hs (IDCC 1090), moniteur-educateur-heures-supplementaires (IDCC
+1518/413), moniteur-ski-heures-supplementaires (IDCC 2511, sport),
+monteur-audiovisuel-heures-supplementaires (IDCC 2642).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+mobilite-volontaire-securisee-guide, modification-contrat-travail-
+refus-guide.
+
+Compteur : lots 1-63/98 terminés sur la base fraîche. **348 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 78/630 pages = 12,4%**
+
+## Lot 64/98 — pages 631 à 640
+
+Pages revues : monteur-reseaux-electriques-heures-supplementaires,
+musicien-salarie-orchestre-heures-supplementaires, musique-
+enregistrement-heures-supplementaires, mutuelle-entreprise-obligatoire,
+nao-negociation-annuelle-hs-guide, navigation-interieure-heures-
+supplementaires, negociation-amiable-hs-guide, negociation-annuelle-
+obligatoire-nao-guide, negociation-collective-accord-entreprise,
+negociation-emploi-seniors-2026-guide.
+
+### Aucune correction — lot entièrement propre
+
+**musique-enregistrement-heures-supplementaires** — la mention d'IDCC
+2770 s'est révélée être une explication pédagogique déjà présente et
+même plus précise que mon propre référentiel : « 2121 a absorbé depuis
+un arrêté du 9 avril 2019 l'ancienne convention de l'édition
+phonographique (IDCC 2770), après une période transitoire de 5 ans
+désormais achevée » — cette date antérieure (2019 avec transition de 5
+ans) est cohérente et complémentaire avec la date de fusion effective
+déjà établie au lot 35 (1er janvier 2025). Aucune erreur.
+
+**navigation-interieure-heures-supplementaires** (IDCC 3229, personnel
+des entreprises de transport en navigation intérieure, confirmé par de
+très nombreuses sources dont Légifrance ; cette convention de 2018 a
+elle-même remplacé deux anciens textes distincts — IDCC 1974 pour le
+transport de passagers et IDCC 2174 pour le transport de marchandises,
+eux-mêmes héritiers d'une convention encore plus ancienne de 1936, IDCC
+003).
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : monteur-
+reseaux-electriques-heures-supplementaires (IDCC 1596).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+musicien-salarie-orchestre-heures-supplementaires, mutuelle-entreprise-
+obligatoire, nao-negociation-annuelle-hs-guide, negociation-amiable-hs-
+guide, negociation-annuelle-obligatoire-nao-guide, negociation-
+collective-accord-entreprise, negociation-emploi-seniors-2026-guide.
+
+Compteur : lots 1-64/98 terminés sur la base fraîche. **338 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 78/640 pages = 12,2%**
+
+## Lot 65/98 — pages 641 à 650
+
+Pages revues : negociation-individuelle-avenant, negociation-salaire-
+guide, negociation-salaire-heures-supplementaires, net-social-bulletin-
+paie-guide, nettoyage-entretien-heures-supplementaires, notaire-
+assistant-heures-supplementaires, notaire-clerc-specialise-heures-
+supplementaires, notariat-heures-supplementaires, obligation-securite-
+employeur-guide, oeth-obligation-emploi-handicapes-guide.
+
+### Aucune correction — deux fausses alertes positives
+
+**notaire-clerc-specialise-heures-supplementaires** — la mention d'IDCC
+1965 (le code fabriqué identifié dès les premiers lots de ce chantier)
+s'est révélée être déjà neutralisée par une explication pédagogique
+intentionnelle (« pourquoi le bon code est 2205 et non 1965 »),
+présente à la fois dans le JSON-LD et un tableau dédié « Confusion avec
+IDCC 1965 ». Aucune anomalie réelle.
+
+**notariat-heures-supplementaires** — la mention d'IDCC 1527 (immobilier)
+s'est révélée être un simple lien de navigation vers une autre page du
+site (« À lire aussi »), sans rapport avec une affirmation sur le
+notariat lui-même. Aucune anomalie.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+nettoyage-entretien-heures-supplementaires (IDCC 2002/3043, deux
+contextes distincts et légitimes selon l'activité précise), notaire-
+assistant-heures-supplementaires et notariat-heures-supplementaires
+(IDCC 2205).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+negociation-individuelle-avenant, negociation-salaire-guide,
+negociation-salaire-heures-supplementaires, net-social-bulletin-paie-
+guide, obligation-securite-employeur-guide, oeth-obligation-emploi-
+handicapes-guide.
+
+Compteur : lots 1-65/98 terminés sur la base fraîche. **328 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 78/650 pages = 12,0%**
+
+## Lot 66/98 — pages 651 à 660
+
+Pages revues : office-manager-heures-supplementaires, operateur-
+centrale-nucleaire-hs, operateur-centre-appel-heures-supplementaires,
+operateur-cnc-heures-supplementaires, operateur-cnc-machiniste-hs,
+operateur-production-agroalimentaire-heures-supplementaires, opticien-
+lunetier-conseil-hs, opticien-lunetier-heures-supplementaires,
+optimisation-fiscale-remuneration, optique-heures-supplementaires.
+
+### 2 pages corrigées, 4 erreurs au total
+
+**operateur-cnc-heures-supplementaires** et **operateur-cnc-machiniste-
+hs** — citaient toutes deux « IDCC 1669 » pour le contexte aéronautique
+(la seconde avec un second code « 1506 » également non confirmé) — le
+même code fabriqué déjà identifié et corrigé au lot 2
+(aeronautique-spatial-heures-supplementaires), jamais confirmé par
+aucune source malgré deux recherches distinctes. Corrigées vers **IDCC
+3248** (métallurgie), déjà utilisé correctement ailleurs sur ces mêmes
+pages pour le contexte CNC/usinage.
+
+**opticien-lunetier-conseil-hs** — page au corps principal exemplaire
+(IDCC 1431 confirmé avec FAQ dédiée précisant explicitement qu'il ne
+s'agit pas d'un « code de secteur alimentaire »), mais un tableau
+détaillé plus bas cumulait deux erreurs distinctes : IDCC 1982 (en
+réalité le secteur médico-technique, déjà confirmé faux au lot 47) cité
+à deux reprises comme code principal, et IDCC 1505 (déjà confirmé faux
+à sept reprises ce chantier, fruits/légumes/épicerie) cité en
+alternative pour un responsable de magasin. Les trois occurrences
+corrigées vers **IDCC 1431**, cohérent avec le reste de la page.
+
+### Codes confirmés corrects
+
+**operateur-centrale-nucleaire-hs** (IDCC 5001, industries électriques
+et gazières, déjà confirmé au lot 37). **operateur-centre-appel-heures-
+supplementaires** — confirmation que la correction du lot 2 (IDCC 2098)
+a bien persisté sans régression.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : opticien-
+lunetier-heures-supplementaires et optique-heures-supplementaires (IDCC
+1431/1517, cohérentes avec la page corrigée).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+office-manager-heures-supplementaires, operateur-production-
+agroalimentaire-heures-supplementaires, optimisation-fiscale-
+remuneration.
+
+Compteur : lots 1-66/98 terminés sur la base fraîche. **318 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 80/660 pages = 12,1%**
+
+## Lot 67/98 — pages 661 à 670
+
+Pages revues : organisation-temps-travail-guide, orthopediste-
+orthesiste-heures-supplementaires, orthophoniste-salarie-heures-
+supplementaires, orthoptiste-salarie-heures-supplementaires,
+osteopathe-salarie-heures-supplementaires, ouvrier-agricole-saisonnier-
+heures-supplementaires, ouvrier-agricole-saisonnier-hs, ouvrier-
+qualifie-chantier-hs, ouvrier-viticole-permanent-heures-supplementaires,
+papier-carton-heures-supplementaires.
+
+### Aucune correction — lot entièrement propre
+
+**ouvrier-qualifie-chantier-hs** — vérification prioritaire compte tenu
+du schéma de récidive BTP déjà documenté à 13 reprises : utilise
+correctement et uniquement IDCC 1596 comme code ouvrier, sans confusion
+ETAM. Aucune erreur.
+
+**papier-carton-heures-supplementaires** — page multi-segments cohérente
+: IDCC 3238 (production et transformation, déjà confirmé au lot 52),
+IDCC 707 (ancien texte ingénieurs/cadres, historiquement fusionné dans
+3238) et IDCC 802 (commerce de gros des papiers-cartons, un segment
+commercial distinct de la production, confirmé par de nombreuses
+sources). Trois codes légitimement différents pour trois activités
+distinctes de la filière papier-carton.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+orthophoniste-salarie-heures-supplementaires, orthoptiste-salarie-
+heures-supplementaires et osteopathe-salarie-heures-supplementaires
+(IDCC 1147/2264/413, cohérents entre eux), ouvrier-agricole-saisonnier-
+heures-supplementaires, ouvrier-agricole-saisonnier-hs et ouvrier-
+viticole-permanent-heures-supplementaires (IDCC 7024, cohérentes entre
+elles).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+organisation-temps-travail-guide, orthopediste-orthesiste-heures-
+supplementaires.
+
+Compteur : lots 1-67/98 terminés sur la base fraîche. **308 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 80/670 pages = 11,9%**
+
+## Lot 68/98 — pages 671 à 680
+
+Pages revues : participation-salaries-guide, particuliers-employeurs-
+heures-supplementaires, patron-paie-hs-bons-cadeaux, pause-repas-temps-
+pause-hs-guide, paysage-jardinage-heures-supplementaires, paysagiste-
+heures-supplementaires, paysagiste-jardinier-hs, peche-maritime-heures-
+supplementaires, peintre-batiment-heures-supplementaires, pension-
+alimentaire-saisie.
+
+### 2 corrections
+
+**peintre-batiment-heures-supplementaires** — 14ème occurrence du
+schéma de récidive ouvrier/ETAM du BTP : « ETAM peinture décoration →
+IDCC 1597 » (faux, code ouvrier), alors même que la page expliquait
+pourtant correctement ailleurs la distinction 1596/1597 par effectif.
+Corrigée vers **IDCC 2609**.
+
+**paysagiste-jardinier-hs** — un exemple de calcul citait « Taux CCN
+paysagistes IDCC 7002 » — 7002 étant en réalité la convention des
+coopératives et SICA de céréales, meunerie et alimentation du bétail,
+sans rapport avec le paysagisme, alors que le reste de la page utilise
+déjà correctement IDCC 7018 (entreprises du paysage). Corrigée vers
+**IDCC 7018**.
+
+### Fausse alerte positive
+
+**particuliers-employeurs-heures-supplementaires** — la mention d'IDCC
+3220 s'est révélée être déjà neutralisée par une explication
+pédagogique intentionnelle (« pourquoi 3239 et non 3220 comme parfois
+indiqué »), confirmant que cette page traite déjà correctement la
+confusion bien documentée sur ce chantier entre particuliers employeurs
+(3239) et offices publics de l'habitat (3220). Aucune anomalie.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : paysage-
+jardinage-heures-supplementaires et paysagiste-heures-supplementaires
+(IDCC 7018), peche-maritime-heures-supplementaires (IDCC 5619, confirmé
+au lot 60).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+participation-salaries-guide, patron-paie-hs-bons-cadeaux, pause-repas-
+temps-pause-hs-guide, pension-alimentaire-saisie.
+
+Compteur : lots 1-68/98 terminés sur la base fraîche. **298 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 82/680 pages = 12,1%**
+
+## Lot 69/98 — pages 681 à 690
+
+Pages revues : pension-invalidite-salarie-guide, per-plan-epargne-
+retraite-hs-guide, peremption-instance-prudhommes-guide, periode-essai,
+periode-essai-droits-obligations-guide, periode-essai-rupture-guide,
+personnel-navigant-commercial-heures-supplementaires, personnel-
+navigation-aerienne-heures-supplementaires, petrole-heures-
+supplementaires, pharma-industrie-heures-supplementaires.
+
+### Aucune correction — lot entièrement propre
+
+**pharma-industrie-heures-supplementaires** — la mention d'IDCC 216
+s'est révélée être déjà neutralisée par une explication pédagogique
+intentionnelle (« pourquoi 176 et non 216 comme parfois indiqué »).
+Aucune anomalie réelle.
+
+**personnel-navigant-commercial-heures-supplementaires** — cohérent
+avec l'approche déjà validée au lot 48 pour le secteur PNC (pas de code
+IDCC unique avancé, secteur fragmenté entre conventions spécifiques et
+accords d'entreprise). **personnel-navigation-aerienne-heures-
+supplementaires** — utilise IDCC 275 (personnel au sol des transports
+aériens, déjà confirmé), cohérent avec son propre sujet distinct du
+personnel navigant.
+
+**periode-essai**, **periode-essai-droits-obligations-guide** et
+**periode-essai-rupture-guide** — trois pages couvrant des angles
+suffisamment distincts (aperçu général, droits/obligations détaillés,
+rupture spécifique) pour ne pas constituer un doublon problématique.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : petrole-
+heures-supplementaires (IDCC 1388, confirmé au lot 62).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+pension-invalidite-salarie-guide, per-plan-epargne-retraite-hs-guide,
+peremption-instance-prudhommes-guide.
+
+Compteur : lots 1-69/98 terminés sur la base fraîche. **288 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 82/690 pages = 11,9%**
+
+## Lot 70/98 — pages 691 à 700
+
+Pages revues : pharmacie-heures-supplementaires, pharmacien-officine-
+hs, photographe-salarie-heures-supplementaires, pigiste-journaliste-
+statut-heures-supplementaires, pilote-drone-salarie-hs, piquet-greve-
+lock-out-guide, plafond-4-ans-indemnites-at-mp-2027-guide, plafond-
+securite-sociale-tranches-guide, plafonnement-duree-arret-travail-2026-
+guide, plan-developpement-competences-guide.
+
+### Aucune correction — lot entièrement propre
+
+**pharmacie-heures-supplementaires** — page multi-contextes cohérente
+associant IDCC 176 (industrie pharmaceutique), IDCC 1996 (pharmacie
+d'officine) et IDCC 2264 (hospitalisation privée, pour les pharmaciens
+hospitaliers salariés du privé) — trois codes déjà confirmés, tous
+correctement associés à leur contexte respectif.
+
+**pilote-drone-salarie-hs** — page multi-secteurs bien structurée
+distinguant trois emplois légitimes du pilote de drone salarié selon
+l'employeur : société audiovisuelle (IDCC 1480 ou 2642), société BTP/
+inspection (IDCC 1596 ou 3248), agence de communication (IDCC 86) —
+tous déjà confirmés et correctement appliqués à leur contexte.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+pharmacien-officine-hs (IDCC 1996), photographe-salarie-heures-
+supplementaires (IDCC 1480/2642).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+pigiste-journaliste-statut-heures-supplementaires, piquet-greve-lock-
+out-guide, plafond-4-ans-indemnites-at-mp-2027-guide, plafond-securite-
+sociale-tranches-guide, plafonnement-duree-arret-travail-2026-guide,
+plan-developpement-competences-guide.
+
+Compteur : lots 1-70/98 terminés sur la base fraîche. **278 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 82/700 pages = 11,7%**
+
+## Lot 71/98 — pages 701 à 710
+
+Pages revues : plan-prevention-coactivite-sous-traitance-guide,
+plan-sauvegarde-emploi-pse-guide, plasturgie-heures-supplementaires,
+plateformes-livreurs-qualification-guide, plombier-chauffagiste-btp-hs,
+plombier-chauffagiste-heures-supplementaires, plongeur-commis-cuisine-
+heures-supplementaires, plongeur-commis-cuisine-hs, pneumatique-
+aluminium-heures-supplementaires, pneumatique-caoutchouc-plastique-
+heures-supplementaires.
+
+### 2 corrections
+
+**plombier-chauffagiste-btp-hs** — 15ème occurrence du schéma de
+récidive ouvrier/ETAM du BTP : « Chauffagiste ETAM → IDCC 1597 » (faux,
+code ouvrier), alors que la page distinguait par ailleurs correctement
+le BTP (1596) des équipements thermiques (998). Corrigée vers **IDCC
+2609**.
+
+**plombier-chauffagiste-heures-supplementaires** — exemple de calcul
+citant « Taux IDCC 3257 » pour un « Plombier artisanal », le même code
+fabriqué déjà rencontré à de multiples reprises (carreleur, charpentier,
+maçon...) sur des pages de métiers du bâtiment. Corrigée vers **IDCC
+1596**, cohérent avec le reste de la page qui distinguait déjà
+correctement 1596/1597 (bâtiment) de 998 (thermique/climatique) pour le
+cas général.
+
+### Vérification de cohérence entre pages proches
+
+**plongeur-commis-cuisine-heures-supplementaires** et **plongeur-
+commis-cuisine-hs** — utilisent de façon cohérente IDCC 1979 (HCR),
+la seconde ajoutant légitimement IDCC 1501 (restauration rapide) comme
+nuance supplémentaire selon le type d'établissement, sans contradiction.
+
+**pneumatique-aluminium-heures-supplementaires** et **pneumatique-
+caoutchouc-plastique-heures-supplementaires** — utilisent de façon
+cohérente les codes déjà confirmés (IDCC 45 caoutchouc, IDCC 292
+plasturgie, IDCC 3248 métallurgie) selon le sous-secteur précis.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+plasturgie-heures-supplementaires (IDCC 292/3248).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+plan-prevention-coactivite-sous-traitance-guide, plan-sauvegarde-
+emploi-pse-guide, plateformes-livreurs-qualification-guide.
+
+Compteur : lots 1-71/98 terminés sur la base fraîche. **268 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 84/710 pages = 11,8%**
+
+## Lot 72/98 — pages 711 à 720
+
+Pages revues : podologue-salarie-heures-supplementaires, poissonnier-
+heures-supplementaires, pompes-funebres-heures-supplementaires,
+pompier-sapeur-hs, pont-jour-ferie-guide, portabilite-droits-mobilite-
+guide, portage-salarial-heures-supplementaires, portage-salarial-hs-
+avance-guide, porteur-courrier-distribution-hs, preavis-depart-
+volontaire-retraite-guide.
+
+### Aucune correction — lot entièrement propre
+
+**poissonnier-heures-supplementaires** — page évitant délibérément un
+code IDCC unique, expliquant à juste titre que la convention applicable
+« varie : grande distribution, commerce de détail, ou métiers de
+bouche » selon le contexte d'emploi réel — approche prudente cohérente
+avec celle déjà validée pour d'autres métiers transversaux (PNC, lot
+48).
+
+**porteur-courrier-distribution-hs** — distinction pertinente et
+correcte entre le statut La Poste (accord collectif spécifique propre,
+sans IDCC classique, cohérent avec le statut IEG-like déjà documenté
+pour les grandes entreprises publiques historiques) et les sociétés de
+livraison privées type DHL/FedEx (IDCC 16, transport routier, déjà
+confirmé). Aucune erreur.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+podologue-salarie-heures-supplementaires (IDCC 1147/2264), pompes-
+funebres-heures-supplementaires (IDCC 759), pompier-sapeur-hs (IDCC
+1351), portage-salarial-heures-supplementaires et portage-salarial-hs-
+avance-guide (IDCC 3219, cohérentes entre elles).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+pont-jour-ferie-guide, portabilite-droits-mobilite-guide, preavis-
+depart-volontaire-retraite-guide.
+
+Compteur : lots 1-72/98 terminés sur la base fraîche. **258 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 84/720 pages = 11,7%**
+
+## Lot 73/98 — pages 721 à 730
+
+Pages revues : preavis-dispense-indemnite, preavis-legal-duree-guide,
+preavis-licenciement, preavis-recherche-emploi-heures-guide, prejudice-
+anxiete-amiante-guide, premier-emploi-hs-guide, preparateur-commandes-
+hs, preparateur-pharmacie-officine-heures-supplementaires, preretrait-
+dispotifs-fin-carriere, preretraite-amiante-caata-guide.
+
+### 1 correction
+
+**preparateur-commandes-hs** — citait « IDCC 1611 » (publicité directe,
+sans rapport) à cinq reprises comme code principal pour un préparateur
+de commandes en logistique — le même code fabriqué déjà corrigé à
+plusieurs reprises ce chantier (logistique-heures-supplementaires,
+magasinier-cariste, etc.). Corrigée vers **IDCC 16**, qui couvre déjà
+explicitement la préparation de commandes dans son propre champ
+d'application.
+
+Code déjà confirmé lors des lots précédents, cohérent ici :
+preparateur-pharmacie-officine-heures-supplementaires (IDCC 1996).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+preavis-dispense-indemnite, preavis-legal-duree-guide, preavis-
+licenciement, preavis-recherche-emploi-heures-guide, prejudice-anxiete-
+amiante-guide, premier-emploi-hs-guide, preretrait-dispotifs-fin-
+carriere, preretraite-amiante-caata-guide.
+
+Compteur : lots 1-73/98 terminés sur la base fraîche. **248 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 85/730 pages = 11,6%**
+
+## Lot 74/98 — pages 731 à 740
+
+Pages revues : prescription-procedure-prudhomale-guide, prescription-
+salaires-rappel-guide, presse-journaliste-agence-heures-supplementaires,
+presse-media-heures-supplementaires, prestataires-tertiaire-heures-
+supplementaires, pret-main-oeuvre-illicite-marchandage-guide, preuve-
+heures-travail-guide, preuve-illicite-employeur-guide, preuve-temps-
+travail-partagee-guide, prevention-addictions-travail-guide.
+
+### 1 correction
+
+**presse-media-heures-supplementaires** — citait « presse régionale
+IDCC 1309 » à cinq reprises, un numéro introuvable dans le paysage très
+fragmenté et complexe des conventions de la presse française (recherche
+exhaustive couvrant les nombreux textes historiques distincts — PQR,
+PQD, PHR, presse spécialisée — sans qu'aucun ne corresponde à 1309).
+Recherche confirmant que la convention actuelle et unifiée de la presse
+quotidienne et hebdomadaire en régions (**IDCC 3242**, signée le 9 août
+2021, en vigueur depuis le 1er janvier 2022) a remplacé neuf anciens
+textes distincts (598, 698, 781, 1018, 693, 1083, 1563, 1281, 1895).
+Corrigée vers **IDCC 3242**, cohérent avec IDCC 1480 (journalistes,
+explicitement exclus du champ de 3242) déjà présent sur la même page.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : presse-
+journaliste-agence-heures-supplementaires (IDCC 1480), prestataires-
+tertiaire-heures-supplementaires (IDCC 2098).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+prescription-procedure-prudhomale-guide, prescription-salaires-rappel-
+guide, pret-main-oeuvre-illicite-marchandage-guide, preuve-heures-
+travail-guide, preuve-illicite-employeur-guide, preuve-temps-travail-
+partagee-guide, prevention-addictions-travail-guide.
+
+Compteur : lots 1-74/98 terminés sur la base fraîche. **238 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 86/740 pages = 11,6%**
+
+## Lot 75/98 — pages 741 à 750
+
+Pages revues : prevoyance-arret-maladie-hs-guide, prevoyance-
+incapacite-invalidite-guide, prime-anciennete-calcul-guide, prime-
+anciennete-conventionnelle-guide, prime-partage-valeur-ppv-guide,
+prime-precarite-cdd-calcul-guide, prime-vacances-guide, priorite-
+reembauche-licenciement-economique-guide, prise-acte-rupture-guide,
+product-owner-scrum-master-heures-supplementaires.
+
+### 3 pages corrigées
+
+**prime-anciennete-calcul-guide** et **prime-anciennete-
+conventionnelle-guide** — citaient toutes deux une ligne générique
+« Commerce (IDCC 1505) » — déjà confirmé faux à huit reprises ce
+chantier (fruits/légumes/épicerie). Corrigées vers **IDCC 1517**,
+cohérent avec les corrections précédentes sur ce type de contexte
+générique.
+
+**prime-vacances-guide** — page multi-secteurs par ailleurs correcte
+(Syntec, BTP, TP), mais deux lignes redondantes et erronées : « Bureaux
+d'études (IDCC 176) » — 176 étant en réalité l'industrie pharmaceutique
+— et « Ingénieurs-conseils (IDCC 1400) » — 1400 introuvable. Recherche
+confirmant que l'intitulé officiel complet d'IDCC 1486 (Syntec) est
+précisément « bureaux d'études techniques, des cabinets d'ingénieurs-
+conseils et des sociétés de conseils » — couvrant donc déjà les deux
+catégories citées séparément et à tort sur ces deux lignes distinctes,
+alors qu'une première ligne de la même page utilisait déjà correctement
+« Syntec (IDCC 1486) ». Les deux lignes corrigées et consolidées sur
+**IDCC 1486**.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici : product-
+owner-scrum-master-heures-supplementaires (IDCC 1486).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+prevoyance-arret-maladie-hs-guide, prevoyance-incapacite-invalidite-
+guide, prime-partage-valeur-ppv-guide, prime-precarite-cdd-calcul-
+guide, priorite-reembauche-licenciement-economique-guide, prise-acte-
+rupture-guide.
+
+Compteur : lots 1-75/98 terminés sur la base fraîche. **228 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 89/750 pages = 11,9%**
+
+## Lot 76/98 — pages 751 à 760
+
+Pages revues : profession-liberale-independant-converti-salarie,
+professions-liberales-heures-supplementaires, promesse-embauche-offre-
+contrat-guide, promotion-immobiliere-heures-supplementaires, proprete-
+heures-supplementaires, proprete-services-heures-supplementaires,
+protection-grossesse-licenciement-guide, protection-lanceur-alerte-
+guide, protection-lanceur-alerte-hs-guide, protection-representants-
+personnel.
+
+### Aucune correction — lot entièrement propre
+
+**promotion-immobiliere-heures-supplementaires** (IDCC 1512, promotion
+immobilière, confirmé par de très nombreuses sources dont Légifrance et
+la FPI France elle-même ; distincte de IDCC 1527, immobilier classique,
+déjà confirmé et correctement présenté en complément sur la même page).
+
+**proprete-services-heures-supplementaires** — la mention « ex-IDCC
+3186 » aux côtés d'IDCC 3043 (propreté, déjà confirmé) est présentée
+comme un contexte historique intentionnel, cohérent avec le format déjà
+validé à de multiples reprises ce chantier pour d'autres fusions de
+conventions. Aucune anomalie détectée.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+profession-liberale-independant-converti-salarie (IDCC 2264/2609/3253,
+exemples multi-secteurs tous déjà validés), proprete-heures-
+supplementaires (IDCC 3043).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+professions-liberales-heures-supplementaires, promesse-embauche-offre-
+contrat-guide, protection-grossesse-licenciement-guide, protection-
+lanceur-alerte-guide, protection-lanceur-alerte-hs-guide, protection-
+representants-personnel.
+
+Compteur : lots 1-76/98 terminés sur la base fraîche. **218 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 89/760 pages = 11,7%**
+
+## Lot 77/98 — pages 761 à 770
+
+Pages revues : prud-hommes-procedure-guide, psychologue-salarie-
+heures-supplementaires, psychologue-salarie-hs, psychomotricien-
+salarie-heures-supplementaires, publicite-regies-heures-supplementaires,
+questions-frequentes-hs-guide, rachat-trimestres-hs-salarie-guide,
+rachat-trimestres-retraite-hs, radio-television-technicien-heures-
+supplementaires, ramonage-entretien-fumisterie-heures-supplementaires.
+
+### 1 correction (incohérence interne)
+
+**ramonage-entretien-fumisterie-heures-supplementaires** — page par
+ailleurs exemplaire (distinction correcte 1596/1597 selon l'effectif,
+avec une FAQ expliquant explicitement « pourquoi 1596 et non un code
+spécifique au ramonage »), mais l'exemple de calcul chiffré contredisait
+cette même logique en citant « Taux CCN ramonage IDCC 1755 » — un code
+« ramonage » spécifique dont la page elle-même venait d'expliquer
+l'inexistence. Corrigée vers **IDCC 1596**, cohérent avec le reste de la
+page.
+
+### Fausse alerte positive
+
+**radio-television-technicien-heures-supplementaires** — la mention
+d'IDCC 1780 (bâtiment PACA, déjà identifié comme récidive classique dans
+le référentiel de ce chantier) s'est révélée être déjà neutralisée par
+une explication pédagogique intentionnelle (« Confusion avec IDCC 1780
+(bâtiment PACA), 1780 sans rapport »). Page déjà exemplaire par ailleurs,
+distinguant clairement radiodiffusion (1922) et production audiovisuelle
+(2642), avec la nuance supplémentaire des journalistes (1480) en
+parallèle. Aucune anomalie réelle.
+
+Codes déjà confirmés lors des lots précédents, cohérents ici :
+psychologue-salarie-heures-supplementaires, psychologue-salarie-hs et
+psychomotricien-salarie-heures-supplementaires (IDCC 1147/2264/413/1486,
+cohérents entre elles), publicite-regies-heures-supplementaires (IDCC
+86).
+
+Pages transversales sans IDCC, relecture rapide sans anomalie détectée :
+prud-hommes-procedure-guide, questions-frequentes-hs-guide, rachat-
+trimestres-hs-salarie-guide, rachat-trimestres-retraite-hs.
+
+Compteur : lots 1-77/98 terminés sur la base fraîche. **208 pages
+restantes** à vérifier.
+
+**Taux d'erreur cumulé : 90/770 pages = 11,7%**
