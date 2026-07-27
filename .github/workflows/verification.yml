@@ -1,0 +1,161 @@
+name: Vérification
+
+# Déclenchement MANUEL : depuis l'app GitHub sur iPhone,
+#   onglet Actions → « Vérification » → bouton « Run workflow ».
+# Le rapport s'affiche directement dans le résumé du run, lisible sur mobile.
+# Aucun fichier n'est modifié : ces scripts ne font que lire et rapporter.
+#
+# Complète les workflows des trois autres dépôts (aspirateur dans droit,
+# Vérification dans l'app, Régénérer dans veille-perso) -- jusqu'ici le guide
+# était le seul purement passif, jamais vérifié pour lui-même.
+on:
+  # Le mercredi comme celui de l'app, à une minute différente pour ne pas
+  # partir pile au même instant que les deux autres runs de la même semaine.
+  #
+  # Minute décalée à :17, pas :00 -- même raison que les trois autres workflows
+  # (aspirateur, Vérification de l'app, Régénérer) : GitHub le documente
+  # lui-même, la charge est la plus forte pile à l'heure ronde. Voir la note du
+  # 27/07/2026 dans ces trois fichiers pour le détail.
+  schedule:
+    - cron: "17 7 * * 3"
+  workflow_dispatch:
+    inputs:
+      depot_hs:
+        description: "Dépôt de l'application (pour CCN_FUSIONS)."
+        required: false
+        default: "tonytonic/hs"
+      branche_hs:
+        description: "Branche de l'application contenant les fichiers de production."
+        required: false
+        default: "Android-cloudfare-production"
+      depot_droit:
+        description: "Dépôt du fonds (pour la validité des citations)."
+        required: false
+        default: "anthonychauvel/droit"
+      depot_veille:
+        description: "Dépôt qui héberge les scripts de vérification eux-mêmes."
+        required: false
+        default: "anthonychauvel/tableaudebord"
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le guide (ce dépôt)
+        uses: actions/checkout@v4
+        with:
+          path: _guide
+
+      # Les scripts eux-mêmes (verifier-guide.py, etc.) vivent dans veille-perso,
+      # pas ici -- sans ce checkout, rien d'autre ne peut s'exécuter.
+      - name: Récupérer les scripts de vérification
+        id: scripts
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.depot_veille || 'anthonychauvel/tableaudebord' }}
+          path: _veille
+          token: ${{ secrets.TOKEN_VEILLE || github.token }}
+
+      - name: Diagnostic d'accès aux scripts
+        if: steps.scripts.outcome != 'success'
+        run: |
+          echo "## ⚠️ Le dépôt des scripts n'a pas pu être lu" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Dépôt visé : \`${{ github.event.inputs.depot_veille || 'anthonychauvel/tableaudebord' }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Si ce dépôt est privé, le jeton automatique de GitHub n'y a pas accès --" >> $GITHUB_STEP_SUMMARY
+          echo "il faut un jeton explicite stocké dans le secret \`TOKEN_VEILLE\` de ce dépôt." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Conséquence : aucun contrôle ne peut s'exécuter, cette vérification s'arrête ici." >> $GITHUB_STEP_SUMMARY
+          exit 1
+
+      # Nécessaire pour CCN_FUSIONS (verifier-guide.py) -- distinguer une CCN
+      # fusionnée sans le dire d'une CCN active à part entière.
+      - name: Récupérer l'application (pour CCN_FUSIONS)
+        id: hs
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.depot_hs || 'tonytonic/hs' }}
+          ref: ${{ github.event.inputs.branche_hs || 'Android-cloudfare-production' }}
+          path: _hs
+          token: ${{ secrets.TOKEN_HS || github.token }}
+
+      - name: Diagnostic d'accès à l'application
+        if: steps.hs.outcome != 'success'
+        run: |
+          echo "## ⚠️ Le dépôt de l'application n'a pas pu être lu" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Dépôt visé : \`${{ github.event.inputs.depot_hs || 'tonytonic/hs' }}\` (branche \`${{ github.event.inputs.branche_hs || 'Android-cloudfare-production' }}\`)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Conséquence : le contrôle des CCN fusionnées sans le dire est ignoré." >> $GITHUB_STEP_SUMMARY
+          echo "Les autres contrôles restent valables." >> $GITHUB_STEP_SUMMARY
+
+      # Le fonds (anthonychauvel/droit) est public, sur un compte DIFFÉRENT de
+      # celui de l'application -- aucun jeton n'est nécessaire pour le lire.
+      - name: Récupérer le fonds (pour la validité des citations)
+        id: fonds
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.depot_droit || 'anthonychauvel/droit' }}
+          path: _droit
+          token: ${{ secrets.TOKEN_DROIT || github.token }}
+
+      - name: Diagnostic d'accès au fonds
+        if: steps.fonds.outcome != 'success'
+        run: |
+          echo "## ⚠️ Le dépôt du fonds n'a pas pu être lu" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Dépôt visé : \`${{ github.event.inputs.depot_droit || 'anthonychauvel/droit' }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Ce dépôt est public : ce n'est presque jamais un problème de permission," >> $GITHUB_STEP_SUMMARY
+          echo "plutôt un nom de dépôt inexact ou une panne passagère de GitHub." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Conséquence : le contrôle de validité des citations est ignoré." >> $GITHUB_STEP_SUMMARY
+          echo "Les autres contrôles restent valables." >> $GITHUB_STEP_SUMMARY
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 1 — Conventions fusionnées citées sans le dire
+        if: steps.hs.outcome == 'success'
+        continue-on-error: true
+        run: |
+          echo "## 1 — Conventions fusionnées citées sans le dire" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python3 _veille/scripts/verifier-guide.py --guide _guide --hs _hs --json /tmp/guide.json 2>&1 | tee /tmp/guide.log
+          cat /tmp/guide.log >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+      - name: 2 — Validité des citations juridiques
+        if: steps.fonds.outcome == 'success'
+        continue-on-error: true
+        run: |
+          echo "## 2 — Validité des citations juridiques" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python3 _veille/scripts/verifier-citations-ecosysteme.py --guide _guide --hs _hs --fonds _droit --json /tmp/citations.json 2>&1 | tee /tmp/citations.log
+          cat /tmp/citations.log >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+      - name: 3 — Validité du JSON-LD
+        continue-on-error: true
+        run: |
+          echo "## 3 — Validité du JSON-LD" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python3 _veille/scripts/verifier-jsonld.py --guide _guide --json /tmp/jsonld.json 2>&1 | tee /tmp/jsonld.log
+          cat /tmp/jsonld.log >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+      - name: Rapports téléchargeables
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapports-verification-guide
+          path: /tmp/*.json
+          if-no-files-found: ignore
