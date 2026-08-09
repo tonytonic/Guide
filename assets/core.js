@@ -215,11 +215,10 @@
      l'utilisateur (mémorisé). Annonce le lancement de l'appli, réservé aux
      utilisateurs de l'application (non disponible en ligne). */
   function renderPromoMLT() {
-    // 1) Fin de vie : plus rien à partir du 1er octobre 2026.
+    // ÉPHÉMÈRE : visible jusqu'au 30/09/2026 inclus, puis plus rien (disparaît
+    // le 1er octobre). PERMANENT sur toute la période : aucun bouton de fermeture.
     if (new Date() >= new Date("2026-10-01T00:00:00")) return;
-    // 2) Déjà fermé par l'utilisateur ?
-    try { if (localStorage.getItem("mlt_promo_dismissed") === "1") return; } catch (e) {}
-    // 3) Insertion en tête du contenu principal.
+    // Insertion en tête du contenu principal (guides ET page d'accueil/menu).
     var main = document.querySelector("main.wrap") || document.querySelector("main");
     if (!main) return;
     var el = document.createElement("aside");
@@ -227,7 +226,6 @@
     el.setAttribute("role", "complementary");
     el.setAttribute("aria-label", "Annonce MonLegiTexte");
     el.innerHTML =
-      '<button class="mlt-promo-close" type="button" aria-label="Fermer l\'annonce">\u00d7</button>' +
       '<div class="mlt-promo-media"><img src="/assets/img/promo-mlt.webp" alt="Aper\u00e7u de l\'application MonLegiTexte" loading="lazy" width="492" height="528"></div>' +
       '<div class="mlt-promo-body">' +
         '<span class="mlt-promo-badge">Nouveau \u00b7 rentr\u00e9e septembre</span>' +
@@ -237,11 +235,6 @@
         '<p class="mlt-promo-note">Lancement \u00e0 la <b>rentr\u00e9e, septembre 2026</b> \u2014 r\u00e9serv\u00e9 aux utilisateurs de l\'application (non disponible en ligne). Un peu de patience.</p>' +
       '</div>';
     main.insertBefore(el, main.firstChild);
-    var close = el.querySelector(".mlt-promo-close");
-    if (close) close.addEventListener("click", function () {
-      if (el.parentNode) el.parentNode.removeChild(el);
-      try { localStorage.setItem("mlt_promo_dismissed", "1"); } catch (e) {}
-    });
   }
 
   [renderTopbar, renderHeroCta, renderAppCta, renderFooter, renderBackToGuides, renderBackPrev, renderBackToTop, renderPromoMLT].forEach(function (fn) {
