@@ -426,3 +426,38 @@ footer a{color:var(--pierre)}
   .tbl th,.tbl td{padding:10px 9px}
   .ex-line .h{font-size:14px}
 }
+
+/* ============================================================================
+   BANDEAU PROMOTIONNEL MonLegiTexte — éphémère (injecté par core.js)
+   Visible jusqu'au 30/09/2026 inclus, fermable. Annonce le lancement de
+   l'appli (non disponible en ligne).
+   ========================================================================== */
+.mlt-promo{ position:relative; display:flex; gap:20px; align-items:center;
+  max-width:960px; margin:22px auto 6px; padding:20px 22px;
+  background:linear-gradient(135deg,#0d1c33,#162647); border:1px solid #2a3a5c;
+  border-radius:18px; box-shadow:0 18px 40px -22px rgba(13,28,51,.7); overflow:hidden; }
+.mlt-promo::before{ content:""; position:absolute; inset:0 0 auto 0; height:3px;
+  background:linear-gradient(90deg,transparent,#e2c369,transparent); opacity:.85; }
+.mlt-promo-media{ flex:0 0 auto; }
+.mlt-promo-media img{ display:block; height:152px; width:auto; }
+.mlt-promo-body{ flex:1 1 auto; min-width:0; color:#e8edf6; }
+.mlt-promo-badge{ display:inline-block; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase; color:#1a2a4a;
+  background:linear-gradient(180deg,#f0d789,#d4af5f); padding:4px 11px; border-radius:999px; margin-bottom:9px; }
+.mlt-promo-title{ font-family:'Outfit',sans-serif; font-size:19px; font-weight:600; margin:0 0 7px;
+  color:#fff; line-height:1.25; }
+.mlt-promo-title .mlt-gold{ color:#e2c369; }
+.mlt-promo-lead{ font-size:13.5px; line-height:1.5; margin:0 0 8px; color:#cdd6e6; }
+.mlt-promo-lead b{ color:#fff; }
+.mlt-promo-lead .mlt-gold{ color:#e2c369; font-weight:600; }
+.mlt-promo-free{ font-size:13px; line-height:1.4; margin:0 0 8px; color:#e2c369; font-weight:600; }
+.mlt-promo-free b{ color:#f4dd97; }
+.mlt-promo-note{ font-size:12.5px; line-height:1.45; margin:0; color:#9fb0cc; }
+.mlt-promo-note b{ color:#e2c369; }
+.mlt-promo-close{ position:absolute; top:10px; right:12px; width:26px; height:26px; border:none;
+  background:rgba(255,255,255,.08); color:#c9d4e6; border-radius:8px; font-size:16px; line-height:1; cursor:pointer; }
+.mlt-promo-close:hover{ background:rgba(255,255,255,.16); color:#fff; }
+@media (max-width:640px){
+  .mlt-promo{ flex-direction:column; text-align:center; gap:14px; padding:18px 16px 20px; }
+  .mlt-promo-media img{ height:184px; }
+}
