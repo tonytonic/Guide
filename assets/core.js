@@ -63,17 +63,20 @@
     var btnIosPrimary      = '<a class="btn" href="' + S.appUrl + '" target="_blank" rel="noopener">' + label + ' <span class="arr">→</span></a>';
     var btnAndroidPrimary  = '<a class="btn" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
 
+    var btnApercu          = '<a class="btn-outline" href="/apercu.html">👀 Voir l\'appli en aperçu <span class="arr">→</span></a>';
+
     var buttons, sub;
     if (platform === "android") {
-      buttons = btnAndroidPrimary;
-      sub = "disponible sur le Play Store.";
+      buttons = btnAndroidPrimary + btnApercu;
+      sub = "disponible sur le Play Store — ou explore-la en aperçu avant.";
     } else if (platform === "ios") {
-      buttons = btnIosPrimary;
-      sub = "web app, ajoute-la à ton écran d'accueil.";
+      buttons = btnIosPrimary + btnApercu;
+      sub = "web app, ajoute-la à ton écran d'accueil — ou explore-la en aperçu avant.";
     } else {
-      // PC/Mac : pas de lien direct vers l'appli, optimisée mobile uniquement.
-      buttons = '<span class="btn-outline" style="cursor:default">📱 Optimisée mobile</span>';
-      sub = "ouvre cette page sur iPhone ou Android pour accéder au simulateur.";
+      // PC/Mac : l'appli tourne désormais bien sur grand écran → on propose un
+      // aperçu, tout en gardant le mobile comme usage principal (objectif : téléchargement mobile).
+      buttons = '<a class="btn-outline" href="/apercu.html">🖥️ Aperçu sur ordinateur <span class="arr">→</span></a>';
+      sub = "pensée pour le mobile — pour l'usage quotidien, ouvre cette page sur iPhone ou Android.";
     }
 
     mount.outerHTML =
@@ -87,11 +90,11 @@
     var platform = detectPlatform();
     var btnIos             = '<a class="btn-light" href="' + S.appUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' iPhone (web) <span class="arr">→</span></a>';
     var btnAndroidPrimary  = '<a class="btn-light" href="' + S.playStoreUrl + '" target="_blank" rel="noopener">' + appIconHtml + ' Télécharger sur le Play Store <span class="arr">→</span></a>';
-    var desktopNotice      = '<span class="btn-outline-light" style="cursor:default">📱 Optimisée mobile — ouvre cette page sur iPhone ou Android</span>';
+    var desktopPreview     = '<a class="btn-outline-light" href="/apercu.html">🖥️ Aperçu sur ordinateur <span class="arr">→</span></a>';
 
     if (platform === "android") return btnAndroidPrimary;
     if (platform === "ios") return btnIos;
-    return desktopNotice; // PC/Mac : pas de lien direct vers l'appli, optimisée mobile uniquement.
+    return desktopPreview; // PC/Mac : aperçu de la version grand écran (usage principal : mobile)
   }
   window.HS_appCtaHtml = appCtaHtml; // réutilisable par d'autres scripts de la page (ex: switchTab dans index.html)
 
