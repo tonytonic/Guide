@@ -1700,8 +1700,7 @@ if (typeof window !== 'undefined') {
 
 <body>
 <div id="apBanner">
-  <span>👀 Aperçu de l'application — pour l'utiliser, télécharge-la sur ton téléphone.</span>
-  <a class="ab-dl" href="https://play.google.com/store/apps/details?id=com.tonytonic.heuressup" target="_blank" rel="noopener">📱 Télécharger</a>
+  <span>👀 Aperçu — 📱 Sur ton téléphone, ouvre <b>simulateurheuressupfrance.fr</b> — le lien s'activera pour utiliser l'appli.</span>
 </div>
 <div id="landscape-blocker" aria-hidden="true">
   <div class="lb-icon">📱</div>
@@ -5782,14 +5781,13 @@ function hasConsent(){
   <div class="ap-box">
     <div class="ap-head"><h3 id="apTitle">Aperçu</h3><button class="ap-close" onclick="apClose()" aria-label="Fermer">&#10005;</button></div>
     <div class="ap-shots" id="apShots"></div>
-    <div class="ap-cta"><div class="msg">📱 Pour utiliser cette fonction, télécharge l'application sur ton téléphone.</div>
-      <a href="https://play.google.com/store/apps/details?id=com.tonytonic.heuressup" target="_blank" rel="noopener">Télécharger l'application →</a></div>
+    <div class="ap-cta"><div class="msg">📱 Sur ton téléphone, ouvre <b>simulateurheuressupfrance.fr</b> — le lien s'activera pour utiliser l'appli.</div></div>
   </div>
 </div>
 <script>
 (function(){
-  var SHOTS={heures:['apercu/img/m1-1.jpg','apercu/img/m1-2.jpg'],paye:['apercu/img/m2-1.jpg','apercu/img/m2-2.jpg'],fox:['apercu/img/m3-1.jpg','apercu/img/m3-2.jpg'],module4:['apercu/img/m4-1.jpg','apercu/img/m4-2.jpg'],module6:['apercu/img/m6-1.jpg','apercu/img/m6-2.jpg'],module5:['apercu/img/m5-1.jpg','apercu/img/m5-2.jpg'],module7:['apercu/img/m7-1.jpg','apercu/img/m7-2.jpg'],GrillePaye:['apercu/img/grille-1.jpg','apercu/img/grille-2.jpg'],trousse:['apercu/img/trousse-1.jpg','apercu/img/trousse-2.jpg'],taiko:['apercu/img/taiko-1.jpg','apercu/img/taiko-2.jpg']};
-  var TITLES={heures:'Compteur annuel',paye:'Heures mensualisées',fox:'Analyse de conformité',module4:'Charge de travail & santé',module6:'Cadres & forfait jours',module5:'Temps partiel & complémentaires',module7:'Nuit, astreintes & primes',GrillePaye:'Grilles de salaire',trousse:'Trousse à outils',site:'Guide en ligne',_generic:"Aperçu de l'application",taiko:'Taiko — rythme de travail',_locked:'MonLegiTexte — bientôt'};
+  var SHOTS={heures:['apercu/img/m1-1.jpg','apercu/img/m1-2.jpg'],paye:['apercu/img/m2-1.jpg','apercu/img/m2-2.jpg'],fox:['apercu/img/m3-1.jpg','apercu/img/m3-2.jpg'],module4:['apercu/img/m4-1.jpg','apercu/img/m4-2.jpg'],module6:['apercu/img/m6-1.jpg','apercu/img/m6-2.jpg'],module5:['apercu/img/m5-1.jpg','apercu/img/m5-2.jpg'],module7:['apercu/img/m7-1.jpg','apercu/img/m7-2.jpg'],GrillePaye:['apercu/img/grille-1.jpg','apercu/img/grille-2.jpg'],trousse:['apercu/img/trousse-1.jpg','apercu/img/trousse-2.jpg'],taiko:['apercu/img/taiko-1.jpg','apercu/img/taiko-2.jpg'],demarrer:['apercu/img/demarrer-1.jpg'],site:['apercu/img/guide-1.jpg'],_locked:['apercu/img/mlt-1.jpg']};
+  var TITLES={heures:'Compteur annuel',paye:'Heures mensualisées',fox:'Analyse de conformité',module4:'Charge de travail & santé',module6:'Cadres & forfait jours',module5:'Temps partiel & complémentaires',module7:'Nuit, astreintes & primes',GrillePaye:'Grilles de salaire',trousse:'Trousse à outils',site:'Guide en ligne',_generic:"Aperçu de l'application",taiko:'Taiko — rythme de travail',demarrer:'Écran de démarrage',_locked:'MonLegiTexte'};
   var MODMAP={'btn-heures':'heures','btn-paye':'paye','btn-fox':'fox','btn-module4':'module4','btn-module6':'module6','btn-module5':'module5','btn-module7':'module7','btn-lumina':'GrillePaye','btn-trousse':'trousse','btn-site':'site'};
   var ov=document.getElementById('apOverlay');
   function openAp(key){
@@ -5807,7 +5805,8 @@ function hasConsent(){
     if(tile){ e.preventDefault(); e.stopPropagation(); openAp(MODMAP[tile.id]||'_generic'); return; }
     if(e.target.closest('[onclick*="taiko.html"]')){ e.preventDefault(); e.stopPropagation(); openAp('taiko'); return; }
     if(e.target.closest('#vignetteLegi')){ e.preventDefault(); e.stopPropagation(); openAp('_locked'); return; }
-    if(e.target.closest('#guideBtn,[onclick*="reopenWizard"],[onclick*="Todo"],[onclick*="todo"],[onclick*="Fav"],[onclick*="fav"]')){ e.preventDefault(); e.stopPropagation(); openAp('_generic'); return; }
+    if(e.target.closest('#guideBtn,[onclick*="reopenWizard"]')){ e.preventDefault(); e.stopPropagation(); openAp('demarrer'); return; }
+    if(e.target.closest('[onclick*="openBackupPopup"],[onclick*="openSharePopup"],[onclick*="mentions-legales"],[onclick*="openContactPopup"],[onclick*="openPrivacyPopup"],[onclick*="openLicensePopup"],[onclick*="Todo"],[onclick*="todo"],[onclick*="Fav"],[onclick*="fav"]')){ e.preventDefault(); e.stopPropagation(); openAp('_generic'); return; }
   }, true);
 })();
 </script>
