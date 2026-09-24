@@ -2479,9 +2479,12 @@ Changer l'adresse ferait perdre le référencement acquis. On garde l'URL, on ch
 ### `vote-electronique-elections-cse-guide.html` (1)
 - ligne 44 : …Les recommandations de la CNIL sur le vote électronique font l'objet d'une actualisation attendue en 2026. Une erreur de calendrier entre accord et PAP peut invalider
 
-## L'outil de passage à 2027 (proposé)
+## L'outil de passage à 2027 (fourni)
 
-Un workflow à lancer depuis l'onglet Actions du dépôt Guide, en janvier, une fois les valeurs 2027 connues :
-1. **Essai** : il produit un rapport de tout ce qu'il changerait, sans rien modifier.
-2. **Application** : il remplace les repères de la catégorie A, recalcule les blocs « Semaine type au SMIC » avec le nouveau SMIC, met à jour `dateModified` dans le JSON-LD, et committe sur une branche à part pour relecture.
-Les catégories B et D restent une relecture humaine, guidée par ce fichier.
+Workflow **« Passage à la nouvelle année (guide) »** dans l'onglet Actions du dépôt Guide (script `passage-annee.py` à la racine).
+À lancer en janvier, une fois le nouveau SMIC connu :
+1. **Essai** (`mode: essai`, `smic: 12.31:<nouveau>`) : rien n'est modifié, le rapport s'affiche sur la page du run.
+2. **Appliquer** : branche `passage-2027` avec les repères « à jour », les blocs « au SMIC » recalculés, l'index de recherche et le plan du site ; Cloudflare en fait un aperçu ; relire puis fusionner dans `main`.
+
+Testé le 24/09/2026 sur une copie du guide (SMIC fictif 12,62 €) : 8 079 repères dans 960 pages, 377 blocs SMIC recalculés (13 à relire), 4 125 titres/extraits dans l'index de recherche, 942 dates du plan du site. Aucun JSON-LD cassé. Contrôle : avec le même SMIC, chaque montant est retrouvé au centime près (arrondi au centime le plus proche).
+Il restera environ 380 mentions dans le texte courant et les 13 blocs particuliers, listés dans le rapport, à relire à la main.
