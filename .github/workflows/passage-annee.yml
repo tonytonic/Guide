@@ -1,0 +1,76 @@
+name: Passage à la nouvelle année (guide)
+
+# À lancer À LA MAIN en janvier, depuis l'onglet Actions (Safari ou l'app
+# GitHub sur iPhone), une fois le nouveau SMIC connu.
+#   1. mode « essai »     : ne modifie rien, affiche le rapport ;
+#   2. mode « appliquer » : modifie les pages sur une branche passage-AAAA,
+#      à relire (Cloudflare en fait un aperçu) puis à fusionner dans main.
+# Détails : passage-annee.py (à la racine, comme categorize.py)
+on:
+  workflow_dispatch:
+    inputs:
+      ancienne:
+        description: "Année à remplacer"
+        required: true
+        default: "2026"
+      nouvelle:
+        description: "Nouvelle année"
+        required: true
+        default: "2027"
+      smic:
+        description: "SMIC horaire brut ancien:nouveau (ex. 12.31:12.62) — vide = blocs SMIC non touchés"
+        required: false
+        default: ""
+      mode:
+        description: "essai (rien n'est modifié) ou appliquer (branche à relire)"
+        required: true
+        default: "essai"
+        type: choice
+        options:
+          - essai
+          - appliquer
+
+permissions:
+  contents: write
+
+jobs:
+  passage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Passage ${{ github.event.inputs.ancienne }} → ${{ github.event.inputs.nouvelle }} (${{ github.event.inputs.mode }})
+        run: |
+          OPTS=""
+          [ -n "${{ github.event.inputs.smic }}" ] && OPTS="$OPTS --smic ${{ github.event.inputs.smic }}"
+          [ "${{ github.event.inputs.mode }}" = "appliquer" ] && OPTS="$OPTS --appliquer"
+          python3 passage-annee.py --racine . \
+            --ancienne "${{ github.event.inputs.ancienne }}" \
+            --nouvelle "${{ github.event.inputs.nouvelle }}" \
+            --rapport /tmp/rapport.md $OPTS
+          # Le rapport s'affiche directement sur la page du run (résumé).
+          cat /tmp/rapport.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Garder le rapport complet
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-passage-${{ github.event.inputs.nouvelle }}
+          path: /tmp/rapport.md
+
+      - name: Pousser sur une branche à relire
+        if: ${{ github.event.inputs.mode == 'appliquer' }}
+        run: |
+          BR="passage-${{ github.event.inputs.nouvelle }}"
+          git config user.name "Passage d'année (bot)"
+          git config user.email "action@github.com"
+          git checkout -b "$BR"
+          git add -A
+          git diff --staged --quiet && { echo "Rien à changer."; exit 0; }
+          git commit -m "Passage ${{ github.event.inputs.ancienne }} → ${{ github.event.inputs.nouvelle }} (repères, blocs SMIC)"
+          git push -f origin "$BR"
+          echo "Branche **$BR** poussée : relis l'aperçu Cloudflare, puis fusionne-la dans main (Pull request)." >> "$GITHUB_STEP_SUMMARY"
