@@ -1702,6 +1702,12 @@ if (typeof window !== 'undefined') {
 <div id="apBanner">
   <a class="ab-back" href="/" onclick="if(history.length>1){history.back();return false;}">‹ Retour au guide</a>
   <span>👀 Aperçu — 📱 Sur ton téléphone, ouvre <b>simulateurheuressupfrance.fr</b> — le lien s'activera pour utiliser l'appli.</span>
+  <!-- 28/09/2026 : réseaux (YouTube, Facebook, Instagram) -->
+  <span class="ab-soc">
+    <a href="https://youtube.com/@heuressupplementairesfrance?si=goW2-b2rQKg2ZlGL" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube : les vidéos de l'appli" style="background:#FF0000"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span>Vidéos</span></a>
+    <a href="https://www.facebook.com/share/18ZNV61uY6/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook" style="background:#1877F2"><svg width="15" height="15" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M14 8V6.3c0-.8.2-1.3 1.4-1.3H17V2.2C16.7 2.1 15.7 2 14.6 2 12.2 2 10.6 3.5 10.6 6.1V8H8v3.2h2.6V22H14V11.2h2.7L17.1 8H14z"/></svg></a>
+    <a href="https://www.instagram.com/simulateurheuressup" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" style="background:linear-gradient(45deg,#F58529,#DD2A7B 45%,#8134AF 75%,#515BD4)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="#fff" stroke="none"/></svg></a>
+  </span>
 </div>
 <div id="landscape-blocker" aria-hidden="true">
   <div class="lb-icon">📱</div>
@@ -5765,6 +5771,8 @@ function hasConsent(){
 <style>
 #apBanner{position:sticky;top:0;z-index:8000;display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap;background:linear-gradient(90deg,#123e50,#0d2b3a);color:#eaf3fa;padding:10px 14px;font-size:13px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.14);text-align:center;}
 #apBanner .ab-dl{background:#eafcff;color:#0c3a44;font-weight:800;padding:8px 15px;border-radius:10px;text-decoration:none;font-size:12.5px;white-space:nowrap;}
+#apBanner .ab-soc{display:inline-flex;gap:8px;align-items:center;}
+#apBanner .ab-soc a{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:34px;height:34px;padding:0 10px;border-radius:10px;color:#fff;text-decoration:none;font-size:12.5px;font-weight:800;}
 #apBanner .ab-back{background:rgba(255,255,255,.12);color:#eaf3fa;text-decoration:none;padding:7px 13px;border-radius:10px;font-size:12.5px;white-space:nowrap;}
 #apOverlay{position:fixed;inset:0;z-index:9998;background:rgba(6,9,14,.93);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:16px;}
 #apOverlay.on{display:flex;}
