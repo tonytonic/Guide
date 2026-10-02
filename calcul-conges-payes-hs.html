@@ -17,7 +17,7 @@
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Mon employeur calcule mes CP sur mon salaire de base seulement. Est-ce correct ?", "acceptedAnswer": {"@type": "Answer", "text": "Si tu fais des HS régulières, non. La règle du 1/10e inclut toutes les rémunérations perçues sur la période de référence, y compris les HS et leurs majorations. Des CP calculés sur le seul fixe sont sous-payés."}}, {"@type": "Question", "name": "Si je pose 2 jours de CP dans une semaine et que je travaille 28 h, ai-je des HS ?", "acceptedAnswer": {"@type": "Answer", "text": "Selon le revirement de septembre 2025 : 28 h travaillées + 14 h de CP (2 jours × 7 h) = 42 h → 7 HS à +25 %. Même si tu n'as travaillé que 28 h effectivement, la règle européenne impose de compter les CP."}}, {"@type": "Question", "name": "Le rappel de HS génère-t-il aussi un rappel de CP ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Si des HS non payées sont reconnues et payées avec rappel, les CP afférents (10 % du rappel) doivent aussi être versés. C'est systématiquement demandé aux prud'hommes."}}, {"@type": "Question", "name": "Les heures sup sont-elles prises en compte dans le calcul de l'indemnité de congés payés ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les heures sup habituellement effectuées et régulièrement rémunérées doivent être intégrées dans l'assiette de calcul de l'indemnité de congés payés."}}, {"@type": "Question", "name": "Quelle méthode de calcul est la plus favorable au salarié : maintien de salaire ou dixième ?", "acceptedAnswer": {"@type": "Answer", "text": "Il convient de comparer les deux méthodes et d'appliquer celle qui est la plus favorable au salarié, l'employeur étant tenu de retenir le résultat le plus avantageux."}}, {"@type": "Question", "name": "Les primes exceptionnelles sont-elles incluses dans le calcul des congés payés ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, en principe, seules les primes ayant le caractère de complément de salaire régulier sont incluses, à l'exclusion des primes exceptionnelles ou liées à des remboursements de frais."}}, {"@type": "Question", "name": "Un salarié à temps partiel a-t-il droit au même nombre de jours de congés qu'un temps plein ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, le nombre de jours de congés payés est identique quel que soit le temps de travail, seule l'indemnisation est proratisée en fonction du salaire réel."}}, {"@type": "Question", "name": "Quel délai pour réclamer un rappel d'indemnité de congés payés mal calculée ?", "acceptedAnswer": {"@type": "Answer", "text": "La prescription est de 3 ans à compter de l'exigibilité de la créance salariale concernée."}}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Congés payés et heures supplémentaires 2026 : calcul et interactions","description":"Calcul des congés payés sur les heures supplémentaires 2026 : les HS entrent-elles dans l'assiette CP ? Règle du 1/10e vs maintien de salaire, CP sur rappel HS.","url":"https://simulateurheuressupfrance.fr/calcul-conges-payes-hs","inLanguage":"fr-FR","publisher":{"@type":"Organization","name":"Heures Supplémentaires France","url":"https://simulateurheuressupfrance.fr/"},"author":{"@type":"Organization","name":"Heures Supplémentaires France"},"dateModified":"2026-06-27"}
+{"@context":"https://schema.org","@type":"Article","headline":"Congés payés et heures supplémentaires 2026 : calcul et interactions","description":"Calcul des congés payés sur les heures supplémentaires 2026 : les HS entrent-elles dans l'assiette CP ? Règle du 1/10e vs maintien de salaire, CP sur rappel HS.","url":"https://simulateurheuressupfrance.fr/calcul-conges-payes-hs","inLanguage":"fr-FR","publisher":{"@type":"Organization","name":"Heures Supplémentaires France","url":"https://simulateurheuressupfrance.fr/"},"author":{"@type":"Organization","name":"Heures Supplémentaires France"},"dateModified":"2026-10-02"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://simulateurheuressupfrance.fr/"},{"@type":"ListItem","position":2,"name":"Congés payés et heures supplémentaires 2026 : calcul et interactions","item":"https://simulateurheuressupfrance.fr/calcul-conges-payes-hs"}]}
@@ -37,7 +37,7 @@
 <body>
 <div class="bg-fixed"></div>
 <div class="page-shell">
-<div id="hs-topbar" data-stamp="à jour juin 2026"></div>
+<div id="hs-topbar" data-stamp="à jour oct. 2026"></div>
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow rise d1">Guide 2026 · CP et HS</div>
@@ -57,7 +57,7 @@
 
   <div class="pnj">
     <img class="pnj-img" src="assets/img/pnj-Renard_Omniscient.PNG" alt="Renard Omniscient">
-    <div class="pnj-bubble"><div class="pnj-name">Renard Omniscient</div>La relation CP/HS est maintenant à double sens. <strong>Les HS gonflent l'assiette des CP (1/10e), et les CP déclenchent des HS (seuil 35 h).</strong> Le M1 intègre les deux directions automatiquement depuis la mise à jour 2025.</div>
+    <div class="pnj-bubble"><div class="pnj-name">Renard Omniscient</div>La relation CP/HS est maintenant à double sens. <strong>Les HS gonflent l'assiette des CP (1/10e), et les CP déclenchent des HS (seuil 35 h).</strong> Le M1 compte tes jours de CP dans le seuil des heures sup : marque-les avec le bouton 🌴.</div>
   </div>
 
   <section class="block">
@@ -109,8 +109,8 @@
 
   <div class="appblock">
     <div class="fox">🦊</div>
-    <h2>M1 intègre les deux interactions CP/HS</h2>
-    <p>Le M1 calcule les HS en tenant compte des CP posés (revirement 2025) et génère le récapitulatif de CP afférents sur les HS. Les deux calculs sont liés automatiquement.</p>
+    <h2>M1 compte les CP dans le seuil des heures sup</h2>
+    <p>Le M1 calcule les HS en tenant compte des CP posés (revirement 2025) : marque tes jours de congé avec le bouton 🌴 <b>Journée de congé payé</b>. Les CP apparaissent à part dans tes relevés PDF. Pour un rappel de salaire, pense à ajouter les CP afférents (10 % du rappel).</p>
     <div class="feats">
       <span class="feat">100 % gratuit</span>
       <span class="feat">sans compte</span>
