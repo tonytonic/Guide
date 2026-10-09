@@ -101,7 +101,33 @@
   function renderAppCta() {
     var mount = document.getElementById("hs-app-cta");
     if (!mount) return;
-    mount.outerHTML = '<div class="btn-group" style="justify-content:center">' + appCtaHtml() + "</div>";
+    mount.outerHTML = '<div class="btn-group" style="justify-content:center">' + appCtaHtml() + "</div>" + bmcHtml();
+  }
+
+  /* Bouton "Buy me a coffee" sous le bouton de téléchargement (09/10/2026).
+     Simple lien (pas le script officiel BMC) : aucun traceur, aucun script tiers. */
+  function bmcHtml() {
+    var url = S.bmcUrl || "https://buymeacoffee.com/tonytonic";
+    if (!document.getElementById("hs-bmc-style")) {
+      var f = document.createElement("link");
+      f.rel = "stylesheet";
+      f.href = "https://fonts.googleapis.com/css2?family=Cookie&display=swap";
+      document.head.appendChild(f);
+      var st = document.createElement("style");
+      st.id = "hs-bmc-style";
+      st.textContent =
+        ".hs-bmc{margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px}" +
+        ".hs-bmc-txt{font-size:13.5px;opacity:.75;text-align:center;line-height:1.5}" +
+        ".hs-bmc-btn{display:inline-flex;align-items:center;gap:8px;background:#FFDD00;color:#000;" +
+        "border:1.5px solid #000;border-radius:12px;padding:6px 22px;text-decoration:none;" +
+        "font-family:'Cookie',cursive;font-size:24px;line-height:1.3;transition:transform .18s ease}" +
+        ".hs-bmc-btn:hover{transform:translateY(-2px)}";
+      document.head.appendChild(st);
+    }
+    return '<div class="hs-bmc">' +
+      '<span class="hs-bmc-txt">L\'appli est gratuite et le restera. Si elle t\'aide, tu peux m\'offrir un café ☕</span>' +
+      '<a class="hs-bmc-btn" href="' + url + '" target="_blank" rel="noopener">☕ Buy me a coffee</a>' +
+      "</div>";
   }
 
   function renderFooter() {
